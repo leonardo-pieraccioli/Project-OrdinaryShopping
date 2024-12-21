@@ -1,3 +1,3 @@
 # Project OrdinaryShopping
 
-Project for the corse "Realtà Virtuale" of Politecnico di Torino.
+Project for the course "Realtà Virtuale" of Politecnico di Torino.
