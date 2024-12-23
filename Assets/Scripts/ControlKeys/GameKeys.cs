@@ -6,5 +6,6 @@ public class GameKeys
 
     //PHONE RELEATED
     static public KeyCode SHOW_PHONE_KEY = KeyCode.E;
+    static public KeyCode SWITCH_PHONE_APP = KeyCode.Q;
 }
 
