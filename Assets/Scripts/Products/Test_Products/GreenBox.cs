@@ -7,7 +7,16 @@ public class GreenBox : MonoBehaviour , IInteractable
 {
     public void Interact(PlayerInteractor interactor)
     {
-        Debug.Log("Interacted with Green Box");
+        StartCoroutine(Spin());
+    }
+
+    private IEnumerator Spin()
+    {
+        for (int i = 0; i < 90; i++)
+        {
+            transform.Rotate(Vector3.left, 2);
+            yield return new WaitForSeconds(0.01f);
+        }
     }
 
     // Start is called before the first frame update

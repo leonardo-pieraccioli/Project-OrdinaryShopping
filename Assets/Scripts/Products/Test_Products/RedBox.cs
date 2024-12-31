@@ -8,19 +8,20 @@ public class RedBox : MonoBehaviour , IInteractable
 {
     public void Interact(PlayerInteractor interactor)
     {
-        StartCoroutine(MoveBoxUpwards());
+        StartCoroutine(MoveBoxUpAndDown());
     }
 
-    private IEnumerator MoveBoxUpwards()
+    private IEnumerator MoveBoxUpAndDown()
     {
-        float time = 0;
-        Vector3 startPos = transform.position;
-        Vector3 endPos = transform.position + Vector3.up * 2;
-        while (time < 1)
+        for (int i = 0; i < 10; i++)
         {
-            transform.position = Vector3.Lerp(startPos, endPos, time);
-            time += Time.deltaTime;
-            yield return null;
+            transform.position += Vector3.up * 0.1f;
+            yield return new WaitForSeconds(0.01f);
+        }
+        for (int i = 0; i < 10; i++)
+        {
+            transform.position += Vector3.down * 0.1f;
+            yield return new WaitForSeconds(0.01f);
         }
     }
 

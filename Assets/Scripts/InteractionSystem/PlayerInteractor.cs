@@ -47,10 +47,10 @@ public class PlayerInteractor : MonoBehaviour
         }
     }
 
-    public void OnInteract(InputAction.CallbackContext context)
+    public void OnInteract(InputValue value)
     {
         // call interaction once on input start
-        if (context.started && currentInteractable != null)
+        if (value.isPressed && currentInteractable != null)
             currentInteractable.Interact(this);
     }
     #endregion
