@@ -74,6 +74,15 @@ namespace StarterAssets
 
 		private const float _threshold = 0.01f;
 
+		// Disable input system
+		private bool isMovementLocked;
+		public void LockMovement(bool locked)
+		{
+			Cursor.lockState = locked ? CursorLockMode.None : CursorLockMode.Locked;
+			Cursor.visible = locked;
+			isMovementLocked = locked;
+		}
+
 		private bool IsCurrentDeviceMouse
 		{
 			get
@@ -112,6 +121,7 @@ namespace StarterAssets
 
 		private void Update()
 		{
+			if(isMovementLocked) return;
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
@@ -132,7 +142,7 @@ namespace StarterAssets
 		private void CameraRotation()
 		{
 			// if there is an input
-			if (_input.look.sqrMagnitude >= _threshold)
+			if (_input.look.sqrMagnitude >= _threshold && !isMovementLocked)
 			{
 				//Don't multiply mouse input by Time.deltaTime
 				float deltaTimeMultiplier = IsCurrentDeviceMouse ? 1.0f : Time.deltaTime;

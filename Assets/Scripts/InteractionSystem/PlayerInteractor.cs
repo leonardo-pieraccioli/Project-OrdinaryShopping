@@ -35,9 +35,7 @@ public class PlayerInteractor : MonoBehaviour
             // enter if hits an Interactable collider
             Debug.Assert(hit.collider.TryGetComponent<IInteractable>(out currentInteractable), "Forgot to add script with IInteractable!");
             if (currentInteractable == null) return;
-
             playerCursorInteractor.SetActive(true);
-            //Debug.Log("Interaction!!");
         }
         else 
         {
@@ -50,14 +48,11 @@ public class PlayerInteractor : MonoBehaviour
     public void OnInteract(InputValue value)
     {
         // call interaction once on input start
-        if (value.isPressed && currentInteractable != null)
+        if (value.isPressed && currentInteractable != null) 
+        {
             currentInteractable.Interact(this);
+        }
     }
     #endregion
 
-    public void DisablePlayer()
-    {
-        // disable player controller
-        throw new NotImplementedException("Disable Player function in PlayerInteractor not implemented");
-    }
 }
