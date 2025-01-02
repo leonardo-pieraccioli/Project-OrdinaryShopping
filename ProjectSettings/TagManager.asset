@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Screen
   - ScreenDefault
+  - CinemachineTarget
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - UI
   - UiText
   - 
-  - 
+  - Interactable
   - 
   - 
   - 
