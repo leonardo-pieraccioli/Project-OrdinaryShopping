@@ -4,26 +4,39 @@ using UnityEngine;
 
 public class DayManager : MonoBehaviour
 {
-    public DayData dayData; // Riferimento allo ScriptableObject
-
+    public DayData dayData; // Riferimento allo ScriptableObject DayData
+   
+    int numberOfPrefabs;//viene calcolato randomicamente
     void Start()
     {
-        GenerateCubes();
+
+        //generare vari prodotti
+        for(int i=0;i<dayData.products.Length;i++){
+
+            numberOfPrefabs=Random.Range(dayData.minNumberOfProducts,dayData.maxNumberOfProducts);    
+            Generate(dayData.products[i].prefabs,numberOfPrefabs,dayData.spawnPointsPrefabs);
+            
+        }
     }
 
-    void GenerateCubes()
+    void Generate(GameObject prefab, int number, Vector3[] spawnPoints)
     {
-        for (int i = 0; i < dayData.numberOfCubes; i++)
+        int currentSpawnPointIndex=0;
+        int instanceNumber = 1;
+
+        for (int i = 0; i < number; i++)
         {
-            // Crea un nuovo cubo
-            GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
             
-            // Posiziona il cubo in modo casuale nella scena
-            cube.transform.position = new Vector3(i * 1.5f, 0, 0);
-            
-            // Cambia il colore del cubo
-            Renderer renderer = cube.GetComponent<Renderer>();
-            renderer.material.color = dayData.cubeColor;
+            GameObject currentEntity = Instantiate(prefab,spawnPoints[currentSpawnPointIndex],Quaternion.identity);
+            //nome prodotto creato
+            currentEntity.name=prefab.name+instanceNumber;
+
+            //posizione oggetti DA MODIFICARE
+            currentSpawnPointIndex=(currentSpawnPointIndex+1 )% spawnPoints.Length; 
+        
+            instanceNumber++;
+
+
         }
     }
 

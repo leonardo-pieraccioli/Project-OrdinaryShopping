@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4798813738384307131}
   - component: {fileID: 8334807694248903770}
   m_Layer: 0
-  m_Name: crispix.001
+  m_Name: crispix
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
