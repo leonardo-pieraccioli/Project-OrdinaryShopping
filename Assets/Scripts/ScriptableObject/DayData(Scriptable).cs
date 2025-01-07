@@ -1,13 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewDayData", menuName = "ScriptableObjects/DayData", order = 1)]
 public class DayData : ScriptableObject
 {
     public int dayNumber;       // Numero del giorno
-    public int numberOfCubes;   // Numero di cubi da generare
-    public Color cubeColor;     // Colore dei cubi
+    public float budget;        //Budget Giornaliero
+
+    //stato di salute(malattia,freddo,disidratazione,stanchezza...)
+    //atmosfera(luci,musica,bombe)
+    //diario
+    //telefono
+    //npc
+    //lista spesa
+    //news
+
+    //prodotti
+    public Product[] products; 
+
+    public int maxNumberOfProducts;
+    public int minNumberOfProducts;
+
+    //capire come posizionare gli oggetti 
+    public Vector3[] spawnPointsPrefabs;
+
+
 
 
 }
