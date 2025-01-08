@@ -8,7 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: beer label
-  m_Shader: {fileID: -6465566751694194690, guid: 0113b9c24b424fc47acd316e2c6ab25b, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 0113b9c24b424fc47acd316e2c6ab25b,
+    type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -41,11 +42,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Contrast: 4
-    - _Light_Intensity: 3.93
+    - _Contrast: 10
+    - _Light_Intensity: 0.87
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Saturation: 1
+    - _Shadow: 0
+    - _Shadow_Lenght: -0.042
+    - _Shadow_darkness: 1
+    - _Shadow_distance: 0.1
+    - _Shadow_position: 0.088
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
