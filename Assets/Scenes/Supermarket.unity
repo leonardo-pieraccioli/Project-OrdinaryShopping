@@ -4510,7 +4510,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dayData: {fileID: 11400000, guid: 563537e372ace7b44b4163d6d64060bd, type: 2}
-  prefab: {fileID: 2407355883855615023, guid: 91e75c2b22e00b643a911a5acbf3ae99, type: 3}
 --- !u!4 &313983541
 Transform:
   m_ObjectHideFlags: 0
