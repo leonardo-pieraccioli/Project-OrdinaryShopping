@@ -4,8 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Screen
-  - ScreenDefault
   - CinemachineTarget
   layers:
   - Default
@@ -14,7 +12,7 @@ TagManager:
   - 
   - Water
   - UI
-  - UiText
+  - 
   - 
   - Interactable
   - 
@@ -41,9 +39,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: UiText
-    uniqueID: 4062830707
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

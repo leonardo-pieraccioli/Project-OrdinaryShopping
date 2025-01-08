@@ -1,1 +1,2 @@
 Tasto destro sullo shader -> crea -> materiale
+se si vuole mettere l'outline bisogna creare 2 slot di materiale e applicare il mat base e nel secondo il materiale dell'outline
