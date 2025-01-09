@@ -29,7 +29,7 @@ struct SurfaceVariables {
 };
 
 float3 CalculateCelShading(Light l, SurfaceVariables s) {
-   
+   /*
    float attenuation = 
       smoothstep(0.0f, s.ec.distanceAttenuation, l.distanceAttenuation) * 
       smoothstep(0.0f, s.ec.shadowAttenuation, l.shadowAttenuation);
@@ -53,7 +53,41 @@ float3 CalculateCelShading(Light l, SurfaceVariables s) {
       rim
    );
    
-   return l.color * (diffuse + max(specular, rim)) * attenuation;
+   //return l.color * (diffuse + max(specular, rim)) * attenuation;
+   */
+   
+   unsigned int shadowDivision = 6; //numer of different shadows displayed
+   
+   float lightPower = (1 + dot(s.normal, l.direction))/2; //[0,1] how much light this point gets
+   
+   float lightOut = 0;
+   float step = 1.0/shadowDivision;
+   for(int i = 1; i<=shadowDivision ; i++)
+   {
+      if(lightPower > step * i)
+      {
+         lightOut += step;
+      }
+   }   
+
+   //RIM light at the corner of the shape
+   float rim = 1 - dot(s.view, s.normal);
+   rim *= pow(lightOut, s.rimThreshold);
+   rim = s.rimStrength * smoothstep(
+      s.rimAmount - 0.5f * s.ec.rim, 
+      s.rimAmount + 0.5f * s.ec.rim, 
+      rim
+   );
+   
+   //specular light reflected to the camera
+   float3 h = SafeNormalize(l.direction + s.view);
+   float specular = saturate(dot(s.normal, h));
+   specular = pow(specular, s.shininess);
+   specular *= lightPower;
+   specular = s.smoothness * smoothstep(0.005f, 
+      0.005f + s.ec.specular * s.smoothness, specular);
+
+   return  l.color *  max(max(specular, rim) * 2, lightOut);
 }
 #endif
 
