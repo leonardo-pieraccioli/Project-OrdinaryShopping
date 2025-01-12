@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,16 @@ public class Product
     public float price; // Prezzo del prodotto
     public string description; // Descrizione del prodotto
     public GameObject prefabs; //prefab prodotto
+
+    public Boolean poco;
+    public Boolean tanto;
+    public Boolean singolo;
+
+    //public int numberOfProduct; 
+
+    //posizione
+    public Vector3 _positions;
+   
 
     //SERVONO DELLE FUNZIONI PER LA GESTIONE?
 }

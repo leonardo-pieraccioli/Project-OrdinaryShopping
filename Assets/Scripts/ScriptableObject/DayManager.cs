@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,38 +7,47 @@ public class DayManager : MonoBehaviour
 {
     public DayData dayData; // Riferimento allo ScriptableObject DayData
    
-    int numberOfPrefabs;//viene calcolato randomicamente
+    //int numberOfPrefabs;//viene calcolato randomicamente
     void Start()
     {
-
         //generare vari prodotti
         for(int i=0;i<dayData.products.Length;i++){
-
-            numberOfPrefabs=Random.Range(dayData.minNumberOfProducts,dayData.maxNumberOfProducts);    
-            Generate(dayData.products[i].prefabs,numberOfPrefabs,dayData.spawnPointsPrefabs);
+           
+            Generate(dayData.products[i]);
             
         }
     }
 
-    void Generate(GameObject prefab, int number, Vector3[] spawnPoints)
+   
+    void Generate(Product product)
     {
-        int currentSpawnPointIndex=0;
-        int instanceNumber = 1;
 
-        for (int i = 0; i < number; i++)
-        {
-            
-            GameObject currentEntity = Instantiate(prefab,spawnPoints[currentSpawnPointIndex],Quaternion.identity);
+            if(product.prefabs==null|| dayData.shader==null){
+                Debug.LogError("Prefab o Shader non assegnati nell'Inspector!");
+                return;
+
+            }
+            GameObject currentEntity = Instantiate(product.prefabs,product._positions,Quaternion.identity);
             //nome prodotto creato
-            currentEntity.name=prefab.name+instanceNumber;
+            currentEntity.name=product.productName;
 
-            //posizione oggetti DA MODIFICARE
-            currentSpawnPointIndex=(currentSpawnPointIndex+1 )% spawnPoints.Length; 
-        
-            instanceNumber++;
-
-
+           //Ottieni il MeshRenderer del prefab
+        MeshRenderer renderer = currentEntity.GetComponent<MeshRenderer>();
+        if (renderer == null)
+        {
+            Debug.LogError("Il prefab non ha un MeshRenderer!");
+            return;
         }
-    }
 
+            // Crea un nuovo materiale con lo shader desiderato
+            Material newMaterial = new Material(dayData.shader);
+
+            // Assegna il nuovo materiale al MeshRenderer del prefab
+            renderer.material = newMaterial;
+
+        Debug.Log("Shader assegnato con successo al prefab istanziato.");
+        
+    
+        
+    }
 }

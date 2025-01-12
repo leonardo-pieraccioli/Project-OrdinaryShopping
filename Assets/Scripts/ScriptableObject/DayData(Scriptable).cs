@@ -16,17 +16,11 @@ public class DayData : ScriptableObject
     //npc
     //lista spesa
     //news
-
+    public  Shader shader;
     //prodotti
-    public Product[] products; 
-
-    public int maxNumberOfProducts;
-    public int minNumberOfProducts;
-
-    //capire come posizionare gli oggetti 
-    public Vector3[] spawnPointsPrefabs;
-
-
+    public Product[] products;
+    
+   
 
 
 }

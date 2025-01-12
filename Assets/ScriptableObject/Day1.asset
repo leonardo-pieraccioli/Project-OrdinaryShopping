@@ -13,7 +13,33 @@ MonoBehaviour:
   m_Name: Day1
   m_EditorClassIdentifier: 
   dayNumber: 1
-  crispixPrefab: crispix
-  numberOfCrispix: 2
-  spawnPoints:
-  - {x: 0, y: 0, z: 0}
+  budget: 0
+  shader: {fileID: -6465566751694194690, guid: 0113b9c24b424fc47acd316e2c6ab25b, type: 3}
+  products:
+  - productName: lucycharm.020
+    price: 20
+    description: ciao
+    prefabs: {fileID: 646131294883329327, guid: 6185b5d0cd8f9644bb366ae4e86c0b31,
+      type: 3}
+    poco: 0
+    tanto: 0
+    singolo: 0
+    _positions: {x: 137.02287, y: 10.833376, z: -21.978504}
+  - productName: oatmeal_#1
+    price: 20
+    description: ciao
+    prefabs: {fileID: 5311101703280702751, guid: b25596af5a1793b4daca79c6a23880c4,
+      type: 3}
+    poco: 0
+    tanto: 0
+    singolo: 0
+    _positions: {x: 140, y: 11.691, z: -22.305}
+  - productName: tuna
+    price: 20
+    description: ciao
+    prefabs: {fileID: 4215225181826669682, guid: abb448b5545295044a74df649a419e0c,
+      type: 3}
+    poco: 0
+    tanto: 0
+    singolo: 0
+    _positions: {x: 142.42, y: 11.015612, z: -22.399364}
