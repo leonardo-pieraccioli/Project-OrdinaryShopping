@@ -7,12 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: beer metal
-  m_Shader: {fileID: -6465566751694194690, guid: 0113b9c24b424fc47acd316e2c6ab25b,
+  m_Name: LadderBeer
+  m_Shader: {fileID: -6465566751694194690, guid: d0508fb690c08b049845b7190b25d007,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _SHADOWBRIGHTTYPE_POWER4
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -24,7 +25,11 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _Texture2D:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 8c1fe2910ba47844691cbd6392b98e05, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SmoothnessMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -42,17 +47,26 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Contrast: 0.16
-    - _Light_Intensity: 1.37
+    - _AmbientEnvironmentMultiplier: 0
+    - _Brightness: 1.25
+    - _Contrast: 1
+    - _EdgeDiffuse: 0
+    - _EdgeDistanceAttenuation: 0
+    - _EdgeRim: 0
+    - _EdgeSpecular: 0
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _RimAmount: 0.289
+    - _RimStrength: 1
+    - _RimThreshold: 0.01
+    - _SHADOWBRIGHTTYPE: 2
     - _Saturation: 1
-    - _Shadow_distance: 0.503
-    - _Shadow_position: 0
+    - _Shadow_Steps: 7
+    - _Smoothness: 0.759
     m_Colors:
-    - _Color: {r: 0.631, g: 0.631, b: 0.631, a: 0}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &1263817137860889680
+--- !u!114 &1762473482734971843
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
