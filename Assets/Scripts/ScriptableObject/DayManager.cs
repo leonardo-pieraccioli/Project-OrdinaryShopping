@@ -1,53 +1,37 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
+//questo script deve assegnare dinamicamente i giorni scriptable ai vari Manager
 public class DayManager : MonoBehaviour
 {
-    public DayData dayData; // Riferimento allo ScriptableObject DayData
-   
-    //int numberOfPrefabs;//viene calcolato randomicamente
+    public DayData dayData;     
+    
     void Start()
     {
-        //generare vari prodotti
-        for(int i=0;i<dayData.products.Length;i++){
-           
-            Generate(dayData.products[i]);
-            
-        }
+        
+        LoadDayData("Day1");
+              //bisogna prendere lo scriptable da caricare e caricarlo nei manager
     }
 
-   
-    void Generate(Product product)
-    {
-
-            if(product.prefabs==null|| dayData.shader==null){
-                Debug.LogError("Prefab o Shader non assegnati nell'Inspector!");
-                return;
-
-            }
-            GameObject currentEntity = Instantiate(product.prefabs,product._positions,Quaternion.identity);
-            //nome prodotto creato
-            currentEntity.name=product.productName;
-
-           //Ottieni il MeshRenderer del prefab
-        MeshRenderer renderer = currentEntity.GetComponent<MeshRenderer>();
-        if (renderer == null)
-        {
-            Debug.LogError("Il prefab non ha un MeshRenderer!");
-            return;
-        }
-
-            // Crea un nuovo materiale con lo shader desiderato
-            Material newMaterial = new Material(dayData.shader);
-
-            // Assegna il nuovo materiale al MeshRenderer del prefab
-            renderer.material = newMaterial;
-
-        Debug.Log("Shader assegnato con successo al prefab istanziato.");
+    public void LoadDayData(string nameScriptable){
         
+        //if day=1
+        DayData loadedDayData=AssetDatabase.LoadAssetAtPath<DayData>("Assets/ScriptableObject/"+nameScriptable+".asset");
     
-        
+        if (loadedDayData != null)
+        {
+            // Assegna lo ScriptableObject al manager
+            ScriptableObjectManager.Instance.CurrentDayData = loadedDayData;
+            Debug.Log("Caricato GameData: " + loadedDayData.name);
+        }
+        else
+        {
+            Debug.LogError("GameData non trovato: " + nameScriptable);
+        }
+
     }
+
 }
