@@ -74,13 +74,13 @@ float3 CalculateCelShading(Light l, SurfaceVariables s, float ShadowSteps, float
    //return  l.color *  max(max(specular, rim) * 2 * lightOut, lightOut) * attenuation;
    
    //black rim  
-   if(lightOut > max(specular, rim))
+   if(max(specular, rim) == 0)
    {
       return l.color * lightOut * attenuation;
    }
    if( specular > rim )
    {
-      return l.color * specular * 2 * attenuation;
+      return l.color * specular * attenuation;
    }
    return float3(0.0,0.0,0.0);
 }
