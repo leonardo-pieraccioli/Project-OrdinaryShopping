@@ -6,7 +6,8 @@ using UnityEngine;
 public enum CanvasCode 
 {
     CNV_HUD,
-    CNV_INSPECT
+    CNV_INSPECT,
+    CNV_DIALOGUE
 };
 
 public class CanvasManager : MonoBehaviour
