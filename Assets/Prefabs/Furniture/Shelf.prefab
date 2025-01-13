@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5601422487588510675}
   - component: {fileID: 3645372737875565789}
   m_Layer: 0
-  m_Name: Bodyframe.001
+  m_Name: Shelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

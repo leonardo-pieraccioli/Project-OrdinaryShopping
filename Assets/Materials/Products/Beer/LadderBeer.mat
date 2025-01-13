@@ -7,12 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CelShadedMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: 8b809c5c5a0f1714a9ab117fa886dd52,
+  m_Name: LadderBeer
+  m_Shader: {fileID: -6465566751694194690, guid: d0508fb690c08b049845b7190b25d007,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _SHADOWBRIGHTTYPE_POWER4
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -46,23 +47,26 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AmbientEnvironmentMultiplier: 0.828
-    - _EdgeDiffuse: 0.204
-    - _EdgeDistanceAttenuation: 0.001
-    - _EdgeRim: 0.001
-    - _EdgeShadowAttenuation: 1
+    - _AmbientEnvironmentMultiplier: 0.387
+    - _Brightness: 1
+    - _Contrast: 1
+    - _EdgeDiffuse: 0
+    - _EdgeDistanceAttenuation: 0
+    - _EdgeRim: 0
     - _EdgeSpecular: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RimAmount: 0.333
+    - _RimAmount: 0.289
     - _RimStrength: 1
-    - _RimThreshold: 0.257
+    - _RimThreshold: 0.01
+    - _SHADOWBRIGHTTYPE: 2
     - _Saturation: 1
-    - _Smoothness: 0.773
+    - _Shadow_Steps: 10.9
+    - _Smoothness: 0.814
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &2925439191624237025
+--- !u!114 &1762473482734971843
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

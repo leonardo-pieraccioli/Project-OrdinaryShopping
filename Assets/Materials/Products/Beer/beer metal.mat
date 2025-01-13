@@ -8,7 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: beer metal
-  m_Shader: {fileID: -6465566751694194690, guid: 0113b9c24b424fc47acd316e2c6ab25b, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 0113b9c24b424fc47acd316e2c6ab25b,
+    type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -46,6 +47,8 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Saturation: 1
+    - _Shadow_distance: 0.503
+    - _Shadow_position: 0
     m_Colors:
     - _Color: {r: 0.631, g: 0.631, b: 0.631, a: 0}
   m_BuildTextureStacks: []

@@ -73,9 +73,9 @@ Material:
     - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
-    - _ScaleRatioA: 1
-    - _ScaleRatioB: 1
-    - _ScaleRatioC: 1
+    - _ScaleRatioA: 0.8333333
+    - _ScaleRatioB: 0.6770833
+    - _ScaleRatioC: 0.6770833
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -120,12 +120,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: segoeprint_bold SDF
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: -1843942847
   material: {fileID: -3090452882318232015}
-  materialHashCode: 0
+  materialHashCode: 134045633
   m_Version: 1.1.0
   m_SourceFontFileGUID: 205be98233d4cce4783d85db141258a6
-  m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 205be98233d4cce4783d85db141258a6, type: 3}
+  m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 205be98233d4cce4783d85db141258a6,
+    type: 3}
   m_SourceFontFile: {fileID: 0}
   m_AtlasPopulationMode: 0
   m_FaceInfo:
