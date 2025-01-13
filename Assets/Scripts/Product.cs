@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Product
+public class Productinfo
 {
     public string productName; // Nome del prodotto
     public float price; // Prezzo del prodotto
@@ -19,7 +19,14 @@ public class Product
 
     //posizione
     public Vector3 _positions;
-   
+   //il transform è memorizzato nel prefab
 
     //SERVONO DELLE FUNZIONI PER LA GESTIONE?
+}
+
+public class Product: MonoBehaviour{
+    Productinfo info;
+
+    
+
 }
