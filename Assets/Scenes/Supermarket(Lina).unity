@@ -4631,7 +4631,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b32d9190abf740e4a937c93683aa776e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayData: {fileID: 11400000, guid: 563537e372ace7b44b4163d6d64060bd, type: 2}
 --- !u!114 &313983543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4644,7 +4643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26d24e3fdc737534f800064ffd16dc79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayData: {fileID: 11400000, guid: 563537e372ace7b44b4163d6d64060bd, type: 2}
+  dayData: {fileID: 0}
   storedPositions: []
   _gameObjectsRef:
   - {fileID: 851577744}

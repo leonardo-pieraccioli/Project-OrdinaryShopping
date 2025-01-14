@@ -20,6 +20,8 @@ public class PositionrScript : MonoBehaviour
     //int numberOfPrefabs;//viene calcolato randomicamente
     void Start()
     {
+        dayData=ScriptableObjectManager.Instance.CurrentDayData; 
+
         StoreGameObjectPositionsIntoSO();
 
         //generare vari prodotti

@@ -7,8 +7,8 @@ using UnityEngine;
 //questo script deve assegnare dinamicamente i giorni scriptable ai vari Manager
 public class DayManager : MonoBehaviour
 {
-    public DayData dayData;     
-    
+   // public DayData dayData;     
+    public static DayData Instance { get; private set; }
     void Start()
     {
         
@@ -20,17 +20,25 @@ public class DayManager : MonoBehaviour
         
         //if day=1
         DayData loadedDayData=AssetDatabase.LoadAssetAtPath<DayData>("Assets/ScriptableObject/"+nameScriptable+".asset");
-    
+
+
+
+    //assegno il manager
         if (loadedDayData != null)
         {
             // Assegna lo ScriptableObject al manager
             ScriptableObjectManager.Instance.CurrentDayData = loadedDayData;
+            //qui io ho assegnato semplicemente allo spawner il manager giusto non il day
             Debug.Log("Caricato GameData: " + loadedDayData.name);
         }
         else
         {
             Debug.LogError("GameData non trovato: " + nameScriptable);
         }
+
+
+
+        
 
     }
 
