@@ -1,33 +1,35 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
-/*L'idea di questo script è quella di raccogliere le posizioni dei GameObject definiti in _gameObjectsRef e 
-memorizzarle in un campo _positions di un ScriptableObject passato tramite _objectToChange.
-Lo script usa reflection per accedere dinamicamente al campo _positions del ScriptableObject, rendendo il codice più flessibile (ma potenzialmente meno sicuro, se il campo non esiste).
-*/
-
-public class NewBehaviourScript : MonoBehaviour
+public class PositionrScript : MonoBehaviour
 {
+    public DayData dayData; 
+    // Riferimento allo ScriptableObject DayData
     //Un riferimento a un ScriptableObject che sarà modificato 
     //(in particolare, verrà aggiornato un suo campo con i dati delle posizioni).
-    [SerializeField] DayData _objectToChange;
+    //[SerializeField] DayData _objectToChange;
     /*Un array di Vector3 usato per memorizzare le posizioni dei GameObject*/
-    [SerializeField] Vector3[] storedPositions;
+    [SerializeField] Vector3[] storedPositions; //Trasform
     /*Array di GameObject di cui verranno estratte le posizioni.*/
     [SerializeField] GameObject[] _gameObjectsRef;
     
     [ContextMenu("Store GameObjects Positions for SO")]
 
-    // Start is called before the first frame update
+    //int numberOfPrefabs;//viene calcolato randomicamente
     void Start()
     {
         StoreGameObjectPositionsIntoSO();
+
+        //generare vari prodotti
+        for(int i=0;i<dayData.products.Length;i++){
+           
+            Generate(dayData.products[i],_gameObjectsRef[i]);
+            
+        }
     }
-
-
-    void StoreGameObjectPositionsIntoSO()
+void StoreGameObjectPositionsIntoSO()
     {
         if (_gameObjectsRef.Length > 0)// Controlla che ci siano GameObject nell'array
         {
@@ -50,7 +52,7 @@ Se _positions non esiste, viene stampato un messaggio di errore nella console.
 */
             for (int i = 0; i < _gameObjectsRef.Length; i++)
             {
-                   _objectToChange.products[i]._positions=storedPositions[i];
+                   dayData.products[i]._positions=storedPositions[i];
 
             }
          
@@ -65,9 +67,38 @@ Se _positions non esiste, viene stampato un messaggio di errore nella console.
             }*/
         }
     }
-    // Update is called once per frame
-    void Update()
+   
+    void Generate(Productinfo product,GameObject gameObjectrefer)
     {
+
+            if(product.prefabs==null|| dayData.shader==null){
+                Debug.LogError("Prefab o Shader non assegnati nell'Inspector!");
+                return;
+            }
+            GameObject currentEntity = Instantiate(product.prefabs,product._positions,product.prefabs.transform.rotation,gameObjectrefer.transform);
+            // GameObject currentEntity = Instantiate(product.prefabs, product.prefabs.transform,true);
+             //currentEntity.transform.SetLocalPositionAndRotation(product._positions,product.prefabs.transform.rotation);
+
+            //nome prodotto creato
+            currentEntity.name=product.productName;
+
+           //Ottieni il MeshRenderer del prefab
+        MeshRenderer renderer = currentEntity.GetComponent<MeshRenderer>();
+        if (renderer == null)
+        {
+            Debug.LogError("Il prefab non ha un MeshRenderer!");
+            return;
+        }
+
+            // Crea un nuovo materiale con lo shader desiderato
+            Material newMaterial = new Material(dayData.shader);
+
+            // Assegna il nuovo materiale al MeshRenderer del prefab
+            renderer.material = newMaterial;
+
+        Debug.Log("Shader assegnato con successo al prefab istanziato.");
+        
+    
         
     }
 }
