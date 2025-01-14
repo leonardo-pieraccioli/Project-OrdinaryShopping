@@ -5,7 +5,8 @@ using UnityEngine;
 public class ScriptableObjectManager : MonoBehaviour
 {
    
-    /*Instance è una proprietà statica di una classe, 
+    /*
+    Instance è una proprietà statica di una classe, 
     utilizzata per implementare un singleton(design pattern). 
     Un singletongarantisce che esista una sola istanza di una classe
      e fornisce un punto di accesso globale a quella istanza.*/

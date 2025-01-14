@@ -21,12 +21,12 @@ public class Productinfo
     public Vector3 _positions;
    //il transform è memorizzato nel prefab
 
-    //SERVONO DELLE FUNZIONI PER LA GESTIONE?
+   
 }
 
 public class Product: MonoBehaviour{
     Productinfo info;
 
     
-
+     // DEFINISCO LE FUNZIONI QUI
 }

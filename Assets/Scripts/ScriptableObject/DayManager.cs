@@ -4,26 +4,28 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-//questo script deve assegnare dinamicamente i giorni scriptable ai vari Manager
+//questo script deve assegnare dinamicamente i giorni scriptable ai vari Manager, cioè Day1, Day2 ecc
 public class DayManager : MonoBehaviour
 {
    // public DayData dayData;     
-    public static DayData Instance { get; private set; }
     void Start()
-    {
-        
-        LoadDayData("Day1");
-              //bisogna prendere lo scriptable da caricare e caricarlo nei manager
+    {     
+        //bisogna prendere lo scriptable da caricare e caricarlo nei manager
+        GetDay("Day1");
+    }
+
+
+//assegna a tutti i Manager il giorno giusto
+    public void GetDay(string nameScriptable){
+        LoadDayData(nameScriptable);
+        //qui assegno il dayData giusto usando il Singelton
+        PositionrScript.dayData=ScriptableObjectManager.Instance.CurrentDayData; 
     }
 
     public void LoadDayData(string nameScriptable){
-        
         //if day=1
         DayData loadedDayData=AssetDatabase.LoadAssetAtPath<DayData>("Assets/ScriptableObject/"+nameScriptable+".asset");
-
-
-
-    //assegno il manager
+        //assegno il manager
         if (loadedDayData != null)
         {
             // Assegna lo ScriptableObject al manager
@@ -35,10 +37,6 @@ public class DayManager : MonoBehaviour
         {
             Debug.LogError("GameData non trovato: " + nameScriptable);
         }
-
-
-
-        
 
     }
 

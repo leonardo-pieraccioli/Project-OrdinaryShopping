@@ -14,6 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayNumber: 2
   budget: 0
-  products: []
-  maxNumberOfProducts: 0
-  minNumberOfProducts: 0
+  shader: {fileID: 4800000, guid: 128e987d567d4e2c824d754223b3f3b0, type: 3}
+  products:
+  - productName: prova1
+    price: 4
+    description: 
+    prefabs: {fileID: 2407355883855615023, guid: 91e75c2b22e00b643a911a5acbf3ae99,
+      type: 3}
+    poco: 0
+    tanto: 0
+    singolo: 0
+    _positions: {x: 0, y: 0, z: 0}
+  - productName: prova2
+    price: 4
+    description: 
+    prefabs: {fileID: 5311101703280702751, guid: b25596af5a1793b4daca79c6a23880c4,
+      type: 3}
+    poco: 0
+    tanto: 0
+    singolo: 0
+    _positions: {x: 0, y: 0, z: 0}

@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayNumber: 1
   budget: 0
-  shader: {fileID: -6465566751694194690, guid: 0113b9c24b424fc47acd316e2c6ab25b, type: 3}
+  shader: {fileID: 4800000, guid: f7ada0af4f174f0694ca6a487b8f543d, type: 3}
   products:
   - productName: ppp
     price: 20
     description: ciao
-    prefabs: {fileID: 646131294883329327, guid: 6185b5d0cd8f9644bb366ae4e86c0b31,
+    prefabs: {fileID: 2407355883855615023, guid: 500ba005ecf15874cb3ae5e74178e805,
       type: 3}
     poco: 0
     tanto: 0
@@ -28,7 +28,7 @@ MonoBehaviour:
   - productName: oatmeal_#1
     price: 20
     description: ciao
-    prefabs: {fileID: 646131294883329327, guid: 6185b5d0cd8f9644bb366ae4e86c0b31,
+    prefabs: {fileID: 5311101703280702751, guid: b25596af5a1793b4daca79c6a23880c4,
       type: 3}
     poco: 0
     tanto: 0

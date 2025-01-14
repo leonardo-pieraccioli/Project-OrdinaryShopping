@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PositionrScript : MonoBehaviour
 {
-    public DayData dayData; 
+     public static DayData dayData; 
     // Riferimento allo ScriptableObject DayData
     //Un riferimento a un ScriptableObject che sarà modificato 
     //(in particolare, verrà aggiornato un suo campo con i dati delle posizioni).
@@ -20,8 +20,6 @@ public class PositionrScript : MonoBehaviour
     //int numberOfPrefabs;//viene calcolato randomicamente
     void Start()
     {
-        dayData=ScriptableObjectManager.Instance.CurrentDayData; 
-
         StoreGameObjectPositionsIntoSO();
 
         //generare vari prodotti
@@ -72,7 +70,6 @@ Se _positions non esiste, viene stampato un messaggio di errore nella console.
    
     void Generate(Productinfo product,GameObject gameObjectrefer)
     {
-
             if(product.prefabs==null|| dayData.shader==null){
                 Debug.LogError("Prefab o Shader non assegnati nell'Inspector!");
                 return;
@@ -98,9 +95,30 @@ Se _positions non esiste, viene stampato un messaggio di errore nella console.
             // Assegna il nuovo materiale al MeshRenderer del prefab
             renderer.material = newMaterial;
 
-        Debug.Log("Shader assegnato con successo al prefab istanziato.");
-        
-    
+        Debug.Log("Shader assegnato con successo al prefab istanziato.");   
         
     }
+
+    void Destroy(Productinfo product){
+           
+           
+        // Trova l'oggetto in scena utilizzando il suo nome
+        GameObject oggetto = GameObject.Find(product.productName);
+
+        // Controlla se l'oggetto esiste
+        if (oggetto != null)
+        {
+            // Distruggi l'oggetto
+            Destroy(oggetto);
+            Debug.Log($"Oggetto {product.productName} distrutto.");
+        }
+        else
+        {
+            Debug.LogWarning($"Oggetto con nome {product.productName} non trovato in scena.");
+        }
+
+
+    }
+
+
 }
