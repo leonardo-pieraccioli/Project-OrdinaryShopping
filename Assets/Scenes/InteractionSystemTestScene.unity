@@ -398,7 +398,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d69c655acb056374b966e0632b12cbde, type: 2}
+  - {fileID: 2100000, guid: da458d24ab7ee9c438e483b24bf517d9, type: 2}
   - {fileID: 2100000, guid: 0881c8ec77511b8408e3eb73a8940fcc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -523,7 +523,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a3ddc272315b9e743ac1b4e4ce14c008, type: 2}
+  - {fileID: 2100000, guid: a0097bbd0c93280438ddb90aca64d3c1, type: 2}
   - {fileID: -876546973899608171, guid: 2e6cbafc9326cd2428cebbc572f530c4, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -1485,7 +1485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 976753526}
   - component: {fileID: 976753525}
-  - component: {fileID: 976753524}
+  - component: {fileID: 976753527}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1493,26 +1493,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &976753524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 976753523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
 --- !u!114 &976753525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1543,6 +1523,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &976753527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976753523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: 4419d82f33d36e848b3ed5af4c8da37e,
+    type: 3}
+  m_PointAction: {fileID: 6883725721698142386, guid: 4419d82f33d36e848b3ed5af4c8da37e,
+    type: 3}
+  m_MoveAction: {fileID: 2450127167072806447, guid: 4419d82f33d36e848b3ed5af4c8da37e,
+    type: 3}
+  m_SubmitAction: {fileID: 2108158961898205557, guid: 4419d82f33d36e848b3ed5af4c8da37e,
+    type: 3}
+  m_CancelAction: {fileID: -8971154924954369281, guid: 4419d82f33d36e848b3ed5af4c8da37e,
+    type: 3}
+  m_LeftClickAction: {fileID: 8964493877546312126, guid: 4419d82f33d36e848b3ed5af4c8da37e,
+    type: 3}
+  m_MiddleClickAction: {fileID: -4962216285949654104, guid: 4419d82f33d36e848b3ed5af4c8da37e,
+    type: 3}
+  m_RightClickAction: {fileID: -9180500344607293256, guid: 4419d82f33d36e848b3ed5af4c8da37e,
+    type: 3}
+  m_ScrollWheelAction: {fileID: -1366960715846707371, guid: 4419d82f33d36e848b3ed5af4c8da37e,
+    type: 3}
+  m_TrackedDevicePositionAction: {fileID: -597322867646454864, guid: 4419d82f33d36e848b3ed5af4c8da37e,
+    type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: -5480756500477468424, guid: 4419d82f33d36e848b3ed5af4c8da37e,
+    type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
 --- !u!1 &980314638
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,7 +1685,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: da4afa930fbed6a44b25c3475d426476, type: 2}
+  - {fileID: 2100000, guid: 4c0ed64ba540b464686a573244647891, type: 2}
   - {fileID: 2100000, guid: 0881c8ec77511b8408e3eb73a8940fcc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -2090,6 +2112,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerCapsule
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549587671856016879, guid: 1cb3621d12912a544a2f93dc76e669bb,
+        type: 3}
+      propertyPath: MoveSpeed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2218846812733519698, guid: 1cb3621d12912a544a2f93dc76e669bb,
         type: 3}

@@ -6,7 +6,6 @@ using System;
 public class PlayerInteractor : MonoBehaviour
 {
     [Header("Common variables")]
-    [SerializeField] private FirstPersonController controller;
     [SerializeField] private Transform cameraTransform;
     [SerializeField] private GameObject playerCursorInteractor;
 
@@ -44,6 +43,7 @@ public class PlayerInteractor : MonoBehaviour
             currentInteractable = null;
         }
     }
+    #endregion
 
     public void OnInteract(InputValue value)
     {
@@ -53,6 +53,4 @@ public class PlayerInteractor : MonoBehaviour
             currentInteractable.Interact(this);
         }
     }
-    #endregion
-
 }

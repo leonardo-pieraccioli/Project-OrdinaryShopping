@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PhoneHandler : MonoBehaviour
 {
@@ -15,17 +17,14 @@ public class PhoneHandler : MonoBehaviour
         top,
     };
     private State _state = State.bottom;
-    private Transform _bodyTrans;
+    [SerializeField] private Transform _bodyTrans;
     private RectTransform _rectTransBody;
     [SerializeField] private float _phoneMoveSpeed = 10;
-    private Queue<GameObject> _screens = new Queue<GameObject>();
+    private LinkedList<GameObject> _screens = new LinkedList<GameObject>();
     private GameObject _currentScreen;
-
 
     void Start()
     {
-        _bodyTrans = transform.GetChild(0);
-        Debug.Assert(_bodyTrans != null, "Screen body transform not found");
         _rectTransBody = _bodyTrans.GetComponent<RectTransform>();
         Debug.Assert(_rectTransBody != null, "Screen body rect transform not found");
 
@@ -39,15 +38,15 @@ public class PhoneHandler : MonoBehaviour
             if(c.tag == "Screen")
             {
                 c.SetActive(false);
-                _screens.Enqueue(c);
             }
             if(c.tag == "ScreenDefault")
             {
-                c.SetActive(true);
                 _currentScreen = c;
+                c.SetActive(true);
             }
+            _screens.AddLast(c);
         }
-        Debug.Assert(_screens.Count == 2 - 1, "Wrong number of screens");
+        // Debug.Assert(_screens.Count == 2 - 1, "Wrong number of screens");
     }
 
     void FixedUpdate()
@@ -72,7 +71,10 @@ public class PhoneHandler : MonoBehaviour
                     _rectTransBody.anchoredPosition += new Vector2(0, _phoneMoveSpeed);
                 }
             }
-
+            else
+            {
+                _state = State.top;
+            }
         }
         else
         {
@@ -88,45 +90,75 @@ public class PhoneHandler : MonoBehaviour
                     _rectTransBody.anchoredPosition += new Vector2(0, -_phoneMoveSpeed);
                 }
             }
+            else
+            {
+                _state = State.bottom;
+            }
 
         }
 
+    }
+
+    public void OnTakePhone(InputValue input)
+    {
+        switch(_state)
+        {
+            case State.rising:
+            _state = State.descending;
+            break;
+            case State.descending:
+            _state = State.rising;
+            break;
+            case State.bottom:
+            _state = State.rising;
+            break;
+            case State.top:
+            _state = State.descending;
+            break;
+        }
+    }
+
+    public void OnPhonePageLeft(InputValue input)
+    {
+        if(_state == State.top)
+            OpenLeftPage();
+    }
+
+    public void OnPhonePageRight(InputValue input)
+    {
+        if(_state == State.top)
+            OpenRightPage();
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(GameKeys.SHOW_PHONE_KEY))
-        {
-            switch(_state)
-            {
-                case State.rising:
-                _state = State.descending;
-                break;
-                case State.descending:
-                _state = State.rising;
-                break;
-                case State.bottom:
-                _state = State.rising;
-                break;
-                case State.top:
-                _state = State.descending;
-                break;
-            }
-        }
 
-        if(Input.GetKeyDown(GameKeys.SWITCH_PHONE_APP))
-        {
-            ChangeAppPage();
-        }
     }
 
-    private void ChangeAppPage() 
+    private void OpenLeftPage() 
     {
-        GameObject nextScreen = _screens.Dequeue();
-        nextScreen.SetActive(true);
+        var previousScreen = _screens.Find(_currentScreen).Previous;
+        if (previousScreen == null)
+        {
+            previousScreen = _screens.Last;
+        }
+        GameObject newScreen = previousScreen.Value;
+        newScreen.SetActive(true);
         _currentScreen.SetActive(false);
-        _screens.Enqueue(_currentScreen);
-        _currentScreen = nextScreen;
+        _currentScreen = newScreen;
+    }
+
+    private void OpenRightPage()
+    {
+        var nextScreen = _screens.Find(_currentScreen).Next;
+        if (nextScreen == null)
+        {
+            nextScreen = _screens.First;
+        }
+        GameObject newScreen = nextScreen.Value;
+        newScreen.SetActive(true);
+        _currentScreen.SetActive(false);
+        _currentScreen = newScreen;
     }
 
 }
