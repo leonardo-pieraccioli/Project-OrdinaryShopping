@@ -46,15 +46,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AmbientEnvironmentMultiplier: 0
-    - _EdgeDiffuse: 1
-    - _EdgeDistanceAttenuation: 0.001
-    - _EdgeRim: 0.001
-    - _EdgeShadowAttenuation: 1
-    - _EdgeSpecular: 0.001
+    - _AmbientEnvironmentMultiplier: 1
+    - _EdgeDiffuse: 0
+    - _EdgeDistanceAttenuation: 0
+    - _EdgeRim: 0
+    - _EdgeShadowAttenuation: 2
+    - _EdgeSpecular: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RimAmount: 0.25
+    - _RimAmount: 0.027
     - _RimStrength: 0
     - _RimThreshold: 0.15
     - _Saturation: 1

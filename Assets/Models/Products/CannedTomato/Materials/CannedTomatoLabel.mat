@@ -48,19 +48,19 @@ Material:
     m_Ints: []
     m_Floats:
     - _AmbientEnvironmentMultiplier: 0.5
-    - _Brightness: 1
-    - _Contrast: 1
+    - _Brightness: 0.3
+    - _Contrast: 0.927
     - _EdgeDistanceAttenuation: 0.001
     - _EdgeRim: 0.001
     - _EdgeSpecular: 0.001
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RimAmount: 0.276
-    - _RimStrength: 1
-    - _RimThreshold: 0.15
+    - _RimAmount: 0
+    - _RimStrength: 0
+    - _RimThreshold: 0.01
     - _SHADOWBRIGHTTYPE: 0
     - _Saturation: 1
-    - _Shadow_Steps: 7.31
+    - _Shadow_Steps: 1.1
     - _Smoothness: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
