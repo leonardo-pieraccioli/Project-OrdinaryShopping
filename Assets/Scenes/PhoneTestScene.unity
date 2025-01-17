@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e49af420cc31df143954829cf36279d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bodyTrans: {fileID: 0}
+  _bodyTrans: {fileID: 1295098038}
   _phoneMoveSpeed: 10
 --- !u!1 &270661604 stripped
 GameObject:
@@ -441,7 +441,7 @@ PrefabInstance:
     - target: {fileID: 1616437912477783059, guid: f530215496ad7d94186f40ab6ab3f3a8,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1616437912477783059, guid: f530215496ad7d94186f40ab6ab3f3a8,
         type: 3}
@@ -1474,7 +1474,7 @@ PrefabInstance:
     - target: {fileID: 9036387544192174570, guid: 1cb3621d12912a544a2f93dc76e669bb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.84999996
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9036387544192174570, guid: 1cb3621d12912a544a2f93dc76e669bb,
         type: 3}
@@ -1484,7 +1484,7 @@ PrefabInstance:
     - target: {fileID: 9036387544192174570, guid: 1cb3621d12912a544a2f93dc76e669bb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.13
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
