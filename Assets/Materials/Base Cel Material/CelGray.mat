@@ -54,13 +54,13 @@ Material:
     - _EdgeSpecular: 0.001
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RimAmount: 0.25
-    - _RimStrength: 0
-    - _RimThreshold: 0.15
+    - _RimAmount: 0.176
+    - _RimStrength: 0.378
+    - _RimThreshold: 0.313
     - _Saturation: 1
-    - _Smoothness: 1
+    - _Smoothness: 0.881
     m_Colors:
-    - _BaseColor: {r: 0.5773585, g: 0.5773585, b: 0.5773585, a: 1}
+    - _BaseColor: {r: 0.6075471, g: 0.6075471, b: 0.6075471, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &2507011145552645463
 MonoBehaviour:

@@ -60,7 +60,7 @@ Material:
     - _RimThreshold: 0.115
     - _SHADOWBRIGHTTYPE: 2
     - _Saturation: 1
-    - _Shadow_Steps: 6.9
+    - _Shadow_Steps: 1.1
     - _Smoothness: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 0, b: 0, a: 1}
