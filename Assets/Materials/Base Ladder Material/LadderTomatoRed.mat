@@ -48,8 +48,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _AmbientEnvironmentMultiplier: 0.5
-    - _Brightness: 0.28
-    - _Contrast: 1
+    - _Brightness: 0.26
+    - _Contrast: 1.094
     - _EdgeDistanceAttenuation: 1.829
     - _EdgeRim: 0.322
     - _EdgeSpecular: 0.996

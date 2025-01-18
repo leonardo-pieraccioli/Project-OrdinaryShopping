@@ -7,9 +7,12 @@ using UnityEngine.InputSystem;
 
 public class PhoneHandler : MonoBehaviour
 {
-
-    private float _startY = -180;
-    private float _finalY = 200;
+    [Header("Phone position")]
+    [Tooltip("The starting position of the phone")]
+    [SerializeField] private float _startY = -250;
+    [Tooltip("The final position of the phone")]
+    [SerializeField] private float _finalY = 150;
+    [SerializeField] private float _phoneMoveSpeed = 10;
     private enum State{
         rising,
         descending,
@@ -19,7 +22,6 @@ public class PhoneHandler : MonoBehaviour
     private State _state = State.bottom;
     [SerializeField] private Transform _bodyTrans;
     private RectTransform _rectTransBody;
-    [SerializeField] private float _phoneMoveSpeed = 10;
     private LinkedList<GameObject> _screens = new LinkedList<GameObject>();
     private GameObject _currentScreen;
 
@@ -30,7 +32,6 @@ public class PhoneHandler : MonoBehaviour
 
         _rectTransBody.anchoredPosition = new Vector2(_rectTransBody.anchoredPosition.x, _startY);
         Debug.Assert(_rectTransBody != null);
-
 
         for(int i = 0; i < _bodyTrans.childCount; i++)
         {
