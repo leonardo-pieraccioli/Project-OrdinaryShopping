@@ -182,7 +182,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: a8b5283e9e134ba4d88971934a186bd7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -235,6 +235,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 270725011642446641, guid: 886cadaf7604ac249949a462b74a7fed,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 270725011642446641, guid: 886cadaf7604ac249949a462b74a7fed,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -591,11 +596,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38a0d92372bb0b24e8912a5b0afae354, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xn: 40
-  yn: 5
+  xn: 3
+  yn: 2
   zn: 3
-  _offset: {x: 0, y: 0, z: 0}
-  _rotate: 0
+  _offset: {x: 1, y: 1, z: 1}
+  _rotate: 1
+  _objectGrabbed: 0
+  grabOne: 0
 --- !u!65 &1089367244
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -678,7 +685,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6b911390c5825014e8377183a7837d3f, type: 2}
+  - {fileID: 2775291755597443973, guid: fc0fecdff213f1a4697f56fce4731359, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

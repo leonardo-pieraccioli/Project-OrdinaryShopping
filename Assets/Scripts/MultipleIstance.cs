@@ -12,21 +12,32 @@ public class ArrayInstances : MonoBehaviour
     [SerializeField] private int xn, yn, zn;
     [SerializeField] private Vector3 _offset;
     [SerializeField] private bool _rotate = true;
+    [SerializeField] private int _objectGrabbed = 0;
+    [SerializeField] private bool grabOne = false;
     
     private Matrix4x4[] _matrices;
 
-    void Start()
+    public void GrabObject()
     {
-        _offset += Vector3.one;
+        gameObject.SetActive(false);
+        _objectGrabbed++;
+        gameObject.SetActive(true);
+    }
+
+    void OnEnable()
+    {
+        //get collider to get gameobject dimension
         BoxCollider collider = GetComponent<BoxCollider>();
         if(collider == null) {
             Debug.Log($"collider not found in gameobject {gameObject.name}");
         }
+        //get mesh renderer for materials
         _mesh = GetComponent<MeshFilter>().mesh;
         if(_mesh == null) {
             Debug.Log($"mesh not found in gameobject {gameObject.name}");
         }
-        _materials = GetComponent<MeshRenderer>().materials;
+        MeshRenderer mr = GetComponent<MeshRenderer>();
+        _materials = mr.materials;
         foreach(Material m in _materials)
         {
             if(m == null) 
@@ -36,20 +47,23 @@ public class ArrayInstances : MonoBehaviour
             m.enableInstancing = true;
         }
         
+        //Block original object render to avoid sovrapposition
+        mr.enabled = false; 
 
         // Create transformation matrices
         _matrices = new Matrix4x4[xn * yn * zn];
         Vector3 startPos = transform.position;
-        bool skip = true;
+        int objRemovedCount = _objectGrabbed;
         for (int i = 0; i < xn; i++)
         {
-           for (int j = 0; j < yn; j++)
-           {
-                for (int k = 0; k < zn; k++)
+            for (int k = 0; k < zn; k++)
+            {
+                for (int j = yn - 1; j >= 0; j--)
                 {
-                    if(skip)
+                    //skip grabbed objects
+                    if(objRemovedCount > 0)
                     {
-                        skip = !skip;
+                        objRemovedCount--;
                         continue;
                     }
 
@@ -63,11 +77,19 @@ public class ArrayInstances : MonoBehaviour
                         Vector3.one);
                 }
            }
-        }        
+        }       
     }
 
     void Update()
     {
+        /////this piece is for debug only////
+        if(grabOne == true)
+        {
+            GrabObject();
+            grabOne = false;
+        }
+        /////////////////////////
+        
         Graphics.DrawMeshInstanced(_mesh, 0, _materials[0], _matrices);
         Graphics.DrawMeshInstanced(_mesh, 1, _materials[1], _matrices);
     }
