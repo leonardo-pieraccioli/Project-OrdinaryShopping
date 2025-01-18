@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Linq;
+using System.Xml.Linq;
 using UnityEngine;
 
 
@@ -9,22 +12,35 @@ public class ArrayInstances : MonoBehaviour
     private Mesh _mesh; 
     private Material[] _materials;
 
-    [SerializeField] private int xn, yn, zn;
+    [SerializeField] private int _xn = 1, _yn = 1, _zn = 1;
     [SerializeField] private Vector3 _offset;
     [SerializeField] private bool _rotate = true;
-    [SerializeField] private int _objectGrabbed = 0;
-    [SerializeField] private bool grabOne = false;
+    [SerializeField] private int _grabbedCount = 0;
+    [SerializeField] private bool _grabOne = false, _putOne = false;
     
-    private Matrix4x4[] _matrices;
+    private Stack<Matrix4x4> _matrices, _removed;
 
     public void GrabObject()
     {
+        if(_grabbedCount == _xn*_yn*_zn)
+            return;
+
         gameObject.SetActive(false);
-        _objectGrabbed++;
+        _grabbedCount++;
         gameObject.SetActive(true);
     }
 
-    void OnEnable()
+    public void PutObject()
+    {
+        if(_grabbedCount == 0)
+            return;
+
+        gameObject.SetActive(false);
+        _grabbedCount--;
+        gameObject.SetActive(true);
+    }
+
+    void Awake()
     {
         //get collider to get gameobject dimension
         BoxCollider collider = GetComponent<BoxCollider>();
@@ -51,46 +67,62 @@ public class ArrayInstances : MonoBehaviour
         mr.enabled = false; 
 
         // Create transformation matrices
-        _matrices = new Matrix4x4[xn * yn * zn];
+        _matrices = new Stack<Matrix4x4>();
+        _removed = new Stack<Matrix4x4>();
         Vector3 startPos = transform.position;
-        int objRemovedCount = _objectGrabbed;
-        for (int i = 0; i < xn; i++)
+        for (int i = 0; i < _xn; i++)
         {
-            for (int k = 0; k < zn; k++)
+            for (int k = 0; k < _zn; k++)
             {
-                for (int j = yn - 1; j >= 0; j--)
+                for (int j = _yn - 1; j >= 0; j--)
                 {
                     //skip grabbed objects
-                    if(objRemovedCount > 0)
-                    {
-                        objRemovedCount--;
-                        continue;
-                    }
-
                     Vector3 currentOffset = _offset;
                     currentOffset.Scale(new Vector3(i,j,k));
                     currentOffset.Scale(collider.size);
                     Vector3 position =  currentOffset + startPos;
-                    _matrices[(i * yn * zn) + (j * zn) + k] = 
+                    _matrices.Push( 
                         Matrix4x4.TRS(position, 
                         _rotate? Quaternion.Euler(Vector3.up * Random.Range(0, 180)) : Quaternion.identity, 
-                        Vector3.one);
+                        Vector3.one));
                 }
            }
-        }       
+        }
+
+        //reverse the stack order
+        _matrices = new Stack<Matrix4x4>(_matrices);  
+    }
+
+    void OnEnable()
+    {
+
+        while(_grabbedCount > _removed.Count)
+        {
+            _removed.Push(_matrices.Pop());
+            return;
+        }
+        while(_removed.Count > _grabbedCount)
+        {
+            _matrices.Push(_removed.Pop());
+        }  
     }
 
     void Update()
     {
         /////this piece is for debug only////
-        if(grabOne == true)
+        if(_grabOne == true)
         {
             GrabObject();
-            grabOne = false;
+            _grabOne = false;
+        }
+        if(_putOne == true)
+        {
+            PutObject();
+            _putOne = false;
         }
         /////////////////////////
         
-        Graphics.DrawMeshInstanced(_mesh, 0, _materials[0], _matrices);
-        Graphics.DrawMeshInstanced(_mesh, 1, _materials[1], _matrices);
+        Graphics.DrawMeshInstanced(_mesh, 0, _materials[0], _matrices.ToArray());
+        Graphics.DrawMeshInstanced(_mesh, 1, _materials[1], _matrices.ToArray());
     }
 }
