@@ -53,10 +53,10 @@ Material:
     - _AmbientEnvironmentMultiplier: 0.195
     - _Contrast: 1
     - _EdgeDiffuse: 0
-    - _EdgeDistanceAttenuation: 0
+    - _EdgeDistanceAttenuation: 0.149
     - _EdgeRim: 0
-    - _EdgeShadowAttenuation: 1
-    - _EdgeSpecular: 0
+    - _EdgeShadowAttenuation: 0.515
+    - _EdgeSpecular: 0.407
     - _Light_Intensity: 1
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -69,7 +69,7 @@ Material:
     - _Smoothness: 0.686
     - _Thickness: 0.01
     m_Colors:
-    - _BaseColor: {r: 0.31764707, g: 0.31764707, b: 0.31764707, a: 1}
+    - _BaseColor: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
     - _Color: {r: 0, g: 0.3773585, b: 0.057735983, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &6913404174302688194
