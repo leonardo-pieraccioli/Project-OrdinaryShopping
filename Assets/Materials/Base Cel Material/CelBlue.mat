@@ -47,7 +47,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AmbientEnvironmentMultiplier: 1
-    - _EdgeDiffuse: 0.15
+    - _EdgeDiffuse: 1
     - _EdgeDistanceAttenuation: 0.42
     - _EdgeRim: 0
     - _EdgeShadowAttenuation: 0.392
@@ -55,7 +55,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RimAmount: 0.51
-    - _RimStrength: 0.64
+    - _RimStrength: 0
     - _RimThreshold: 0.68
     - _Saturation: 1
     - _Smoothness: 0

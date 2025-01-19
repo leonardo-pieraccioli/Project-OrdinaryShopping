@@ -27,6 +27,7 @@ struct SurfaceVariables {
 };
 
 
+
 float3 CalculateCelShading(Light l, SurfaceVariables s, float ShadowSteps, float ShadowType) {
       
    //shadow occlusion from other objects
@@ -140,12 +141,15 @@ void LightingCelShaded_float(float Smoothness,
 #endif
      
    Light light = GetMainLight(shadowCoord);
+   
    Color = CalculateCelShading(light, s, ShadowSteps, ShadowType);
 
    int pixelLightCount = GetAdditionalLightsCount();
-   for (int i = 0; i < pixelLightCount; i++) {
+   for (int i = 0; i < pixelLightCount; i++) 
+   {
       light = GetAdditionalLight(i, Position, 1);
-      Color += CalculateNotMainLightShading(light, s);
+      //Color += CalculateNotMainLightShading(light, s);
+      Color += CalculateCelShading(light, s, ShadowSteps, ShadowType);
    }
    
 #endif

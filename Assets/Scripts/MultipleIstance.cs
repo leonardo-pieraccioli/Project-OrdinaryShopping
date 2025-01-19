@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 
 [RequireComponent(typeof(BoxCollider))]
@@ -89,6 +90,11 @@ public class ArrayInstances : MonoBehaviour
            }
         }
 
+        //new collider to match the stock size
+        BoxCollider newCollider = gameObject.AddComponent<BoxCollider>();
+        newCollider.center += Vector3.Scale(collider.size, new Vector3(_xn, _yn, _zn)/2) - collider.size /2;
+        newCollider.size = Vector3.Scale(collider.size, new Vector3(_xn, _yn, _zn));
+        collider.enabled = false;
         //reverse the stack order
         _matrices = new Stack<Matrix4x4>(_matrices);  
     }
