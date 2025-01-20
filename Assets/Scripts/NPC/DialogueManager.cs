@@ -22,23 +22,27 @@ public class DialogueManager : MonoBehaviour
     }
 
     private FirstPersonController playerController;
+    [Header("Dialogue parameters")]
     [Tooltip("The text box where the dialogue is displayed")]
     [SerializeField] private TextMeshProUGUI dialogueBox;
     [Tooltip("The speed at which the text is displayed")]
     [SerializeField] private float textSpeed = .05f;
-    private int currentDialogueIndex;
+
+    [Header("Help messages parameters")]
     public bool isDialogueHappening = false;
+    private int currentDialogueIndex;
     private bool isLineRunning = false;
     private string[] dialogue;
     private Action endOfDialogueCallback;
     private Coroutine activeCoroutine;
+    [SerializeField] TextMeshProUGUI helpBox;
 
     public void StartDialogue(string[] dialogue, Action callback)
     {
         this.dialogue = dialogue;
         this.endOfDialogueCallback = callback;
 
-        CanvasManager.Instance.ActivateCanvas(CanvasCode.CNV_DIALOGUE);
+        CanvasManager.Instance.DeactivateAllCanvasBut(CanvasCode.CNV_DIALOGUE);
         playerController.LockMovement(true);
         isDialogueHappening = true;
         currentDialogueIndex = 0;
@@ -49,7 +53,7 @@ public class DialogueManager : MonoBehaviour
     public void StopDialogueUI()
     {
         playerController.LockMovement(false);
-        CanvasManager.Instance.ActivateCanvas(CanvasCode.CNV_HUD);
+        CanvasManager.Instance.DeactivateAllCanvasBut(CanvasCode.CNV_HUD);
     }
 
     // Start is called before the first frame update
@@ -69,7 +73,7 @@ public class DialogueManager : MonoBehaviour
             isDialogueHappening = false;
             dialogueBox.text = string.Empty;
             playerController.LockMovement(false);
-            CanvasManager.Instance.ActivateCanvas(CanvasCode.CNV_HUD);
+            CanvasManager.Instance.DeactivateAllCanvasBut(CanvasCode.CNV_HUD);
             endOfDialogueCallback();
         }
         else
@@ -101,5 +105,11 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(textSpeed);
         }
         isLineRunning = false;
+    }
+
+    // Help box management
+    public void WriteHelpMessage(string message)
+    {
+        helpBox.text = message;
     }
 }

@@ -11,6 +11,7 @@ public enum CanvasCode
     CNV_HUD,
     CNV_INSPECT,
     CNV_DIALOGUE,
+    CNV_HELPBOX,
     CNV_PHONE
 };
 
@@ -50,7 +51,7 @@ public class CanvasManager : MonoBehaviour
             canvases.Add(transform.GetChild(i).gameObject.GetComponent<Canvas>());
         }
 
-        ActivateCanvas(CanvasCode.CNV_HUD);
+        DeactivateAllCanvasBut(CanvasCode.CNV_HUD);
 
         controller = GameObject.FindAnyObjectByType<FirstPersonController>();
     }
@@ -60,9 +61,40 @@ public class CanvasManager : MonoBehaviour
         CanvasCode i = 0;
         foreach(Canvas c in canvases)
         {
+            if (i == canvasCode)
+                c.gameObject.SetActive(true);
+            i++;
+        }
+    }
+
+    public void DeactivateCanvas(CanvasCode canvasCode)
+    {
+        if (canvasCode == CanvasCode.CNV_PHONE)
+        {
+            Debug.LogError("Cannote deactivate Phone Canvas. Please check your code or contact Leo ;)");
+        }
+
+        CanvasCode i = 0;
+        foreach(Canvas c in canvases)
+        {
+            if (i == canvasCode)
+                c.gameObject.SetActive(false);
+            i++;
+        }
+    }
+
+    public void DeactivateAllCanvasBut(CanvasCode canvasCode)
+    {
+        CanvasCode i = 0;
+        foreach(Canvas c in canvases)
+        {
             if (i == CanvasCode.CNV_PHONE)
                 continue;
-            c.gameObject.SetActive(i++ == canvasCode);
+            else if (i == canvasCode)
+                c.gameObject.SetActive(true);
+            else 
+                c.gameObject.SetActive(false);
+            i++;
         }
     }
 }

@@ -32,14 +32,14 @@ public class InspectManager : MonoBehaviour
         inspectedProduct = product;
         inspectedProduct.ReachInspectPosition();
         playerController.LockMovement(true);
-        CanvasManager.Instance.ActivateCanvas(CanvasCode.CNV_INSPECT);
+        CanvasManager.Instance.DeactivateAllCanvasBut(CanvasCode.CNV_INSPECT);
     }
 
     public void StopInspect()
     {
         inspectedProduct = null;
         playerController.LockMovement(false);
-        CanvasManager.Instance.ActivateCanvas(CanvasCode.CNV_HUD);
+        CanvasManager.Instance.DeactivateAllCanvasBut(CanvasCode.CNV_HUD);
     }
 
     public void LeaveProduct()
