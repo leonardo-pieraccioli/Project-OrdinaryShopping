@@ -19,7 +19,7 @@ public class DayManager : MonoBehaviour
     public void GetDay(string nameScriptable){
         LoadDayData(nameScriptable);
         //qui assegno il dayData giusto usando il Singelton
-        PositionrScript.dayData=ScriptableObjectManager.Instance.CurrentDayData; 
+        PositionScript.dayData=ScriptableObjectManager.Instance.CurrentDayData; 
     }
 
     public void LoadDayData(string nameScriptable){
