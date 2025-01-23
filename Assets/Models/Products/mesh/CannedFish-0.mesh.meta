@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Models/Products/CannedMeat/Materials/Canned Meet Material.mat.meta
+guid: 9015966179d605c4098ae9853b17f970
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+========
+guid: 208ca6488f892684a84e80b14fc77c59
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4300000
+>>>>>>>> 760b138c6fea979a2d6c58e248e73e1c8e5caa8b:Assets/Models/Products/mesh/CannedFish-0.mesh.meta
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
