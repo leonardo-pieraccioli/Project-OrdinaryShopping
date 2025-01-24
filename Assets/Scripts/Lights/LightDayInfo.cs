@@ -13,7 +13,6 @@ public class LightDayInfo : ScriptableObject
         public float flickeringDuration; // Durata di ogni flicker
     }
 
-    public Color lightColor; // Colore della luce
     public float intensity; // Intensità della luce
     public LightFlickeringSettings flickeringSettings; // Configurazioni per il flickering
 }

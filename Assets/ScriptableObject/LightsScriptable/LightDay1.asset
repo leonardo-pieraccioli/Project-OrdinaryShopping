@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5ee29e6e4c0234fa06cc11ecadfaf1, type: 3}
   m_Name: LightDay1
   m_EditorClassIdentifier: 
-  lightColor: {r: 0, g: 0, b: 0, a: 0}
-  intensity: 0
+  intensity: 1
   flickeringSettings:
-    enableFlickering: 0
-    flickeringInterval: 0
-    flickeringDuration: 0
+    enableFlickering: 1
+    flickeringInterval: 1
+    flickeringDuration: 2
