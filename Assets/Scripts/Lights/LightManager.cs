@@ -314,8 +314,20 @@ public class LightManager : MonoBehaviour
         {
             isTriggered = true;
             LightDayInfo settings = dayLightSettings[currentDayIndex];
-            StartFlickering(settings.flickeringSettings);
+            StartFlickeringWithDuration(settings.flickeringSettings, 1f); // Flickering per 1 secondo
         }
+    }
+
+    private void StartFlickeringWithDuration(LightDayInfo.LightFlickeringSettings settings, float duration)
+    {
+        StartFlickering(settings);
+        StartCoroutine(StopFlickeringAfterDuration(duration));
+    }
+
+    private IEnumerator StopFlickeringAfterDuration(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        StopLightBehavior();
     }
 
     /// <summary>
