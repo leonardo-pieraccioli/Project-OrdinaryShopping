@@ -47,22 +47,22 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AmbientEnvironmentMultiplier: 0.662
-    - _Brightness: 0.7
-    - _Contrast: 1.2
-    - _EdgeDistanceAttenuation: 1.98
-    - _EdgeRim: 0.495
-    - _EdgeSpecular: 0.278
+    - _AmbientEnvironmentMultiplier: 0
+    - _Brightness: 2.83
+    - _Contrast: 1
+    - _EdgeDistanceAttenuation: 1.141
+    - _EdgeRim: 0.451
+    - _EdgeSpecular: 0.543
     - _Main_Light_X: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RimAmount: 0.224
-    - _RimStrength: 0.345
-    - _RimThreshold: 0.264
+    - _RimAmount: 0.3
+    - _RimStrength: 0.5
+    - _RimThreshold: 0.365
     - _SHADOWBRIGHTTYPE: 2
     - _Saturation: 1
-    - _Shadow_Steps: 5.7
-    - _Smoothness: 0
+    - _Shadow_Steps: 4
+    - _Smoothness: 0.2
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Main_Light_Position: {r: 7, g: 1.4, b: 2.8, a: 0}
