@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayNumber: 1
   budget: 0
-  shader: {fileID: 4800000, guid: f7ada0af4f174f0694ca6a487b8f543d, type: 3}
   products:
   - productName: ppp
     price: 20
@@ -30,3 +29,7 @@ MonoBehaviour:
       type: 3}
     numberOfProduct: 2
     _positions: {x: 136.62906, y: 10.877171, z: -21.797424}
+  light: {fileID: 11400000, guid: f11dcdc9f3d42804c9ac503b58ac6a9b, type: 2}
+  npc:
+  - {fileID: 11400000, guid: 5af4042842d1db34d94eacc3c1a9b467, type: 2}
+  - {fileID: 11400000, guid: d23d10502edefe049ab6c8303bdaffae, type: 2}

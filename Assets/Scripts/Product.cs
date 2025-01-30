@@ -35,10 +35,10 @@ public class Product: MonoBehaviour{
     // Dizionario per tenere traccia degli oggetti istanziati e delle risorse allocate
     public static Dictionary<string, (GameObject instance, Material material)> instantiatedProducts = new Dictionary<string, (GameObject, Material)>();
 
-    static public void Generate(Productinfo product, GameObject gameObjectrefer, Shader shader)
+    static public void Generate(Productinfo product, GameObject gameObjectrefer)
     {
-            if(product.prefabs==null|| shader==null){
-                Debug.LogError("Prefab o Shader non assegnati nell'Inspector!");
+            if(product.prefabs==null){
+                Debug.LogError("Prefab non assegnati nell'Inspector!");
                 return;
             }
             GameObject instance  = Instantiate(product.prefabs,product._positions,product.prefabs.transform.rotation,gameObjectrefer.transform);
@@ -83,12 +83,12 @@ public class Product: MonoBehaviour{
     }
 
 
-     public static void GenerateBlock(Productinfo product, GameObject parent, Shader shader, int rows, int columns, int levels, Vector3 spacingOverride)
+     public static void GenerateBlock(Productinfo product, GameObject parent, int rows, int columns, int levels, Vector3 spacingOverride)
     {
 
-        if (product.prefabs == null || shader == null)
+        if (product.prefabs == null )
         {
-            Debug.LogError("Prefab o Shader non assegnati!");
+            Debug.LogError("Prefab non assegnati!");
             return;
         }
         GameObject instance1  = Instantiate(product.prefabs,product._positions,product.prefabs.transform.rotation,parent.transform);

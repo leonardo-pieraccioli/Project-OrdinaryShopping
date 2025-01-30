@@ -12,7 +12,7 @@ public class DialogueManager : MonoBehaviour
     {
         get
         {
-            if(_instance == null)
+            if (_instance == null)
             {
                 _instance = GameObject.FindObjectOfType<DialogueManager>();
             }
@@ -21,32 +21,47 @@ public class DialogueManager : MonoBehaviour
         }
     }
     #endregion
- 
+    public static NPCDayInfo[] npcs;
     private FirstPersonController playerController;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerController = GameObject.FindObjectOfType<FirstPersonController>();
 
+
+    }
+    public void Init(NPCDayInfo[] currentNPCDayInfo)
+    {
+        if (currentNPCDayInfo != null && currentNPCDayInfo.Length > 0)
+        {
+            npcs = new NPCDayInfo[currentNPCDayInfo.Length];
+
+            Array.Copy(currentNPCDayInfo, npcs, currentNPCDayInfo.Length);
+        }
+        else
+        {
+            Debug.LogError("Npc non trovato o array vuoto/null");
+        }
+
+        playerController = GameObject.FindObjectOfType<FirstPersonController>();
         // MOVE TO DAY MANAGER
-        foreach(NPCDayInfo npc in npcs)
+        foreach (NPCDayInfo npc in npcs)
         {
             SpawnNPC(npc);
         }
+
     }
 
     #region NPC Management
-    
+
     [Header("NPC Parameters")]
     [SerializeField] private Transform[] spawnPositions;
-
     // MOVE TO DAY MANAGER
-    [SerializeField] NPCDayInfo[] npcs;
+    //[SerializeField] NPCDayInfo[] npcs;
 
     public void SpawnNPC(NPCDayInfo info)
     {
-        GameObject npc = Instantiate(info.prefab, spawnPositions[(int) info.position]);
+        GameObject npc = Instantiate(info.prefab, spawnPositions[(int)info.position]);
         npc.GetComponent<InteractableNPC>().dayInfo = info;
     }
 
@@ -79,7 +94,7 @@ public class DialogueManager : MonoBehaviour
         dialogueBox.text = string.Empty;
         StartCoroutine(TypeLine());
     }
-    
+
     public void StopDialogueUI()
     {
         playerController.LockMovement(false);
@@ -134,7 +149,7 @@ public class DialogueManager : MonoBehaviour
     #endregion
 
     #region Help Area
-    
+
     [Header("Help messages parameters")]
     [SerializeField] TextMeshProUGUI helpBox;
 

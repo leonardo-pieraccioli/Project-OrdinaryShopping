@@ -13,14 +13,14 @@ public class DayData : ScriptableObject
     //atmosfera(luci,musica,bombe)
     //diario
     //telefono
-    //npc
-    //lista spesa
+
     //news
-    public  Shader shader;
+    //public  Shader shader;
     //prodotti
     public Productinfo[] products;
     
-   
+    public LightDayInfo light;
+    public NPCDayInfo[] npc;
 
 
 }
