@@ -1366,6 +1366,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 219727547}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1515854744 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8601172936451807546, guid: d7d6ff0e128dd36419d676003b790a98,
+    type: 3}
+  m_PrefabInstance: {fileID: 4887083202606944154}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1706471603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,6 +1496,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 70, y: -20, z: 0}
+--- !u!224 &1943364326 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8255486843800479405, guid: d7d6ff0e128dd36419d676003b790a98,
+    type: 3}
+  m_PrefabInstance: {fileID: 4887083202606944154}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1979986253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1557,6 +1575,11 @@ PrefabInstance:
       propertyPath: playerCursorInteractor
       value: 
       objectReference: {fileID: 3528698549771250251}
+    - target: {fileID: 3221055519582198558, guid: 1cb3621d12912a544a2f93dc76e669bb,
+        type: 3}
+      propertyPath: _bodyTrans
+      value: 
+      objectReference: {fileID: 1943364326}
     - target: {fileID: 3992214560584293775, guid: 1cb3621d12912a544a2f93dc76e669bb,
         type: 3}
       propertyPath: playerCursorInteractor
@@ -1590,6 +1613,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5488505831769716301, guid: 5220e97509a70cd4eaed80b8e6c31fe6,
+        type: 3}
+      propertyPath: helpBox
+      value: 
+      objectReference: {fileID: 1515854744}
     - target: {fileID: 5488505831769716301, guid: 5220e97509a70cd4eaed80b8e6c31fe6,
         type: 3}
       propertyPath: dialogueBox

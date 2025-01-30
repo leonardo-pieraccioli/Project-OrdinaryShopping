@@ -1,12 +1,12 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using StarterAssets;
 using TMPro;
 using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
 {
+    #region Singleton definition
     private static DialogueManager _instance;
     public static DialogueManager Instance
     {
@@ -20,23 +20,53 @@ public class DialogueManager : MonoBehaviour
             return _instance;
         }
     }
-
+    #endregion
+ 
     private FirstPersonController playerController;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        playerController = GameObject.FindObjectOfType<FirstPersonController>();
+
+        // MOVE TO DAY MANAGER
+        foreach(NPCDayInfo npc in npcs)
+        {
+            SpawnNPC(npc);
+        }
+    }
+
+    #region NPC Management
+    
+    [Header("NPC Parameters")]
+    [SerializeField] private Transform[] spawnPositions;
+
+    // MOVE TO DAY MANAGER
+    [SerializeField] NPCDayInfo[] npcs;
+
+    public void SpawnNPC(NPCDayInfo info)
+    {
+        GameObject npc = Instantiate(info.prefab, spawnPositions[(int) info.position]);
+        npc.GetComponent<InteractableNPC>().dayInfo = info;
+    }
+
+    #endregion
+
+    #region Dialogue Management
     [Header("Dialogue parameters")]
+
     [Tooltip("The text box where the dialogue is displayed")]
     [SerializeField] private TextMeshProUGUI dialogueBox;
+
     [Tooltip("The speed at which the text is displayed")]
     [SerializeField] private float textSpeed = .05f;
 
-    [Header("Help messages parameters")]
     public bool isDialogueHappening = false;
     private int currentDialogueIndex;
     private bool isLineRunning = false;
     private string[] dialogue;
     private Action endOfDialogueCallback;
     private Coroutine activeCoroutine;
-    [SerializeField] TextMeshProUGUI helpBox;
-
     public void StartDialogue(string[] dialogue, Action callback)
     {
         this.dialogue = dialogue;
@@ -54,12 +84,6 @@ public class DialogueManager : MonoBehaviour
     {
         playerController.LockMovement(false);
         CanvasManager.Instance.DeactivateAllCanvasBut(CanvasCode.CNV_HUD);
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        playerController = GameObject.FindObjectOfType<FirstPersonController>();
     }
 
     public void ProceedWithDialogue()
@@ -107,9 +131,17 @@ public class DialogueManager : MonoBehaviour
         isLineRunning = false;
     }
 
-    // Help box management
+    #endregion
+
+    #region Help Area
+    
+    [Header("Help messages parameters")]
+    [SerializeField] TextMeshProUGUI helpBox;
+
     public void WriteHelpMessage(string message)
     {
         helpBox.text = message;
     }
+
+    #endregion
 }

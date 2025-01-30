@@ -9,7 +9,7 @@ public class InteractableNPC : MonoBehaviour, IInteractable
     private TextMeshProUGUI dialogueBox;
 
     [Tooltip("The day info of the NPC")]
-    [SerializeField] NPCDayInfo dayInfo;
+    [SerializeField] public NPCDayInfo dayInfo;
     private string[] dialogue;
 
     [Tooltip("The animator that will be used to animate the NPC")]
