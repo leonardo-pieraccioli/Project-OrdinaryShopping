@@ -55,7 +55,7 @@ Material:
     - _EdgeSpecular: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RimAmount: 0.317
+    - _RimAmount: 0
     - _RimStrength: 1
     - _RimThreshold: 0.5
     - _SHADOWBRIGHTTYPE: 0
