@@ -186,7 +186,9 @@ public class LightManager : MonoBehaviour
 
 */
 
+///////////////////////////////////////
 
+/*
 
 using System.Collections;
 using System.Collections.Generic;
@@ -195,34 +197,37 @@ using UnityEngine;
 public class LightManager : MonoBehaviour
 {
     [SerializeField] private Light[] sceneLights; // Array di luci da gestire
-    [SerializeField] private LightDayInfo[] dayLightSettings; // Array di configurazioni per ogni giorno
+    //[SerializeField] private LightDayInfo[] dayLightSettings; // Array di configurazioni per ogni giorno
 
-    private int currentDayIndex = 0; // Indice del giorno attuale
     private List<Coroutine> flickeringCoroutines = new List<Coroutine>();
     private bool isTriggered = true; // Flag per attivare/disattivare il comportamento delle luci da collegare con bombe
 
-    void Start()
+    /*void Start()
     {
         // Applica le impostazioni iniziali delle luci senza avviare il flickering
         ApplyLightSettings(currentDayIndex);
+    }*/
+
+/*
+    static public void Init(LightDayInfo dayLightSettings) // inizializza le luci con le impostazioni del giorno
+    {
+        // Imposta il colore e l'intensità per tutte le luci
+        
+
+    }
+
+    void Update()
+    {
+        // Controlla se ci sono bombe e flickering attivi
+
     }
 
     /// <summary>
     /// Cambia le impostazioni della luce in base all'indice del giorno.
     /// </summary>
     /// <param name="dayIndex">Indice del giorno</param>
-    public void ApplyLightSettings(int dayIndex)
+    public void ApplyLightSettings(LightDayInfo settings)
     {
-        if (dayIndex < 0 || dayIndex >= dayLightSettings.Length)
-        {
-            Debug.LogWarning("Indice del giorno non valido.");
-            return;
-        }
-
-        currentDayIndex = dayIndex;
-        LightDayInfo settings = dayLightSettings[dayIndex];
-
-        // Imposta il colore e l'intensità per tutte le luci
         foreach (Light light in sceneLights)
         {
             if (light != null)
@@ -232,16 +237,16 @@ public class LightManager : MonoBehaviour
         }
 
         // Avvia o ferma il flickering in base al trigger
-        if (isTriggered)
+        /*if (isTriggered)
         {
             StartFlickering(settings.flickeringSettings);
         }
         else
         {
             StopFlickering();
-        }
-    }
-
+        }*/
+    //}
+/*
     /// <summary>
     /// Avvia il flickering delle luci.
     /// </summary>
@@ -349,5 +354,110 @@ public class LightManager : MonoBehaviour
     {
         int nextDayIndex = (currentDayIndex + 1) % dayLightSettings.Length;
         ApplyLightSettings(nextDayIndex);
+    }
+}
+
+*/
+
+//Nuova versione
+
+
+
+using UnityEngine;
+using System.Collections;
+
+public class LightManager : MonoBehaviour
+{
+    [Header("Light Settings")]
+    public Light [] sceneLights;
+    private float baseIntensity;
+    private bool isFlickering = false;
+
+    [Header("Audio Settings")]
+    public AudioSource backgroundMusic;
+    public AudioSource bombSound;
+
+    [Header("Bomb Settings")]
+    public GameObject bombEffect;
+    private bool bombActive = false;
+
+    private LightDayInfo currentDayInfo;
+
+    public void Init(LightDayInfo dayInfo)
+    {
+        currentDayInfo = dayInfo;
+        
+        // Impostazione della luce
+        baseIntensity = dayInfo.intensity;
+        foreach (Light light in sceneLights)
+        {
+            if (light != null)
+            {
+                light.intensity = baseIntensity;
+            }
+        }
+        
+
+        // Impostazione audio
+        backgroundMusic.clip = dayInfo.background;
+        backgroundMusic.loop = true;
+        backgroundMusic.Play();
+    }
+
+    void Update()
+    {
+        if (currentDayInfo == null) return;
+
+        // Gestione del flickering dinamico
+        if (currentDayInfo.flickeringSettings.enableFlickering && !isFlickering)
+        {
+            StartCoroutine(FlickerEffect());
+        }
+    }
+
+    private IEnumerator FlickerEffect()
+    {
+        isFlickering = true;
+        while (currentDayInfo.flickeringSettings.enableFlickering)
+        {
+            foreach (Light light in sceneLights)
+            {
+                light.intensity = Random.Range(baseIntensity * 0.8f, baseIntensity * 1.2f);
+            }
+            yield return new WaitForSeconds(Random.Range(0.1f, 0.5f));
+        }
+
+        foreach (Light light in sceneLights)
+        {
+            light.intensity = baseIntensity;
+        }
+        isFlickering = false;
+    }
+
+    public void TriggerBomb()
+    {
+        if (!bombActive)
+        {
+            bombActive = true;
+            bombSound.Play();
+            Instantiate(bombEffect, transform.position, Quaternion.identity);
+            StartCoroutine(BombFlickerEffect());
+        }
+    }
+
+    private IEnumerator BombFlickerEffect()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            foreach (Light sceneLight in sceneLights)
+            {
+                sceneLight.enabled = false;
+                yield return new WaitForSeconds(0.1f);
+                sceneLight.enabled = true;
+                yield return new WaitForSeconds(0.1f);
+            }
+            
+        }
+        bombActive = false;
     }
 }
