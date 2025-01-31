@@ -12,9 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5ee29e6e4c0234fa06cc11ecadfaf1, type: 3}
   m_Name: LightDay1
   m_EditorClassIdentifier: 
-  lightColor: {r: 0, g: 0, b: 0, a: 0}
-  intensity: 0
+  lightColor: {r: 1, g: 0.80932117, b: 0, a: 0}
+  intensity: 1
   flickeringSettings:
-    enableFlickering: 0
-    flickeringInterval: 0
-    flickeringDuration: 0
+    enableFlickering: 1
+    flickeringInterval: 0.2
+    flickeringDuration: 2
+    maxFlickeringIntensity: 1
+    numberOfExplosions: 3
+    minExplosionInterval: 5
+    maxExplosionInterval: 10
+  explosionSound: {fileID: 0}
+  flickeringSound: {fileID: 0}
+  musicSource: {fileID: 0}
+  sfxSource: {fileID: 0}

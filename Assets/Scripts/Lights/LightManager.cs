@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LightManager : MonoBehaviour
 {
-    [SerializeField] private Light sceneLight; // Riferimento alla luce della scena
+    [SerializeField] private Light [] sceneLights; // Riferimento alla luce della scena
     //[SerializeField] private LightDayInfo[] dayLightSettings; // Array di configurazioni per ogni giorno
     private LightDayInfo dayLightSetting;
 
@@ -24,62 +24,96 @@ public class LightManager : MonoBehaviour
 
     private int currentDayIndex = 0; // Indice del giorno attuale
 
+    
     private Coroutine flickeringCoroutine;
+    private Coroutine explosionCoroutine;
 
     void Start()
     {
-        //ApplyLightSettings(currentDayIndex);
     }
 
-    public void Init(LightDayInfo currentLightInfo)
+    /*public void Init(LightDayInfo currentLightInfo)
     {
-        if (currentLightInfo != null)
+        if (currentLightInfo != null && sceneLights != null)
         {
             dayLightSetting=currentLightInfo;
+            ApplyLightSettings();
         }
         else
         {
             Debug.LogError("Configurazione Light non trovato");
         }
 
-       ApplyLightSettings(currentDayIndex);
+       
+    }*/
+
+    public void Init(LightDayInfo currentLightInfo)
+    {
+        if (currentLightInfo != null && sceneLights.Length > 0)
+        {
+            dayLightSetting = currentLightInfo;
+            ApplyLightSettings();
+
+            // Avvia il ciclo delle esplosioni
+            if (dayLightSetting.flickeringSettings != null && dayLightSetting.flickeringSettings.enableFlickering)
+            {
+                if (explosionCoroutine != null)
+                    StopCoroutine(explosionCoroutine);
+                
+                explosionCoroutine = StartCoroutine(ExplosionCycle());
+            }
+        }
+        else
+        {
+            Debug.LogError("Configurazione luce non trovata o sceneLights non impostate.");
+        }
     }
+
+    
 
     /// <summary>
     /// Cambia le impostazioni della luce in base all'indice del giorno.
     /// </summary>
     /// <param name="dayIndex">Indice del giorno</param>
-    public void ApplyLightSettings(int dayIndex)
+    /*public void ApplyLightSettings()
     {
-       /* if (dayIndex < 0 || dayIndex >= dayLightSettings.Length)
-        {
-            Debug.LogWarning("Indice del giorno non valido.");
-            return;
-        }*/
+        // Imposta colore e intensità della luce
 
-        //currentDayIndex = dayIndex;
-        //LightDayInfo settings = dayLightSettings[dayIndex];
-        LightDayInfo settings = dayLightSetting;
-
-        // Imposta il colore e l'intensità della luce
-        if (sceneLight != null)
+        foreach (Light light in sceneLights)
         {
-            sceneLight.color = settings.lightColor;
-            sceneLight.intensity = settings.intensity;
+            if (light != null)
+            {
+                light.intensity = dayLightSetting.intensity;
+                light.color = dayLightSetting.lightColor;
+            }
         }
 
         // Gestisce l'effetto di flickering
-        if (settings.flickeringSettings != null && settings.flickeringSettings.enableFlickering)
+        if (dayLightSetting.flickeringSettings != null && dayLightSetting.flickeringSettings.enableFlickering)
         {
             if (flickeringCoroutine != null)
                 StopCoroutine(flickeringCoroutine);
 
-            flickeringCoroutine = StartCoroutine(FlickerLight(settings.flickeringSettings));
+            flickeringCoroutine = StartCoroutine(FlickerLight(dayLightSetting.flickeringSettings));
         }
         else if (flickeringCoroutine != null)
         {
             StopCoroutine(flickeringCoroutine);
             flickeringCoroutine = null;
+        }
+    }*/
+
+
+
+    private void ApplyLightSettings()
+    {
+        foreach (Light light in sceneLights)
+        {
+            if (light != null)
+            {
+                light.intensity = dayLightSetting.intensity;
+                light.color = dayLightSetting.lightColor;
+            }
         }
     }
 
@@ -88,26 +122,110 @@ public class LightManager : MonoBehaviour
     /// </summary>
     /// <param name="settings">Configurazioni del flickering</param>
     /// <returns></returns>
-    private IEnumerator FlickerLight(LightDayInfo.LightFlickeringSettings settings)
+    /*private IEnumerator FlickerLight(LightDayInfo.LightFlickeringSettings settings)
     {
         while (true)
         {
-            // Riduce l'intensità a 0 per simulare il flicker
-            sceneLight.enabled = false;
-            yield return new WaitForSeconds(settings.flickeringDuration);
+            foreach (Light light in sceneLights)
+            {
+                // Riduce l'intensità a 0 per simulare il flicker
+                light.enabled = false;
+                yield return new WaitForSeconds(settings.flickeringDuration);
 
-            // Ripristina l'intensità
-            sceneLight.enabled = true;
-            yield return new WaitForSeconds(settings.flickeringInterval);
+                 // Ripristina l'intensità
+                light.enabled = true;
+                yield return new WaitForSeconds(settings.flickeringInterval);
+            }
+            
+        }
+    }*/
+
+     private IEnumerator ExplosionCycle()
+    {
+        int explosionsLeft = dayLightSetting.flickeringSettings.numberOfExplosions;
+        
+        while (explosionsLeft > 0)
+        {
+            // Tempo casuale tra un'esplosione e l'altra (es. tra 20 e 30 secondi)
+            float waitTime = Random.Range(dayLightSetting.flickeringSettings.minExplosionInterval, 
+                                          dayLightSetting.flickeringSettings.maxExplosionInterval);
+            yield return new WaitForSeconds(waitTime);
+
+            // Simula l'esplosione
+            TriggerExplosion();
+
+            explosionsLeft--;
+        }
+
+        Debug.Log("Tutte le esplosioni completate.");
+    }
+
+    
+
+    /// <summary>
+    /// Attiva il flickering della luce quando avviene un'esplosione.
+    /// </summary>
+    private void TriggerExplosion()
+    {
+        Debug.Log("Esplosione avvenuta! Attivando flickering...");
+        TriggerFlicker();
+    }
+
+    /// <summary>
+    /// Attiva il flickering della luce.
+    /// </summary>
+    public void TriggerFlicker()
+    {
+        if (dayLightSetting.flickeringSettings != null && dayLightSetting.flickeringSettings.enableFlickering)
+        {
+            if (flickeringCoroutine != null)
+                StopCoroutine(flickeringCoroutine);
+
+            flickeringCoroutine = StartCoroutine(FlickerLight(dayLightSetting.flickeringSettings));
         }
     }
 
     /// <summary>
-    /// Avanza al giorno successivo.
+    /// Coroutine per simulare il flickering della luce.
     /// </summary>
-   /* public void NextDay()
+    private IEnumerator FlickerLight(LightDayInfo.LightFlickeringSettings settings)
     {
-        int nextDayIndex = (currentDayIndex + 1) % dayLightSettings.Length;
-        ApplyLightSettings(nextDayIndex);
-    }*/
+        float elapsedTime = 0f;
+        float totalDuration = settings.flickeringDuration;
+
+        while (elapsedTime < totalDuration)
+        {
+            foreach (Light light in sceneLights)
+            {
+                if (light != null)
+                {
+                    light.intensity = Random.Range(0f, settings.maxFlickeringIntensity);
+                    light.enabled = !light.enabled; // Alterna lo stato acceso/spento
+                }
+            }
+
+            yield return new WaitForSeconds(Random.Range(settings.flickeringInterval * 0.5f, settings.flickeringInterval * 1.5f));
+            elapsedTime += settings.flickeringInterval;
+        }
+
+        ResetLights();
+    }
+
+    /// <summary>
+    /// Ripristina le luci allo stato normale dopo il flickering.
+    /// </summary>
+    private void ResetLights()
+    {
+        foreach (Light light in sceneLights)
+        {
+            if (light != null)
+            {
+                light.intensity = dayLightSetting.intensity;
+                light.enabled = true;
+            }
+        }
+
+        flickeringCoroutine = null;
+    }
 }
+
