@@ -5,7 +5,22 @@ using UnityEngine;
 public class LightManager : MonoBehaviour
 {
     [SerializeField] private Light sceneLight; // Riferimento alla luce della scena
-    [SerializeField] private LightDayInfo[] dayLightSettings; // Array di configurazioni per ogni giorno
+    //[SerializeField] private LightDayInfo[] dayLightSettings; // Array di configurazioni per ogni giorno
+    private LightDayInfo dayLightSetting;
+
+    private static LightManager _instance;
+    public static LightManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = GameObject.FindObjectOfType<LightManager>();
+            }
+
+            return _instance;
+        }
+    }    
 
     private int currentDayIndex = 0; // Indice del giorno attuale
 
@@ -13,7 +28,21 @@ public class LightManager : MonoBehaviour
 
     void Start()
     {
-        ApplyLightSettings(currentDayIndex);
+        //ApplyLightSettings(currentDayIndex);
+    }
+
+    public void Init(LightDayInfo currentLightInfo)
+    {
+        if (currentLightInfo != null)
+        {
+            dayLightSetting=currentLightInfo;
+        }
+        else
+        {
+            Debug.LogError("Configurazione Light non trovato");
+        }
+
+       ApplyLightSettings(currentDayIndex);
     }
 
     /// <summary>
@@ -22,14 +51,15 @@ public class LightManager : MonoBehaviour
     /// <param name="dayIndex">Indice del giorno</param>
     public void ApplyLightSettings(int dayIndex)
     {
-        if (dayIndex < 0 || dayIndex >= dayLightSettings.Length)
+       /* if (dayIndex < 0 || dayIndex >= dayLightSettings.Length)
         {
             Debug.LogWarning("Indice del giorno non valido.");
             return;
-        }
+        }*/
 
-        currentDayIndex = dayIndex;
-        LightDayInfo settings = dayLightSettings[dayIndex];
+        //currentDayIndex = dayIndex;
+        //LightDayInfo settings = dayLightSettings[dayIndex];
+        LightDayInfo settings = dayLightSetting;
 
         // Imposta il colore e l'intensità della luce
         if (sceneLight != null)
@@ -75,9 +105,9 @@ public class LightManager : MonoBehaviour
     /// <summary>
     /// Avanza al giorno successivo.
     /// </summary>
-    public void NextDay()
+   /* public void NextDay()
     {
         int nextDayIndex = (currentDayIndex + 1) % dayLightSettings.Length;
         ApplyLightSettings(nextDayIndex);
-    }
+    }*/
 }

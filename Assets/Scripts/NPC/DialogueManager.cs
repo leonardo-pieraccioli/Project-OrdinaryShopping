@@ -27,7 +27,13 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        /*
+        playerController = GameObject.FindObjectOfType<FirstPersonController>();
+        // MOVE TO DAY MANAGER
+        foreach (NPCDayInfo npc in npcs)
+        {
+            SpawnNPC(npc);
+        }*/
 
     }
     public void Init(NPCDayInfo[] currentNPCDayInfo)

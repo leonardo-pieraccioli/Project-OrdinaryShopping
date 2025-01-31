@@ -43,7 +43,7 @@ public class DayManager : MonoBehaviour
            
             
             //init Light
-            //LightManager.Instance.Init(loadedDayData.light);
+            LightManager.Instance.Init(loadedDayData.light);
            
             
             Debug.Log("Caricato Day" + nameScriptable);
