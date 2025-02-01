@@ -4,8 +4,25 @@ using UnityEngine;
 
 public class LightManager : MonoBehaviour
 {
+    [Header("---Lights---")]
     [SerializeField] private Light [] sceneLights; // Riferimento alla luce della scena
-    //[SerializeField] private LightDayInfo[] dayLightSettings; // Array di configurazioni per ogni giorno
+    
+
+    [Header("---Music Clips---")]
+    public AudioClip[] background;
+    public AudioClip explosionSound; // Suono dell'esplosione
+    public AudioClip flickeringSound; // Suono del flickering
+
+    [Header("---Audio Sources---")]
+    [SerializeField] public AudioSource musicSource; // Sorgente audio per la musica
+    [SerializeField] public AudioSource SFXSource; // Sorgente audio per gli effetti sonori
+
+    [Header("---Bomb Audio Sources---")]
+    [SerializeField] private AudioSource [] bombAudioSources;
+
+
+
+
     private LightDayInfo dayLightSetting;
 
     private static LightManager _instance;
@@ -22,7 +39,7 @@ public class LightManager : MonoBehaviour
         }
     }    
 
-    private int currentDayIndex = 0; // Indice del giorno attuale
+    //private int currentDayIndex = 0; // Indice del giorno attuale
 
     
     private Coroutine flickeringCoroutine;
@@ -32,20 +49,6 @@ public class LightManager : MonoBehaviour
     {
     }
 
-    /*public void Init(LightDayInfo currentLightInfo)
-    {
-        if (currentLightInfo != null && sceneLights != null)
-        {
-            dayLightSetting=currentLightInfo;
-            ApplyLightSettings();
-        }
-        else
-        {
-            Debug.LogError("Configurazione Light non trovato");
-        }
-
-       
-    }*/
 
     public void Init(LightDayInfo currentLightInfo)
     {
@@ -53,6 +56,15 @@ public class LightManager : MonoBehaviour
         {
             dayLightSetting = currentLightInfo;
             ApplyLightSettings();
+
+            // Avvia la musica di background   
+            // !!!Bisogna fare controllo su che parte del gioco siamo per decidere quale musica di background far partire!!!
+            if (musicSource != null && background.Length > 0)
+            {
+                musicSource.clip = background[Random.Range(0, background.Length)];
+                musicSource.loop = true;
+                musicSource.Play();
+            }
 
             // Avvia il ciclo delle esplosioni
             if (dayLightSetting.flickeringSettings != null && dayLightSetting.flickeringSettings.enableFlickering)
@@ -168,7 +180,16 @@ public class LightManager : MonoBehaviour
     private void TriggerExplosion()
     {
         Debug.Log("Esplosione avvenuta! Attivando flickering...");
-        TriggerFlicker();
+
+        // Riproduce il suono dell'esplosione
+        if (bombAudioSources != null && explosionSound != null)
+        {
+            bombAudioSources[Random.Range(0, bombAudioSources.Length)].PlayOneShot(explosionSound);
+        }
+
+        Invoke(nameof(TriggerFlicker), 0.5f); // Modifica "0.5f" con il tempo di ritardo desiderato
+
+       // TriggerFlicker();
     }
 
     /// <summary>
@@ -190,8 +211,16 @@ public class LightManager : MonoBehaviour
     /// </summary>
     private IEnumerator FlickerLight(LightDayInfo.LightFlickeringSettings settings)
     {
-        float elapsedTime = 0f;
+        float elapsedTime = 0f; // Tempo trascorso dall'inizio del flickering
         float totalDuration = settings.flickeringDuration;
+
+
+        // Suono del flickering
+        if (SFXSource != null && flickeringSound != null)
+        {
+            SFXSource.PlayOneShot(flickeringSound);
+        }
+
 
         while (elapsedTime < totalDuration)
         {

@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f5ee29e6e4c0234fa06cc11ecadfaf1, type: 3}
-  m_Name: LightDay1
+  m_Name: LightDay2
   m_EditorClassIdentifier: 
-  lightColor: {r: 0.4641509, g: 0.45147434, b: 0.4054752, a: 0}
-  intensity: 1
+  lightColor: {r: 0.2830189, g: 0.255785, b: 0.255785, a: 0}
+  intensity: 0
   flickeringSettings:
     enableFlickering: 1
     flickeringInterval: 0.09
     flickeringDuration: 1
     maxFlickeringIntensity: 2
     numberOfExplosions: 5
-    minExplosionInterval: 3
-    maxExplosionInterval: 10
+    minExplosionInterval: 10
+    maxExplosionInterval: 40

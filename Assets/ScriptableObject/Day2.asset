@@ -22,6 +22,6 @@ MonoBehaviour:
       type: 3}
     numberOfProduct: 0
     _positions: {x: 132.328, y: 11.171, z: -23.13}
-  light: {fileID: 11400000, guid: f11dcdc9f3d42804c9ac503b58ac6a9b, type: 2}
+  light: {fileID: 11400000, guid: 9d790bef7e784ef4dac20799ec672f14, type: 2}
   npc:
   - {fileID: 11400000, guid: cc8b73de89b38af4fb7b97ffd42be5d5, type: 2}
