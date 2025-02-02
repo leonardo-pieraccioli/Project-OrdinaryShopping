@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CheckoutWhite
+  m_Name: CartMat
   m_Shader: {fileID: -6465566751694194690, guid: d0508fb690c08b049845b7190b25d007,
     type: 3}
   m_Parent: {fileID: 0}
@@ -47,23 +47,23 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AmbientEnvironmentMultiplier: 1
+    - _AmbientEnvironmentMultiplier: 0.429
     - _Brightness: 1
-    - _Contrast: 0.972
-    - _EdgeDistanceAttenuation: 0
-    - _EdgeRim: 0
+    - _Contrast: 1
+    - _EdgeDistanceAttenuation: 2
+    - _EdgeRim: 0.077
     - _EdgeSpecular: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RimAmount: 0
-    - _RimStrength: 0
-    - _RimThreshold: 0.01
+    - _RimAmount: 0.281
+    - _RimStrength: 0.221
+    - _RimThreshold: 0.317
     - _SHADOWBRIGHTTYPE: 0
     - _Saturation: 1
-    - _Shadow_Steps: 3
-    - _Smoothness: 0
+    - _Shadow_Steps: 4
+    - _Smoothness: 0.657
     m_Colors:
-    - _BaseColor: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
+    - _BaseColor: {r: 0.23867998, g: 0.70199996, b: 0.34951335, a: 1}
     - _Main_Light_Position: {r: 0.4, g: 0, b: -0.16, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &3982348512348924458
