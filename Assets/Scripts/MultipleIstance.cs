@@ -80,12 +80,13 @@ public class ArrayInstances : MonoBehaviour
                     //skip grabbed objects
                     Vector3 currentOffset = _offset;
                     currentOffset.Scale(new Vector3(i,j,k));
-                    currentOffset.Scale(collider.size);
+                    Vector3 scaledCollider = Vector3.Scale(collider.size, transform.localScale);
+                    currentOffset.Scale(scaledCollider);
                     Vector3 position =  currentOffset + startPos;
                     _matrices.Push( 
                         Matrix4x4.TRS(position, 
                         _rotate? Quaternion.Euler(Vector3.up * Random.Range(0, 180)) : Quaternion.identity, 
-                        Vector3.one));
+                        transform.localScale));
                 }
            }
         }

@@ -13,7 +13,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _SHADOWBRIGHTTYPE_SQUARED
+  - _SHADOWBRIGHTTYPE_LINEAR
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -47,24 +47,24 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AmbientEnvironmentMultiplier: 0
+    - _AmbientEnvironmentMultiplier: 0.5
     - _Brightness: 1
-    - _Contrast: 1.094
-    - _EdgeDistanceAttenuation: 1.829
-    - _EdgeRim: 0.322
-    - _EdgeSpecular: 0.996
+    - _Contrast: 1
+    - _EdgeDistanceAttenuation: 0.792
+    - _EdgeRim: 0.523
+    - _EdgeSpecular: 0.5
     - _Main_Light_X: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RimAmount: 0.331
-    - _RimStrength: 0.652
-    - _RimThreshold: 0.234
-    - _SHADOWBRIGHTTYPE: 1
+    - _RimAmount: 0.1
+    - _RimStrength: 1
+    - _RimThreshold: 0.5
+    - _SHADOWBRIGHTTYPE: 0
     - _Saturation: 1
-    - _Shadow_Steps: 1.1
-    - _Smoothness: 0.167
+    - _Shadow_Steps: 2
+    - _Smoothness: 0.188
     m_Colors:
-    - _BaseColor: {r: 0.89433956, g: 0.35231826, b: 0.28855106, a: 1}
+    - _BaseColor: {r: 0.89411765, g: 0.4082847, b: 0.19215688, a: 1}
     - _Main_Light_Position: {r: 5, g: 5, b: 5, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7712515785515227109
