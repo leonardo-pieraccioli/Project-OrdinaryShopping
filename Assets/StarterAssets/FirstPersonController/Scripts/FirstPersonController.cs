@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
@@ -64,7 +65,12 @@ namespace StarterAssets
 		private float _jumpTimeoutDelta;
 		private float _fallTimeoutDelta;
 
-	
+		//----Restart-----
+		private Vector3 _startPosition;
+		private Quaternion _startRotation; // Memorizza la rotazione iniziale
+		private bool isResetting = false; // Variabile per bloccare il movimento
+		//------------------
+
 #if ENABLE_INPUT_SYSTEM
 		private PlayerInput _playerInput;
 #endif
@@ -87,11 +93,11 @@ namespace StarterAssets
 		{
 			get
 			{
-				#if ENABLE_INPUT_SYSTEM
+#if ENABLE_INPUT_SYSTEM
 				return _playerInput.currentControlScheme == "KeyboardMouse";
-				#else
+#else
 				return false;
-				#endif
+#endif
 			}
 		}
 
@@ -114,6 +120,9 @@ namespace StarterAssets
 			Debug.LogError( "Starter Assets package is missing dependencies. Please use Tools/Starter Assets/Reinstall Dependencies to fix it");
 #endif
 
+
+			_startPosition = transform.position;
+			_startRotation = transform.rotation; 
 			// reset our timeouts on start
 			_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
@@ -121,7 +130,7 @@ namespace StarterAssets
 
 		private void Update()
 		{
-			if(isMovementLocked) return;
+			if (isMovementLocked) return;
 			Move();
 		}
 
@@ -137,7 +146,7 @@ namespace StarterAssets
 			{
 				//Don't multiply mouse input by Time.deltaTime
 				float deltaTimeMultiplier = IsCurrentDeviceMouse ? 1.0f : Time.deltaTime;
-				
+
 				_cinemachineTargetPitch += _input.look.y * RotationSpeed * deltaTimeMultiplier;
 				_rotationVelocity = _input.look.x * RotationSpeed * deltaTimeMultiplier;
 
@@ -195,6 +204,8 @@ namespace StarterAssets
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
 			}
 
+			 if (isResetting) return;
+
 			// move the player
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 		}
@@ -217,5 +228,30 @@ namespace StarterAssets
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
 		}
+
+		public void ResetToStartPosition()
+		{
+			StartCoroutine(Respawn());
+		}
+
+		private IEnumerator Respawn()
+		{
+			isResetting = true; // Blocca il movimento
+			_controller.enabled = false; // Disabilita il CharacterController
+
+			transform.position = _startPosition; // Reimposta la posizione
+			transform.rotation = _startRotation; // Ripristina la rotazione
+
+			yield return null; // Aspetta un frame
+
+			_controller.enabled = true; // Riabilita il CharacterController
+			isResetting = false; // Riattiva il movimento
+		}
+
+
+
 	}
+
+
+
 }

@@ -8,6 +8,7 @@ using UnityEngine;
 public class DayManager : MonoBehaviour
 {
     public DayData[] listDayData;
+    public DayData currentDay;
     private static DayManager _instance;
     public static DayManager Instance
     {
@@ -24,29 +25,28 @@ public class DayManager : MonoBehaviour
     void Start()
     {     
         //bisogna prendere lo scriptable da caricare e caricarlo nei manager
-        LoadDayData(0);
+        LoadDayData(1);
     }
 
     public void LoadDayData(int nameScriptable){
         
-        DayData loadedDayData=listDayData[nameScriptable];
+        DayData loadedDayData=listDayData[nameScriptable-1];
+        currentDay=loadedDayData;
         if (loadedDayData != null)
         { 
-            // Assegna lo ScriptableObject al manager
-            // ScriptableObjectManager.Instance.CurrentDayData = loadedDayData;
            
             //init NPC
             DialogueManager.Instance.Init(loadedDayData.npc); 
 
             //init Product
-            ProductManager.Instance.Init(loadedDayData);
+            ProductManager.Instance.Init(loadedDayData.productInfo);
            
             
             //init Light
             LightManager.Instance.Init(loadedDayData.light);
            
             
-            Debug.Log("Caricato Day" + nameScriptable);
+            Debug.Log("Caricato Day" + nameScriptable++);
         }
         else
         {

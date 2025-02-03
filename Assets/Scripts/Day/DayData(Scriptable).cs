@@ -17,7 +17,8 @@ public class DayData : ScriptableObject
     //news
     //public  Shader shader;
     //prodotti
-    public Productinfo[] products;
+    //public Productinfo[] products;
+    public ProductInfo productInfo;
     
     public LightDayInfo light;
     public NPCDayInfo[] npc;

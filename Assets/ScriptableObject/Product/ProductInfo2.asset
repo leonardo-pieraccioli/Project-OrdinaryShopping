@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45439366eaf38f043b33d8dd70f69e30, type: 3}
+  m_Name: ProductInfo2
+  m_EditorClassIdentifier: 
+  products:
+  - productName: giorno2
+    price: 4
+    description: 
+    prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
+      type: 3}
+    numberOfProduct: 0
+    _positions: {x: 5.251, y: 0.56540936, z: 1.392}
+    _xn: 2
+    _yn: 2
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - productName: giorno2
+    price: 4
+    description: 
+    prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
+      type: 3}
+    numberOfProduct: 0
+    _positions: {x: 3.243, y: 0.971, z: 6.26}
+    _xn: 2
+    _yn: 2
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
