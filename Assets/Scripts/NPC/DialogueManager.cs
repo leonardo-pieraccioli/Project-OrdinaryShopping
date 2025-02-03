@@ -24,12 +24,13 @@ public class DialogueManager : MonoBehaviour
     #endregion
     public static NPCDayInfo[] npcs;
     private FirstPersonController playerController;
-    private List<GameObject> activeNPCs;
+    private List<GameObject> activeNPCs=new List<GameObject>();
+    private int nistancenpc = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        activeNPCs = new List<GameObject>();
+        //activeNPCs = new List<GameObject>();
     }
     public void Init(NPCDayInfo[] currentNPCDayInfo)
     {
@@ -44,11 +45,20 @@ public class DialogueManager : MonoBehaviour
             Debug.LogError("Npc non trovato o array vuoto/null");
         }
 
+        if (nistancenpc > 0)
+        {
+
+            DestroyNPCs();
+            nistancenpc = 0;
+
+        }
+
         playerController = GameObject.FindObjectOfType<FirstPersonController>();
         // MOVE TO DAY MANAGER
         foreach (NPCDayInfo npc in npcs)
         {
             SpawnNPC(npc);
+            nistancenpc++;
         }
     }
 
