@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PearMaterial
+  m_Name: AppleMaterial
   m_Shader: {fileID: -6465566751694194690, guid: d0508fb690c08b049845b7190b25d007,
     type: 3}
   m_Parent: {fileID: 0}
@@ -39,7 +39,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 9e9240d7569d71344b2d51b0a4c6e60c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0eda4a0dcbc521c44ba6c57acce1031e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -102,10 +102,10 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _AmbientEnvironmentMultiplier: 0.228
+    - _AmbientEnvironmentMultiplier: 0.832
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
-    - _Brightness: 4
+    - _Brightness: 3
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
