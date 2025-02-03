@@ -31,7 +31,7 @@ MonoBehaviour:
     prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
       type: 3}
     numberOfProduct: 0
-    _positions: {x: 5.36, y: 0.971, z: 6.26}
+    _positions: {x: 5.251, y: 1.764, z: 3.29}
     _xn: 5
     _yn: 5
     _zn: 5
