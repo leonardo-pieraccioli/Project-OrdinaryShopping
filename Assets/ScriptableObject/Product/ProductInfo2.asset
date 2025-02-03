@@ -19,8 +19,8 @@ MonoBehaviour:
     prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
       type: 3}
     numberOfProduct: 0
-    _positions: {x: 5.251, y: 0.56540936, z: 1.392}
-    _xn: 2
+    _positions: {x: 5.251, y: 1.19, z: 3.29}
+    _xn: 1
     _yn: 2
     _zn: 1
     _offset: {x: 1, y: 1, z: 1}
@@ -31,7 +31,19 @@ MonoBehaviour:
     prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
       type: 3}
     numberOfProduct: 0
-    _positions: {x: 3.243, y: 0.971, z: 6.26}
+    _positions: {x: 5.36, y: 0.971, z: 6.26}
+    _xn: 5
+    _yn: 5
+    _zn: 5
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - productName: giorno2p2
+    price: 4
+    description: 
+    prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
+      type: 3}
+    numberOfProduct: 0
+    _positions: {x: 12.41, y: 0, z: 5.99}
     _xn: 2
     _yn: 2
     _zn: 1

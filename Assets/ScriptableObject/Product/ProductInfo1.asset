@@ -19,10 +19,10 @@ MonoBehaviour:
     prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
       type: 3}
     numberOfProduct: 1
-    _positions: {x: 5.251, y: 0.56540936, z: 1.392}
-    _xn: 2
-    _yn: 2
-    _zn: 2
+    _positions: {x: 9.928667, y: 0.79200006, z: 3.5600252}
+    _xn: 4
+    _yn: 4
+    _zn: 4
     _offset: {x: 1, y: 1, z: 1}
     _rotate: 1
   - productName: test2prod
@@ -31,7 +31,7 @@ MonoBehaviour:
     prefabs: {fileID: 1783762480677081828, guid: 886cadaf7604ac249949a462b74a7fed,
       type: 3}
     numberOfProduct: 1
-    _positions: {x: 3.243, y: 0.971, z: 6.26}
+    _positions: {x: 3.0866647, y: 1.6080002, z: 3.893464}
     _xn: 2
     _yn: 2
     _zn: 2
