@@ -58,7 +58,7 @@ public class Product: MonoBehaviour{
      
     static public void Destroy(Productinfo product){
 
-        
+        //considerare l'idea di salvarsi una lista dei prodotti istanziati e poi su quella chiamare la destroy
         // Trova l'oggetto in scena utilizzando il suo nome
         GameObject oggetto = GameObject.Find(product.productName);
 

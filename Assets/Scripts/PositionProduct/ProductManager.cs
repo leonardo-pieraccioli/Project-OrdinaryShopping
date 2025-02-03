@@ -112,7 +112,7 @@ public class ProductManager : MonoBehaviour
             /*Se il campo _positions esiste nel ScriptableObject, lo aggiorna con il valore di storedPositions usando reflection.
             Se _positions non esiste, viene stampato un messaggio di errore nella console.
             */
-            for (int i = 0; i < _objectPosition.Length; i++)
+            for (int i = 0; i < productInfo.products.Length; i++)
             {
                 productInfo.products[i]._positions = storedPositions[i];
 
