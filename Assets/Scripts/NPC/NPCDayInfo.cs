@@ -5,10 +5,12 @@ using UnityEngine;
 // TODO: update when supermarket is ready
 public enum NPCPosition
 {
-    Entrance,
-    Isle1,
-    Isle2,
-    Counter
+    SpawnArea1,
+    SpawnArea2,
+    SpawnArea3,
+    SpawnArea4,
+    SpawnArea5,
+    SpawnArea6
 }
 
 [CreateAssetMenu(fileName = "NewNPCDayInfo", menuName = "ScriptableObjects/NPCDayInfo", order = 1)]
