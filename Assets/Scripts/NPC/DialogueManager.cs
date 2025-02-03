@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using StarterAssets;
 using TMPro;
 using UnityEngine;
@@ -23,18 +24,12 @@ public class DialogueManager : MonoBehaviour
     #endregion
     public static NPCDayInfo[] npcs;
     private FirstPersonController playerController;
+    private List<GameObject> activeNPCs;
 
     // Start is called before the first frame update
     void Start()
     {
-        /*
-        playerController = GameObject.FindObjectOfType<FirstPersonController>();
-        // MOVE TO DAY MANAGER
-        foreach (NPCDayInfo npc in npcs)
-        {
-            SpawnNPC(npc);
-        }*/
-
+        activeNPCs = new List<GameObject>();
     }
     public void Init(NPCDayInfo[] currentNPCDayInfo)
     {
@@ -55,7 +50,14 @@ public class DialogueManager : MonoBehaviour
         {
             SpawnNPC(npc);
         }
+    }
 
+    public void DestroyNPCs()
+    {
+        foreach (GameObject npc in activeNPCs)
+        {
+            Destroy(npc);
+        }
     }
 
     #region NPC Management
@@ -69,7 +71,10 @@ public class DialogueManager : MonoBehaviour
     {
         GameObject npc = Instantiate(info.prefab, spawnPositions[(int)info.position]);
         npc.GetComponent<InteractableNPC>().dayInfo = info;
+        activeNPCs.Add(npc);
     }
+
+
 
     #endregion
 
