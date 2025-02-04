@@ -17,7 +17,7 @@ public class ChangeDayCollision : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Verifica se l'altro collider appartiene all'oggetto specifico che desideri
-        if (other.CompareTag("Finish"))
+        if (other.CompareTag("Player"))
         {
 
             if (DayManager.Instance.currentDay.dayNumber < 2)
