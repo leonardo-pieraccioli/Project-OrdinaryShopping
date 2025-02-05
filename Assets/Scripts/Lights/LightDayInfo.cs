@@ -22,6 +22,8 @@ public class LightDayInfo : ScriptableObject
     public float intensity; // Intensità della luce
     public LightFlickeringSettings flickeringSettings; // Configurazioni per il flickering
 
+    public bool StopMusic; // Flag per interrompere la musica alla prima bomba
+
     
 }
 

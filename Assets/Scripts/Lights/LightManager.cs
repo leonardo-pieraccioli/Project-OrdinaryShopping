@@ -6,6 +6,8 @@ public class LightManager : MonoBehaviour
 {
     [Header("---Lights---")]
     [SerializeField] private Light [] sceneLights; // Riferimento alla luce della scena
+    [SerializeField] private GameObject [] objLights; // Riferimento alla luce della scena
+
     
 
     [Header("---Music Clips---")]
@@ -155,6 +157,7 @@ public class LightManager : MonoBehaviour
      private IEnumerator ExplosionCycle()
     {
         int explosionsLeft = dayLightSetting.flickeringSettings.numberOfExplosions;
+        bool StopMusic = dayLightSetting.StopMusic;
         
         while (explosionsLeft > 0)
         {
@@ -172,7 +175,12 @@ public class LightManager : MonoBehaviour
         Debug.Log("Tutte le esplosioni completate.");
     }
 
-    
+    void StopAudio()
+    {
+        musicSource.Stop();
+    }
+
+
 
     /// <summary>
     /// Attiva il flickering della luce quando avviene un'esplosione.
@@ -188,6 +196,8 @@ public class LightManager : MonoBehaviour
         }
 
         Invoke(nameof(TriggerFlicker), 0.5f); // Modifica "0.5f" con il tempo di ritardo desiderato
+        Invoke(nameof(StopAudio), 0.7f); // Modifica "0.5f" con il tempo di ritardo desiderato
+
 
        // TriggerFlicker();
     }
@@ -206,40 +216,71 @@ public class LightManager : MonoBehaviour
         }
     }
 
+
     /// <summary>
     /// Coroutine per simulare il flickering della luce.
-    /// </summary>
+    /// </summary>   
     private IEnumerator FlickerLight(LightDayInfo.LightFlickeringSettings settings)
+{
+    float elapsedTime = 0f; // Tempo trascorso dall'inizio del flickering
+    float totalDuration = settings.flickeringDuration;
+
+    // Suono del flickering
+    if (SFXSource != null && flickeringSound != null)
     {
-        float elapsedTime = 0f; // Tempo trascorso dall'inizio del flickering
-        float totalDuration = settings.flickeringDuration;
-
-
-        // Suono del flickering
-        if (SFXSource != null && flickeringSound != null)
-        {
-            SFXSource.PlayOneShot(flickeringSound);
-        }
-
-
-        while (elapsedTime < totalDuration)
-        {
-            foreach (Light light in sceneLights)
-            {
-                if (light != null)
-                {
-                    light.intensity = Random.Range(0f, settings.maxFlickeringIntensity);
-                    light.enabled = !light.enabled; // Alterna lo stato acceso/spento
-                }
-            }
-
-            yield return new WaitForSeconds(Random.Range(settings.flickeringInterval * 0.5f, settings.flickeringInterval * 1.5f));
-            elapsedTime += settings.flickeringInterval;
-        }
-
-        ResetLights();
+        SFXSource.PlayOneShot(flickeringSound);
     }
 
+    while (elapsedTime < totalDuration)
+    {
+        for (int i = 0; i < sceneLights.Length; i++)
+        {
+            Light light = sceneLights[i];
+
+            if (light != null)
+            {
+                // Alterna stato della luce
+                light.intensity = Random.Range(0f, settings.maxFlickeringIntensity);
+                light.enabled = !light.enabled;
+
+                // Cerca il MeshRenderer associato (che è contenuto in objLights)
+                if (i < objLights.Length) // Controlliamo che esista un GameObject corrispondente
+                {
+                    MeshRenderer meshRenderer = objLights[i].GetComponent<MeshRenderer>();
+                    if (meshRenderer != null)
+                    {
+                        Material[] materials = meshRenderer.materials;
+                        for (int j = 0; j < materials.Length; j++)
+                        {
+                            if (materials[j].name.Contains("Material.013")) // Trova il materiale corretto
+                            {
+                                if (light.enabled)
+                                {
+                                    //materials[j].EnableKeyword("_EMISSION");
+                                    materials[j].SetColor("_EmissionColor", Color.white * 3f);
+                                }
+                                else
+                                {
+                                    //materials[j].DisableKeyword("_EMISSION");
+                                    materials[j].SetColor("_EmissionColor", Color.black);
+                                }
+                            }
+                        }
+                        meshRenderer.materials = materials; // Aggiorna i materiali
+                    }
+                }
+            }
+        }
+
+        yield return new WaitForSeconds(Random.Range(settings.flickeringInterval * 0.5f, settings.flickeringInterval * 1.5f));
+        elapsedTime += settings.flickeringInterval;
+    }
+
+    ResetLights();
+}
+
+    
+    
     /// <summary>
     /// Ripristina le luci allo stato normale dopo il flickering.
     /// </summary>
