@@ -10,7 +10,8 @@ public enum NPCPosition
     SpawnArea3,
     SpawnArea4,
     SpawnArea5,
-    SpawnArea6
+    SpawnArea6,
+    SpawnAreaBimba
 }
 
 [CreateAssetMenu(fileName = "NewNPCDayInfo", menuName = "ScriptableObjects/NPCDayInfo", order = 1)]

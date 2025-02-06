@@ -908,6 +908,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1726988045}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &169621971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 169621972}
+  m_Layer: 0
+  m_Name: NPCSpawnArea Bimba
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &169621972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169621971}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.405, y: -0.105, z: 3.998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 992648661}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &180236042 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3087593100149287366, guid: 5560ab21ad9ff5e4a9cf05413a2d13b0,
@@ -5224,7 +5255,7 @@ PrefabInstance:
     - target: {fileID: 5488505831769716301, guid: 5220e97509a70cd4eaed80b8e6c31fe6,
         type: 3}
       propertyPath: spawnPositions.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5488505831769716301, guid: 5220e97509a70cd4eaed80b8e6c31fe6,
         type: 3}
@@ -5256,6 +5287,11 @@ PrefabInstance:
       propertyPath: spawnPositions.Array.data[5]
       value: 
       objectReference: {fileID: 76764054}
+    - target: {fileID: 5488505831769716301, guid: 5220e97509a70cd4eaed80b8e6c31fe6,
+        type: 3}
+      propertyPath: spawnPositions.Array.data[6]
+      value: 
+      objectReference: {fileID: 169621972}
     - target: {fileID: 5988396265274875180, guid: 5220e97509a70cd4eaed80b8e6c31fe6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5333,6 +5369,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 76764054}
+    - targetCorrespondingSourceObject: {fileID: 5988396265274875180, guid: 5220e97509a70cd4eaed80b8e6c31fe6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 169621972}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5220e97509a70cd4eaed80b8e6c31fe6, type: 3}
 --- !u!4 &992648661 stripped
@@ -6776,7 +6816,7 @@ GameObject:
   m_Layer: 0
   m_Name: ' ExitTrigger'
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -13030,7 +13070,7 @@ PrefabInstance:
     - target: {fileID: 2218846812733519698, guid: 1cb3621d12912a544a2f93dc76e669bb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.133
       objectReference: {fileID: 0}
     - target: {fileID: 2218846812733519698, guid: 1cb3621d12912a544a2f93dc76e669bb,
         type: 3}
@@ -13040,7 +13080,7 @@ PrefabInstance:
     - target: {fileID: 2218846812733519698, guid: 1cb3621d12912a544a2f93dc76e669bb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.379
       objectReference: {fileID: 0}
     - target: {fileID: 2218846812733519698, guid: 1cb3621d12912a544a2f93dc76e669bb,
         type: 3}
