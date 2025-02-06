@@ -22,3 +22,4 @@ MonoBehaviour:
     numberOfExplosions: 5
     minExplosionInterval: 10
     maxExplosionInterval: 40
+  StopMusic: 1
