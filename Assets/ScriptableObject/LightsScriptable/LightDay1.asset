@@ -19,6 +19,7 @@ MonoBehaviour:
     flickeringInterval: 0.09
     flickeringDuration: 1
     maxFlickeringIntensity: 2
-    numberOfExplosions: 5
+    numberOfExplosions: 2
     minExplosionInterval: 3
     maxExplosionInterval: 10
+  StopMusic: 1
