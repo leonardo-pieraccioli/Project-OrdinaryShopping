@@ -6529,9 +6529,6 @@ MonoBehaviour:
   - {fileID: 2088058166}
   - {fileID: 732135241}
   - {fileID: 748621393}
-  background:
-  - {fileID: 8300000, guid: 132b77d77e83a3747bace450ba46a440, type: 3}
-  - {fileID: 8300000, guid: d865645e7f9ecf441a0d760d2ceba8f1, type: 3}
   explosionSound: {fileID: 8300000, guid: 6d3aa13a937b111449331f5164cabfe4, type: 3}
   flickeringSound: {fileID: 8300000, guid: 739cc588e89f292408ba6c22261a3b15, type: 3}
   musicSource: {fileID: 1839889467}
