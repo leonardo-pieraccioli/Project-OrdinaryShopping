@@ -41,10 +41,14 @@ public class DayManager : MonoBehaviour
             //init Product
             ProductManager.Instance.Init(loadedDayData.productInfo);
            
-            
             //init Light
             LightManager.Instance.Init(loadedDayData.light);
            
+            //init shopping list
+            GroceriesList.Instance.Init(loadedDayData.productInfo);
+
+            //init balance
+            BalanceText.Instance.SetBalance(loadedDayData.budget);
             
             Debug.Log("Caricato Day" + nameScriptable++);
         }

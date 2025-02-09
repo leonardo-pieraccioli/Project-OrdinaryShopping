@@ -18,7 +18,7 @@ public class ArrayInstanceProduct : MonoBehaviour
     [SerializeField] private bool _grabOne = false, _putOne = false;
 
     private Stack<Matrix4x4> _matrices, _removed;
-    private Productinfo product;
+    public Productinfo product;
 
     private bool _isInitialized = false;
 
@@ -43,7 +43,7 @@ public class ArrayInstanceProduct : MonoBehaviour
     }
     public void Init(Productinfo productInfo)
     {
-
+        product = productInfo;
         if (productInfo == null) return;
 
         _xn = productInfo._xn;

@@ -13,26 +13,28 @@ MonoBehaviour:
   m_Name: ProductInfo1
   m_EditorClassIdentifier: 
   products:
-  - productName: test1prod
+  - productName: Canned fish
     price: 5
     description: "questa \xE8 una prova"
+    isInShoppingList: 1
     prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
       type: 3}
     numberOfProduct: 1
     _positions: {x: 3.595, y: 0.24000001, z: 3.47}
     _xn: 6
-    _yn: 1
+    _yn: 3
     _zn: 1
     _offset: {x: 1, y: 1, z: 1}
-    _rotate: 1
-  - productName: test2prod
+    _rotate: 0
+  - productName: Soda blue
     price: 5
-    description: "questa \xE8 una prova"
-    prefabs: {fileID: 1783762480677081828, guid: 886cadaf7604ac249949a462b74a7fed,
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 8973046401379164388, guid: 466ec06af0c7bbd40af23c8cb407751e,
       type: 3}
     numberOfProduct: 1
     _positions: {x: 3.595, y: 0.80499995, z: 3.47}
-    _xn: 4
+    _xn: 12
     _yn: 1
     _zn: 1
     _offset: {x: 1, y: 1, z: 1}

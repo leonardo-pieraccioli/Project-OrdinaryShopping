@@ -12,6 +12,7 @@ public class Productinfo
     public string productName; // Nome del prodotto
     public float price; // Prezzo del prodotto
     public string description; // Descrizione del prodotto
+    public bool isInShoppingList;
     public GameObject prefabs; //prefab prodotto
 
 /*

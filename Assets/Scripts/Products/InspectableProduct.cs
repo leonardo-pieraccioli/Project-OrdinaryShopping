@@ -39,8 +39,9 @@ public class InspectableProduct : MonoBehaviour, IInteractable
 
     public void CartTheProduct()
     {
-        Debug.LogError("Implement the function to insert this product in the cart");
         meshRenderer.enabled = false;
+        GroceriesList.Instance.CheckProductFromList(instanceProduct.product.productName);
+        BalanceText.Instance.UpdateBalance(-instanceProduct.product.price);
     }
 
     public void Interact(PlayerInteractor interactor)

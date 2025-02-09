@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Day2
   m_EditorClassIdentifier: 
   dayNumber: 2
-  budget: 0
+  budget: 99.9999
   productInfo: {fileID: 11400000, guid: 2848a306ffae23f4ea5e3a01a269c770, type: 2}
   light: {fileID: 11400000, guid: 9d790bef7e784ef4dac20799ec672f14, type: 2}
   npc:

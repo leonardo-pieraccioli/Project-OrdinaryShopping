@@ -1,27 +1,35 @@
+using System.Globalization;
 using TMPro;
 using UnityEngine;
 
 public class BalanceText : MonoBehaviour
 {
-
-    TMP_Text _textComponent;
-    private int balance;
-
-    void Awake()
+    private static BalanceText _instance;
+    public static BalanceText Instance
     {
-        _textComponent = GetComponent<TMP_Text>();
-        Debug.Assert(_textComponent != null, "Unable to find text component");
+        get
+        {
+            if (_instance == null)
+                _instance = GameObject.FindObjectOfType<BalanceText>();
+            return _instance;
+        }
+    }    
+    [SerializeField] TMP_Text _textComponent;
+    private float balance;
+
+    public void SetBalance(float newBalance)
+    {
+        balance = newBalance;
+        _textComponent.text = balance.ToString("C", CultureInfo.GetCultureInfo("en-US"));
     }
 
-    void OnEnable()
-    {   
-        balance = getCurrentBalance();
-        _textComponent.text = balance.ToString() + " $";
-    }
-
-    private int getCurrentBalance()
+    public void UpdateBalance (float updateAmount)
     {
-        //temporary solution 
-        return Random.Range(0,1000);
+        balance += updateAmount;
+        _textComponent.text = balance.ToString("C", CultureInfo.GetCultureInfo("en-US"));
+        if (balance <= 0)
+        {
+            _textComponent.color = Color.red;
+        }
     }
 }
