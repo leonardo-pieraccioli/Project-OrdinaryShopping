@@ -2370,7 +2370,9 @@ PrefabInstance:
       propertyPath: m_fontSizeMin
       value: 15
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2714588604525744418, guid: 6488647f2d659184a9d3ec27236a9741, type: 3}
+    - {fileID: 6445698613105913372, guid: 6488647f2d659184a9d3ec27236a9741, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
