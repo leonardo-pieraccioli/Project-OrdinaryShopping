@@ -23,4 +23,6 @@ MonoBehaviour:
     minExplosionInterval: 10
     maxExplosionInterval: 40
   StopMusic: 1
-  background: []
+  background:
+  - {fileID: 8300000, guid: 132b77d77e83a3747bace450ba46a440, type: 3}
+  - {fileID: 8300000, guid: f7c279b433cae494bb471eedaabb227d, type: 3}
