@@ -30,7 +30,7 @@ public class ProductManager : MonoBehaviour
     //[SerializeField] GameObject[] _objectPosition;
     [SerializeField] public PositionClass[] posClass;
 
-    
+
     int numberShelve;
     private static ProductManager _instance;
     public static ProductManager Instance
@@ -70,7 +70,7 @@ public class ProductManager : MonoBehaviour
 
         productInfo = currentProductInfo;
         Array.Copy(currentProductInfo, productInfo, currentProductInfo.Length);
-       
+
 
         /*GameObject[] targetArray = null;
 
@@ -107,8 +107,8 @@ public class ProductManager : MonoBehaviour
 
     }
 
-    
- 
+
+
 
     void StoreGameObjectPositionsIntoSO()
     {
@@ -120,29 +120,43 @@ public class ProductManager : MonoBehaviour
             //System.Reflection.FieldInfo product = _objectToChange.GetType().GetField("product");
             //System.Reflection.FieldInfo _positions=_objectToChange.products.GetType().GetField("_positions");
             /*Inizializza un array storedPositions con una dimensione pari al numero di GameObject referenziati.*/
-            int totProdotti = 0;
+            int totempty = 0;
+            int totProduct = productInfo.Length;
+
             for (int i = 0; i < posClass.Length; i++)
             {
-                totProdotti = totProdotti + posClass[i]._objectPosition.Length;
+                //tot empty in scena
+                totempty = totempty + posClass[i]._objectPosition.Length;
             }
 
-
-            storedPositions = new Vector3[totProdotti];
+            storedPositions = new Vector3[totempty];
             /*Itera attraverso l'array di GameObject e memorizza la posizione di ciascuno di essi nell'array storedPositions.*/
+
             int k = 0;
-            if (productInfo.Length < totProdotti)
+            //se gli empty nella scena sono meno rispetto ai prodotti
+            if (productInfo.Length > totempty)
             {
-                Debug.Log("Prodotti terminati!");
+                Debug.Log("Pochi empty nella scena!Dove metto gli oggetti?");
                 return;
             }
+
             for (int i = 0; i < posClass.Length; i++)
                 for (int j = 0; j < posClass[i]._objectPosition.Length; ++j)
                 {
                     {
                         storedPositions[k] = posClass[i]._objectPosition[j].transform.position;
-                        productInfo[k].LabelPosition = posClass[i].LabelPosition;
-                        productInfo[k].emptyPos=posClass[i]._objectPosition[j];
-                        ++k;
+                        if (k < productInfo.Length)
+                        {
+                            productInfo[k].LabelPosition = posClass[i]._objectPosition[j].name;
+                            productInfo[k].emptyPos = posClass[i]._objectPosition[j];
+                            ++k;
+                        }
+                        else
+                        {
+                            Debug.Log("Pochi prodotti!");
+                            return;
+
+                        }
                     }
                 }
             /*Se il campo _positions esiste nel ScriptableObject, lo aggiorna con il valore di storedPositions usando reflection.
@@ -151,7 +165,7 @@ public class ProductManager : MonoBehaviour
             for (int i = 0; i < productInfo.Length; i++)
             {
                 productInfo[i]._positions = storedPositions[i];
-                
+
 
             }
 
