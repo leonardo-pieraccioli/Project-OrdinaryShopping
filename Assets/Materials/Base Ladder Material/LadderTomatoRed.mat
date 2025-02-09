@@ -50,9 +50,9 @@ Material:
     - _AmbientEnvironmentMultiplier: 0.5
     - _Brightness: 1
     - _Contrast: 1
-    - _EdgeDistanceAttenuation: 0.792
-    - _EdgeRim: 0.523
-    - _EdgeSpecular: 0.5
+    - _EdgeDistanceAttenuation: 0
+    - _EdgeRim: 0
+    - _EdgeSpecular: 0
     - _Main_Light_X: 0
     - _QueueControl: 0
     - _QueueOffset: 0
