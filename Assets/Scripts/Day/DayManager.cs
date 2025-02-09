@@ -39,8 +39,8 @@ public class DayManager : MonoBehaviour
             DialogueManager.Instance.Init(loadedDayData.npc); 
 
             //init Product
-            ProductManager.Instance.Init(loadedDayData.productInfo);
-           
+            ProductManager.Instance.Init(loadedDayData.productInfo.products,nameScriptable);
+
             //init Light
             LightManager.Instance.Init(loadedDayData.light);
            
