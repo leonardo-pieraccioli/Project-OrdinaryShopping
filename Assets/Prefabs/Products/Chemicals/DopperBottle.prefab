@@ -58,10 +58,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4462710444816093270, guid: 892aef88ea3ca19438d22bf712c7ed3e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -1610580144069998971, guid: 892aef88ea3ca19438d22bf712c7ed3e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 892aef88ea3ca19438d22bf712c7ed3e,
         type: 3}
       propertyPath: m_Name
       value: DopperBottle
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 892aef88ea3ca19438d22bf712c7ed3e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1103621852412493680, guid: 892aef88ea3ca19438d22bf712c7ed3e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7522377134705790858, guid: 892aef88ea3ca19438d22bf712c7ed3e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8038033186337642179, guid: 892aef88ea3ca19438d22bf712c7ed3e,
         type: 3}
@@ -76,5 +101,27 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 892aef88ea3ca19438d22bf712c7ed3e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8074615602451088803}
   m_SourcePrefab: {fileID: 100100000, guid: 892aef88ea3ca19438d22bf712c7ed3e, type: 3}
+--- !u!1 &288299074216625344 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 892aef88ea3ca19438d22bf712c7ed3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 630881814353590673}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-8074615602451088803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288299074216625344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279e0dfbdde6a5a4abe47c60a717f266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

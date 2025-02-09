@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1399084023389333941}
   - component: {fileID: 1785061230933412738}
   - component: {fileID: 1975449677713142234}
-  - component: {fileID: 4705910377866134718}
-  m_Layer: 0
+  - component: {fileID: -3142143701933380561}
+  m_Layer: 8
   m_Name: CannedTomatoBase 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,24 +85,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4705910377866134718
-BoxCollider:
+--- !u!114 &-3142143701933380561
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6908195517934943740}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
-  m_Center: {x: 0, y: 0.11459063, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279e0dfbdde6a5a4abe47c60a717f266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
