@@ -129,7 +129,12 @@ public class ArrayInstances : MonoBehaviour
         }
         /////////////////////////
         
-        Graphics.DrawMeshInstanced(_mesh, 0, _materials[0], _matrices.ToArray());
-        Graphics.DrawMeshInstanced(_mesh, 1, _materials[1], _matrices.ToArray());
+         for (int i = 0; i < _materials.Length; ++i)
+        {
+            if (_materials[i] != null)
+            {
+                Graphics.DrawMeshInstanced(_mesh, i, _materials[i], _matrices.ToArray());
+            }
+        }
     }
 }

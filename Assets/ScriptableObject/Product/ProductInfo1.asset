@@ -13,27 +13,163 @@ MonoBehaviour:
   m_Name: ProductInfo1
   m_EditorClassIdentifier: 
   products:
-  - productName: test1prod
-    price: 5
-    description: "questa \xE8 una prova"
-    prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
+  - productName: 
+    price: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
       type: 3}
-    numberOfProduct: 1
-    _positions: {x: 3.595, y: 0.24000001, z: 3.47}
-    _xn: 6
-    _yn: 1
-    _zn: 1
-    _offset: {x: 1, y: 1, z: 1}
-    _rotate: 1
-  - productName: test2prod
-    price: 5
-    description: "questa \xE8 una prova"
-    prefabs: {fileID: 1783762480677081828, guid: 886cadaf7604ac249949a462b74a7fed,
+    _positions: {x: 0, y: 0, z: 0}
+    _xn: 0
+    _yn: 0
+    _zn: 0
+    _offset: {x: 0, y: 0, z: 0}
+    _rotate: 0
+  - productName: 
+    price: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
       type: 3}
-    numberOfProduct: 1
-    _positions: {x: 3.595, y: 0.80499995, z: 3.47}
-    _xn: 4
-    _yn: 1
-    _zn: 1
-    _offset: {x: 1, y: 1, z: 1}
-    _rotate: 1
+    _positions: {x: 0, y: 0, z: 0}
+    _xn: 0
+    _yn: 0
+    _zn: 0
+    _offset: {x: 0, y: 0, z: 0}
+    _rotate: 0
+  - productName: 
+    price: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
+      type: 3}
+    _positions: {x: 0, y: 0, z: 0}
+    _xn: 0
+    _yn: 0
+    _zn: 0
+    _offset: {x: 0, y: 0, z: 0}
+    _rotate: 0
+  - productName: 
+    price: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
+      type: 3}
+    _positions: {x: 0, y: 0, z: 0}
+    _xn: 0
+    _yn: 0
+    _zn: 0
+    _offset: {x: 0, y: 0, z: 0}
+    _rotate: 0
+  - productName: 
+    price: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
+      type: 3}
+    _positions: {x: 0, y: 0, z: 0}
+    _xn: 0
+    _yn: 0
+    _zn: 0
+    _offset: {x: 0, y: 0, z: 0}
+    _rotate: 0
+  - productName: 
+    price: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
+      type: 3}
+    _positions: {x: 0, y: 0, z: 0}
+    _xn: 0
+    _yn: 0
+    _zn: 0
+    _offset: {x: 0, y: 0, z: 0}
+    _rotate: 0
+  - productName: 
+    price: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
+      type: 3}
+    _positions: {x: 0, y: 0, z: 0}
+    _xn: 0
+    _yn: 0
+    _zn: 0
+    _offset: {x: 0, y: 0, z: 0}
+    _rotate: 0
+  - productName: 
+    price: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
+      type: 3}
+    _positions: {x: 0, y: 0, z: 0}
+    _xn: 0
+    _yn: 0
+    _zn: 0
+    _offset: {x: 0, y: 0, z: 0}
+    _rotate: 0
+  - productName: 
+    price: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
+      type: 3}
+    _positions: {x: 0, y: 0, z: 0}
+    _xn: 0
+    _yn: 0
+    _zn: 0
+    _offset: {x: 0, y: 0, z: 0}
+    _rotate: 0
+  - productName: 
+    price: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
+      type: 3}
+    _positions: {x: 0, y: 0, z: 0}
+    _xn: 0
+    _yn: 0
+    _zn: 0
+    _offset: {x: 0, y: 0, z: 0}
+    _rotate: 0
+  - productName: 
+    price: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
+      type: 3}
+    _positions: {x: 0, y: 0, z: 0}
+    _xn: 0
+    _yn: 0
+    _zn: 0
+    _offset: {x: 0, y: 0, z: 0}
+    _rotate: 0
+  - productName: 
+    price: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
+      type: 3}
+    _positions: {x: 0, y: 0, z: 0}
+    _xn: 0
+    _yn: 0
+    _zn: 0
+    _offset: {x: 0, y: 0, z: 0}
+    _rotate: 0
+  - productName: 
+    price: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
+      type: 3}
+    _positions: {x: 0, y: 0, z: 0}
+    _xn: 0
+    _yn: 0
+    _zn: 0
+    _offset: {x: 0, y: 0, z: 0}
+    _rotate: 0
+  - productName: 
+    price: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
+      type: 3}
+    _positions: {x: 0, y: 0, z: 0}
+    _xn: 0
+    _yn: 0
+    _zn: 0
+    _offset: {x: 0, y: 0, z: 0}
+    _rotate: 0
+  - productName: 
+    price: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
+      type: 3}
+    _positions: {x: 0, y: 0, z: 0}
+    _xn: 0
+    _yn: 0
+    _zn: 0
+    _offset: {x: 0, y: 0, z: 0}
+    _rotate: 0
+  - productName: 
+    price: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
+      type: 3}
+    _positions: {x: 0, y: 0, z: 0}
+    _xn: 0
+    _yn: 0
+    _zn: 0
+    _offset: {x: 0, y: 0, z: 0}
+    _rotate: 0

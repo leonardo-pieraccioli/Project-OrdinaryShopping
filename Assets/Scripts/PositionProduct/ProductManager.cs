@@ -23,8 +23,9 @@ public class ProductManager : MonoBehaviour
     //-----------------
 
     //public static DayData dayData;
-    public ProductInfo productInfo;
-    private int nistance=0;
+    public Productinfo[] productInfo;
+    private int nistance = 0;
+
     //public static Productinfo[] products;
     // Riferimento allo ScriptableObject DayData
     //Un riferimento a un ScriptableObject che sarà modificato 
@@ -33,9 +34,13 @@ public class ProductManager : MonoBehaviour
     /*Un array di Vector3 usato per memorizzare le posizioni dei GameObject*/
     [SerializeField] Vector3[] storedPositions; //Trasform
     /*Array di GameObject di cui verranno estratte le posizioni.*/
+    //[SerializeField] GameObject[] _objectPosition;
     [SerializeField] GameObject[] _objectPosition;
-    //Tenere traccia degli oggetti istanziati e risorse allocate
+   /*  [SerializeField] GameObject[] _objectPositionshelve2;
+    [SerializeField] GameObject[] _objectPositionshelve3; */
 
+    //Tenere traccia degli oggetti istanziati e risorse allocate
+    int numberShelve;
     private static ProductManager _instance;
     public static ProductManager Instance
     {
@@ -52,35 +57,56 @@ public class ProductManager : MonoBehaviour
 
     [ContextMenu("Store GameObjects Positions for SO")]
 
-    public void Init(ProductInfo currentProductInfo)
+    public void Init(Productinfo[] currentProductInfo,int currentDay)
+
+    
     {
         if (currentProductInfo == null)
         {
             Debug.LogError("Errore: currentProductInfo è nullo");
             return;
         }
-        if (nistance>0)
+        if (currentDay > 1)
         {
             //prima elimino tutti i vecchi oggetti dalla scena
-            for (int i = 0; i < productInfo.products.Length; i++)
+            for (int i = 0; i < currentProductInfo.Length; i++)
             {
-                Product.Destroy(productInfo.products[i]);
+                Product.Destroy(currentProductInfo[i]);
                 nistance--;
 
             }
         }
 
         productInfo = currentProductInfo;
+        Array.Copy(currentProductInfo, productInfo, currentProductInfo.Length);
+        
+        
+        /*GameObject[] targetArray = null;
 
-
-        StoreGameObjectPositionsIntoSO();
+         switch (n)
+        {
+            case 1:
+                targetArray = _objectPositionshelve1;
+                break;
+            case 2:
+                targetArray = _objectPositionshelve2;
+                break;
+            case 3:
+                targetArray = _objectPositionshelve3;
+                break;
+            default:
+                Debug.LogError("Indice n non valido");
+                return;
+        }
+ */
+        StoreGameObjectPositionsIntoSO(_objectPosition);
 
 
         //generare vari prodotti
-        for (int i = 0; i < productInfo.products.Length; i++)
+        for (int i = 0; i < currentProductInfo.Length; i++)
         {
 
-            Product.Generate(productInfo.products[i], _objectPosition[i]);
+            Product.Generate(currentProductInfo[i], _objectPosition[i]);
             nistance++;
             //Product.GenerateBlock(productInfo.products[i], _objectPosition[i], 1, 1, 1, new Vector3(0,0,0));
             //GenerateMultipleIstance(productInfo.products[i]);
@@ -91,7 +117,7 @@ public class ProductManager : MonoBehaviour
 
     }
 
-    void StoreGameObjectPositionsIntoSO()
+    void StoreGameObjectPositionsIntoSO(GameObject[] _objectPosition)
     {
         if (_objectPosition.Length > 0)// Controlla che ci siano GameObject nell'array
         {
@@ -112,9 +138,9 @@ public class ProductManager : MonoBehaviour
             /*Se il campo _positions esiste nel ScriptableObject, lo aggiorna con il valore di storedPositions usando reflection.
             Se _positions non esiste, viene stampato un messaggio di errore nella console.
             */
-            for (int i = 0; i < productInfo.products.Length; i++)
+            for (int i = 0; i < productInfo.Length; i++)
             {
-                productInfo.products[i]._positions = storedPositions[i];
+                productInfo[i]._positions = storedPositions[i];
 
             }
 

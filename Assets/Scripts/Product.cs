@@ -11,7 +11,7 @@ public class Productinfo
 {
     public string productName; // Nome del prodotto
     public float price; // Prezzo del prodotto
-    public string description; // Descrizione del prodotto
+    //public string description; // Descrizione del prodotto
     public GameObject prefabs; //prefab prodotto
 
 /*
@@ -19,7 +19,7 @@ public class Productinfo
     public Boolean tanto;
     public Boolean singolo;
 */
-    public int numberOfProduct; 
+    //public int numberOfProduct; 
 
     //posizione
     public Vector3 _positions;
