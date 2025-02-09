@@ -48,7 +48,7 @@ public class PlayerInteractor : MonoBehaviour
     public void OnInteract(InputValue value)
     {
         // call interaction once on input start
-        if (value.isPressed && currentInteractable != null) 
+        if (value.isPressed && currentInteractable != null && !InspectManager.Instance.isInspecting) 
         {
             currentInteractable.Interact(this);
         }

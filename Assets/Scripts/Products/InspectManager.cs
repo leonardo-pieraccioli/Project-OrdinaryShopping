@@ -22,6 +22,7 @@ public class InspectManager : MonoBehaviour
 
     static private FirstPersonController playerController;
     private InspectableProduct inspectedProduct = null;
+    public bool isInspecting = false;
 
     private void Start()
     {
@@ -29,14 +30,15 @@ public class InspectManager : MonoBehaviour
     }
     public void StartInspect(InspectableProduct product)
     {
+        isInspecting = true;
         inspectedProduct = product;
-        inspectedProduct.ReachInspectPosition();
         playerController.LockMovement(true);
         CanvasManager.Instance.DeactivateAllCanvasBut(CanvasCode.CNV_INSPECT);
     }
 
     public void StopInspect()
     {
+        isInspecting = false;
         inspectedProduct = null;
         playerController.LockMovement(false);
         CanvasManager.Instance.DeactivateAllCanvasBut(CanvasCode.CNV_HUD);
