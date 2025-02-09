@@ -48,7 +48,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AmbientEnvironmentMultiplier: 0.73
-    - _Brightness: 1
+    - _Brightness: 1.91
     - _Contrast: 1
     - _EdgeDistanceAttenuation: 0.001
     - _EdgeRim: 0.001
@@ -61,7 +61,7 @@ Material:
     - _SHADOWBRIGHTTYPE: 0
     - _Saturation: 1
     - _Shadow_Steps: 3
-    - _Smoothness: 0.604
+    - _Smoothness: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

@@ -13,27 +13,483 @@ MonoBehaviour:
   m_Name: ProductInfo1
   m_EditorClassIdentifier: 
   products:
-  - productName: test1prod
-    price: 5
-    description: "questa \xE8 una prova"
-    prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
+  - productName: MedicineBox
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 2848822888665487190, guid: cd074c5530bc731429af2992d7c00057,
       type: 3}
-    numberOfProduct: 1
-    _positions: {x: 3.595, y: 0.24000001, z: 3.47}
-    _xn: 6
-    _yn: 1
-    _zn: 1
-    _offset: {x: 1, y: 1, z: 1}
-    _rotate: 1
-  - productName: test2prod
-    price: 5
-    description: "questa \xE8 una prova"
-    prefabs: {fileID: 1783762480677081828, guid: 886cadaf7604ac249949a462b74a7fed,
+    LabelPosition: ShelfW1sotto
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.069544025, y: 0.15322475, z: 0.07012618}
+    _positions: {x: 3.065, y: 0.24000001, z: 3.272}
+    _xn: 7
+    _yn: 2
+    _zn: 4
+    _offset: {x: 0.7, y: 0.7, z: 1}
+    _rotate: 0
+  - productName: Soda blue
+    price: 3
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 8973046401379164388, guid: 466ec06af0c7bbd40af23c8cb407751e,
       type: 3}
-    numberOfProduct: 1
-    _positions: {x: 3.595, y: 0.80499995, z: 3.47}
+    LabelPosition: ShelfW1sotto
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.09307695, y: 0.21658349, z: 0.093076944}
+    _positions: {x: 4.0650005, y: 0.24000001, z: 3.272}
+    _xn: 7
+    _yn: 2
+    _zn: 3
+    _offset: {x: 2, y: 2, z: 2}
+    _rotate: 0
+  - productName: Soda red
+    price: 3
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 4477105512359372738, guid: c6f4bca6e32cd38469e64071fd0ecd7a,
+      type: 3}
+    LabelPosition: ShelfW1sotto
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.09307695, y: 0.21658349, z: 0.093076944}
+    _positions: {x: 5.0650005, y: 0.24000001, z: 3.272}
+    _xn: 7
+    _yn: 2
+    _zn: 2
+    _offset: {x: 2, y: 2, z: 2}
+    _rotate: 0
+  - productName: Tea
+    price: 4
+    description: 
+    isInShoppingList: 1
+    prefabs: {fileID: 6239699513786241697, guid: f337a4056f119194d9e71076db156c94,
+      type: 3}
+    LabelPosition: ShelfW1sotto
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.122721195, y: 0.24622476, z: 0.07552081}
+    _positions: {x: 6.065001, y: 0.24000001, z: 3.272}
     _xn: 4
     _yn: 1
+    _zn: 3
+    _offset: {x: 1.2, y: 1.2, z: 1}
+    _rotate: 0
+  - productName: CakeFruit
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 3933548172878679237, guid: d723c88e16dcf514991a8cffd419d7b3,
+      type: 3}
+    LabelPosition: ShelfW1sotto
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.32916296, y: 0.1973489, z: 0.22716798}
+    _positions: {x: 3.065, y: 0.804, z: 3.272}
+    _xn: 2
+    _yn: 2
     _zn: 1
+    _offset: {x: 1, y: 0.5, z: 1}
+    _rotate: 0
+  - productName: Canned fish
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
+      type: 3}
+    LabelPosition: ShelfW1sotto
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.19273928, y: 0.08380286, z: 0.19273922}
+    _positions: {x: 4.065, y: 0.804, z: 3.2719998}
+    _xn: 4
+    _yn: 3
+    _zn: 2
     _offset: {x: 1, y: 1, z: 1}
-    _rotate: 1
+    _rotate: 0
+  - productName: Canned meet
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 8020566462490758205, guid: bfcd6f38a6f01a44294e19becd2349b5,
+      type: 3}
+    LabelPosition: ShelfW1sotto
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.18082055, y: 0.08411352, z: 0.18082057}
+    _positions: {x: 5.0650005, y: 0.804, z: 3.272}
+    _xn: 2
+    _yn: 1
+    _zn: 2
+    _offset: {x: 2, y: 2, z: 2}
+    _rotate: 0
+  - productName: Canned tomato
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
+      type: 3}
+    LabelPosition: ShelfW1sotto
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.25834998, y: 0.18437986, z: 0.25834998}
+    _positions: {x: 6.065001, y: 0.804, z: 3.272}
+    _xn: 2
+    _yn: 2
+    _zn: 2
+    _offset: {x: 1, y: 0.7, z: 0.7}
+    _rotate: 0
+  - productName: Chips
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 7913742142706278766, guid: 9a3fecb1cbf5c784cb02c50304e757dc,
+      type: 3}
+    LabelPosition: ShelfW2sotto
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.22911635, y: 0.29773057, z: 0.2810242}
+    _positions: {x: 6.716, y: 0.24000001, z: 3.272}
+    _xn: 3
+    _yn: 1
+    _zn: 2
+    _offset: {x: 0.7, y: 0.7, z: 1}
+    _rotate: 0
+  - productName: Chocolate snack
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 4667439362339048614, guid: 199a1e79f15c4104689dfa79845cae5b,
+      type: 3}
+    LabelPosition: ShelfW2sotto
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.20565337, y: 0.054691717, z: 0.17492153}
+    _positions: {x: 7.7160006, y: 0.24000001, z: 3.272}
+    _xn: 3
+    _yn: 1
+    _zn: 3
+    _offset: {x: 0.7, y: 0.7, z: 1}
+    _rotate: 0
+  - productName: Noodle Cup
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 6219198428732776439, guid: ea0730c09b3b9754785e61db58bf4291,
+      type: 3}
+    LabelPosition: ShelfW2sotto
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.11901473, y: 0.14691214, z: 0.1189661}
+    _positions: {x: 8.716, y: 0.24000001, z: 3.272}
+    _xn: 7
+    _yn: 2
+    _zn: 5
+    _offset: {x: 0.07, y: 0.07, z: 0.07}
+    _rotate: 0
+  - productName: Anti septic
+    price: 10
+    description: 
+    isInShoppingList: 1
+    prefabs: {fileID: 1043126048670360175, guid: e4ef13fd5b80a66418dcf773e534653f,
+      type: 3}
+    LabelPosition: ShelfW2sotto
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.07359615, y: 0.21876012, z: 0.07249428}
+    _positions: {x: 9.716, y: 0.24000001, z: 3.272}
+    _xn: 4
+    _yn: 1
+    _zn: 3
+    _offset: {x: 2.5, y: 1, z: 2.5}
+    _rotate: 0
+  - productName: Anti septic box
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
+      type: 3}
+    LabelPosition: ShelfW2sotto
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.08400005, y: 0.25535646, z: 0.084027596}
+    _positions: {x: 6.716, y: 0.804, z: 3.272}
+    _xn: 6
+    _yn: 1
+    _zn: 2
+    _offset: {x: 2, y: 1, z: 3}
+    _rotate: 0
+  - productName: Bleach
+    price: 10
+    description: 
+    isInShoppingList: 1
+    prefabs: {fileID: 1084924201873051434, guid: bb667c5d143d5294e84ca5fb18899d57,
+      type: 3}
+    LabelPosition: ShelfW2sotto
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.08839113, y: 0.2937395, z: 0.061210893}
+    _positions: {x: 7.7160006, y: 0.804, z: 3.272}
+    _xn: 5
+    _yn: 1
+    _zn: 2
+    _offset: {x: 1.5, y: 1, z: 1.5}
+    _rotate: 0
+  - productName: Codeine
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 3992470281443889014, guid: 6c0686cf52e0f414f90ee6899b1f2c1a,
+      type: 3}
+    LabelPosition: ShelfW2sotto
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.0989707, y: 0.2396445, z: 0.09673134}
+    _positions: {x: 8.716, y: 0.804, z: 3.272}
+    _xn: 4
+    _yn: 1
+    _zn: 2
+    _offset: {x: 1.2, y: 1, z: 1.5}
+    _rotate: 0
+  - productName: Detergent
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 2834691519401720754, guid: 697a9b3855e5b2a4380f3ba23ea96eee,
+      type: 3}
+    LabelPosition: ShelfW2sotto
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.14124902, y: 0.3221454, z: 0.06598895}
+    _positions: {x: 9.716, y: 0.804, z: 3.272}
+    _xn: 3
+    _yn: 1
+    _zn: 2
+    _offset: {x: 1.2, y: 1, z: 1.5}
+    _rotate: 0
+  - productName: Dopper bottle
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 288299074216625344, guid: 9f8e62bde16241e4ca9065f93af800ab,
+      type: 3}
+    LabelPosition: ShelfW1sopra
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.11713505, y: 0.2663874, z: 0.117130406}
+    _positions: {x: 3.0434518, y: 1.248, z: 3.272}
+    _xn: 2
+    _yn: 1
+    _zn: 2
+    _offset: {x: 1.5, y: 1.5, z: 1}
+    _rotate: 0
+  - productName: Flacon for pills
+    price: 10
+    description: 
+    isInShoppingList: 1
+    prefabs: {fileID: 8836187707814888428, guid: ec3858a72c4daf04d8f7a69a8fcae40e,
+      type: 3}
+    LabelPosition: ShelfW1sopra
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.10381105, y: 0.17985283, z: 0.10356069}
+    _positions: {x: 4.0434523, y: 1.248, z: 3.272}
+    _xn: 3
+    _yn: 1
+    _zn: 2
+    _offset: {x: 1.2, y: 1, z: 1.5}
+    _rotate: 0
+  - productName: Hand sanitizer
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 2657968292557722250, guid: 8c807afba1c77ba4fbe057bf6f7791f4,
+      type: 3}
+    LabelPosition: ShelfW1sopra
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.17792252, y: 0.37474537, z: 0.11570847}
+    _positions: {x: 5.0434523, y: 1.248, z: 3.272}
+    _xn: 2
+    _yn: 1
+    _zn: 2
+    _offset: {x: 1.2, y: 1, z: 1.5}
+    _rotate: 0
+  - productName: Hand cream
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 5264444037268359098, guid: a464486dbcaa6d54fb27c121b13fd747,
+      type: 3}
+    LabelPosition: ShelfW1sopra
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.10076619, y: 0.23294018, z: 0.053690135}
+    _positions: {x: 6.0434527, y: 1.248, z: 3.272}
+    _xn: 3
+    _yn: 1
+    _zn: 2
+    _offset: {x: 3, y: 1, z: 2}
+    _rotate: 0
+  - productName: Vida medicine
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 4365570326480699178, guid: c78db953d92fbd64b87e67d6e9d8fb50,
+      type: 3}
+    LabelPosition: ShelfW1sopra
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.093365155, y: 0.19130936, z: 0.093365155}
+    _positions: {x: 3.0434518, y: 1.678, z: 3.272}
+    _xn: 3
+    _yn: 1
+    _zn: 2
+    _offset: {x: 1.5, y: 1, z: 1.5}
+    _rotate: 0
+  - productName: Pill bottle
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 5908235145960124908, guid: 42d70392a97cafa4faa85e14f8702c60,
+      type: 3}
+    LabelPosition: ShelfW1sopra
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.1808187, y: 0.065784074, z: 0.09581024}
+    _positions: {x: 4.0434523, y: 1.678, z: 3.272}
+    _xn: 2
+    _yn: 1
+    _zn: 2
+    _offset: {x: 3, y: 1, z: 2}
+    _rotate: 0
+  - productName: Scan Medicine
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 2848822888665487190, guid: cd074c5530bc731429af2992d7c00057,
+      type: 3}
+    LabelPosition: ShelfW1sopra
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.069544025, y: 0.15322475, z: 0.07012618}
+    _positions: {x: 5.0434523, y: 1.678, z: 3.272}
+    _xn: 7
+    _yn: 2
+    _zn: 5
+    _offset: {x: 0.7, y: 0.7, z: 1}
+    _rotate: 0
+  - productName: Oil
+    price: 10
+    description: 
+    isInShoppingList: 1
+    prefabs: {fileID: 230013934694285457, guid: db0c85a4cce8097429dc35dddd171dbb,
+      type: 3}
+    LabelPosition: ShelfW1sopra
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.076200016, y: 0.22154525, z: 0.06248473}
+    _positions: {x: 6.0434527, y: 1.678, z: 3.272}
+    _xn: 7
+    _yn: 2
+    _zn: 5
+    _offset: {x: 0.7, y: 0.7, z: 1}
+    _rotate: 0
+  - productName: MedicineBox
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 2848822888665487190, guid: cd074c5530bc731429af2992d7c00057,
+      type: 3}
+    LabelPosition: ShelfW2sopra
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.069544025, y: 0.15322475, z: 0.07012618}
+    _positions: {x: 6.859, y: 1.248, z: 3.272}
+    _xn: 7
+    _yn: 2
+    _zn: 5
+    _offset: {x: 0.7, y: 0.7, z: 1}
+    _rotate: 0
+  - productName: MedicineBox
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 2848822888665487190, guid: cd074c5530bc731429af2992d7c00057,
+      type: 3}
+    LabelPosition: ShelfW2sopra
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.069544025, y: 0.15322475, z: 0.07012618}
+    _positions: {x: 7.859, y: 1.248, z: 3.272}
+    _xn: 7
+    _yn: 2
+    _zn: 5
+    _offset: {x: 0.7, y: 0.7, z: 1}
+    _rotate: 0
+  - productName: MedicineBox
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 2848822888665487190, guid: cd074c5530bc731429af2992d7c00057,
+      type: 3}
+    LabelPosition: ShelfW2sopra
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.069544025, y: 0.15322475, z: 0.07012618}
+    _positions: {x: 8.859001, y: 1.248, z: 3.272}
+    _xn: 7
+    _yn: 2
+    _zn: 5
+    _offset: {x: 0.7, y: 0.7, z: 1}
+    _rotate: 0
+  - productName: MedicineBox
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 2848822888665487190, guid: cd074c5530bc731429af2992d7c00057,
+      type: 3}
+    LabelPosition: ShelfW2sopra
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.069544025, y: 0.15322475, z: 0.07012618}
+    _positions: {x: 9.859001, y: 1.248, z: 3.272}
+    _xn: 7
+    _yn: 2
+    _zn: 5
+    _offset: {x: 0.7, y: 0.7, z: 1}
+    _rotate: 0
+  - productName: MedicineBox
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 2848822888665487190, guid: cd074c5530bc731429af2992d7c00057,
+      type: 3}
+    LabelPosition: ShelfW2sopra
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.069544025, y: 0.15322475, z: 0.07012618}
+    _positions: {x: 6.859, y: 1.678, z: 3.272}
+    _xn: 7
+    _yn: 2
+    _zn: 5
+    _offset: {x: 0.7, y: 0.7, z: 1}
+    _rotate: 0
+  - productName: MedicineBox
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 2848822888665487190, guid: cd074c5530bc731429af2992d7c00057,
+      type: 3}
+    LabelPosition: ShelfW2sopra
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.069544025, y: 0.15322475, z: 0.07012618}
+    _positions: {x: 7.859, y: 1.678, z: 3.272}
+    _xn: 7
+    _yn: 2
+    _zn: 5
+    _offset: {x: 0.7, y: 0.7, z: 1}
+    _rotate: 0
+  - productName: MedicineBox
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 2848822888665487190, guid: cd074c5530bc731429af2992d7c00057,
+      type: 3}
+    LabelPosition: ShelfW2sopra
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.069544025, y: 0.15322475, z: 0.07012618}
+    _positions: {x: 8.859001, y: 1.678, z: 3.272}
+    _xn: 7
+    _yn: 2
+    _zn: 5
+    _offset: {x: 0.7, y: 0.7, z: 1}
+    _rotate: 0
+  - productName: MedicineBox
+    price: 10
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 2848822888665487190, guid: cd074c5530bc731429af2992d7c00057,
+      type: 3}
+    LabelPosition: ShelfW2sopra
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.069544025, y: 0.15322475, z: 0.07012618}
+    _positions: {x: 9.859001, y: 1.678, z: 3.272}
+    _xn: 7
+    _yn: 2
+    _zn: 5
+    _offset: {x: 0.7, y: 0.7, z: 1}
+    _rotate: 0
