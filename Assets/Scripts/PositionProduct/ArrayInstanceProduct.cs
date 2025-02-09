@@ -18,7 +18,7 @@ public class ArrayInstanceProduct : MonoBehaviour
     [SerializeField] private bool _grabOne = false, _putOne = false;
 
     private Stack<Matrix4x4> _matrices, _removed;
-    private Productinfo product;
+    public Productinfo product;
 
     private bool _isInitialized = false;
 
@@ -43,7 +43,7 @@ public class ArrayInstanceProduct : MonoBehaviour
     }
     public void Init(Productinfo productInfo)
     {
-
+        product = productInfo;
         if (productInfo == null) return;
 
         _xn = productInfo._xn;
@@ -105,9 +105,11 @@ public class ArrayInstanceProduct : MonoBehaviour
                     currentOffset.Scale(collider.size);
                     Vector3 position = currentOffset + startPos;
                     _matrices.Push(
-                        Matrix4x4.TRS(position,
-                        _rotate ? Quaternion.Euler(Vector3.up * Random.Range(0, 180)) : Quaternion.identity,
-                        Vector3.one));
+                        Matrix4x4.TRS(position, 
+              _rotate ? transform.rotation * Quaternion.Euler(Vector3.up * Random.Range(0, 180)) 
+                      : transform.rotation,
+              transform.localScale));
+
                 }
             }
         }
@@ -124,8 +126,8 @@ public class ArrayInstanceProduct : MonoBehaviour
     void OnEnable()
     {
 
-        if (!_isInitialized) return; 
-        
+        if (!_isInitialized) return;
+
         while (_grabbedCount > _removed.Count)
         {
             _removed.Push(_matrices.Pop());
@@ -138,10 +140,10 @@ public class ArrayInstanceProduct : MonoBehaviour
     }
 
     void Update()
-    
+
     {
 
-        if (!_isInitialized) return; 
+        if (!_isInitialized) return;
         /////this piece is for debug only////
         if (_grabOne == true)
         {
@@ -154,9 +156,13 @@ public class ArrayInstanceProduct : MonoBehaviour
             _putOne = false;
         }
         /////////////////////////
-
-        Graphics.DrawMeshInstanced(_mesh, 0, _materials[0], _matrices.ToArray());
-        Graphics.DrawMeshInstanced(_mesh, 1, _materials[1], _matrices.ToArray());
+        for (int i = 0; i < _materials.Length; ++i)
+        {
+            if (_materials[i] != null)
+            {
+                Graphics.DrawMeshInstanced(_mesh, i, _materials[i], _matrices.ToArray());
+            }
+        }
     }
 
 }
