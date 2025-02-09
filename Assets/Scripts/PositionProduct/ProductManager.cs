@@ -30,7 +30,7 @@ public class ProductManager : MonoBehaviour
     //[SerializeField] GameObject[] _objectPosition;
     [SerializeField] public PositionClass[] posClass;
 
-    //Tenere traccia degli oggetti istanziati e risorse allocate
+    
     int numberShelve;
     private static ProductManager _instance;
     public static ProductManager Instance
@@ -62,15 +62,15 @@ public class ProductManager : MonoBehaviour
             //prima elimino tutti i vecchi oggetti dalla scena
             for (int i = 0; i < currentProductInfo.Length; i++)
             {
-                Product.Destroy(currentProductInfo[i]);
-                nistance--;
+                Product.Destroy();
+                //nistance--;
 
             }
         }
 
         productInfo = currentProductInfo;
         Array.Copy(currentProductInfo, productInfo, currentProductInfo.Length);
-
+       
 
         /*GameObject[] targetArray = null;
 
@@ -96,17 +96,19 @@ public class ProductManager : MonoBehaviour
         //generare vari prodotti
         for (int i = 0; i < currentProductInfo.Length; i++)
         {
-            
-                Product.Generate(currentProductInfo[i]);
-                nistance++;
-                //Product.GenerateBlock(productInfo.products[i], _objectPosition[i], 1, 1, 1, new Vector3(0,0,0));
-                //GenerateMultipleIstance(productInfo.products[i]);
-                //GenerateMultipleIstance(instance,productInfo.products[i]);
+            Product.Generate(currentProductInfo[i]);
+            nistance++;
+            //Product.GenerateBlock(productInfo.products[i], _objectPosition[i], 1, 1, 1, new Vector3(0,0,0));
+            //GenerateMultipleIstance(productInfo.products[i]);
+            //GenerateMultipleIstance(instance,productInfo.products[i]);
 
         }
 
 
     }
+
+    
+ 
 
     void StoreGameObjectPositionsIntoSO()
     {
@@ -128,12 +130,18 @@ public class ProductManager : MonoBehaviour
             storedPositions = new Vector3[totProdotti];
             /*Itera attraverso l'array di GameObject e memorizza la posizione di ciascuno di essi nell'array storedPositions.*/
             int k = 0;
+            if (productInfo.Length < totProdotti)
+            {
+                Debug.Log("Prodotti terminati!");
+                return;
+            }
             for (int i = 0; i < posClass.Length; i++)
                 for (int j = 0; j < posClass[i]._objectPosition.Length; ++j)
                 {
                     {
                         storedPositions[k] = posClass[i]._objectPosition[j].transform.position;
-                        productInfo[k].LabelPosition=posClass[i].LabelPosition;
+                        productInfo[k].LabelPosition = posClass[i].LabelPosition;
+                        productInfo[k].emptyPos=posClass[i]._objectPosition[j];
                         ++k;
                     }
                 }
@@ -144,6 +152,7 @@ public class ProductManager : MonoBehaviour
             {
                 productInfo[i]._positions = storedPositions[i];
                 
+
             }
 
             /*if (_positions != null)
