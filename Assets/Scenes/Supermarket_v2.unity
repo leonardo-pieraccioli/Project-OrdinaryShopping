@@ -4836,7 +4836,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   productInfo: []
   storedPositions: []
-  _objectPosition: []
+  _objectPosition:
+  - {fileID: 830317007}
+  - {fileID: 977955887}
+  - {fileID: 646159292}
+  - {fileID: 1279821465}
+  - {fileID: 2068713055}
+  - {fileID: 65910737}
+  - {fileID: 211951349}
+  - {fileID: 97385881}
+  - {fileID: 1527255019}
+  - {fileID: 1996731717}
+  - {fileID: 1700734171}
+  - {fileID: 119895441}
+  - {fileID: 1668934605}
+  - {fileID: 970285926}
+  - {fileID: 970285926}
+  - {fileID: 1503097319}
+  - {fileID: 1019313689}
 --- !u!1001 &764269056
 PrefabInstance:
   m_ObjectHideFlags: 0

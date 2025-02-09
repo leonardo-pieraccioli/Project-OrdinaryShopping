@@ -40,7 +40,8 @@ public class ShelfSpawner : MonoBehaviour
                 
                 // Assegna il parent dopo l'instanziazione
                 empty.transform.SetParent(transform, true); // Il "true" mantiene la posizione mondiale
-                empty.name = $"SpawnPoint_{i}_{j}";
+                //empty.name = $"SpawnPoint_{i}_{j}";
+                empty.name = gameObject.name+$"_{i}_{j}";
             }
         }
 

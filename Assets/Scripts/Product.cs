@@ -13,7 +13,7 @@ public class Productinfo
     public float price; // Prezzo del prodotto
     //public string description; // Descrizione del prodotto
     public GameObject prefabs; //prefab prodotto
-
+    public String LabelPosition;
 /*
     public Boolean poco;
     public Boolean tanto;
@@ -36,13 +36,14 @@ public class Productinfo
 public class Product: MonoBehaviour{
 
     // DEFINISCO LE FUNZIONI QUI
-    static public void Generate(Productinfo product, GameObject gameObjectrefer)
+    static public void Generate(Productinfo product/* , GameObject gameObjectrefer */)
     {
             if(product.prefabs==null){
                 Debug.LogError("Prefab non assegnati nell'Inspector!");
                 return;
             }
-            GameObject instance  = Instantiate(product.prefabs,product._positions,product.prefabs.transform.rotation,gameObjectrefer.transform);
+            
+            GameObject instance  = Instantiate(product.prefabs,product._positions,product.prefabs.transform.rotation);
             //GameObject currentEntity = Instantiate(product.prefabs, product.prefabs.transform,true);
             //currentEntity.transform.SetLocalPositionAndRotation(product._positions,product.prefabs.transform.rotation);
 
