@@ -30,7 +30,7 @@ public class GroceriesList : MonoBehaviour
     [SerializeField] TMP_Text _textComponent;
     private List<ListElement> _groceriesList;
 
-    void Start()
+    void Awake()
     {
         _groceriesList = new List<ListElement>();
         Debug.Assert(_textComponent != null, "Unable to find text component in GroceriesList");
