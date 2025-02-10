@@ -48,7 +48,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AmbientEnvironmentMultiplier: 1
-    - _Brightness: 4
+    - _Brightness: 3.84
     - _Contrast: 1.019
     - _EdgeDistanceAttenuation: 0.706
     - _EdgeRim: 0.263
@@ -60,7 +60,7 @@ Material:
     - _RimThreshold: 0.01
     - _SHADOWBRIGHTTYPE: 0
     - _Saturation: 1
-    - _Shadow_Steps: 2
+    - _Shadow_Steps: 1.1
     - _Smoothness: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}

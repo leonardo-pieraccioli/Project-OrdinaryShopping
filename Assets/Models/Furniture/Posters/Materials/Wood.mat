@@ -26,7 +26,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 194ecbfcf7282074da675edf545b480d, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SmoothnessMap:
@@ -50,9 +50,9 @@ Material:
     - _AmbientEnvironmentMultiplier: 1
     - _Brightness: 2.21
     - _Contrast: 1.019
-    - _EdgeDistanceAttenuation: 0.706
-    - _EdgeRim: 0.263
-    - _EdgeSpecular: 0.331
+    - _EdgeDistanceAttenuation: 0
+    - _EdgeRim: 0
+    - _EdgeSpecular: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RimAmount: 0
@@ -60,10 +60,10 @@ Material:
     - _RimThreshold: 0.01
     - _SHADOWBRIGHTTYPE: 0
     - _Saturation: 1
-    - _Shadow_Steps: 3.3
+    - _Shadow_Steps: 3.74
     - _Smoothness: 0
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 0.54070085, g: 0.9622642, b: 0, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &3982348512348924458
 MonoBehaviour:
