@@ -20,7 +20,7 @@ public class ChangeDayCollision : MonoBehaviour
         if (other.CompareTag("Player"))
         {
 
-            if (DayManager.Instance.currentDay.dayNumber < 2)
+            if (DayManager.Instance.currentDay.dayNumber < 9)
             {
                 // Chiama la funzione desiderata sull'oggetto che contiene questo script
                 DayManager.Instance.LoadDayData(DayManager.Instance.currentDay.dayNumber + 1);
