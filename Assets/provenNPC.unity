@@ -122,7 +122,214 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &3670397145561431384
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2520019941357315026, guid: 1c5b444dfd6926949be031b4a1499bda,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0964019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520019941357315026, guid: 1c5b444dfd6926949be031b4a1499bda,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520019941357315026, guid: 1c5b444dfd6926949be031b4a1499bda,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.04814148
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520019941357315026, guid: 1c5b444dfd6926949be031b4a1499bda,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520019941357315026, guid: 1c5b444dfd6926949be031b4a1499bda,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520019941357315026, guid: 1c5b444dfd6926949be031b4a1499bda,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520019941357315026, guid: 1c5b444dfd6926949be031b4a1499bda,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520019941357315026, guid: 1c5b444dfd6926949be031b4a1499bda,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520019941357315026, guid: 1c5b444dfd6926949be031b4a1499bda,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520019941357315026, guid: 1c5b444dfd6926949be031b4a1499bda,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004807380366047592, guid: 1c5b444dfd6926949be031b4a1499bda,
+        type: 3}
+      propertyPath: m_Name
+      value: Standing (cassiera con skin)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1c5b444dfd6926949be031b4a1499bda, type: 3}
+--- !u!1001 &6535867665118900288
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7172374840568885051, guid: 82663ca39bef1c54fa7013e4c19b3444,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5469155
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172374840568885051, guid: 82663ca39bef1c54fa7013e4c19b3444,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172374840568885051, guid: 82663ca39bef1c54fa7013e4c19b3444,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.28605855
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172374840568885051, guid: 82663ca39bef1c54fa7013e4c19b3444,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172374840568885051, guid: 82663ca39bef1c54fa7013e4c19b3444,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172374840568885051, guid: 82663ca39bef1c54fa7013e4c19b3444,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172374840568885051, guid: 82663ca39bef1c54fa7013e4c19b3444,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172374840568885051, guid: 82663ca39bef1c54fa7013e4c19b3444,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172374840568885051, guid: 82663ca39bef1c54fa7013e4c19b3444,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7172374840568885051, guid: 82663ca39bef1c54fa7013e4c19b3444,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548794139018458497, guid: 82663ca39bef1c54fa7013e4c19b3444,
+        type: 3}
+      propertyPath: m_Name
+      value: Standing (Jacob con skin)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 82663ca39bef1c54fa7013e4c19b3444, type: 3}
+--- !u!1001 &9083649747097639751
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8488012492552826011, guid: eae20781fb124ab41a54eecaf0400902,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488012492552826011, guid: eae20781fb124ab41a54eecaf0400902,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488012492552826011, guid: eae20781fb124ab41a54eecaf0400902,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488012492552826011, guid: eae20781fb124ab41a54eecaf0400902,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488012492552826011, guid: eae20781fb124ab41a54eecaf0400902,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488012492552826011, guid: eae20781fb124ab41a54eecaf0400902,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488012492552826011, guid: eae20781fb124ab41a54eecaf0400902,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488012492552826011, guid: eae20781fb124ab41a54eecaf0400902,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488012492552826011, guid: eae20781fb124ab41a54eecaf0400902,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8488012492552826011, guid: eae20781fb124ab41a54eecaf0400902,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115473453460239905, guid: eae20781fb124ab41a54eecaf0400902,
+        type: 3}
+      propertyPath: m_Name
+      value: Standing (Nelly con skin)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eae20781fb124ab41a54eecaf0400902, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
-  m_Roots: []
+  m_Roots:
+  - {fileID: 9083649747097639751}
+  - {fileID: 3670397145561431384}
+  - {fileID: 6535867665118900288}
