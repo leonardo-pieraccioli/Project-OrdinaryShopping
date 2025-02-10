@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5ee29e6e4c0234fa06cc11ecadfaf1, type: 3}
   m_Name: LightDay1
   m_EditorClassIdentifier: 
-  lightColor: {r: 0.4641509, g: 0.45147434, b: 0.4054752, a: 0}
+  lightColor: {r: 0.9245283, g: 0.9137131, b: 0.87045217, a: 0}
   intensity: 1
   flickeringSettings:
-    enableFlickering: 1
+    enableFlickering: 0
     flickeringInterval: 0.09
     flickeringDuration: 1
     maxFlickeringIntensity: 2
@@ -23,3 +23,6 @@ MonoBehaviour:
     minExplosionInterval: 3
     maxExplosionInterval: 10
   StopMusic: 1
+  background:
+  - {fileID: 8300000, guid: 132b77d77e83a3747bace450ba46a440, type: 3}
+  - {fileID: 8300000, guid: f7c279b433cae494bb471eedaabb227d, type: 3}

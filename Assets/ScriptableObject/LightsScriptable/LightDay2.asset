@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5ee29e6e4c0234fa06cc11ecadfaf1, type: 3}
   m_Name: LightDay2
   m_EditorClassIdentifier: 
-  lightColor: {r: 0.2830189, g: 0.255785, b: 0.255785, a: 0}
-  intensity: 0
+  lightColor: {r: 1, g: 1, b: 0.92941177, a: 0}
+  intensity: 4
   flickeringSettings:
     enableFlickering: 1
     flickeringInterval: 0.09
@@ -23,3 +23,6 @@ MonoBehaviour:
     minExplosionInterval: 10
     maxExplosionInterval: 40
   StopMusic: 1
+  background:
+  - {fileID: 8300000, guid: 132b77d77e83a3747bace450ba46a440, type: 3}
+  - {fileID: 8300000, guid: f7c279b433cae494bb471eedaabb227d, type: 3}

@@ -12,7 +12,7 @@ public class LightManager : MonoBehaviour
     
 
     [Header("---Music Clips---")]
-    public AudioClip[] background;
+    //public AudioClip[] background;
     public AudioClip explosionSound; // Suono dell'esplosione
     public AudioClip flickeringSound; // Suono del flickering
 
@@ -33,8 +33,6 @@ public class LightManager : MonoBehaviour
     Menu = 2
     
 }
-
-
 
 
     private LightDayInfo dayLightSetting;
@@ -101,54 +99,19 @@ public class LightManager : MonoBehaviour
 
     public void PlayBackgroundMusic()
 {
-    if (musicSource != null && supermarketMusicSource != null && background.Length > 1)
+    if (musicSource != null && supermarketMusicSource != null && dayLightSetting.background.Length > 1)
     {
         // Imposta la prima musica
-        musicSource.clip = background[BackgroundMusicType.Background.GetHashCode()];
+        musicSource.clip = dayLightSetting.background[BackgroundMusicType.Background.GetHashCode()];
         musicSource.loop = true;
         musicSource.Play();
 
         // Imposta la seconda musica
-        supermarketMusicSource.clip = background[BackgroundMusicType.SupermarketBack.GetHashCode()];
+        supermarketMusicSource.clip = dayLightSetting.background[BackgroundMusicType.SupermarketBack.GetHashCode()];
         supermarketMusicSource.loop = true;
         supermarketMusicSource.Play();
     }
 }
-
-
-    
-
-    /// <summary>
-    /// Cambia le impostazioni della luce in base all'indice del giorno.
-    /// </summary>
-    /// <param name="dayIndex">Indice del giorno</param>
-    /*public void ApplyLightSettings()
-    {
-        // Imposta colore e intensità della luce
-
-        foreach (Light light in sceneLights)
-        {
-            if (light != null)
-            {
-                light.intensity = dayLightSetting.intensity;
-                light.color = dayLightSetting.lightColor;
-            }
-        }
-
-        // Gestisce l'effetto di flickering
-        if (dayLightSetting.flickeringSettings != null && dayLightSetting.flickeringSettings.enableFlickering)
-        {
-            if (flickeringCoroutine != null)
-                StopCoroutine(flickeringCoroutine);
-
-            flickeringCoroutine = StartCoroutine(FlickerLight(dayLightSetting.flickeringSettings));
-        }
-        else if (flickeringCoroutine != null)
-        {
-            StopCoroutine(flickeringCoroutine);
-            flickeringCoroutine = null;
-        }
-    }*/
 
 
 
@@ -163,29 +126,6 @@ public class LightManager : MonoBehaviour
             }
         }
     }
-
-    /// <summary>
-    /// Coroutine per l'effetto flickering.
-    /// </summary>
-    /// <param name="settings">Configurazioni del flickering</param>
-    /// <returns></returns>
-    /*private IEnumerator FlickerLight(LightDayInfo.LightFlickeringSettings settings)
-    {
-        while (true)
-        {
-            foreach (Light light in sceneLights)
-            {
-                // Riduce l'intensità a 0 per simulare il flicker
-                light.enabled = false;
-                yield return new WaitForSeconds(settings.flickeringDuration);
-
-                 // Ripristina l'intensità
-                light.enabled = true;
-                yield return new WaitForSeconds(settings.flickeringInterval);
-            }
-            
-        }
-    }*/
 
      private IEnumerator ExplosionCycle()
     {
