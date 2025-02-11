@@ -126,15 +126,24 @@ public class ArrayInstanceProduct : MonoBehaviour
         collider.size=product.sizeCollider;
         collider.center=product.centerCollider;
         //new collider to match the stock size
-        BoxCollider newCollider = gameObject.AddComponent<BoxCollider>();
-        if (product.prefabs.transform.rotation.eulerAngles != Vector3.zero)
-        {
-            newCollider.transform.rotation=collider.transform.rotation;
-        }
-        newCollider.center += Vector3.Scale(collider.size, new Vector3(_xn, _yn, _zn) / 2) - collider.size / 2;
-        newCollider.size = Vector3.Scale(collider.size, new Vector3(_xn, _yn, _zn));
-        
-        
+      // Calcola il nuovo centro e la nuova dimensione includendo l'offset
+Vector3 newCenter = Vector3.Scale(
+    collider.size, 
+    new Vector3((_xn - 1) * _offset.x, (_yn - 1) * _offset.y, (_zn - 1) * _offset.z)
+) * 0.5f;
+
+Vector3 newSize = Vector3.Scale(
+    collider.size, 
+    new Vector3(1 + (_xn - 1) * _offset.x, 1 + (_yn - 1) * _offset.y, 1 + (_zn - 1) * _offset.z)
+);
+
+// Allinea il centro Y in modo che sia a metà dell'altezza complessiva del collider
+newCenter.y = newSize.y * 0.5f;
+
+BoxCollider newCollider = gameObject.AddComponent<BoxCollider>();
+newCollider.center = newCenter;
+newCollider.size = newSize;
+
      
         collider.enabled = false;
         //reverse the stack order
