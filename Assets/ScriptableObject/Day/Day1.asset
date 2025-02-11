@@ -17,5 +17,7 @@ MonoBehaviour:
   productInfo: {fileID: 11400000, guid: da76a52ba31f71740aa922c834a15e2c, type: 2}
   light: {fileID: 11400000, guid: f11dcdc9f3d42804c9ac503b58ac6a9b, type: 2}
   npc:
-  - {fileID: 11400000, guid: 5af4042842d1db34d94eacc3c1a9b467, type: 2}
-  - {fileID: 11400000, guid: d23d10502edefe049ab6c8303bdaffae, type: 2}
+  - {fileID: 11400000, guid: bc4725a3f90a4bf4bb1e1d679bb7ac68, type: 2}
+  - {fileID: 11400000, guid: 937be193e39e4a44cb0bddb361ec4ba5, type: 2}
+  - {fileID: 11400000, guid: c7d33dcbc07eb1e4b9ce97789320fdbf, type: 2}
+  - {fileID: 11400000, guid: 45f112bafe8e2634fa8d59df624156d2, type: 2}

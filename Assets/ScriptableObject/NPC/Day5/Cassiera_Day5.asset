@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f0bcb5e2848b6c439f94991cefa2924, type: 3}
-  m_Name: NPC1_Day1(Mark)
+  m_Name: Cassiera_Day5
   m_EditorClassIdentifier: 
-  prefab: {fileID: 919132149155446097, guid: 9b58afe5ff8c87846afa87355c8d9c20, type: 3}
-  position: 0
-  dialogues:
-  - Finally, here you are, I have been looking for you for an hour
+  prefab: {fileID: 4853459816441512934, guid: eb13820d95216964a8b2d06508706746, type: 3}
+  position: 3
+  npcName: Cassiera
+  dialogues: []
   animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}

@@ -19,6 +19,7 @@ public class NPCDayInfo : ScriptableObject
 {
     public GameObject prefab;
     public NPCPosition position;
+    public string npcName;
     public string[] dialogues;
     public RuntimeAnimatorController animatorController;
 }

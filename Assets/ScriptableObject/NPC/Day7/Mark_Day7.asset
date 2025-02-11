@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f0bcb5e2848b6c439f94991cefa2924, type: 3}
-  m_Name: NPC4_Day1(Jacob)
+  m_Name: Mark_Day7
   m_EditorClassIdentifier: 
-  prefab: {fileID: 919132149155446097, guid: 143698464cd90034184943c9146fbaf1, type: 3}
-  position: 3
+  prefab: {fileID: 4853459816441512934, guid: eb13820d95216964a8b2d06508706746, type: 3}
+  position: 1
+  npcName: Mark
   dialogues:
-  - yuuuuelaaawa
+  - "Its empty\u2026"
   animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}

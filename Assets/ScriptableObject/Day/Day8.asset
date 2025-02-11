@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 506aed4b5b29a8240a387d8da5b91f24, type: 3}
+  m_Name: Day8
+  m_EditorClassIdentifier: 
+  dayNumber: 8
+  budget: 10
+  productInfo: {fileID: 11400000, guid: f853c2102f5fc3448939f49247eba484, type: 2}
+  light: {fileID: 11400000, guid: f11dcdc9f3d42804c9ac503b58ac6a9b, type: 2}
+  npc:
+  - {fileID: 11400000, guid: c9e1bddd4abb0b24f9cdc1c65acb3092, type: 2}
+  - {fileID: 11400000, guid: 86560d3e6d0fe9e42b63dc97427b1415, type: 2}

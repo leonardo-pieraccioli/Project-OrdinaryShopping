@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f0bcb5e2848b6c439f94991cefa2924, type: 3}
-  m_Name: NPC3_Day1(Nelly)
+  m_Name: Bimba_Day3
   m_EditorClassIdentifier: 
-  prefab: {fileID: 919132149155446097, guid: b667ac043934b58438042a4c50444a1b, type: 3}
-  position: 2
-  dialogues:
-  - 
+  prefab: {fileID: 4853459816441512934, guid: eb13820d95216964a8b2d06508706746, type: 3}
+  position: 5
+  npcName: Carol
+  dialogues: []
   animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}

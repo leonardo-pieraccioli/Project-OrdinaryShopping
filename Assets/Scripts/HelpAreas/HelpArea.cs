@@ -25,6 +25,7 @@ public class HelpArea : MonoBehaviour
     {
         DialogueManager.Instance.WriteHelpMessage(string.Empty);
         CanvasManager.Instance.DeactivateCanvas(CanvasCode.CNV_HELPBOX);
+        Destroy(gameObject);
     }
 
 }
