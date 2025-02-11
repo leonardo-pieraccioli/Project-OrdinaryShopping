@@ -190,6 +190,85 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c5b444dfd6926949be031b4a1499bda, type: 3}
+--- !u!1001 &5615855918198750532
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 76928517319661572, guid: 9292267cb5662e84f9cc1e59015d1a86,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.2373037
+      objectReference: {fileID: 0}
+    - target: {fileID: 76928517319661572, guid: 9292267cb5662e84f9cc1e59015d1a86,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 76928517319661572, guid: 9292267cb5662e84f9cc1e59015d1a86,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5492382
+      objectReference: {fileID: 0}
+    - target: {fileID: 76928517319661572, guid: 9292267cb5662e84f9cc1e59015d1a86,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 76928517319661572, guid: 9292267cb5662e84f9cc1e59015d1a86,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 76928517319661572, guid: 9292267cb5662e84f9cc1e59015d1a86,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 76928517319661572, guid: 9292267cb5662e84f9cc1e59015d1a86,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 76928517319661572, guid: 9292267cb5662e84f9cc1e59015d1a86,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 76928517319661572, guid: 9292267cb5662e84f9cc1e59015d1a86,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 76928517319661572, guid: 9292267cb5662e84f9cc1e59015d1a86,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 746083204236034750, guid: 9292267cb5662e84f9cc1e59015d1a86,
+        type: 3}
+      propertyPath: m_Name
+      value: Standing (Ezra)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336954730523279998, guid: 9292267cb5662e84f9cc1e59015d1a86,
+        type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+        'mixamorig:LeftLeg'\n\tTransform 'mixamorig:LeftShoulder'\n\tTransform 'mixamorig:RightFoot'\n\tTransform
+        'mixamorig:Head'\n\tTransform 'mixamorig:LeftUpLeg'\n\tand more ...\n\tFrom
+        animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9292267cb5662e84f9cc1e59015d1a86, type: 3}
 --- !u!1001 &6535867665118900288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -266,6 +345,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2534214561432450785, guid: eae20781fb124ab41a54eecaf0400902,
+        type: 3}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8488012492552826011, guid: eae20781fb124ab41a54eecaf0400902,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -333,3 +417,4 @@ SceneRoots:
   - {fileID: 9083649747097639751}
   - {fileID: 3670397145561431384}
   - {fileID: 6535867665118900288}
+  - {fileID: 5615855918198750532}
