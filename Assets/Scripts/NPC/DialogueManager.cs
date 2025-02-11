@@ -93,8 +93,10 @@ public class DialogueManager : MonoBehaviour
 
     [Tooltip("The text box where the dialogue is displayed")]
     [SerializeField] private TextMeshProUGUI dialogueBox;
+    [Tooltip("The NPC name box")]
+    [SerializeField] private TextMeshProUGUI npcNameBox;
 
-    [Tooltip("The speed at which the text is displayed")]
+    [Tooltip("The seconds each letters wait for the next one")]
     [SerializeField] private float textSpeed = .05f;
 
     public bool isDialogueHappening = false;
@@ -103,11 +105,11 @@ public class DialogueManager : MonoBehaviour
     private string[] dialogue;
     private Action endOfDialogueCallback;
     private Coroutine activeCoroutine;
-    public void StartDialogue(string[] dialogue, Action callback)
+    public void StartDialogue(string[] dialogue, string npcName, Action callback)
     {
         this.dialogue = dialogue;
         this.endOfDialogueCallback = callback;
-
+        npcNameBox.text = npcName;
         CanvasManager.Instance.DeactivateAllCanvasBut(CanvasCode.CNV_DIALOGUE);
         playerController.LockMovement(true);
         isDialogueHappening = true;
