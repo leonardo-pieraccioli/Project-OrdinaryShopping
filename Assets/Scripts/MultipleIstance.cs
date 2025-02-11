@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -78,23 +79,24 @@ public class ArrayInstances : MonoBehaviour
                 for (int j = _yn - 1; j >= 0; j--)
                 {
                     //skip grabbed objects
-                    Vector3 currentOffset = _offset;
-                    currentOffset.Scale(new Vector3(i,j,k));
-                    Vector3 scaledCollider = Vector3.Scale(collider.size, transform.localScale);
-                    currentOffset.Scale(scaledCollider);
-                    Vector3 position =  currentOffset + startPos;
+                    Vector3 currentOffset = Vector3.Scale(new Vector3(i,j,k), _offset);
+                    currentOffset.Scale(collider.bounds.size);   //old -->>>> Vector3.Scale(collider.bounds.size, transform.localScale));
+                    Vector3 position = currentOffset + startPos;
                     _matrices.Push( 
                         Matrix4x4.TRS(position, 
-                        _rotate? Quaternion.Euler(Vector3.up * Random.Range(0, 180)) : Quaternion.identity, 
-                        transform.localScale));
+                        _rotate? Quaternion.AngleAxis(Random.Range(0, 180), Vector3.up) * transform.rotation : transform.rotation, 
+                        transform.localScale)
+                    );
                 }
            }
         }
 
         //new collider to match the stock size
         BoxCollider newCollider = gameObject.AddComponent<BoxCollider>();
-        newCollider.center += Vector3.Scale(collider.size, new Vector3(_xn, _yn, _zn)/2) - collider.size /2;
-        newCollider.size = Vector3.Scale(collider.size, new Vector3(_xn, _yn, _zn));
+        Vector3 copyNumb = transform.TransformDirection(new Vector3(_xn, _yn, _zn));
+        newCollider.center += Vector3.Scale(collider.center, copyNumb/2) - collider.size /2;
+        Vector3 tmp = Vector3.Scale(collider.size, copyNumb);
+        newCollider.size = new Vector3(Mathf.Abs(tmp.x), Mathf.Abs(tmp.y), Mathf.Abs(tmp.z));
         collider.enabled = false;
         //reverse the stack order
         _matrices = new Stack<Matrix4x4>(_matrices);  

@@ -107,11 +107,11 @@ MonoBehaviour:
     price: 10
     description: 
     isInShoppingList: 0
-    prefabs: {fileID: 3439905404973497030, guid: e29b35be65b95d841b5f4b87a6720478,
+    prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
     LabelPosition: ShelfW1sotto_1_2
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0, y: 0, z: 0}
+    _dimensions: {x: 0.3299659, y: 0.15349625, z: 0.32996598}
     _positions: {x: 5.0650005, y: 0.804, z: 3.272}
     _xn: 3
     _yn: 2
