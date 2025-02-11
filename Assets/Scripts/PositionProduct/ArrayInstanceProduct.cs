@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 
 [RequireComponent(typeof(BoxCollider))]
@@ -64,11 +65,20 @@ public class ArrayInstanceProduct : MonoBehaviour
     public void InitializeArr()
     {
         //get collider to get gameobject dimension
+       
+ 
         BoxCollider collider = GetComponent<BoxCollider>();
         if (collider == null)
         {
             Debug.Log($"collider not found in gameobject {gameObject.name}");
         }
+         product.sizeCollider=collider.size;
+        product.centerCollider=collider.center;
+        
+    
+        // Imposta la dimensione e la posizione del collider
+        collider.center = Vector3.zero; // Impostato su zero per default
+        collider.size = product.prefabs.GetComponent<Renderer>().bounds.size;
         //get mesh renderer for materials
         _mesh = GetComponent<MeshFilter>().mesh;
         if (_mesh == null)
@@ -113,7 +123,8 @@ public class ArrayInstanceProduct : MonoBehaviour
                 }
             }
         }
-
+        collider.size=product.sizeCollider;
+        collider.center=product.centerCollider;
         //new collider to match the stock size
         BoxCollider newCollider = gameObject.AddComponent<BoxCollider>();
         if (product.prefabs.transform.rotation.eulerAngles != Vector3.zero)

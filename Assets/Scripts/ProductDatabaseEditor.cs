@@ -8,7 +8,6 @@ public class ProductInfoEditor : Editor
 {
     private string searchQuery = ""; // Campo per la barra di ricerca
     private string searchLabel = ""; // Campo per la ricerca per label
-    private List<Productinfo> filteredList = new List<Productinfo>();
     private SerializedProperty productsProperty;
 
     private void OnEnable()
@@ -24,8 +23,8 @@ public class ProductInfoEditor : Editor
 
         // Barra di ricerca
         EditorGUILayout.LabelField("Search", EditorStyles.boldLabel);
-        searchQuery = EditorGUILayout.TextField("Filter by name:", searchQuery);
-        searchLabel = EditorGUILayout.TextField("Filter by label position:", searchLabel);
+        searchQuery = EditorGUILayout.TextField("Filter by name:", searchQuery).ToLower();
+        searchLabel = EditorGUILayout.TextField("Filter by label position:", searchLabel).ToLower();
 
         // Pulsante per aggiungere un nuovo prodotto
         if (GUILayout.Button("Add Product"))
@@ -34,24 +33,16 @@ public class ProductInfoEditor : Editor
             EditorUtility.SetDirty(productDatabase);
         }
 
-        // Filtra la lista basandosi sulla ricerca
-        if (!string.IsNullOrEmpty(searchQuery) || !string.IsNullOrEmpty(searchLabel))
-        {
-            filteredList = productDatabase.products
-                .Where(p => (string.IsNullOrEmpty(searchQuery) || (p.productName != null && p.productName.ToLower().Contains(searchQuery.ToLower()))) &&
-                            (string.IsNullOrEmpty(searchLabel) || (p.LabelPosition != null && p.LabelPosition.ToLower().Contains(searchLabel.ToLower()))))
-                .ToList();
-        }
-        else
-        {
-            filteredList = productDatabase.products.ToList(); // Mostra tutti se non c'è ricerca
-        }
-
         // Mostra la lista filtrata
         EditorGUILayout.Space();
         EditorGUILayout.LabelField("Products", EditorStyles.boldLabel);
 
-        if (filteredList.Count == 0)
+        var filteredList = productDatabase.products
+            .Where(p => (string.IsNullOrEmpty(searchQuery) || (p.productName != null && p.productName.ToLower().Contains(searchQuery))) &&
+                        (string.IsNullOrEmpty(searchLabel) || (p.LabelPosition != null && p.LabelPosition.ToLower().Contains(searchLabel))))
+            .ToArray();
+
+        if (filteredList.Length == 0)
         {
             EditorGUILayout.HelpBox("No products found", MessageType.Info);
         }
@@ -59,6 +50,9 @@ public class ProductInfoEditor : Editor
         {
             for (int i = 0; i < productDatabase.products.Length; i++)
             {
+                if (!filteredList.Contains(productDatabase.products[i]))
+                    continue;
+                
                 EditorGUILayout.BeginVertical("box");
                 productDatabase.products[i].LabelPosition = EditorGUILayout.TextField("Label Position:", productDatabase.products[i].LabelPosition);
                 productDatabase.products[i].productName = EditorGUILayout.TextField("Name:", productDatabase.products[i].productName);
@@ -74,7 +68,9 @@ public class ProductInfoEditor : Editor
                 productDatabase.products[i]._zn = EditorGUILayout.IntField("Z Count:", productDatabase.products[i]._zn);
                 productDatabase.products[i]._offset = EditorGUILayout.Vector3Field("Offset:", productDatabase.products[i]._offset);
                 productDatabase.products[i]._rotate = EditorGUILayout.Toggle("Rotate:", productDatabase.products[i]._rotate);
+                productDatabase.products[i].sizeCollider = EditorGUILayout.Vector3Field("ColliderSize:", productDatabase.products[i].sizeCollider);
                 
+                productDatabase.products[i].centerCollider = EditorGUILayout.Vector3Field("ColliderCenter:", productDatabase.products[i].centerCollider);
                 if (GUILayout.Button("Remove Product"))
                 {
                     ArrayUtility.RemoveAt(ref productDatabase.products, i);
