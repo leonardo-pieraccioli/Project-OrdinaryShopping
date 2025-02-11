@@ -55,7 +55,11 @@ public class GroceriesList : MonoBehaviour
     public void CheckProductFromList(string productName)
     {
         StringBuilder listSB = new StringBuilder();
-        _groceriesList.Find(e => e.name == productName).isTaken = true;
+        ListElement product = _groceriesList.Find(e => e.name == productName);
+        if (product != null)
+            product.isTaken = true;
+        else
+            return;
         foreach(ListElement e in _groceriesList)
         {
             if (e.isTaken)
@@ -64,6 +68,16 @@ public class GroceriesList : MonoBehaviour
                 listSB.Append("- " + e.name + "\n");
         }
         _textComponent.text = listSB.ToString();
+    }
+
+    public bool IsAtLeastOneProductChecked()
+    {
+        foreach(ListElement e in _groceriesList)
+        {
+            if (e.isTaken)
+                return true;
+        }
+        return false;
     }
 
 }
