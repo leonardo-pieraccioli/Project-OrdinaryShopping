@@ -25,6 +25,7 @@ public class InteractableNPC : MonoBehaviour, IInteractable
     public void Interact(PlayerInteractor interactor)
     {
         if (DialogueManager.Instance.isDialogueHappening) return;
+        if (dialogue.Length == 0) return;
         animator.SetBool("isTalking", true);
         DialogueManager.Instance.StartDialogue(dialogue, TransitionToIdle);
     }
