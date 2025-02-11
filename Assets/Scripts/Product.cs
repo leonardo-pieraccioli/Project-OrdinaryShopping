@@ -10,12 +10,13 @@ using UnityEngine.InputSystem.LowLevel;
 [System.Serializable]
 public class Productinfo
 {
+    public String LabelPosition;
     public string productName; // Nome del prodotto
     public float price; // Prezzo del prodotto
     public string description; // Descrizione del prodotto
     public bool isInShoppingList;
     public GameObject prefabs; //prefab prodotto
-    public String LabelPosition;
+    
     public GameObject emptyPos;
 /*
     public Boolean poco;
@@ -51,11 +52,13 @@ public class Product: MonoBehaviour{
             }
             
             GameObject instance  = Instantiate(product.prefabs,product._positions,product.prefabs.transform.rotation);
+            instance.transform.SetPositionAndRotation(product._positions,product.prefabs.transform.rotation);
+            instance.transform.localScale=product.prefabs.transform.localScale;
             instance.transform.SetParent(product.emptyPos.transform);
             //GameObject currentEntity = Instantiate(product.prefabs, product.prefabs.transform,true);
             //currentEntity.transform.SetLocalPositionAndRotation(product._positions,product.prefabs.transform.rotation);
 
-            Vector3 prefabDimensions = GetPrefabDimensions(instance);
+            Vector3 prefabDimensions = instance.transform.localScale;
             product._dimensions=prefabDimensions;
             //nome prodotto creato
             instance.name=product.productName;

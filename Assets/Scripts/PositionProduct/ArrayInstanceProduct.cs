@@ -116,8 +116,15 @@ public class ArrayInstanceProduct : MonoBehaviour
 
         //new collider to match the stock size
         BoxCollider newCollider = gameObject.AddComponent<BoxCollider>();
+        if (product.prefabs.transform.rotation.eulerAngles != Vector3.zero)
+        {
+            newCollider.transform.rotation=collider.transform.rotation;
+        }
         newCollider.center += Vector3.Scale(collider.size, new Vector3(_xn, _yn, _zn) / 2) - collider.size / 2;
         newCollider.size = Vector3.Scale(collider.size, new Vector3(_xn, _yn, _zn));
+        
+        
+     
         collider.enabled = false;
         //reverse the stack order
         _matrices = new Stack<Matrix4x4>(_matrices);
