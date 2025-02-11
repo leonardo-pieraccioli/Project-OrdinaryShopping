@@ -5,9 +5,9 @@ using UnityEngine.Assertions;
 public class InspectableProduct : MonoBehaviour, IInteractable
 {
     [Tooltip("The distance from the camera at which the object is put when it is inspected")]
-    [SerializeField] static private float inspectDistance = 1f;
+    [SerializeField] static private float inspectDistance = .6f;
 
-    private ArrayInstanceProduct instanceProduct;
+    public ArrayInstanceProduct instanceProduct;
     private MeshRenderer meshRenderer;
     private Vector3 originalPosition;
     static private Transform cameraTransform;
