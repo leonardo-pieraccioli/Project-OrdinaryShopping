@@ -48,22 +48,22 @@ Material:
     m_Ints: []
     m_Floats:
     - _AmbientEnvironmentMultiplier: 1
-    - _Brightness: 0.72
-    - _Contrast: 1.019
-    - _EdgeDistanceAttenuation: 0.706
-    - _EdgeRim: 0.263
-    - _EdgeSpecular: 0.331
+    - _Brightness: 3.54
+    - _Contrast: 0.986
+    - _EdgeDistanceAttenuation: 0.75
+    - _EdgeRim: 0.275
+    - _EdgeSpecular: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RimAmount: 0
-    - _RimStrength: 0
-    - _RimThreshold: 0.01
+    - _RimAmount: 0.381
+    - _RimStrength: 0.062
+    - _RimThreshold: 0.136
     - _SHADOWBRIGHTTYPE: 0
     - _Saturation: 1
     - _Shadow_Steps: 3.3
-    - _Smoothness: 0
+    - _Smoothness: 1
     m_Colors:
-    - _BaseColor: {r: 0.1768868, g: 0.3799313, b: 0.7075472, a: 1}
+    - _BaseColor: {r: 0.9098039, g: 0.41568628, b: 0.76204497, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &3982348512348924458
 MonoBehaviour:

@@ -16,5 +16,6 @@ MonoBehaviour:
   position: 2
   npcName: Nelly
   dialogues:
-  - How can I afford powdered milk at these prices? What am I going to feed my baby?
+  - How can I afford eyedrops at these prices? How am I supposed to take care of
+    my baby?
   animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}

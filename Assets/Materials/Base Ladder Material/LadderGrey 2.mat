@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LadderGrey 1
+  m_Name: LadderGrey 2
   m_Shader: {fileID: -6465566751694194690, guid: d0508fb690c08b049845b7190b25d007,
     type: 3}
   m_Parent: {fileID: 0}
@@ -48,7 +48,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AmbientEnvironmentMultiplier: 0.297
-    - _Brightness: 2.03
+    - _Brightness: 2.74
     - _Contrast: 1.074
     - _EdgeDistanceAttenuation: 0.31
     - _EdgeRim: 0.394
@@ -63,7 +63,7 @@ Material:
     - _Shadow_Steps: 5.7
     - _Smoothness: 1
     m_Colors:
-    - _BaseColor: {r: 0.5292061, g: 0.58373284, b: 0.8792453, a: 1}
+    - _BaseColor: {r: 0.25910288, g: 0.6695708, b: 0.90943396, a: 1}
     - _Main_Light_Position: {r: 0.4, g: 0, b: -0.16, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &3982348512348924458
