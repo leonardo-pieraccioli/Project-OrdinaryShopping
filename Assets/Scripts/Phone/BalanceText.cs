@@ -15,7 +15,8 @@ public class BalanceText : MonoBehaviour
         }
     }    
     [SerializeField] TMP_Text _textComponent;
-    private float balance;
+    public float balance;
+    public const float MINIMUM_BALANCE_EXIT = 5;
 
     public void SetBalance(float newBalance)
     {
