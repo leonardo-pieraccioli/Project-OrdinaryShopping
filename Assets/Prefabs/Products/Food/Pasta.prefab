@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &228361953436628350
+--- !u!1001 &8975365864643934397
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -26,17 +26,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: abf73c911f1b37c44b3eec101497aa2f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.358
+      value: 7.4056487
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: abf73c911f1b37c44b3eec101497aa2f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.80231
+      value: 0.245
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: abf73c911f1b37c44b3eec101497aa2f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.772
+      value: 3.595
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: abf73c911f1b37c44b3eec101497aa2f,
         type: 3}
@@ -81,7 +81,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: abf73c911f1b37c44b3eec101497aa2f,
         type: 3}
       propertyPath: m_Name
-      value: Pasta
+      value: Pasta 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

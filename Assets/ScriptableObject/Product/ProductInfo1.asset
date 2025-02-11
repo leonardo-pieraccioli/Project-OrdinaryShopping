@@ -81,7 +81,7 @@ MonoBehaviour:
       type: 3}
     LabelPosition: ShelfW1sotto_1_0
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.32916296, y: 0.1973489, z: 0.22716798}
+    _dimensions: {x: 0.2271679, y: 0.1973489, z: 0.3291629}
     _positions: {x: 3.065, y: 0.804, z: 3.272}
     _xn: 2
     _yn: 2
@@ -107,11 +107,11 @@ MonoBehaviour:
     price: 10
     description: 
     isInShoppingList: 0
-    prefabs: {fileID: 8020566462490758205, guid: bfcd6f38a6f01a44294e19becd2349b5,
+    prefabs: {fileID: 3439905404973497030, guid: e29b35be65b95d841b5f4b87a6720478,
       type: 3}
     LabelPosition: ShelfW1sotto_1_2
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.18082055, y: 0.08411352, z: 0.18082057}
+    _dimensions: {x: 0, y: 0, z: 0}
     _positions: {x: 5.0650005, y: 0.804, z: 3.272}
     _xn: 3
     _yn: 2
