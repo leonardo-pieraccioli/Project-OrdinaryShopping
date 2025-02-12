@@ -32,7 +32,6 @@ public class Productinfo
     public Vector3 _positions;
     //il transform è memorizzato nel prefab
     
-
     public int _xn , _yn, _zn;
     public Vector3 _offset;
     public bool _rotate;
@@ -54,13 +53,12 @@ public class Product: MonoBehaviour{
     }
     
     // Istanzia l'oggetto
-    GameObject instance = Instantiate(product.prefabs, product._positions, product.prefabs.transform.rotation);
+    GameObject instance = Instantiate(product.prefabs, product._positions, product.emptyPos.transform.rotation);
   
     // Ora che l'oggetto è istanziato, possiamo regolare la sua posizione e scala
     instance.transform.localScale = product.prefabs.transform.localScale;
-    instance.transform.SetPositionAndRotation(product._positions, product.prefabs.transform.rotation);
+    instance.transform.SetPositionAndRotation(product._positions, product.emptyPos.transform.rotation);
     instance.transform.SetParent(product.emptyPos.transform);
-
     // Aggiorna le dimensioni del prodotto (con la scala effettiva del prefab)
     product._dimensions = instance.transform.lossyScale;
    
@@ -109,7 +107,7 @@ public class Product: MonoBehaviour{
             Debug.Log($"Oggetto {product.name} distrutto.");
         }
         
-
+    	activeProduct.Clear();
 
     }
 /* 

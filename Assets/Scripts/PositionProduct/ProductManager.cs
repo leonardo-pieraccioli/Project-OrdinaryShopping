@@ -1,35 +1,25 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Net.Http.Headers;
-using System.Linq;
-using System.Xml.Linq;
-using UnityEngine.UIElements;
 using UnityEngine;
+using System.IO;
+using UnityEditor;
+using Unity.VisualScripting;
 
 public class ProductManager : MonoBehaviour
 {
     //----MultipleIstance
     private Mesh _mesh;
     private Material[] _materials;
-
-    //private int _xn , _yn, _zn;
-    //private Vector3 _offset;
-    //private bool _rotate;
-    //private int _grabbedCount;
-    //private bool _grabOne, _putOne;
-
     private Stack<Matrix4x4> _matrices, _removed;
+    
     //-----------------
     public Productinfo[] productInfo;
     private int nistance = 0;
 
-    [SerializeField] Vector3[] storedPositions; //Trasform
+    [SerializeField] Vector3[] storedPositions; // Array per memorizzare le posizioni degli empty
 
-    /*Array di GameObject di cui verranno estratte le posizioni.*/
-    //[SerializeField] GameObject[] _objectPosition;
-    [SerializeField] public PositionClass[] posClass;
-
+    // Abbiamo rimosso posClass
 
     int numberShelve;
     private static ProductManager _instance;
@@ -41,16 +31,12 @@ public class ProductManager : MonoBehaviour
             {
                 _instance = GameObject.FindObjectOfType<ProductManager>();
             }
-
             return _instance;
         }
     }
 
     [ContextMenu("Store GameObjects Positions for SO")]
-
     public void Init(Productinfo[] currentProductInfo, int currentDay)
-
-
     {
         if (currentProductInfo == null)
         {
@@ -59,126 +45,71 @@ public class ProductManager : MonoBehaviour
         }
         if (currentDay > 1)
         {
-            //prima elimino tutti i vecchi oggetti dalla scena
-            for (int i = 0; i < currentProductInfo.Length; i++)
-            {
-                Product.Destroy();
-                //nistance--;
-
-            }
+            Product.Destroy();
+            // nistance--;
         }
 
         productInfo = currentProductInfo;
         Array.Copy(currentProductInfo, productInfo, currentProductInfo.Length);
 
-
-        /*GameObject[] targetArray = null;
-
-         switch (n)
-        {
-            case 1:
-                targetArray = _objectPositionshelve1;
-                break;
-            case 2:
-                targetArray = _objectPositionshelve2;
-                break;
-            case 3:
-                targetArray = _objectPositionshelve3;
-                break;
-            default:
-                Debug.LogError("Indice n non valido");
-                return;
-        }
- */
+        // Recupera direttamente gli empty e assegna le posizioni
         StoreGameObjectPositionsIntoSO();
 
-
-        //generare vari prodotti
+        // Genera i vari prodotti
         for (int i = 0; i < currentProductInfo.Length; i++)
         {
             Product.Generate(currentProductInfo[i]);
             nistance++;
-            //Product.GenerateBlock(productInfo.products[i], _objectPosition[i], 1, 1, 1, new Vector3(0,0,0));
-            //GenerateMultipleIstance(productInfo.products[i]);
-            //GenerateMultipleIstance(instance,productInfo.products[i]);
-
         }
-
-
     }
 
+    /// <summary>
+    /// Raccoglie tutti i GameObject empty.
+    /// Si assume che i contenitori siano i figli diretti del GameObject a cui è attaccato il ProductManager,
+    /// e che ogni contenitore abbia come figli gli empty da utilizzare.
+    /// </summary>
+    /// <returns>Un array contenente tutti i GameObject empty trovati.</returns>
+    private GameObject[] GetAllEmptyGameObjects()
+    {
+        List<GameObject> empties = new List<GameObject>();
+        int containerCount = transform.childCount;
+        for (int i = 0; i < containerCount; i++)
+        {
+            Transform container = transform.GetChild(i);
+            for (int j = 0; j < container.childCount; j++)
+            {
+                empties.Add(container.GetChild(j).gameObject);
+            }
+        }
+        return empties.ToArray();
+    }
 
-
-
+    [ContextMenu("Store GameObjects Positions for SO")]
     void StoreGameObjectPositionsIntoSO()
     {
-        if (posClass.Length > 0)// Controlla che ci siano GameObject nell'array
+        // Recupera gli empty direttamente dalla gerarchia
+        GameObject[] empties = GetAllEmptyGameObjects();
+        int totEmpty = empties.Length;
+        if (productInfo.Length > totEmpty)
         {
-            /*Usa reflection per accedere al campo _positions all'interno dell'_objectToChange (che è il ScriptableObject). Questo campo deve essere definito nel 
-            ScriptableObject, altrimenti restituirà null.*/
-
-            //System.Reflection.FieldInfo product = _objectToChange.GetType().GetField("product");
-            //System.Reflection.FieldInfo _positions=_objectToChange.products.GetType().GetField("_positions");
-            /*Inizializza un array storedPositions con una dimensione pari al numero di GameObject referenziati.*/
-            int totempty = 0;
-            int totProduct = productInfo.Length;
-
-            for (int i = 0; i < posClass.Length; i++)
+            Debug.Log("Pochi empty nella scena! Dove metto gli oggetti?");
+            return;
+        }
+        storedPositions = new Vector3[totEmpty];
+        for (int i = 0; i < empties.Length; i++)
+        {
+            storedPositions[i] = empties[i].transform.position;
+            if (i < productInfo.Length)
             {
-                //tot empty in scena
-                totempty = totempty + posClass[i]._objectPosition.Length;
+                productInfo[i]._positions = empties[i].transform.position;
+                productInfo[i].emptyPos = empties[i];
+                productInfo[i].LabelPosition = empties[i].name;
             }
-
-            storedPositions = new Vector3[totempty];
-            /*Itera attraverso l'array di GameObject e memorizza la posizione di ciascuno di essi nell'array storedPositions.*/
-
-            int k = 0;
-            //se gli empty nella scena sono meno rispetto ai prodotti
-            if (productInfo.Length > totempty)
+            else
             {
-                Debug.Log("Pochi empty nella scena!Dove metto gli oggetti?");
+                Debug.Log("Pochi prodotti!");
                 return;
             }
-
-            for (int i = 0; i < posClass.Length; i++)
-                for (int j = 0; j < posClass[i]._objectPosition.Length; ++j)
-                {
-                    {
-                        storedPositions[k] = posClass[i]._objectPosition[j].transform.position;
-                        if (k < productInfo.Length)
-                        {
-                            productInfo[k].LabelPosition = posClass[i]._objectPosition[j].name;
-                            productInfo[k].emptyPos = posClass[i]._objectPosition[j];
-                            ++k;
-                        }
-                        else
-                        {
-                            Debug.Log("Pochi prodotti!");
-                            return;
-
-                        }
-                    }
-                }
-            /*Se il campo _positions esiste nel ScriptableObject, lo aggiorna con il valore di storedPositions usando reflection.
-            Se _positions non esiste, viene stampato un messaggio di errore nella console.
-            */
-            for (int i = 0; i < productInfo.Length; i++)
-            {
-                productInfo[i]._positions = storedPositions[i];
-
-
-            }
-
-            /*if (_positions != null)
-            {
-                 _objectToChange.products.GetType().GetField("_positions").SetValue(_objectToChange, storedPositions);
-             }
-             else
-             {
-                 Debug.Log("_positions variable does not exist in this SO : " + _objectToChange.name);
-             }*/
         }
     }
-
-
 }

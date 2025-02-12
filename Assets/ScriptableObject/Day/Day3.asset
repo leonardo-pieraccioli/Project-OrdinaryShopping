@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayNumber: 3
   budget: 10
-  productInfo: {fileID: 11400000, guid: f853c2102f5fc3448939f49247eba484, type: 2}
+  productInfo: {fileID: 11400000, guid: da76a52ba31f71740aa922c834a15e2c, type: 2}
   light: {fileID: 11400000, guid: f11dcdc9f3d42804c9ac503b58ac6a9b, type: 2}
   npc:
   - {fileID: 11400000, guid: 17fa6c996c1f85249b6e153b9b0088d8, type: 2}
@@ -23,3 +23,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fc2b995634e6b864b9cba4b1438e88d0, type: 2}
   - {fileID: 11400000, guid: c9e8ded878148414881d70dc42f5a6db, type: 2}
   - {fileID: 11400000, guid: 3772b40c244c18044930ae19ffcd686a, type: 2}
+  diaryDay: {fileID: 11400000, guid: 1edc424a9566ff94a94f00233b834665, type: 2}
