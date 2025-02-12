@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 //questo script deve assegnare dinamicamente i giorni scriptable ai vari Manager, cioè Day1, Day2 ecc
 public class DayManager : MonoBehaviour
@@ -30,6 +32,15 @@ public class DayManager : MonoBehaviour
 
     public void LoadDayData(int nameScriptable){
         
+        //Gestione Saturazione globale
+        float value = -100.0f * Mathf.Pow(currentDay.dayNumber/3, 2) / 9.0f;
+        GameObject postProcess = GameObject.Find("PostProcess");
+        Volume v = postProcess.GetComponent<Volume>();
+        ColorAdjustments ca;
+        v.profile.TryGet<ColorAdjustments>(out ca);
+        ca.saturation.value = value;
+        
+
         DayData loadedDayData=listDayData[nameScriptable-1];
         currentDay=loadedDayData;
         if (loadedDayData != null)
@@ -50,8 +61,7 @@ public class DayManager : MonoBehaviour
             //init balance
             BalanceText.Instance.SetBalance(loadedDayData.budget);
 
-            //init diary
-//            DiaryManager.Instance.Init(loadedDayData.diaryDay);
+            DiaryManager.Instance.Init(loadedDayData.diaryDay);
             
             Debug.Log("Caricato Day" + nameScriptable++);
         }
