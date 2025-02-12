@@ -18,4 +18,6 @@ MonoBehaviour:
   dialogues:
   - I am really sorry about food missing, with rationings people have been assaulting
     the supermarket
+  audioClips:
+  - {fileID: 8300000, guid: 2cc76f9255c5eb048b60787bfcd3c26f, type: 3}
   animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}

@@ -12,4 +12,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45439366eaf38f043b33d8dd70f69e30, type: 3}
   m_Name: NewProductInfo
   m_EditorClassIdentifier: 
-  products: []
+  products:
+  - LabelPosition: ShelfW1sotto_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 3.065, y: 0.24000001, z: 3.648}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfW1sotto_0_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 4.6650004, y: 0.24000001, z: 3.648}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfW1sotto_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 3.065, y: 0.804, z: 3.648}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfW1sotto_1_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 4.6650004, y: 0.804, z: 3.648}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
