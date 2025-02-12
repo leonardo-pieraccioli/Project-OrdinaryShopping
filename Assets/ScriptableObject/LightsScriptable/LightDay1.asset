@@ -15,14 +15,14 @@ MonoBehaviour:
   lightColor: {r: 0.9245283, g: 0.9137131, b: 0.87045217, a: 0}
   intensity: 5
   flickeringSettings:
-    enableFlickering: 1
+    enableFlickering: 0
     flickeringInterval: 0.09
     flickeringDuration: 1
     maxFlickeringIntensity: 2
-    numberOfExplosions: 2
-    minExplosionInterval: 3
-    maxExplosionInterval: 10
-  StopMusic: 1
+    numberOfExplosions: 0
+    minExplosionInterval: 0
+    maxExplosionInterval: 0
+  StopMusic: 0
   background:
   - {fileID: 8300000, guid: cbb1c211e628d17439536185bf26688e, type: 3}
   - {fileID: 8300000, guid: f7c279b433cae494bb471eedaabb227d, type: 3}
