@@ -40,6 +40,13 @@ public class DayManager : MonoBehaviour
         ColorAdjustments ca;
         v.profile.TryGet<ColorAdjustments>(out ca);
         ca.saturation.value = value;
+
+        //Gestione Frutta
+        if(currentDay.dayNumber == 5)
+        {
+            Destroy(GameObject.Find("DeletedFruits"));
+        }
+
         if (loadedDayData != null)
         { 
            
