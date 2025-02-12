@@ -32,6 +32,18 @@ public class DayManager : MonoBehaviour
 
     public void LoadDayData(int nameScriptable){
         
+        
+/*
+        //Gestione Frutta
+        if(currentDay.dayNumber == 5)
+        {
+            GameObject.Find("DeletedFruits");
+        }
+ */       
+
+        DayData loadedDayData=listDayData[nameScriptable-1];
+        currentDay=loadedDayData;
+
         //Gestione Saturazione globale
         float value = -100.0f * Mathf.Pow(currentDay.dayNumber/3, 2) / 9.0f;
         GameObject postProcess = GameObject.Find("PostProcess");
@@ -39,10 +51,7 @@ public class DayManager : MonoBehaviour
         ColorAdjustments ca;
         v.profile.TryGet<ColorAdjustments>(out ca);
         ca.saturation.value = value;
-        
 
-        DayData loadedDayData=listDayData[nameScriptable-1];
-        currentDay=loadedDayData;
         if (loadedDayData != null)
         { 
            
