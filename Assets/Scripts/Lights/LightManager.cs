@@ -22,6 +22,9 @@ public class LightManager : MonoBehaviour
     
     [SerializeField] public AudioSource SFXSource; // Sorgente audio per gli effetti sonori
 
+    [SerializeField] public AudioSource SFXLight; // Sorgente audio per gli effetti sonori
+
+
     [Header("---Bomb Audio Sources---")]
     [SerializeField] private AudioSource [] bombAudioSources;
 
@@ -139,13 +142,6 @@ public class LightManager : MonoBehaviour
         else
         {
             Debug.Log("Il gioco è già iniziato, rimetto la musica del supermercato.");
-
-            /*if (!supermarketMusicSource.isPlaying && dayLightSetting.background.Length > 1)
-            {
-                supermarketMusicSource.Play();
-                musicSource.Play();
-                Debug.Log("Musica del supermercato riavviata!");
-            }*/
 
             if (musicSource.isPlaying)
                 musicSource.Stop();
@@ -335,13 +331,16 @@ private IEnumerator FlickerLight(LightDayInfo.LightFlickeringSettings settings)
     float elapsedTime = 0f; // Tempo trascorso dall'inizio del flickering
     float totalDuration = settings.flickeringDuration;
 
-    // Suono del flickering
-    if (SFXSource != null && flickeringSound != null)
-    {
-        SFXSource.PlayOneShot(flickeringSound);
-    }
+        // Suono del flickering
+        if (SFXLight != null && flickeringSound != null)
+        {
 
-    while (elapsedTime < totalDuration)
+            SFXLight.clip= flickeringSound;
+            SFXLight.Play();
+           
+        }
+
+        while (elapsedTime < totalDuration)
     {
         for (int i = 0; i < sceneLights.Length; i++)
         {
