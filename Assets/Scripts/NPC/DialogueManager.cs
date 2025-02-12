@@ -103,18 +103,23 @@ public class DialogueManager : MonoBehaviour
     private int currentDialogueIndex;
     private bool isLineRunning = false;
     private string[] dialogue;
+    private AudioClip[] audioClips;
     private Action endOfDialogueCallback;
+    private InteractableNPC npc;
     private Coroutine activeCoroutine;
-    public void StartDialogue(string[] dialogue, string npcName, Action callback)
+    public void StartDialogue(InteractableNPC npc, Action callback)
     {
-        this.dialogue = dialogue;
+        this.dialogue = npc.dialogue;
+        this.audioClips = npc.audioClips;
         this.endOfDialogueCallback = callback;
-        npcNameBox.text = npcName;
+        this.npc = npc;
+        npcNameBox.text = npc.npcName;
         CanvasManager.Instance.DeactivateAllCanvasBut(CanvasCode.CNV_DIALOGUE);
         playerController.LockMovement(true);
         isDialogueHappening = true;
         currentDialogueIndex = 0;
         dialogueBox.text = string.Empty;
+        NPCStartAudio();
         StartCoroutine(TypeLine());
     }
 
@@ -155,6 +160,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueBox.text = string.Empty;
         currentDialogueIndex++;
+        NPCStartAudio();
         activeCoroutine = StartCoroutine(TypeLine());
     }
 
@@ -179,6 +185,19 @@ public class DialogueManager : MonoBehaviour
     public void WriteHelpMessage(string message)
     {
         helpBox.text = message;
+    }
+
+    private void NPCStartAudio()
+    {
+        if (npc.audioSource == null)
+        {
+            Debug.LogError("Audio source not found on NPC: " + npc.npcName + " on day " + DayManager.Instance.currentDay);
+        }
+        else
+        {
+            npc.audioSource.clip = audioClips[currentDialogueIndex];
+            npc.audioSource.Play();
+        }
     }
 
     #endregion

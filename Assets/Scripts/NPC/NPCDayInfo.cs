@@ -21,5 +21,6 @@ public class NPCDayInfo : ScriptableObject
     public NPCPosition position;
     public string npcName;
     public string[] dialogues;
+    public AudioClip[] audioClips;
     public RuntimeAnimatorController animatorController;
 }
