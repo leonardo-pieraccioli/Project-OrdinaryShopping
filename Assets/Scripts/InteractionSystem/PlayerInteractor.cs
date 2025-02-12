@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using StarterAssets;
 using System;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerInteractor : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class PlayerInteractor : MonoBehaviour
     [SerializeField] private GameObject playerCursorInteractor;
 
     [Header("Raycast variables")]
+    [SerializeField] private TextMeshProUGUI interactionText;
     [SerializeField] private float interactionMaxDistance = 5.0f;
     [SerializeField] private LayerMask interactionMask;
 
@@ -17,7 +20,8 @@ public class PlayerInteractor : MonoBehaviour
     private IInteractable currentInteractable;
 
     void Update()
-    {
+    { 
+        interactionText.text = "";
         CastInteraction();    
     }
 
@@ -31,9 +35,9 @@ public class PlayerInteractor : MonoBehaviour
         // cast ray from camera
         if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, interactionMaxDistance, interactionMask))
         {
-            // enter if hits an Interactable collider
-            Debug.Assert(hit.collider.TryGetComponent<IInteractable>(out currentInteractable), "Forgot to add script with IInteractable!");
+            hit.collider.TryGetComponent<IInteractable>(out currentInteractable);
             if (currentInteractable == null) return;
+            interactionText.text = currentInteractable == null ? "false" : "true";
             playerCursorInteractor.SetActive(true);
         }
         else 
