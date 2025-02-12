@@ -20,3 +20,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ba9a83adb701dc84ebdecfe7d3dfa78b, type: 2}
   - {fileID: 11400000, guid: 69a86ca37f1d6a14e803ea46dd2ad0bc, type: 2}
   - {fileID: 11400000, guid: 31713316d7607a241a90757828fc66b1, type: 2}
+  diaryDay: {fileID: 11400000, guid: 7609c9be27e7ca74fb932dcc74716f68, type: 2}

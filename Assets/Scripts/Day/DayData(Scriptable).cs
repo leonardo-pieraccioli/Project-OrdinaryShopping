@@ -22,5 +22,7 @@ public class DayData : ScriptableObject
     public LightDayInfo light;
     public NPCDayInfo[] npc;
 
+    public DiaryDay diaryDay;
+
 
 }

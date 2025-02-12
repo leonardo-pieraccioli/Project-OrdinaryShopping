@@ -36,6 +36,7 @@ public class LightManager : MonoBehaviour
 
 
     private LightDayInfo dayLightSetting;
+    private bool isGameStarted = false; // Controlla se il gioco è iniziato
 
     private static LightManager _instance;
     public static LightManager Instance
@@ -59,6 +60,7 @@ public class LightManager : MonoBehaviour
 
     void Start()
     {
+        //PlayMenuMusic(); // Fa partire la musica del menu all'inizio
     }
 
 
@@ -78,20 +80,61 @@ public class LightManager : MonoBehaviour
                 musicSource.loop = true;
                 musicSource.Play();
             }*/
-            PlayBackgroundMusic();
+
+
+            // PlayBackgroundMusic();
 
             // Avvia il ciclo delle esplosioni
-            if (dayLightSetting.flickeringSettings != null && dayLightSetting.flickeringSettings.enableFlickering)
+            if (dayLightSetting.flickeringSettings != null && dayLightSetting.flickeringSettings.enableFlickering && isGameStarted)
             {
-                if (explosionCoroutine != null)
+                /*if (explosionCoroutine != null)
                     StopCoroutine(explosionCoroutine);
                 
-                explosionCoroutine = StartCoroutine(ExplosionCycle());
+                explosionCoroutine = StartCoroutine(ExplosionCycle());*/
             }
         }
         else
         {
             Debug.LogError("Configurazione luce non trovata o sceneLights non impostate.");
+        }
+    }
+    
+
+    public void PlayMenuMusic()
+    {
+        if (musicSource != null && dayLightSetting.background.Length > 2)
+        {
+            musicSource.clip = dayLightSetting.background[BackgroundMusicType.Menu.GetHashCode()];
+            musicSource.loop = true;
+            musicSource.Play();
+        }
+    }
+
+    public void StartGameMusic()
+    {
+        if (!isGameStarted) // Controlla se il gioco è già iniziato
+        {
+            isGameStarted = true;
+
+            // Ferma la musica del menu
+            if (musicSource.isPlaying)
+                musicSource.Stop();
+
+            if (supermarketMusicSource.isPlaying)
+                supermarketMusicSource.Stop();
+
+            if (SFXSource.isPlaying)
+                SFXSource.Stop();
+
+
+            if (explosionCoroutine != null)
+                StopCoroutine(explosionCoroutine);
+
+            explosionCoroutine = StartCoroutine(ExplosionCycle());
+
+
+            // Avvia la musica del supermercato e di background
+            PlayBackgroundMusic();
         }
     }
 

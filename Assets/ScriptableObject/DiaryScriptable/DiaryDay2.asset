@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46c50183bb4fcc44b6119cd110f59a2, type: 3}
+  m_Name: DiaryDay2
+  m_EditorClassIdentifier: 
+  dayName: 12th May
+  dayText: "\"I found a toy truck for Jack. I wish I could buy it for him. He's always
+    sick and spends so many days in his room. I hope this situation is just temporary.\u201D"
+  dayImage: {fileID: 0}

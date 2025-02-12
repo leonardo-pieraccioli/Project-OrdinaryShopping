@@ -21,7 +21,7 @@ MonoBehaviour:
     maxFlickeringIntensity: 2
     numberOfExplosions: 5
     minExplosionInterval: 10
-    maxExplosionInterval: 40
+    maxExplosionInterval: 11
   StopMusic: 1
   background:
   - {fileID: 8300000, guid: 132b77d77e83a3747bace450ba46a440, type: 3}
