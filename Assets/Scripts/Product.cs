@@ -10,12 +10,14 @@ using UnityEngine.InputSystem.LowLevel;
 [System.Serializable]
 public class Productinfo
 {
+    public String LabelPosition;
     public string productName; // Nome del prodotto
     public float price; // Prezzo del prodotto
     public string description; // Descrizione del prodotto
     public bool isInShoppingList;
     public GameObject prefabs; //prefab prodotto
-    public String LabelPosition;
+    public Vector3 sizeCollider;
+    public Vector3 centerCollider;
     public GameObject emptyPos;
 /*
     public Boolean poco;
@@ -44,28 +46,38 @@ public class Product: MonoBehaviour{
     public static List<GameObject> activeProduct=new List<GameObject>();
     // DEFINISCO LE FUNZIONI QUI
     static public void Generate(Productinfo product)
+{
+    if (product.prefabs == null)
     {
-            if(product.prefabs==null){
-                Debug.LogError("Prefab non assegnati nell'Inspector!");
-                return;
-            }
-            
-            GameObject instance  = Instantiate(product.prefabs,product._positions,product.prefabs.transform.rotation);
-            instance.transform.SetParent(product.emptyPos.transform);
-            //GameObject currentEntity = Instantiate(product.prefabs, product.prefabs.transform,true);
-            //currentEntity.transform.SetLocalPositionAndRotation(product._positions,product.prefabs.transform.rotation);
-
-            Vector3 prefabDimensions = GetPrefabDimensions(instance);
-            product._dimensions=prefabDimensions;
-            //nome prodotto creato
-            instance.name=product.productName;
-            activeProduct.Add(instance);
-            
-            ArrayInstanceProduct arrayInstances=instance.AddComponent<ArrayInstanceProduct>();
-            instance.GetComponent<ArrayInstanceProduct>().Init(product);
-            
-        
+        Debug.LogError("Prefab non assegnato nell'Inspector!");
+        return;
     }
+    
+    // Istanzia l'oggetto
+    GameObject instance = Instantiate(product.prefabs, product._positions, product.prefabs.transform.rotation);
+  
+    // Ora che l'oggetto è istanziato, possiamo regolare la sua posizione e scala
+    instance.transform.localScale = product.prefabs.transform.localScale;
+    instance.transform.SetPositionAndRotation(product._positions, product.prefabs.transform.rotation);
+    instance.transform.SetParent(product.emptyPos.transform);
+
+    // Aggiorna le dimensioni del prodotto (con la scala effettiva del prefab)
+    product._dimensions = instance.transform.lossyScale;
+   
+
+    // Imposta il nome
+    instance.name = product.productName;
+    activeProduct.Add(instance);
+
+    // Aggiungi il componente ArrayInstanceProduct e inizializza
+    ArrayInstanceProduct arrayInstances = instance.AddComponent<ArrayInstanceProduct>();
+
+    // Inizializza l'array
+    arrayInstances.Init(product);
+}
+
+
+
 
      static private Vector3 GetPrefabDimensions(GameObject instance)
     {

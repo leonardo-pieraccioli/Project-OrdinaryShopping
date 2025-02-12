@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 
 [RequireComponent(typeof(BoxCollider))]
@@ -64,11 +65,20 @@ public class ArrayInstanceProduct : MonoBehaviour
     public void InitializeArr()
     {
         //get collider to get gameobject dimension
+       
+ 
         BoxCollider collider = GetComponent<BoxCollider>();
         if (collider == null)
         {
             Debug.Log($"collider not found in gameobject {gameObject.name}");
         }
+         product.sizeCollider=collider.size;
+        product.centerCollider=collider.center;
+        
+    
+        // Imposta la dimensione e la posizione del collider
+        collider.center = Vector3.zero; // Impostato su zero per default
+        collider.size = product.prefabs.GetComponent<Renderer>().bounds.size;
         //get mesh renderer for materials
         _mesh = GetComponent<MeshFilter>().mesh;
         if (_mesh == null)
@@ -113,11 +123,28 @@ public class ArrayInstanceProduct : MonoBehaviour
                 }
             }
         }
-
+        collider.size=product.sizeCollider;
+        collider.center=product.centerCollider;
         //new collider to match the stock size
-        BoxCollider newCollider = gameObject.AddComponent<BoxCollider>();
-        newCollider.center += Vector3.Scale(collider.size, new Vector3(_xn, _yn, _zn) / 2) - collider.size / 2;
-        newCollider.size = Vector3.Scale(collider.size, new Vector3(_xn, _yn, _zn));
+      // Calcola il nuovo centro e la nuova dimensione includendo l'offset
+Vector3 newCenter = Vector3.Scale(
+    collider.size, 
+    new Vector3((_xn - 1) * _offset.x, (_yn - 1) * _offset.y, (_zn - 1) * _offset.z)
+) * 0.5f;
+
+Vector3 newSize = Vector3.Scale(
+    collider.size, 
+    new Vector3(1 + (_xn - 1) * _offset.x, 1 + (_yn - 1) * _offset.y, 1 + (_zn - 1) * _offset.z)
+);
+
+// Allinea il centro Y in modo che sia a metà dell'altezza complessiva del collider
+newCenter.y = newSize.y * 0.5f;
+
+BoxCollider newCollider = gameObject.AddComponent<BoxCollider>();
+newCollider.center = newCenter;
+newCollider.size = newSize;
+
+     
         collider.enabled = false;
         //reverse the stack order
         _matrices = new Stack<Matrix4x4>(_matrices);
