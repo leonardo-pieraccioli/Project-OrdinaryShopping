@@ -9,6 +9,8 @@ public class CameraMovement : MonoBehaviour
     void Start()
     {
         c = Camera.main;
+        //rotx = 10
+        //FOV = 22
     }
 
     void FixedUpdate()
