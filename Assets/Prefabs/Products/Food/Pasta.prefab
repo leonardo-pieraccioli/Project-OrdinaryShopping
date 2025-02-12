@@ -81,10 +81,33 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: abf73c911f1b37c44b3eec101497aa2f,
         type: 3}
       propertyPath: m_Name
-      value: Pasta 1
+      value: Pasta
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: abf73c911f1b37c44b3eec101497aa2f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4293823205882436897}
   m_SourcePrefab: {fileID: 100100000, guid: abf73c911f1b37c44b3eec101497aa2f, type: 3}
+--- !u!1 &8092843609906841068 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: abf73c911f1b37c44b3eec101497aa2f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8975365864643934397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4293823205882436897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8092843609906841068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279e0dfbdde6a5a4abe47c60a717f266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instanceProduct: {fileID: 0}

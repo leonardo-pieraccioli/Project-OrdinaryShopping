@@ -56,7 +56,6 @@ public class DiaryManager : MonoBehaviour
             fadeOverlay.color = new Color(0, 0, 0, 0);
         }
 
-         StartCoroutine(ShowDiary());   
     }
 
    /* void Start()
@@ -128,6 +127,9 @@ public class DiaryManager : MonoBehaviour
         if (diaryCanvas != null)
             diaryCanvas.gameObject.SetActive(false);
 
+        if(lightManager.isGameStarted==true)
+          lightManager.isGameStarted=false;
+          
         // Sblocca il movimento del giocatore
         if (controller != null) controller.LockMovement(false);
     }

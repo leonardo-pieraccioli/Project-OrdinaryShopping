@@ -62,7 +62,7 @@ public class DayManager : MonoBehaviour
             BalanceText.Instance.SetBalance(loadedDayData.budget);
 
             //init diary
-            DiaryManager.Instance.Init(loadedDayData.diaryDay);
+//            DiaryManager.Instance.Init(loadedDayData.diaryDay);
             
             Debug.Log("Caricato Day" + nameScriptable++);
         }

@@ -36,7 +36,7 @@ public class LightManager : MonoBehaviour
 
 
     private LightDayInfo dayLightSetting;
-    private bool isGameStarted = false; // Controlla se il gioco è iniziato
+    public bool isGameStarted = false; // Controlla se il gioco è iniziato
 
     private static LightManager _instance;
     public static LightManager Instance
@@ -60,7 +60,6 @@ public class LightManager : MonoBehaviour
 
     void Start()
     {
-        //PlayMenuMusic(); // Fa partire la musica del menu all'inizio
     }
 
 
@@ -133,8 +132,41 @@ public class LightManager : MonoBehaviour
             explosionCoroutine = StartCoroutine(ExplosionCycle());
 
 
+            Debug.Log("Avvio musica del supermercato!");
             // Avvia la musica del supermercato e di background
             PlayBackgroundMusic();
+        }
+        else
+        {
+            Debug.Log("Il gioco è già iniziato, rimetto la musica del supermercato.");
+
+            /*if (!supermarketMusicSource.isPlaying && dayLightSetting.background.Length > 1)
+            {
+                supermarketMusicSource.Play();
+                musicSource.Play();
+                Debug.Log("Musica del supermercato riavviata!");
+            }*/
+
+            if (musicSource.isPlaying)
+                musicSource.Stop();
+
+            if (supermarketMusicSource.isPlaying)
+                supermarketMusicSource.Stop();
+
+            if (SFXSource.isPlaying)
+                SFXSource.Stop();
+
+
+            if (explosionCoroutine != null)
+                StopCoroutine(explosionCoroutine);
+
+            explosionCoroutine = StartCoroutine(ExplosionCycle());
+
+
+            Debug.Log("Avvio musica del supermercato!");
+            // Avvia la musica del supermercato e di background
+            PlayBackgroundMusic();
+
         }
     }
 
@@ -158,7 +190,7 @@ public class LightManager : MonoBehaviour
 
 
 
-    private void ApplyLightSettings()
+    public void ApplyLightSettings()
     {
         foreach (Light light in sceneLights)
         {
@@ -371,7 +403,7 @@ private IEnumerator FlickerSingleLight(Light light, GameObject objLight, LightDa
     /// <summary>
     /// Ripristina le luci allo stato normale dopo il flickering.
     /// </summary>
-    private void ResetLights()
+    /*private void ResetLights()
     {
         foreach (Light light in sceneLights)
         {
@@ -382,7 +414,134 @@ private IEnumerator FlickerSingleLight(Light light, GameObject objLight, LightDa
             }
         }
 
+        Debug.Log("-----------------------------Flickering completato. Luci ripristinate.");
+
         flickeringCoroutine = null;
+    }*/
+
+
+
+
+
+    /// <summary>
+/// Ripristina le luci allo stato normale dopo il flickering, inclusi i materiali emissivi.
+/// </summary>
+
+
+
+
+/*public void ResetLights()
+{
+    Debug.Log("🔄 Resetting all lights and materials...");
+
+    foreach (Light light in sceneLights)
+    {
+        if (light != null)
+        {
+            light.intensity = dayLightSetting.intensity; // Reset intensità
+            light.color = dayLightSetting.lightColor;   // Reset colore
+            light.enabled = true;                      // Assicura che siano accese
+        }
     }
+
+    for (int i = 0; i < objLights.Length; i++)
+    {
+        if (objLights[i] != null)
+        {
+            MeshRenderer meshRenderer = objLights[i].GetComponent<MeshRenderer>();
+            if (meshRenderer != null)
+            {
+                Material[] materials = meshRenderer.materials;
+                for (int j = 0; j < materials.Length; j++)
+                {
+                    if (materials[j].name.Contains("Material.013")) 
+                    {
+                        materials[j].SetColor("_EmissionColor", Color.white * 3f); // Reset alla luce standard
+                    }
+                }
+                meshRenderer.materials = materials; // Aggiorna i materiali
+            }
+        }
+    }
+
+    flickeringCoroutine = null;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/// <summary>
+/// Ripristina le luci allo stato normale dopo il flickering, inclusi i materiali emissivi.
+/// </summary>
+public void ResetLights()
+{
+    Debug.Log("🔄 Resetting all lights and materials...");
+
+    // Reset delle luci
+    for (int i = 0; i < sceneLights.Length; i++)
+    {
+        Light light = sceneLights[i];
+        if (light != null)
+        {
+            light.intensity = dayLightSetting.intensity; // Reset intensità
+            light.color = dayLightSetting.lightColor;   // Reset colore
+            light.enabled = true;                      // Forza l'attivazione della luce
+            Debug.Log($"💡 Luce {i} ripristinata - Intensità: {light.intensity}, Stato: {light.enabled}");
+        }
+        else
+        {
+            Debug.LogError($"❌ Luce {i} è NULL! Controlla che sia assegnata correttamente.");
+        }
+    }
+
+    // Reset dei materiali emissivi delle luci
+    for (int i = 0; i < objLights.Length; i++)
+    {
+        GameObject objLight = objLights[i];
+        if (objLight != null)
+        {
+            MeshRenderer meshRenderer = objLight.GetComponent<MeshRenderer>();
+            if (meshRenderer != null)
+            {
+                Material[] materials = meshRenderer.materials;
+                for (int j = 0; j < materials.Length; j++)
+                {
+                    if (materials[j].name.Contains("Material.013")) // Verifica che sia il materiale corretto
+                    {
+                        materials[j].SetColor("_EmissionColor", Color.white * 3f); // Materiale torna bianco
+                        materials[j].EnableKeyword("_EMISSION"); // Forza l'aggiornamento dell'emissione
+                        Debug.Log($"✨ Material.013 ripristinato su {objLight.name}");
+                    }
+                }
+                meshRenderer.materials = materials; // Aggiorna i materiali
+            }
+            else
+            {
+                Debug.LogError($"❌ MeshRenderer mancante su {objLight.name}");
+            }
+        }
+        else
+        {
+            Debug.LogError($"❌ ObjLight {i} è NULL! Controlla che sia assegnato.");
+        }
+    }
+
+    flickeringCoroutine = null;
+}
+
+
+
 }
 
