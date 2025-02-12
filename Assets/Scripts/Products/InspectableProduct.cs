@@ -7,7 +7,7 @@ public class InspectableProduct : MonoBehaviour, IInteractable
     [Tooltip("The distance from the camera at which the object is put when it is inspected")]
     [SerializeField] static private float inspectDistance = .6f;
 
-    private ArrayInstanceProduct instanceProduct;
+    public ArrayInstanceProduct instanceProduct;
     private MeshRenderer meshRenderer;
     private Vector3 originalPosition;
     static private Transform cameraTransform;
@@ -25,7 +25,6 @@ public class InspectableProduct : MonoBehaviour, IInteractable
 
     public void ReachInspectPosition()
     {
-        instanceProduct.GrabObject();
         transform.position = cameraTransform.position + cameraTransform.forward * inspectDistance;
         meshRenderer.enabled = true;
     }
@@ -34,7 +33,6 @@ public class InspectableProduct : MonoBehaviour, IInteractable
     {
         transform.position = originalPosition;
         meshRenderer.enabled = false;
-        instanceProduct.PutObject();
     }
 
     public void CartTheProduct()
@@ -47,6 +45,5 @@ public class InspectableProduct : MonoBehaviour, IInteractable
     public void Interact(PlayerInteractor interactor)
     {
         InspectManager.Instance.StartInspect(this);
-        ReachInspectPosition();
     }
 }

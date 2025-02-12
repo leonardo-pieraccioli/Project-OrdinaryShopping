@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 4853459816441512934, guid: eb13820d95216964a8b2d06508706746, type: 3}
   position: 4
+  npcName: Jacob
   dialogues:
-  - "This chicken is worth two days of work in the fields, how am I supposed to afford
+  - "This oil is worth two days of work in the fields, how am I supposed to afford
     this\u2026"
   animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}

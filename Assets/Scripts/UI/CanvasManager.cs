@@ -12,7 +12,8 @@ public enum CanvasCode
     CNV_INSPECT,
     CNV_DIALOGUE,
     CNV_HELPBOX,
-    CNV_PHONE
+    CNV_PHONE,
+    CNV_MENU
 };
 
 public class CanvasManager : MonoBehaviour
@@ -37,7 +38,7 @@ public class CanvasManager : MonoBehaviour
     // temp
     // ---- 
     private FirstPersonController controller;
-
+    private bool isMenuActive = false;
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -54,6 +55,42 @@ public class CanvasManager : MonoBehaviour
         DeactivateAllCanvasBut(CanvasCode.CNV_HUD);
 
         controller = GameObject.FindAnyObjectByType<FirstPersonController>();
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ToggleMenu();
+        }
+    }
+
+    public void ToggleMenu()
+    {
+        if ((   canvases[(int)CanvasCode.CNV_HUD].gameObject.activeSelf 
+            ||  canvases[(int)CanvasCode.CNV_PHONE].gameObject.activeSelf 
+            ||  canvases[(int)CanvasCode.CNV_HELPBOX].gameObject.activeSelf
+            ||  canvases[(int)CanvasCode.CNV_MENU].gameObject.activeSelf
+            ) && canvases[(int)CanvasCode.CNV_DIALOGUE].gameObject.activeSelf == false
+            && canvases[(int)CanvasCode.CNV_INSPECT].gameObject.activeSelf == false)
+        {
+            if (canvases[(int)CanvasCode.CNV_MENU].gameObject.activeSelf)
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+                DeactivateCanvas(CanvasCode.CNV_MENU);
+                controller.enabled = true;
+                Time.timeScale = 1;
+            }
+            else
+            {   
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                ActivateCanvas(CanvasCode.CNV_MENU);
+                controller.enabled = false;
+                Time.timeScale = 0;
+            }
+        }
     }
 
     public void ActivateCanvas(CanvasCode canvasCode)

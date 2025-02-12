@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 using StarterAssets;
-using Unity.VisualScripting;
+using TMPro;
 
 public class InspectManager : MonoBehaviour
 {
@@ -19,7 +18,9 @@ public class InspectManager : MonoBehaviour
             return _instance;
         }
     }
-
+    [SerializeField] private TextMeshProUGUI productNameBox;
+    [SerializeField] private TextMeshProUGUI productPriceBox;
+    
     static private FirstPersonController playerController;
     private InspectableProduct inspectedProduct = null;
     public bool isInspecting = false;
@@ -30,10 +31,15 @@ public class InspectManager : MonoBehaviour
     }
     public void StartInspect(InspectableProduct product)
     {
+        productNameBox.text = product.instanceProduct.product.productName;
+        productPriceBox.text = product.instanceProduct.product.price.ToString("C", CultureInfo.GetCultureInfo("en-US"));
+
         isInspecting = true;
         inspectedProduct = product;
         playerController.LockMovement(true);
         CanvasManager.Instance.DeactivateAllCanvasBut(CanvasCode.CNV_INSPECT);
+        inspectedProduct.ReachInspectPosition();
+        inspectedProduct.instanceProduct.GrabObject();
     }
 
     public void StopInspect()
@@ -46,11 +52,13 @@ public class InspectManager : MonoBehaviour
 
     public void LeaveProduct()
     {
+        inspectedProduct.instanceProduct.PutObject();
         inspectedProduct.ReachOriginalPosition();
     }
 
     public void BuyProduct()
     {
         inspectedProduct.CartTheProduct();
+        inspectedProduct.ReachOriginalPosition();
     }
 }

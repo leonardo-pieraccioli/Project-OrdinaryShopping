@@ -1,8 +1,10 @@
 using StarterAssets;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ChangeDayCollision : MonoBehaviour
 {
+    [SerializeField] private string helpMessage = "You haven't taken any products from the shopping list. Pick up your phone with the Spacebar and navigate with Q or E to see the shopping list.";
     private FirstPersonController player;
     void Start()
     {
@@ -17,10 +19,15 @@ public class ChangeDayCollision : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Verifica se l'altro collider appartiene all'oggetto specifico che desideri
-        if (other.CompareTag("Player"))
+        if ( other.CompareTag("Player") )
         {
-
-            if (DayManager.Instance.currentDay.dayNumber < 9)
+            if (BalanceText.Instance.balance >= BalanceText.MINIMUM_BALANCE_EXIT
+                && !GroceriesList.Instance.IsAtLeastOneProductChecked() )
+            {
+                CanvasManager.Instance.ActivateCanvas(CanvasCode.CNV_HELPBOX);
+                DialogueManager.Instance.WriteHelpMessage(helpMessage);
+            }
+            else if (DayManager.Instance.currentDay.dayNumber < 9)
             {
                 // Chiama la funzione desiderata sull'oggetto che contiene questo script
                 DayManager.Instance.LoadDayData(DayManager.Instance.currentDay.dayNumber + 1);
@@ -29,9 +36,19 @@ public class ChangeDayCollision : MonoBehaviour
             else
             {
 
-                //Finish
+                //Trigger game ending
 
             }
+        }
+
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            DialogueManager.Instance.WriteHelpMessage(string.Empty);
+            CanvasManager.Instance.DeactivateCanvas(CanvasCode.CNV_HELPBOX);
         }
     }
 }
