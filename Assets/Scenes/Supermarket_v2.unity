@@ -12380,6 +12380,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1424970377}
   m_LocalEulerAnglesHint: {x: 0, y: 89.308, z: 0}
+--- !u!1001 &1488501673
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1708902744575043751, guid: b0c88e61bd299064d8d4d8d307f6341c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708902744575043751, guid: b0c88e61bd299064d8d4d8d307f6341c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2035058
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708902744575043751, guid: b0c88e61bd299064d8d4d8d307f6341c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.1365218
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708902744575043751, guid: b0c88e61bd299064d8d4d8d307f6341c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708902744575043751, guid: b0c88e61bd299064d8d4d8d307f6341c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708902744575043751, guid: b0c88e61bd299064d8d4d8d307f6341c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708902744575043751, guid: b0c88e61bd299064d8d4d8d307f6341c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708902744575043751, guid: b0c88e61bd299064d8d4d8d307f6341c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708902744575043751, guid: b0c88e61bd299064d8d4d8d307f6341c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708902744575043751, guid: b0c88e61bd299064d8d4d8d307f6341c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850510131603752424, guid: b0c88e61bd299064d8d4d8d307f6341c,
+        type: 3}
+      propertyPath: m_Name
+      value: DeletedFruits
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b0c88e61bd299064d8d4d8d307f6341c, type: 3}
 --- !u!4 &1492713686 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1350786376146210745, guid: 270ac29f393bcab428c069869cc370cd,
@@ -19073,3 +19141,4 @@ SceneRoots:
   - {fileID: 1047275123}
   - {fileID: 1360959645}
   - {fileID: 1416652844}
+  - {fileID: 1488501673}
