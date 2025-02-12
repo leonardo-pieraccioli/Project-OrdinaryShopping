@@ -1,6 +1,7 @@
 using StarterAssets;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChangeDayCollision : MonoBehaviour
 {
@@ -35,9 +36,8 @@ public class ChangeDayCollision : MonoBehaviour
             }
             else
             {
-
-                //Trigger game ending
-
+                // TODO Change to scene 2
+                SceneManager.LoadScene(0);
             }
         }
 

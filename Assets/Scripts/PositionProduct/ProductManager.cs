@@ -45,12 +45,8 @@ public class ProductManager : MonoBehaviour
         }
         if (currentDay > 1)
         {
-            // Prima elimino tutti i vecchi oggetti dalla scena
-            for (int i = 0; i < currentProductInfo.Length; i++)
-            {
-                Product.Destroy();
-                // nistance--;
-            }
+            Product.Destroy();
+            // nistance--;
         }
 
         productInfo = currentProductInfo;
