@@ -21,19 +21,26 @@ public class FridgeDoorInteraction : MonoBehaviour, IInteractable
 
     private IEnumerator OpenDoor()
     {
-        for (int i = 0; i < 95; i++)
+        float angle = 0;
+        float  speed = 90;
+        while (angle > -95)
         {
-            transform.Rotate(0, 1, 0);
+            transform.Rotate(0, -speed * Time.deltaTime, 0);
+            angle -= speed * Time.deltaTime;
             yield return null;
         }
     }
 
     private IEnumerator CloseDoor()
     {
-        for (int i = 0; i < 95; i++)
+        float angle = 0;
+        float  speed = 90;
+        while (angle < 95)
         {
-            transform.Rotate(0, -1, 0);
+            transform.Rotate(0, speed * Time.deltaTime, 0);
+            angle += speed * Time.deltaTime;
             yield return null;
         }
+
     }
 }
