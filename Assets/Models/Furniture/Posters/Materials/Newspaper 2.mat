@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CheckoutWhite
+  m_Name: Newspaper 2
   m_Shader: {fileID: -6465566751694194690, guid: d0508fb690c08b049845b7190b25d007,
     type: 3}
   m_Parent: {fileID: 0}
@@ -26,7 +26,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: e9ba990317c5d7143a658633c14bd05f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SmoothnessMap:
@@ -48,8 +48,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _AmbientEnvironmentMultiplier: 1
-    - _Brightness: 1
-    - _Contrast: 0.972
+    - _Brightness: 4
+    - _Contrast: 1
     - _EdgeDistanceAttenuation: 0
     - _EdgeRim: 0
     - _EdgeSpecular: 0
@@ -60,11 +60,10 @@ Material:
     - _RimThreshold: 0.01
     - _SHADOWBRIGHTTYPE: 1
     - _Saturation: 1
-    - _Shadow_Steps: 3
-    - _Smoothness: 0
+    - _Shadow_Steps: 1.1
+    - _Smoothness: 1
     m_Colors:
-    - _BaseColor: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
-    - _Main_Light_Position: {r: 0.4, g: 0, b: -0.16, a: 0}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &3982348512348924458
 MonoBehaviour:
