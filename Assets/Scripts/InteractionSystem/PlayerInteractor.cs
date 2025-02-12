@@ -21,7 +21,6 @@ public class PlayerInteractor : MonoBehaviour
 
     void Update()
     { 
-        interactionText.text = "";
         CastInteraction();    
     }
 
@@ -37,7 +36,6 @@ public class PlayerInteractor : MonoBehaviour
         {
             hit.collider.TryGetComponent<IInteractable>(out currentInteractable);
             if (currentInteractable == null) return;
-            interactionText.text = currentInteractable == null ? "false" : "true";
             playerCursorInteractor.SetActive(true);
         }
         else 
