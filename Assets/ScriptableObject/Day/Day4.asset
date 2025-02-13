@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Day4
   m_EditorClassIdentifier: 
   dayNumber: 4
-  budget: 4
-  productInfo: {fileID: 11400000, guid: da76a52ba31f71740aa922c834a15e2c, type: 2}
+  budget: 100
+  productInfo: {fileID: 11400000, guid: 0c68427e541a42144a8d12da747de8ca, type: 2}
   light: {fileID: 11400000, guid: be9b9804b33d0274ea74c298f01bf787, type: 2}
   npc:
-  - {fileID: 11400000, guid: bc4725a3f90a4bf4bb1e1d679bb7ac68, type: 2}
+  - {fileID: 11400000, guid: 42ee7aa488c88e444bff829ce49489ad, type: 2}
   - {fileID: 11400000, guid: 4b2b24125bd652743beeedb4506e8f4a, type: 2}
   diaryDay: {fileID: 11400000, guid: 710e51f7763371246919bdc8c48bbc83, type: 2}

@@ -15,9 +15,6 @@ MonoBehaviour:
   prefab: {fileID: 4853459816441512934, guid: eb13820d95216964a8b2d06508706746, type: 3}
   position: 3
   npcName: Cassiera
-  dialogues:
-  - I am really sorry about food missing, with rationings people have been assaulting
-    the supermarket
-  audioClips:
-  - {fileID: 0}
+  dialogues: []
+  audioClips: []
   animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}

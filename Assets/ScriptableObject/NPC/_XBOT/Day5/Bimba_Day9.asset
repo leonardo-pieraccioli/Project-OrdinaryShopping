@@ -16,7 +16,7 @@ MonoBehaviour:
   position: 6
   npcName: Carol
   dialogues:
-  - "I can\u2019t reach the water, could you get it for me?"
+  - "I can\u2019t reach those pills, could you get them for me?"
   audioClips:
-  - {fileID: 8300000, guid: a4f946191d0e5ad41a066fc6bff589b5, type: 3}
+  - {fileID: 8300000, guid: 8883d6f31f6c55f43ad8ea9dc4eb9b68, type: 3}
   animatorController: {fileID: 9100000, guid: b1575f78d44e3ed4ab462cc16cda1a97, type: 2}

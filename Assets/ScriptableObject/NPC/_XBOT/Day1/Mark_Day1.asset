@@ -16,7 +16,7 @@ MonoBehaviour:
   position: 4
   npcName: Mark
   dialogues:
-  - Finally, here you are, I have been looking for you for an hour
+  - "Did you hear the radio today? Weird\u2026"
   audioClips:
-  - {fileID: 8300000, guid: 0a457e687fa91554ba85eaaae2992854, type: 3}
+  - {fileID: 8300000, guid: 44d75a3908bb36f4ba2d57821e4a6329, type: 3}
   animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}
