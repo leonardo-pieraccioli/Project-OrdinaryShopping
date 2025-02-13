@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f0bcb5e2848b6c439f94991cefa2924, type: 3}
+  m_Name: Mark_Day4
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3978775550034758273, guid: 61f027c7926a64a499ae62916626a052, type: 3}
+  position: 5
+  npcName: Mark
+  dialogues:
+  - "Have you heard about the bombings in the fields? If you want, you can make an
+    offer for the families\u2026 "
+  animatorController: {fileID: 9100000, guid: 708d874e5c8873941bcc9a0df4bbaa06, type: 2}
