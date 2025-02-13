@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Nelly_Day2
   m_EditorClassIdentifier: 
   prefab: {fileID: 4853459816441512934, guid: eb13820d95216964a8b2d06508706746, type: 3}
-  position: 2
+  position: 5
   npcName: Nelly
   dialogues:
   - How can I afford eyedrops at these prices? How am I supposed to take care of

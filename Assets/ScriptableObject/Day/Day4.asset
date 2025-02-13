@@ -18,4 +18,5 @@ MonoBehaviour:
   light: {fileID: 11400000, guid: be9b9804b33d0274ea74c298f01bf787, type: 2}
   npc:
   - {fileID: 11400000, guid: bc4725a3f90a4bf4bb1e1d679bb7ac68, type: 2}
+  - {fileID: 11400000, guid: 4b2b24125bd652743beeedb4506e8f4a, type: 2}
   diaryDay: {fileID: 11400000, guid: 710e51f7763371246919bdc8c48bbc83, type: 2}

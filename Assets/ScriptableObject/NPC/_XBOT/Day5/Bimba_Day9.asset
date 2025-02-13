@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Bimba_Day9
   m_EditorClassIdentifier: 
   prefab: {fileID: 4317832734631925373, guid: f0ba5bb6e21d9784088250881d6dab84, type: 3}
-  position: 5
+  position: 6
   npcName: Carol
   dialogues:
   - "I can\u2019t reach the water, could you get it for me?"
+  audioClips:
+  - {fileID: 8300000, guid: a4f946191d0e5ad41a066fc6bff589b5, type: 3}
   animatorController: {fileID: 9100000, guid: b1575f78d44e3ed4ab462cc16cda1a97, type: 2}

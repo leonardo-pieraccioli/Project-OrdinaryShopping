@@ -17,5 +17,5 @@ MonoBehaviour:
   productInfo: {fileID: 11400000, guid: da76a52ba31f71740aa922c834a15e2c, type: 2}
   light: {fileID: 11400000, guid: e6b89c60a4a237448b89aa41ef9a8204, type: 2}
   npc:
-  - {fileID: 11400000, guid: bc4725a3f90a4bf4bb1e1d679bb7ac68, type: 2}
+  - {fileID: 11400000, guid: 56c58a34a5193cb45938595f97f30088, type: 2}
   diaryDay: {fileID: 11400000, guid: 0d6dc6d56e26afa459125793ecf359e2, type: 2}

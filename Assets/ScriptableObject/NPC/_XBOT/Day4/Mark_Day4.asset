@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0bcb5e2848b6c439f94991cefa2924, type: 3}
   m_Name: Mark_Day4
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3978775550034758273, guid: 61f027c7926a64a499ae62916626a052, type: 3}
+  prefab: {fileID: 4853459816441512934, guid: eb13820d95216964a8b2d06508706746, type: 3}
   position: 5
   npcName: Mark
   dialogues:
   - "Have you heard about the bombings in the fields? If you want, you can make an
     offer for the families\u2026 "
-  animatorController: {fileID: 9100000, guid: 708d874e5c8873941bcc9a0df4bbaa06, type: 2}
+  audioClips:
+  - {fileID: 8300000, guid: 69f469214cc99ce458da836afbfb8dbc, type: 3}
+  animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}
