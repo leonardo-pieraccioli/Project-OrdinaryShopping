@@ -93,6 +93,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eyedrop
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 71fa7aea04be8124d801f2842e401a58,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
