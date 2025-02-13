@@ -32,12 +32,12 @@ public class InteractableNPC : MonoBehaviour, IInteractable
     {
         if (DialogueManager.Instance.isDialogueHappening) return;
         if (dialogue.Length == 0) return;
-        animator.SetBool("IsTalking", true);
+        animator.SetBool("isTalking", true);
         DialogueManager.Instance.StartDialogue(this, TransitionToIdle);
     }
 
     private void TransitionToIdle()
     {
-        animator.SetBool("IsTalking", false);
+        animator.SetBool("isTalking", false);
     }
 }

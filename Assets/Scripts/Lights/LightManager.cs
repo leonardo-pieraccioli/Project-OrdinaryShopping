@@ -104,6 +104,12 @@ public class LightManager : MonoBehaviour
 
     public void PlayMenuMusic()
     {
+        if (supermarketMusicSource.isPlaying)
+            supermarketMusicSource.Stop();
+        
+        if (SFXSource.isPlaying)
+            SFXSource.Stop();
+
         if (musicSource != null && dayLightSetting.background.Length > 2)
         {
             musicSource.clip = dayLightSetting.background[BackgroundMusicType.Menu.GetHashCode()];

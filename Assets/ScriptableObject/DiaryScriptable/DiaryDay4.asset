@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: DiaryDay4
   m_EditorClassIdentifier: 
   dayName: 14th May
-  dayText: "\u201CThe house is silent, I try to protect my angels but they feel the
-    suffering. I cannot stop thinking about that poor kid, he always helped me to
-    carry bags at the market, he had his whole life ahead of him\u2026\u201D "
+  dayText: "I cannot stop thinking about Jacob dying in the fields, he always helped
+    me to carry bags at the market, he had his whole life ahead of him\u2026 Bombs
+    are falling from the sky, day and night. The closest one fell one km from our
+    house. Why are they doing this to us?"
   dayImage: {fileID: 0}

@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f5ee29e6e4c0234fa06cc11ecadfaf1, type: 3}
-  m_Name: LightDay3
+  m_Name: 3LightOneBomb
   m_EditorClassIdentifier: 
-  lightColor: {r: 0, g: 0, b: 0, a: 0}
-  intensity: 0
+  lightColor: {r: 1, g: 1, b: 1, a: 0}
+  intensity: 5
   flickeringSettings:
     enableFlickering: 1
     flickeringInterval: 0.09
     flickeringDuration: 1
     maxFlickeringIntensity: 2
-    numberOfExplosions: 3
-    minExplosionInterval: 8
-    maxExplosionInterval: 25
+    numberOfExplosions: 1
+    minExplosionInterval: 15
+    maxExplosionInterval: 16
   StopMusic: 1
   background:
   - {fileID: 8300000, guid: cbb1c211e628d17439536185bf26688e, type: 3}

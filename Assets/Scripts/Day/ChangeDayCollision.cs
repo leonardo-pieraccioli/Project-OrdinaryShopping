@@ -28,7 +28,7 @@ public class ChangeDayCollision : MonoBehaviour
                 CanvasManager.Instance.ActivateCanvas(CanvasCode.CNV_HELPBOX);
                 DialogueManager.Instance.WriteHelpMessage(helpMessage);
             }
-            else if (DayManager.Instance.currentDay.dayNumber < 9)
+            else if (DayManager.Instance.currentDay.dayNumber < 5)
             {
                 // Chiama la funzione desiderata sull'oggetto che contiene questo script
                 DayManager.Instance.LoadDayData(DayManager.Instance.currentDay.dayNumber + 1);
@@ -36,8 +36,7 @@ public class ChangeDayCollision : MonoBehaviour
             }
             else
             {
-                // TODO Change to scene 2
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(2);
             }
         }
 
