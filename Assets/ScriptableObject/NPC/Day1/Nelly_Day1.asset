@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0bcb5e2848b6c439f94991cefa2924, type: 3}
   m_Name: Nelly_Day1
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4853459816441512934, guid: eb13820d95216964a8b2d06508706746, type: 3}
+  prefab: {fileID: 1873080019932689577, guid: 3f0b59355bf5ea741bc1182de42878b1, type: 3}
   position: 2
   npcName: Nelly
   dialogues: []
-  animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}
+  audioClips: []
+  animatorController: {fileID: 9100000, guid: b341474446ee9404a98bd139de09741b, type: 2}

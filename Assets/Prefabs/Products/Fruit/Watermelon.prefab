@@ -86,6 +86,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: -8537869525502825136}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 51cbe72ff5e8dd54fa06502fb3c4cbe3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2324706046630451453}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 51cbe72ff5e8dd54fa06502fb3c4cbe3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7965164592254504403}
   m_SourcePrefab: {fileID: 100100000, guid: 51cbe72ff5e8dd54fa06502fb3c4cbe3, type: 3}
 --- !u!1 &9070379588119585589 stripped
 GameObject:
@@ -105,3 +113,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279e0dfbdde6a5a4abe47c60a717f266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  instanceProduct: {fileID: 0}
+--- !u!65 &2324706046630451453
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9070379588119585589}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.39764628, y: 0.367152, z: 0.43064192}
+  m_Center: {x: -0.03391963, y: 0.18077172, z: 0.018042458}
+--- !u!114 &-7965164592254504403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9070379588119585589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf702b4d441ea644d9defcea066002c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _grabbedCount: 0
+  _grabOne: 0
+  _putOne: 0
+  product:
+    LabelPosition: 
+    productName: Watermelon
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 0, y: 0, z: 0}
+    _xn: 0
+    _yn: 0
+    _zn: 0
+    _offset: {x: 0, y: 0, z: 0}
+    _rotate: 0

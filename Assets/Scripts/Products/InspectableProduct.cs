@@ -18,7 +18,7 @@ public class InspectableProduct : MonoBehaviour, IInteractable
         originalPosition = transform.position;
         cameraTransform = FindObjectOfType<Camera>().gameObject.transform;
         instanceProduct = GetComponent<ArrayInstanceProduct>();
-        Debug.Assert(instanceProduct != null, message: "The product must have an ArrayInstanceProduct component");
+        Debug.Assert(instanceProduct != null, message: $"The product {gameObject.name} must have an ArrayInstanceProduct component");
         meshRenderer = GetComponent<MeshRenderer>();
         Debug.Assert(meshRenderer != null, message: "The product must have a MeshRenderer component");
     }
@@ -39,11 +39,19 @@ public class InspectableProduct : MonoBehaviour, IInteractable
     {
         meshRenderer.enabled = false;
         GroceriesList.Instance.CheckProductFromList(instanceProduct.product.productName);
-        BalanceText.Instance.UpdateBalance(-instanceProduct.product.price);
+        if(BalanceText.Instance.balance >= instanceProduct.product.price)
+        {
+            BalanceText.Instance.UpdateBalance(-instanceProduct.product.price);
+        }
     }
 
     public void Interact(PlayerInteractor interactor)
     {
         InspectManager.Instance.StartInspect(this);
+    }
+
+    public void setOriginalPosition(Vector3 pos)
+    {
+        originalPosition = pos;
     }
 }

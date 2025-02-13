@@ -12,11 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0bcb5e2848b6c439f94991cefa2924, type: 3}
   m_Name: Mark_Day3
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4853459816441512934, guid: eb13820d95216964a8b2d06508706746, type: 3}
+  prefab: {fileID: 3978775550034758273, guid: 61f027c7926a64a499ae62916626a052, type: 3}
   position: 4
   npcName: Mark
   dialogues:
   - Have you seen the canned fish, how is it possible that the shelf is empty
-  audioClips:
-  - {fileID: 8300000, guid: c1f8c1f8191cd684c906ab05cddd831a, type: 3}
-  animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}
+  animatorController: {fileID: 9100000, guid: 5177895d7844630419c24c8c5b27f69b, type: 2}

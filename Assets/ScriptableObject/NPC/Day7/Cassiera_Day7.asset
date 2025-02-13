@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0bcb5e2848b6c439f94991cefa2924, type: 3}
   m_Name: Cassiera_Day7
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4853459816441512934, guid: eb13820d95216964a8b2d06508706746, type: 3}
+  prefab: {fileID: 138309009128414630, guid: 36c56cd3b44f54d40b856424f08a21bf, type: 3}
   position: 3
   npcName: Cassiera
   dialogues: []
-  animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}
+  animatorController: {fileID: 9100000, guid: 805a9567db4d26f41bba5d07fa49ce1c, type: 2}

@@ -2,6 +2,7 @@ using System.Globalization;
 using UnityEngine;
 using StarterAssets;
 using TMPro;
+using System;
 
 public class InspectManager : MonoBehaviour
 {
@@ -59,6 +60,10 @@ public class InspectManager : MonoBehaviour
     public void BuyProduct()
     {
         inspectedProduct.CartTheProduct();
+        if(inspectedProduct.tag == "UNIQUE") //es.unicorno
+        {
+            inspectedProduct.setOriginalPosition(new Vector3(1000f,1000f,1000f));    
+        }
         inspectedProduct.ReachOriginalPosition();
     }
 }
