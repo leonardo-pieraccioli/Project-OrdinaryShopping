@@ -150,84 +150,16 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: Rack1_0_0
-    productName: Meet
-    price: 0
-    description: 
-    isInShoppingList: 0
-    prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
-      type: 3}
-    sizeCollider: {x: 0.32996598, y: 0.15349625, z: 0.32996607}
-    centerCollider: {x: -0.00000008195641, y: 0.07794205, z: 0.00000010430816}
-    emptyPos: {fileID: 0}
-    _dimensions: {x: 1.0000002, y: 1, z: 1.0000002}
-    _positions: {x: -0.902, y: 1.0247183, z: 5.443}
-    _xn: 4
-    _yn: 2
-    _zn: 1
-    _offset: {x: 1, y: 1, z: 1}
-    _rotate: 0
-  - LabelPosition: Rack2_0_0
-    productName: Meet
-    price: 0
-    description: 
-    isInShoppingList: 0
-    prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
-      type: 3}
-    sizeCollider: {x: 0.32996598, y: 0.15349625, z: 0.32996607}
-    centerCollider: {x: -0.00000008195641, y: 0.07794205, z: 0.00000010430816}
-    emptyPos: {fileID: 0}
-    _dimensions: {x: 1.0000002, y: 1, z: 1.0000002}
-    _positions: {x: -0.868, y: 2.0175447, z: 5.641}
-    _xn: 8
-    _yn: 2
-    _zn: 1
-    _offset: {x: 1, y: 1, z: 1}
-    _rotate: 0
-  - LabelPosition: Rack1 (2)_0_0
-    productName: Meet
-    price: 0
-    description: 
-    isInShoppingList: 0
-    prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
-      type: 3}
-    sizeCollider: {x: 0.3299659, y: 0.15349625, z: 0.32996598}
-    centerCollider: {x: -0.00000008195639, y: 0.07794205, z: 0.00000010430813}
-    emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: -0.51954854, y: 1.0247183, z: 6.905}
-    _xn: 4
-    _yn: 2
-    _zn: 1
-    _offset: {x: 1, y: 1, z: 1}
-    _rotate: 0
-  - LabelPosition: Rack1 (3)_0_0
-    productName: Meet
-    price: 0
-    description: 
-    isInShoppingList: 0
-    prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
-      type: 3}
-    sizeCollider: {x: 0.3299659, y: 0.15349625, z: 0.32996598}
-    centerCollider: {x: -0.00000008195639, y: 0.07794205, z: 0.00000010430813}
-    emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: -0.502, y: 2.0175447, z: 6.904}
-    _xn: 8
-    _yn: 2
-    _zn: 1
-    _offset: {x: 1, y: 1, z: 1}
-    _rotate: 0
-  - LabelPosition: Rack1_0_0
     productName: Noodle
     price: 0
     description: 
     isInShoppingList: 0
-    prefabs: {fileID: 6219198428732776439, guid: ea0730c09b3b9754785e61db58bf4291,
+    prefabs: {fileID: 4365570326480699178, guid: c78db953d92fbd64b87e67d6e9d8fb50,
       type: 3}
-    sizeCollider: {x: 0.123154625, y: 0.15117413, z: 0.12304414}
-    centerCollider: {x: 0.007569584, y: 0.07337947, z: -0.0035266776}
+    sizeCollider: {x: 0.07646615, y: 0.15668252, z: 0.07646615}
+    centerCollider: {x: -0.0019526077, y: 0.07874228, z: 0.0016312603}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.070000015, y: 0.07, z: 0.070000015}
+    _dimensions: {x: 1.2210003, y: 1.2210001, z: 1.2210003}
     _positions: {x: -0.902, y: 1.0247183, z: 5.443}
     _xn: 4
     _yn: 2
@@ -239,12 +171,12 @@ MonoBehaviour:
     price: 0
     description: 
     isInShoppingList: 0
-    prefabs: {fileID: 6219198428732776439, guid: ea0730c09b3b9754785e61db58bf4291,
+    prefabs: {fileID: 4365570326480699178, guid: c78db953d92fbd64b87e67d6e9d8fb50,
       type: 3}
-    sizeCollider: {x: 0.123154625, y: 0.15117413, z: 0.12304414}
-    centerCollider: {x: 0.0075619547, y: 0.07337947, z: -0.0035266776}
+    sizeCollider: {x: 0.07646615, y: 0.15668252, z: 0.07646615}
+    centerCollider: {x: -0.0019526077, y: 0.07874228, z: 0.0016312603}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.070000015, y: 0.07, z: 0.070000015}
+    _dimensions: {x: 1.2210003, y: 1.2210001, z: 1.2210003}
     _positions: {x: -0.868, y: 2.0175447, z: 5.641}
     _xn: 4
     _yn: 1
@@ -1768,11 +1700,12 @@ MonoBehaviour:
     price: 0
     description: 
     isInShoppingList: 0
-    prefabs: {fileID: 0}
-    sizeCollider: {x: 0, y: 0, z: 0}
-    centerCollider: {x: 0, y: 0, z: 0}
+    prefabs: {fileID: 8973046401379164388, guid: 466ec06af0c7bbd40af23c8cb407751e,
+      type: 3}
+    sizeCollider: {x: 0.045758285, y: 0.10647632, z: 0.04575828}
+    centerCollider: {x: -0.0009629382, y: 0.053255707, z: 0.000026844442}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 12.9329605, y: 1.8056769, z: -3.0249999}
     _xn: 1
     _yn: 1
