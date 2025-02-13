@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0bcb5e2848b6c439f94991cefa2924, type: 3}
   m_Name: Jacob_Day4
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4853459816441512934, guid: eb13820d95216964a8b2d06508706746, type: 3}
+  prefab: {fileID: 5892320592192851479, guid: cd8a6fefaf62df2468508fafa51cd10f, type: 3}
   position: 0
   npcName: Jacob
   dialogues: []
-  animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}
+  animatorController: {fileID: 9100000, guid: 2d7297c4c84d6bd47a7d9fef31dd483e, type: 2}

@@ -107,7 +107,7 @@ public class Product: MonoBehaviour{
             Debug.Log($"Oggetto {product.name} distrutto.");
         }
         
-
+    	activeProduct.Clear();
 
     }
 /* 
