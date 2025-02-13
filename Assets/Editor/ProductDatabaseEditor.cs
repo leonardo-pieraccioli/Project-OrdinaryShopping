@@ -22,11 +22,11 @@ public class ProductInfoEditor : Editor
         ProductInfo productDatabase = (ProductInfo)target;
         serializedObject.Update();
 
-        // Barra di ricerca
+        /* // Barra di ricerca
         EditorGUILayout.LabelField("Search", EditorStyles.boldLabel);
         searchQuery = EditorGUILayout.TextField("Filter by name:", searchQuery).ToLower();
         searchLabel = EditorGUILayout.TextField("Filter by label position:", searchLabel).ToLower();
-        searchPrefab = EditorGUILayout.TextField("Filter by prefab name:", searchPrefab).ToLower();
+        searchPrefab = EditorGUILayout.TextField("Filter by prefab name:", searchPrefab).ToLower(); */
 
         // Pulsante per aggiungere un nuovo prodotto
         if (GUILayout.Button("Add Product"))
