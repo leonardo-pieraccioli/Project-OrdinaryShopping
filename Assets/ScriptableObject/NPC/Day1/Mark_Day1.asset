@@ -17,4 +17,6 @@ MonoBehaviour:
   npcName: Mark
   dialogues:
   - Finally, here you are, I have been looking for you for an hour
+  audioClips:
+  - {fileID: 8300000, guid: 0a457e687fa91554ba85eaaae2992854, type: 3}
   animatorController: {fileID: 9100000, guid: 71a101b28dee5a74bad2a92d6c3d0d76, type: 2}

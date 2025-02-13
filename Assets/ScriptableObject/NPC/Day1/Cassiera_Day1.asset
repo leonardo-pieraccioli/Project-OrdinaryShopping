@@ -17,4 +17,6 @@ MonoBehaviour:
   npcName: Cassiera
   dialogues:
   - What a pretty unicorn
+  audioClips:
+  - {fileID: 8300000, guid: 62d78051e092ff144acc7316ca4f7e40, type: 3}
   animatorController: {fileID: 9100000, guid: 944e09123af606142b7e76eb6a204706, type: 2}
