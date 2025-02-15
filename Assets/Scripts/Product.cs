@@ -12,10 +12,11 @@ public class Productinfo
 {
     public String LabelPosition;
     public string productName; // Nome del prodotto
+    public GameObject prefabs; //prefab prodotto
     public float price; // Prezzo del prodotto
     public string description; // Descrizione del prodotto
     public bool isInShoppingList;
-    public GameObject prefabs; //prefab prodotto
+    
     public Vector3 sizeCollider;
     public Vector3 centerCollider;
     public GameObject emptyPos;
