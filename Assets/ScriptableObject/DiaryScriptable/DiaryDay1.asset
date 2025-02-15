@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: DiaryDay1
   m_EditorClassIdentifier: 
   dayName: '11th May '
-  dayText: "\"Angela asked if the war was really close. I smiled and told her it
-    was just a bad dream. She was relieved and fell asleep hugging her new TOY.\u201D"
+  dayText: "Life is simple, and I am grateful. Mary and I care for Jack and Angela\u2014Jack,
+    fragile but strong in his own way, and Angela, always full of questions. They
+    are my world, my joy. I just wish I could give them more. "
   dayImage: {fileID: 0}

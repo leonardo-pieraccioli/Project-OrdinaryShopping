@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: DiaryDay2
   m_EditorClassIdentifier: 
   dayName: 12th May
-  dayText: "\"I found a toy truck for Jack. I wish I could buy it for him. He's always
-    sick and spends so many days in his room. I hope this situation is just temporary.\u201D"
+  dayText: "Last night I talked with Mary, she is very worried for our children too.
+    Maybe we should escape, but I am afraid its too late\u2026 Angela asked if the
+    war was really close. I smiled and told her it was just a bad dream. She was
+    relieved and fell asleep hugging her new toy."
   dayImage: {fileID: 0}

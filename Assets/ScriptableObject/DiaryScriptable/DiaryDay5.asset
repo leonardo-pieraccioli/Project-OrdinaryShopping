@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DiaryDay5
   m_EditorClassIdentifier: 
   dayName: 15th May
-  dayText: "\u201CThe situation is worsening, Jack lost a lot of weight, he needs
-    good nutrition to grow healthy and strong\u2026\u201D"
+  dayText: "My neighbors are dead, bomb debris got to their house. It got me in the
+    leg, I can barely walk. My son got it in the eye, he can\u2019t see anymore."
   dayImage: {fileID: 0}

@@ -48,7 +48,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AmbientEnvironmentMultiplier: 0.548
-    - _Brightness: 1
+    - _Brightness: 1.44
     - _Contrast: 1
     - _EdgeDiffuse: 0
     - _EdgeDistanceAttenuation: 0

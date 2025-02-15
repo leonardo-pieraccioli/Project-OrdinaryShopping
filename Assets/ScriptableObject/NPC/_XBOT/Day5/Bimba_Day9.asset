@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f0bcb5e2848b6c439f94991cefa2924, type: 3}
+  m_Name: Bimba_Day9
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4317832734631925373, guid: f0ba5bb6e21d9784088250881d6dab84, type: 3}
+  position: 6
+  npcName: Carol
+  dialogues:
+  - "I can\u2019t reach those pills, could you get them for me?"
+  audioClips:
+  - {fileID: 8300000, guid: 8883d6f31f6c55f43ad8ea9dc4eb9b68, type: 3}
+  animatorController: {fileID: 9100000, guid: b1575f78d44e3ed4ab462cc16cda1a97, type: 2}

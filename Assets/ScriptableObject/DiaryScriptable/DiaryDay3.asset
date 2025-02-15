@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: DiaryDay3
   m_EditorClassIdentifier: 
   dayName: 13th May
-  dayText: "\u201CLast night I talked with Mary, she is very worried for oour children
-    too. Maybe we should escape, but I am afraid its too late\u2026\u201D"
+  dayText: The situation is worsening, Jack lost a lot of weight. Angela drank dirty
+    water and vomited all night. They were already feeling weak because of the cold,
+    the situation is getting worse.
   dayImage: {fileID: 0}

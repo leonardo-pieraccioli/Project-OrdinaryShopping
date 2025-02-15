@@ -34,7 +34,8 @@ public class DayManager : MonoBehaviour
         DayData loadedDayData=listDayData[nameScriptable-1];
         currentDay=loadedDayData;
         //Gestione Saturazione globale
-        float value = -100.0f * Mathf.Pow(currentDay.dayNumber/3, 2) / 9.0f;
+        float value = -100.0f * Mathf.Pow((float)currentDay.dayNumber/5, 2);
+        Debug.Log("Saturazione day " + currentDay.dayNumber + ": " + value);
         GameObject postProcess = GameObject.Find("PostProcess");
         Volume v = postProcess.GetComponent<Volume>();
         ColorAdjustments ca;
@@ -42,7 +43,7 @@ public class DayManager : MonoBehaviour
         ca.saturation.value = value;
 
         //Gestione Frutta
-        if(currentDay.dayNumber == 5)
+        if(currentDay.dayNumber == 2)
         {
             Destroy(GameObject.Find("DeletedFruits"));
         }
