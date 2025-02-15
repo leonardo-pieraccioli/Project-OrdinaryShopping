@@ -65,7 +65,7 @@ public class ProductInfoAutoFiller : EditorWindow
                 _xn = 1,
                 _yn = 1,
                 _zn = 1,
-                _offset = new Vector3(1f, 1f, 1f)
+                _offset = new Vector3(1.5f, 1f, 1.5f)
             };
 
             newProducts.Add(newProduct);
@@ -136,7 +136,7 @@ public class ProductInfoAutoFiller : EditorWindow
                 _xn = 1,
                 _yn = 1,
                 _zn = 1,
-                _offset = new Vector3(1f, 1f, 1f)
+                _offset = new Vector3(1.5f, 1f, 1.5f)
             };
 
             newProducts.Add(newProduct);
