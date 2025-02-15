@@ -365,7 +365,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 10.318999, y: 0.24000001, z: 3.557}
-    _xn: 8
+    _xn: 6
     _yn: 2
     _zn: 1
     _offset: {x: 2, y: 1, z: 1.5}
@@ -382,7 +382,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 11.601, y: 0.24000001, z: 3.557}
-    _xn: 8
+    _xn: 6
     _yn: 2
     _zn: 2
     _offset: {x: 2, y: 1, z: 1.5}
@@ -401,7 +401,7 @@ MonoBehaviour:
     _positions: {x: 10.318999, y: 0.804, z: 3.557}
     _xn: 5
     _yn: 2
-    _zn: 2
+    _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWS3sotto_1_1
@@ -416,9 +416,9 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 0.043987412, y: 0.045485795, z: 0.17992951}
     _positions: {x: 11.601, y: 0.804, z: 3.557}
-    _xn: 10
+    _xn: 5
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 2, y: 1, z: 2}
     _rotate: 0
   - LabelPosition: ShelfWS3Sopra_0_0
@@ -435,7 +435,7 @@ MonoBehaviour:
     _positions: {x: 10.124, y: 1.248, z: 3.557}
     _xn: 4
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWS3Sopra_0_1
@@ -501,7 +501,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 3.065, y: 0.24000001, z: 4.08}
-    _xn: 6
+    _xn: 9
     _yn: 1
     _zn: 2
     _offset: {x: 2, y: 1, z: 1.5}
@@ -518,11 +518,11 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 3.065, y: 0.804, z: 4.08}
-    _xn: 6
+    _xn: 9
     _yn: 1
     _zn: 2
     _offset: {x: 2, y: 1, z: 1.5}
-    _rotate: 0
+    _rotate: 1
   - LabelPosition: ShelfWN1sotto_0_1
     productName: Detergenti
     price: 0
@@ -570,9 +570,9 @@ MonoBehaviour:
     _dimensions: {x: 2, y: 2, z: 2}
     _positions: {x: 6.716, y: 0.24000001, z: 4.077}
     _xn: 5
-    _yn: 2
+    _yn: 1
     _zn: 2
-    _offset: {x: 1.5, y: 1, z: 1.5}
+    _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWN2sotto_1_0
     productName: Antiseptic
@@ -587,12 +587,12 @@ MonoBehaviour:
     _dimensions: {x: 2, y: 2, z: 2}
     _positions: {x: 6.716, y: 0.804, z: 4.077}
     _xn: 5
-    _yn: 2
+    _yn: 1
     _zn: 2
-    _offset: {x: 1.5, y: 1, z: 1.5}
+    _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWN2sotto_0_1
-    productName: 
+    productName: Antiseptic
     price: 0
     description: 
     isInShoppingList: 0
@@ -603,10 +603,10 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2, y: 2, z: 2}
     _positions: {x: 8.161, y: 0.24000001, z: 4.077}
-    _xn: 4
+    _xn: 8
     _yn: 1
     _zn: 2
-    _offset: {x: 1, y: 1, z: 1}
+    _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfWN2sotto_1_1
     productName: Antiseptic
@@ -620,10 +620,10 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2, y: 2, z: 2}
     _positions: {x: 8.161, y: 0.804, z: 4.077}
-    _xn: 4
+    _xn: 8
     _yn: 1
     _zn: 2
-    _offset: {x: 1.5, y: 1, z: 1.5}
+    _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWN3sotto_0_0
     productName: Chips
@@ -637,7 +637,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 10.149, y: 0.24000001, z: 4.077}
-    _xn: 5
+    _xn: 3
     _yn: 1
     _zn: 2
     _offset: {x: 1.5, y: 1, z: 1.5}
@@ -654,7 +654,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 10.149, y: 0.804, z: 4.077}
-    _xn: 5
+    _xn: 3
     _yn: 1
     _zn: 2
     _offset: {x: 1.5, y: 1, z: 1.5}
@@ -671,7 +671,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 11.49, y: 0.24000001, z: 4.077}
-    _xn: 5
+    _xn: 3
     _yn: 1
     _zn: 2
     _offset: {x: 1.5, y: 1, z: 1.5}
@@ -681,36 +681,122 @@ MonoBehaviour:
     price: 0
     description: 
     isInShoppingList: 0
-    prefabs: {fileID: 0}
-    sizeCollider: {x: 0, y: 0, z: 0}
-    centerCollider: {x: 0, y: 0, z: 0}
+    prefabs: {fileID: 8533873060431379036, guid: e0ad384f3cd21a64d9d52e1fe6e1ec4c,
+      type: 3}
+    sizeCollider: {x: 0.24808007, y: 0.29773057, z: 0.13224001}
+    centerCollider: {x: -0.009129796, y: 0.14899841, z: -0.007523367}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 11.49, y: 0.804, z: 4.077}
-    _xn: 5
+    _xn: 3
     _yn: 1
     _zn: 2
     _offset: {x: 1.5, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWN3Sopra_0_0
-    productName: Snitizer
+    productName: Canned Tomato
     price: 0
     description: 
     isInShoppingList: 0
-    prefabs: {fileID: 1484380487437812938, guid: f8189813296ac2e48a273056a7f989ec,
+    prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    sizeCollider: {x: 0.12008752, y: 0.25170872, z: 0.07789418}
-    centerCollider: {x: -0.00010508299, y: 0.12709711, z: 0.00010121614}
+    sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
+    centerCollider: {x: 0, y: 0.11459063, z: 0}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 0.8, y: 0.8, z: 0.8}
     _positions: {x: 10.292001, y: 1.248, z: 4.085}
-    _xn: 6
+    _xn: 4
     _yn: 1
-    _zn: 3
+    _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfWN3Sopra_1_0
-    productName: HandCream
+    productName: Canned Tomato
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
+      type: 3}
+    sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
+    centerCollider: {x: 0, y: 0.11459063, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.8, y: 0.8, z: 0.8}
+    _positions: {x: 10.292001, y: 1.678, z: 4.085}
+    _xn: 4
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1.5, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN3Sopra_0_1
+    productName: Canned Tomato
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
+      type: 3}
+    sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
+    centerCollider: {x: 0, y: 0.11459063, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.8, y: 0.8, z: 0.8}
+    _positions: {x: 11.771001, y: 1.248, z: 4.085}
+    _xn: 4
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1.5, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN3Sopra_1_1
+    productName: Canned Tomato
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
+      type: 3}
+    sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
+    centerCollider: {x: 0, y: 0.11459063, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 0.8, y: 0.8, z: 0.8}
+    _positions: {x: 11.771001, y: 1.678, z: 4.085}
+    _xn: 4
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1.5, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN1sopra_0_0
+    productName: Antiseptic
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
+      type: 3}
+    sizeCollider: {x: 0.042000014, y: 0.12767823, z: 0.042013787}
+    centerCollider: {x: -0.000000011175871, y: 0.063802265, z: -0.011330162}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 2, y: 2, z: 2}
+    _positions: {x: 3.0434518, y: 1.248, z: 4.112}
+    _xn: 11
+    _yn: 1
+    _zn: 1
+    _offset: {x: 2, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN1sopra_1_0
+    productName: Antiseptic
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
+      type: 3}
+    sizeCollider: {x: 0.042000014, y: 0.12767823, z: 0.042013787}
+    centerCollider: {x: -0.000000011175871, y: 0.063802265, z: -0.011330162}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 2, y: 2, z: 2}
+    _positions: {x: 3.0434518, y: 1.678, z: 4.112}
+    _xn: 11
+    _yn: 1
+    _zn: 1
+    _offset: {x: 2, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN1sopra_0_1
+    productName: Hand Cream
     price: 0
     description: 
     isInShoppingList: 0
@@ -720,13 +806,64 @@ MonoBehaviour:
     centerCollider: {x: 0.00000049639493, y: 0.056285117, z: 0.0000000013969839}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.9999999, y: 1.9999999, z: 1.9999999}
-    _positions: {x: 10.292001, y: 1.678, z: 4.085}
-    _xn: 6
-    _yn: 2
-    _zn: 3
-    _offset: {x: 1, y: 1, z: 1}
+    _positions: {x: 4.989452, y: 1.248, z: 4.112}
+    _xn: 7
+    _yn: 1
+    _zn: 2
+    _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
-  - LabelPosition: ShelfWN3Sopra_0_1
+  - LabelPosition: ShelfWN1sopra_1_1
+    productName: Hand Cream
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 5264444037268359098, guid: a464486dbcaa6d54fb27c121b13fd747,
+      type: 3}
+    sizeCollider: {x: 0.048381425, y: 0.115128435, z: 0.023584917}
+    centerCollider: {x: 0.00000049639493, y: 0.056285117, z: 0.0000000013969839}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1.9999999, y: 1.9999999, z: 1.9999999}
+    _positions: {x: 4.989452, y: 1.678, z: 4.112}
+    _xn: 7
+    _yn: 1
+    _zn: 2
+    _offset: {x: 2, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN2Sopra_0_0
+    productName: Eye Drop
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 2383542905293890662, guid: c2b91f9ddc53a814e9887aaa0963087b,
+      type: 3}
+    sizeCollider: {x: 0.022832278, y: 0.06775481, z: 0.02283228}
+    centerCollider: {x: 0, y: 0.03342061, z: 9.313226e-10}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 2.4938, y: 2.4938, z: 2.4938}
+    _positions: {x: 6.859, y: 1.248, z: 4.085}
+    _xn: 8
+    _yn: 1
+    _zn: 2
+    _offset: {x: 2, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN2Sopra_1_0
+    productName: Eyedrop
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 2383542905293890662, guid: c2b91f9ddc53a814e9887aaa0963087b,
+      type: 3}
+    sizeCollider: {x: 0.022832278, y: 0.06775481, z: 0.02283228}
+    centerCollider: {x: 0, y: 0.03342061, z: 9.313226e-10}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 2.4938, y: 2.4938, z: 2.4938}
+    _positions: {x: 6.859, y: 1.678, z: 4.085}
+    _xn: 8
+    _yn: 1
+    _zn: 1
+    _offset: {x: 2, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN2Sopra_0_1
     productName: Sanitizer
     price: 0
     description: 
@@ -737,164 +874,28 @@ MonoBehaviour:
     centerCollider: {x: -0.00010508299, y: 0.12709711, z: 0.00010121614}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 11.771001, y: 1.248, z: 4.085}
-    _xn: 6
-    _yn: 1
-    _zn: 3
-    _offset: {x: 1.5, y: 1, z: 1}
-    _rotate: 0
-  - LabelPosition: ShelfWN3Sopra_1_1
-    productName: Handcream
-    price: 0
-    description: 
-    isInShoppingList: 0
-    prefabs: {fileID: 5264444037268359098, guid: a464486dbcaa6d54fb27c121b13fd747,
-      type: 3}
-    sizeCollider: {x: 0.048381425, y: 0.115128435, z: 0.023584917}
-    centerCollider: {x: 0.00000049639493, y: 0.056285117, z: 0.0000000013969839}
-    emptyPos: {fileID: 0}
-    _dimensions: {x: 1.9999999, y: 1.9999999, z: 1.9999999}
-    _positions: {x: 11.771001, y: 1.678, z: 4.085}
-    _xn: 6
-    _yn: 2
-    _zn: 3
-    _offset: {x: 1.5, y: 1, z: 1}
-    _rotate: 0
-  - LabelPosition: ShelfWN1sopra_0_0
-    productName: Latte
-    price: 0
-    description: 
-    isInShoppingList: 0
-    prefabs: {fileID: 6099454480340716241, guid: e26626a233d70614e8015042417431b0,
-      type: 3}
-    sizeCollider: {x: 0.045758285, y: 0.10647632, z: 0.04575828}
-    centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026725233}
-    emptyPos: {fileID: 0}
-    _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 3.0434518, y: 1.248, z: 4.112}
-    _xn: 6
-    _yn: 2
-    _zn: 3
-    _offset: {x: 1.5, y: 1, z: 1}
-    _rotate: 0
-  - LabelPosition: ShelfWN1sopra_1_0
-    productName: Latte
-    price: 0
-    description: 
-    isInShoppingList: 0
-    prefabs: {fileID: 6099454480340716241, guid: e26626a233d70614e8015042417431b0,
-      type: 3}
-    sizeCollider: {x: 0.045758285, y: 0.10647632, z: 0.04575828}
-    centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026725233}
-    emptyPos: {fileID: 0}
-    _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 3.0434518, y: 1.678, z: 4.112}
-    _xn: 6
-    _yn: 2
-    _zn: 3
-    _offset: {x: 1, y: 1, z: 1}
-    _rotate: 0
-  - LabelPosition: ShelfWN1sopra_0_1
-    productName: Te
-    price: 0
-    description: 
-    isInShoppingList: 0
-    prefabs: {fileID: 6239699513786241697, guid: f337a4056f119194d9e71076db156c94,
-      type: 3}
-    sizeCollider: {x: 0.097684614, y: 0.19599201, z: 0.060113654}
-    centerCollider: {x: 0.001899492, y: 0.098023705, z: -0.008394174}
-    emptyPos: {fileID: 0}
-    _dimensions: {x: 1.2563, y: 1.2563, z: 1.2563}
-    _positions: {x: 4.989452, y: 1.248, z: 4.112}
-    _xn: 6
-    _yn: 2
-    _zn: 3
-    _offset: {x: 1, y: 1, z: 1}
-    _rotate: 0
-  - LabelPosition: ShelfWN1sopra_1_1
-    productName: Te
-    price: 0
-    description: 
-    isInShoppingList: 0
-    prefabs: {fileID: 6239699513786241697, guid: f337a4056f119194d9e71076db156c94,
-      type: 3}
-    sizeCollider: {x: 0.097684614, y: 0.19599201, z: 0.060113654}
-    centerCollider: {x: 0.001899492, y: 0.098023705, z: -0.008394174}
-    emptyPos: {fileID: 0}
-    _dimensions: {x: 1.2563, y: 1.2563, z: 1.2563}
-    _positions: {x: 4.989452, y: 1.678, z: 4.112}
-    _xn: 10
-    _yn: 2
-    _zn: 3
-    _offset: {x: 1, y: 1, z: 1}
-    _rotate: 0
-  - LabelPosition: ShelfWN2Sopra_0_0
-    productName: olio
-    price: 0
-    description: 
-    isInShoppingList: 0
-    prefabs: {fileID: 230013934694285457, guid: db0c85a4cce8097429dc35dddd171dbb,
-      type: 3}
-    sizeCollider: {x: 762.00024, y: 2215.4524, z: 624.8471}
-    centerCollider: {x: 0.24986267, y: 1109.2484, z: -20.952637}
-    emptyPos: {fileID: 0}
-    _dimensions: {x: 0.0002, y: 0.00015, z: 0.0002}
-    _positions: {x: 6.859, y: 1.248, z: 4.085}
-    _xn: 4
-    _yn: 2
-    _zn: 2
-    _offset: {x: 1.5, y: 1, z: 1}
-    _rotate: 0
-  - LabelPosition: ShelfWN2Sopra_1_0
-    productName: Olio
-    price: 0
-    description: 
-    isInShoppingList: 0
-    prefabs: {fileID: 230013934694285457, guid: db0c85a4cce8097429dc35dddd171dbb,
-      type: 3}
-    sizeCollider: {x: 762.00024, y: 2215.4524, z: 624.8471}
-    centerCollider: {x: 0.24986267, y: 1109.2484, z: -20.952637}
-    emptyPos: {fileID: 0}
-    _dimensions: {x: 0.0002, y: 0.00015, z: 0.0002}
-    _positions: {x: 6.859, y: 1.678, z: 4.085}
-    _xn: 4
-    _yn: 2
-    _zn: 3
-    _offset: {x: 1.5, y: 1, z: 1}
-    _rotate: 0
-  - LabelPosition: ShelfWN2Sopra_0_1
-    productName: Soda
-    price: 0
-    description: 
-    isInShoppingList: 0
-    prefabs: {fileID: 4477105512359372738, guid: c6f4bca6e32cd38469e64071fd0ecd7a,
-      type: 3}
-    sizeCollider: {x: 0.045758285, y: 0.10647632, z: 0.04575828}
-    centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026725233}
-    emptyPos: {fileID: 0}
-    _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 8.2560005, y: 1.248, z: 4.085}
-    _xn: 4
-    _yn: 2
+    _xn: 7
+    _yn: 1
     _zn: 2
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfWN2Sopra_1_1
-    productName: Soda
+    productName: Sanitizer
     price: 0
     description: 
     isInShoppingList: 0
-    prefabs: {fileID: 4477105512359372738, guid: c6f4bca6e32cd38469e64071fd0ecd7a,
+    prefabs: {fileID: 1484380487437812938, guid: f8189813296ac2e48a273056a7f989ec,
       type: 3}
-    sizeCollider: {x: 0.045758285, y: 0.10647632, z: 0.04575828}
-    centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026725233}
+    sizeCollider: {x: 0.12008752, y: 0.25170872, z: 0.07789418}
+    centerCollider: {x: -0.00010508299, y: 0.12709711, z: 0.00010121614}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
+    _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 8.2560005, y: 1.678, z: 4.085}
-    _xn: 10
-    _yn: 2
+    _xn: 7
+    _yn: 1
     _zn: 2
-    _offset: {x: 1, y: 1, z: 1}
+    _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfN1sotto_0_0
     productName: Cake
@@ -908,9 +909,9 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.9999998, y: 3, z: 2.9999998}
     _positions: {x: 4.595, y: 0.24000001, z: 6.8187995}
-    _xn: 6
+    _xn: 2
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfN1sotto_1_0
@@ -925,9 +926,9 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.9999998, y: 3, z: 2.9999998}
     _positions: {x: 4.595, y: 0.804, z: 6.8187995}
-    _xn: 6
+    _xn: 2
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfN1sopra_0_0
@@ -935,12 +936,12 @@ MonoBehaviour:
     price: 0
     description: 
     isInShoppingList: 0
-    prefabs: {fileID: 6099454480340716241, guid: e26626a233d70614e8015042417431b0,
+    prefabs: {fileID: 2190908929263238766, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
-    sizeCollider: {x: 0.045758307, y: 0.10647632, z: 0.045758303}
-    centerCollider: {x: -0.00096293865, y: 0.053255767, z: 0.000026725245}
+    sizeCollider: {x: 0.09045753, y: 0.24942127, z: 0.14858362}
+    centerCollider: {x: 0.00000047683716, y: 0.1250378, z: 0}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
+    _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 4.576, y: 1.242, z: 6.819}
     _xn: 6
     _yn: 2
@@ -952,12 +953,12 @@ MonoBehaviour:
     price: 0
     description: 
     isInShoppingList: 0
-    prefabs: {fileID: 8973046401379164388, guid: 466ec06af0c7bbd40af23c8cb407751e,
+    prefabs: {fileID: 2190908929263238766, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
-    sizeCollider: {x: 0.045758307, y: 0.10647632, z: 0.045758303}
-    centerCollider: {x: -0.00096293865, y: 0.053255767, z: 0.000026725245}
+    sizeCollider: {x: 0.09045753, y: 0.24942127, z: 0.14858362}
+    centerCollider: {x: 0.00000047683716, y: 0.1250378, z: 0}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
+    _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 4.576, y: 1.6719999, z: 6.819}
     _xn: 10
     _yn: 2
