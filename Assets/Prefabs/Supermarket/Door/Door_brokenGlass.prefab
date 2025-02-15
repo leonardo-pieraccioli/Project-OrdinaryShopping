@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7443016144915767904
+--- !u!1 &169144882498325753
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3530385100380905778}
-  - component: {fileID: 8380707441319140680}
-  - component: {fileID: 1541787021518349327}
+  - component: {fileID: 7610325558372904831}
+  - component: {fileID: 7934080613992733174}
+  - component: {fileID: 3148307807088985115}
   m_Layer: 0
-  m_Name: Door
+  m_Name: Door_brokenGlass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3530385100380905778
+--- !u!4 &7610325558372904831
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7443016144915767904}
+  m_GameObject: {fileID: 169144882498325753}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0.7071068, w: 0}
   m_LocalPosition: {x: -4.117, y: -1.332, z: 19.242208}
@@ -33,21 +33,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 180}
---- !u!33 &8380707441319140680
+--- !u!33 &7934080613992733174
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7443016144915767904}
+  m_GameObject: {fileID: 169144882498325753}
   m_Mesh: {fileID: 2619086233303812490, guid: 0734dc69aad50ce40898ea216eb1f960, type: 3}
---- !u!23 &1541787021518349327
+--- !u!23 &3148307807088985115
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7443016144915767904}
+  m_GameObject: {fileID: 169144882498325753}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: b35fc28cc4437c24bbf62d8c549ef31a, type: 2}
-  - {fileID: 2100000, guid: 97cccd17d4ca80742acfe2f8035b497c, type: 2}
+  - {fileID: 2100000, guid: 859640208114de749a61e09ebbc8ae4d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

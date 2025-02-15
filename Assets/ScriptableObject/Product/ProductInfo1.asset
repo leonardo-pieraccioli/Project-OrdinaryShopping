@@ -15,7 +15,7 @@ MonoBehaviour:
   products:
   - LabelPosition: ShelfWS1sotto_0_0
     productName: Bleach
-    price: 44
+    price: 4
     description: 
     isInShoppingList: 0
     prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
@@ -126,7 +126,7 @@ MonoBehaviour:
     centerCollider: {x: -0.008983575, y: 0.108602226, z: -0.008656116}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.5317687, y: 1.5317687, z: 1.5317687}
-    _positions: {x: -0.35754853, y: 1.0247183, z: 6.905}
+    _positions: {x: -0.76954854, y: 1.0247183, z: 6.905}
     _xn: 5
     _yn: 2
     _zn: 2
@@ -143,7 +143,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00018830784, y: 0.11591488, z: 0.0010599829}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: -0.33999997, y: 2.0175447, z: 6.904}
+    _positions: {x: -0.752, y: 2.0175447, z: 6.904}
     _xn: 8
     _yn: 2
     _zn: 2
@@ -428,10 +428,10 @@ MonoBehaviour:
     isInShoppingList: 0
     prefabs: {fileID: 8092843609906841068, guid: b4298c600cf88424a87d97bcb4916cdf,
       type: 3}
-    sizeCollider: {x: 0.24808007, y: 0.29773057, z: 0.13224001}
-    centerCollider: {x: -0.009129796, y: 0.14899841, z: -0.007523367}
+    sizeCollider: {x: 2.0000007, y: 2, z: 2.0000007}
+    centerCollider: {x: -0.000030517578, y: 1, z: 0}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 0.043987412, y: 0.045485795, z: 0.17992951}
     _positions: {x: 10.124, y: 1.248, z: 3.557}
     _xn: 4
     _yn: 1
