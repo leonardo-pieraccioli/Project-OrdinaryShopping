@@ -72,11 +72,12 @@ public class ArrayInstanceProduct : MonoBehaviour
         {
             Debug.Log($"collider not found in gameobject {gameObject.name}");
         }
-         product.sizeCollider=collider.size;
+       
+        product.sizeCollider=collider.size;
         product.centerCollider=collider.center;
         
     
-        // Imposta la dimensione e la posizione del collider
+        // Imposta la dimensione e la posizione del colliders
         collider.center = Vector3.zero; // Impostato su zero per default
         collider.size = product.prefabs.GetComponent<Renderer>().bounds.size;
         //get mesh renderer for materials
@@ -125,6 +126,7 @@ public class ArrayInstanceProduct : MonoBehaviour
         }
         collider.size=product.sizeCollider;
         collider.center=product.centerCollider;
+        
         //new collider to match the stock size
       // Calcola il nuovo centro e la nuova dimensione includendo l'offset
 Vector3 newCenter = Vector3.Scale(
@@ -143,6 +145,7 @@ newCenter.y = newSize.y * 0.5f;
 BoxCollider newCollider = gameObject.AddComponent<BoxCollider>();
 newCollider.center = newCenter;
 newCollider.size = newSize;
+newCollider.transform.rotation=product.emptyPos.transform.rotation;
 
      
         collider.enabled = false;

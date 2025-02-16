@@ -49,16 +49,16 @@ public class Product: MonoBehaviour{
 {
     if (product.prefabs == null)
     {
-        Debug.LogError("Prefab non assegnato nell'Inspector!");
+        Debug.Log("Prefab non assegnato nell'Inspector!");
         return;
     }
     
     // Istanzia l'oggetto
-    GameObject instance = Instantiate(product.prefabs, product._positions, product.emptyPos.transform.rotation);
+    GameObject instance = Instantiate(product.prefabs, product._positions, product.prefabs.transform.rotation);
   
     // Ora che l'oggetto è istanziato, possiamo regolare la sua posizione e scala
     instance.transform.localScale = product.prefabs.transform.localScale;
-    instance.transform.SetPositionAndRotation(product._positions, product.emptyPos.transform.rotation);
+    instance.transform.SetPositionAndRotation(product._positions, product.prefabs.transform.rotation);
     instance.transform.SetParent(product.emptyPos.transform);
     // Aggiorna le dimensioni del prodotto (con la scala effettiva del prefab)
     product._dimensions = instance.transform.lossyScale;

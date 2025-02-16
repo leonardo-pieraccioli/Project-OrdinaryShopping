@@ -1,0 +1,1423 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45439366eaf38f043b33d8dd70f69e30, type: 3}
+  m_Name: ProductInfo_Day1OLD
+  m_EditorClassIdentifier: 
+  products:
+  - LabelPosition: ShelfWS1sotto_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 2.847, y: 0.24000001, z: 3.519}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS1sotto_0_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 4.447, y: 0.24000001, z: 3.6219997}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS1sotto_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 2.847, y: 0.804, z: 3.519}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS1sotto_1_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 4.447, y: 0.804, z: 3.625}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: Rack1_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: -0.8020006, y: 1.0247183, z: 5.6409645}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: Rack2_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: -0.803, y: 2.0175447, z: 5.641}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: Rack1 (2)_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: -0.76954854, y: 1.0247183, z: 6.905}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: Rack1 (3)_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: -0.752, y: 2.0175447, z: 6.904}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS2sotto_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 6.716, y: 0.24000001, z: 3.394}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS2sotto_0_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 8.216, y: 0.24000001, z: 3.394}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS2sotto_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 6.716, y: 0.804, z: 3.5092}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS2sotto_1_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 8.216, y: 0.804, z: 3.5092}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS1sopra_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 2.824, y: 1.248, z: 3.525}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS1sopra_0_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 4.637, y: 1.248, z: 3.5249999}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS1sopra_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 3.2259998, y: 1.678, z: 3.525}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS1sopra_1_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 4.637, y: 1.678, z: 3.5249999}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS2Sopra_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 6.638, y: 1.248, z: 3.557}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS2Sopra_0_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 8.516001, y: 1.248, z: 3.5569997}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS2Sopra_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 6.634, y: 1.678, z: 3.557}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS2Sopra_1_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 8.516001, y: 1.678, z: 3.5569997}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS3sotto_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 10.318999, y: 0.24000001, z: 3.557}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS3sotto_0_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 11.601, y: 0.24000001, z: 3.557}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS3sotto_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 10.318999, y: 0.804, z: 3.557}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS3sotto_1_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 11.601, y: 0.804, z: 3.557}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS3Sopra_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 10.124, y: 1.248, z: 3.557}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS3Sopra_0_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 11.613, y: 1.248, z: 3.5569997}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS3Sopra_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 10.12, y: 1.678, z: 3.557}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWS3Sopra_1_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 11.613, y: 1.678, z: 3.5569997}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN1sotto_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 3.065, y: 0.24000001, z: 4.08}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN1sotto_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 3.065, y: 0.804, z: 4.08}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN1sotto_0_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 4.883, y: 0.24000001, z: 4.08}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN1sotto_1_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 4.883, y: 0.804, z: 4.08}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN2sotto_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 6.716, y: 0.24000001, z: 4.077}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN2sotto_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 6.716, y: 0.804, z: 4.077}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN2sotto_0_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 8.161, y: 0.24000001, z: 4.077}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN2sotto_1_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 8.161, y: 0.804, z: 4.077}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN3sotto_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 10.149, y: 0.24000001, z: 4.077}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN3sotto_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 10.149, y: 0.804, z: 4.077}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN3sotto_0_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 11.49, y: 0.24000001, z: 4.077}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN3sotto_1_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 11.49, y: 0.804, z: 4.077}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN3Sopra_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 10.292001, y: 1.248, z: 4.085}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN3Sopra_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 10.292001, y: 1.678, z: 4.085}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN3Sopra_0_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 11.771001, y: 1.248, z: 4.085}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN3Sopra_1_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 11.771001, y: 1.678, z: 4.085}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN1sopra_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 3.0434518, y: 1.248, z: 4.112}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN1sopra_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 3.0434518, y: 1.678, z: 4.112}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN1sopra_0_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 4.989452, y: 1.248, z: 4.112}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN1sopra_1_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 4.989452, y: 1.678, z: 4.112}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN2Sopra_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 6.859, y: 1.248, z: 4.085}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN2Sopra_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 6.859, y: 1.678, z: 4.085}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN2Sopra_0_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 8.2560005, y: 1.248, z: 4.085}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfWN2Sopra_1_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 8.2560005, y: 1.678, z: 4.085}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN1sotto_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 4.595, y: 0.24000001, z: 6.8187995}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN1sotto_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 4.595, y: 0.804, z: 6.8187995}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN1sopra_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 4.576, y: 1.242, z: 6.819}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN1sopra_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 4.576, y: 1.6719999, z: 6.819}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN2sotto_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 6.099, y: 0.24000001, z: 6.6537995}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN2sotto_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 6.099, y: 0.804, z: 6.6537995}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN2Sopra_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 6.072, y: 1.248, z: 6.6537995}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN2Sopra_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 6.072, y: 1.678, z: 6.6537995}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN3sotto_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 7.632, y: 0.24000001, z: 6.752}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN3sotto_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 7.632, y: 0.804, z: 6.752}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN3Sopra_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 7.605, y: 1.248, z: 6.784}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN3Sopra_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 7.605, y: 1.678, z: 6.784}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN4sotto_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 9.165, y: 0.245, z: 6.655}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN4sotto_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 9.165, y: 0.809, z: 6.655}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN4Sopra_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 9.1380005, y: 1.246, z: 6.635}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN4Sopra_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 9.1380005, y: 1.676, z: 6.635}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN5sotto_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 10.724, y: 0.24000001, z: 6.6537995}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN5sotto_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 10.724, y: 0.804, z: 6.6537995}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN5Sopra_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 10.6970005, y: 1.248, z: 6.6537995}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfN5Sopra_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 10.6970005, y: 1.678, z: 6.6537995}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfVerticalFridge_0_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 11.898001, y: 0.39365608, z: -3.1299999}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfVerticalFridge_0_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 12.446, y: 0.39365608, z: -3.103}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfVerticalFridge_0_2
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 13.117001, y: 0.39365608, z: -3.103}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfVerticalFridge_0_3
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 13.7960005, y: 0.39365608, z: -3.103}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfVerticalFridge_1_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 11.857, y: 0.964, z: -2.9039998}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfVerticalFridge_1_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 12.462, y: 0.964, z: -2.904}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfVerticalFridge_1_2
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 13.182, y: 0.964, z: -2.904}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfVerticalFridge_1_3
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 13.853001, y: 0.964, z: -2.904}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfVerticalFridge_2_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 11.857, y: 1.3880723, z: -3.0249999}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfVerticalFridge_2_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 12.477, y: 1.3880723, z: -3.0249999}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfVerticalFridge_2_2
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 13.156, y: 1.3880723, z: -3.0249999}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfVerticalFridge_2_3
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 13.847, y: 1.3880723, z: -3.0249999}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfVerticalFridge_3_0
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 11.857, y: 1.8056769, z: -3.0249999}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfVerticalFridge_3_1
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 12.468, y: 1.8056769, z: -3.0249999}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfVerticalFridge_3_2
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 13.166, y: 1.8056769, z: -3.0249999}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0
+  - LabelPosition: ShelfVerticalFridge_3_3
+    productName: 
+    price: 0
+    description: 
+    isInShoppingList: 0
+    prefabs: {fileID: 0}
+    sizeCollider: {x: 0, y: 0, z: 0}
+    centerCollider: {x: 0, y: 0, z: 0}
+    emptyPos: {fileID: 0}
+    _dimensions: {x: 1, y: 1, z: 1}
+    _positions: {x: 13.83, y: 1.8056769, z: -3.0249999}
+    _xn: 1
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
+    _rotate: 0

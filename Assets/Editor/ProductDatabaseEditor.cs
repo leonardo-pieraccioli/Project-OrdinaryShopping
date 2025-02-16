@@ -12,14 +12,16 @@ public class ProductInfoEditor : Editor
     private string searchQuery = "";    // Filtro per il nome del prodotto
     private string searchLabel = "";    // Filtro per la label
     private string searchPrefab = "";   // Filtro per il nome del prefab
-    private SerializedProperty productsProperty;
-    private SerializedProperty productName;
+    
+    private SerializedProperty scriptableTarget;
     private SerializedProperty price;
 
     private void OnEnable()
     {
-        productsProperty = serializedObject.FindProperty("products");
 
+
+       // scriptableTarget=serializedObject.FindProperty("ProductInfo1");
+      
     }
 
     public override void OnInspectorGUI()
@@ -28,7 +30,7 @@ public class ProductInfoEditor : Editor
         ProductInfo productDatabase = (ProductInfo)target;
 
         serializedObject.Update();
-
+        SerializedProperty productsProperty = serializedObject.FindProperty("products");
         // Barra di ricerca
         EditorGUILayout.LabelField("Search", EditorStyles.boldLabel);
         searchQuery = EditorGUILayout.TextField("Filter by name:", searchQuery).ToLower();
@@ -39,22 +41,17 @@ public class ProductInfoEditor : Editor
         if (GUILayout.Button("Add Product"))
         {
             // Aumenta la dimensione dell'array
-            productsProperty.arraySize++;
-
-            // Ottieni l'ultimo elemento appena aggiunto
-            SerializedProperty newProduct = productsProperty.GetArrayElementAtIndex(productsProperty.arraySize - 1);
-
-            // Inizializza l'elemento con un nuovo oggetto Productinfo
-            newProduct.managedReferenceValue = new Productinfo();
-
-            // Segna il `SerializedObject` come modificato
-            serializedObject.ApplyModifiedProperties();
+        
+            productsProperty.InsertArrayElementAtIndex(productsProperty.arraySize);
+                    
+            EditorUtility.SetDirty(productDatabase);
         }
 
         // Mostra la lista filtrata
         EditorGUILayout.Space();
         EditorGUILayout.LabelField("Products", EditorStyles.boldLabel);
 
+        if(productDatabase.products.Length>0){
         var filteredList = productDatabase.products
             .Where(p => (string.IsNullOrEmpty(searchQuery) || (p.productName != null && p.productName.ToLower().Contains(searchQuery))) &&
                         (string.IsNullOrEmpty(searchLabel) || (p.LabelPosition != null && p.LabelPosition.ToLower().Contains(searchLabel))) &&
@@ -73,12 +70,12 @@ public class ProductInfoEditor : Editor
                     continue;
 
                 SerializedProperty product = productsProperty.GetArrayElementAtIndex(i);
-
                 EditorGUILayout.BeginVertical("box");
                 EditorGUILayout.PropertyField(product.FindPropertyRelative("LabelPosition"), new GUIContent("LabelPosition:"));
                 EditorGUILayout.PropertyField(product.FindPropertyRelative("productName"), new GUIContent("Name:"));
-                EditorGUILayout.PropertyField(product.FindPropertyRelative("prefabs"));
-                if (GUILayout.Button("Update Name"))
+                EditorGUILayout.PropertyField(product.FindPropertyRelative("prefabs"));       
+                EditorGUILayout.PropertyField(product.FindPropertyRelative("price"), new GUIContent("Price:"));
+                if (GUILayout.Button("Update Name and Price"))
                 {
                      for (int j = 0; j < productDatabase.products.Length; j++){
                    
@@ -86,20 +83,6 @@ public class ProductInfoEditor : Editor
                      if(product.FindPropertyRelative("prefabs").objectReferenceInstanceIDValue==product2.FindPropertyRelative("prefabs").objectReferenceInstanceIDValue){
 
                             product2.FindPropertyRelative("productName").stringValue=product.FindPropertyRelative("productName").stringValue;
-
-                     }
-                }
-                    serializedObject.ApplyModifiedProperties();
-                    break;
-                }
-                EditorGUILayout.PropertyField(product.FindPropertyRelative("price"), new GUIContent("Price:"));
-                if (GUILayout.Button("Update Price"))
-                {
-                     for (int j = 0; j < productDatabase.products.Length; j++){
-                   
-                    SerializedProperty product2 = productsProperty.GetArrayElementAtIndex(j);
-                     if(product.FindPropertyRelative("productName").stringValue==product2.FindPropertyRelative("productName").stringValue){
-
                             product2.FindPropertyRelative("price").floatValue=product.FindPropertyRelative("price").floatValue;
 
                      }
@@ -107,7 +90,6 @@ public class ProductInfoEditor : Editor
                     serializedObject.ApplyModifiedProperties();
                     break;
                 }
-               
                 EditorGUILayout.PropertyField(product.FindPropertyRelative("description"), new GUIContent("Description:"));
                 EditorGUILayout.PropertyField(product.FindPropertyRelative("isInShoppingList"), new GUIContent("isInShoppingList:"));
                 
@@ -129,7 +111,7 @@ public class ProductInfoEditor : Editor
                 EditorGUILayout.EndVertical();
             }
         }
-
+        }
 
         serializedObject.ApplyModifiedProperties();
     }
