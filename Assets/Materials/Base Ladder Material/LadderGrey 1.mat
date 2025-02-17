@@ -8,12 +8,11 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LadderGrey 1
-  m_Shader: {fileID: -6465566751694194690, guid: d0508fb690c08b049845b7190b25d007,
+  m_Shader: {fileID: -6465566751694194690, guid: 8b809c5c5a0f1714a9ab117fa886dd52,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _SHADOWBRIGHTTYPE_LINEAR
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -50,9 +49,11 @@ Material:
     - _AmbientEnvironmentMultiplier: 0.297
     - _Brightness: 2.03
     - _Contrast: 1.074
-    - _EdgeDistanceAttenuation: 0.31
+    - _EdgeDiffuse: 0.591
+    - _EdgeDistanceAttenuation: 0.56
     - _EdgeRim: 0.394
-    - _EdgeSpecular: 0
+    - _EdgeShadowAttenuation: 1
+    - _EdgeSpecular: 0.299
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RimAmount: 0.315
@@ -63,7 +64,7 @@ Material:
     - _Shadow_Steps: 5.7
     - _Smoothness: 1
     m_Colors:
-    - _BaseColor: {r: 0.5292061, g: 0.58373284, b: 0.8792453, a: 1}
+    - _BaseColor: {r: 0.6377357, g: 0.6377357, b: 0.6377357, a: 1}
     - _Main_Light_Position: {r: 0.4, g: 0, b: -0.16, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &3982348512348924458
