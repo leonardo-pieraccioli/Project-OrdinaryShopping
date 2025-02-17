@@ -58,7 +58,7 @@ Material:
     - _RimStrength: 0.378
     - _RimThreshold: 0.313
     - _Saturation: 1
-    - _Smoothness: 1
+    - _Smoothness: 0.532
     m_Colors:
     - _BaseColor: {r: 0.78113204, g: 0.78113204, b: 0.78113204, a: 1}
   m_BuildTextureStacks: []
