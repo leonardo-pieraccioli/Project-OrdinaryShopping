@@ -72,6 +72,9 @@ public class GroceriesList : MonoBehaviour
 
     public bool IsAtLeastOneProductChecked()
     {
+        if (_groceriesList.Count == 0)
+            return true;
+            
         foreach(ListElement e in _groceriesList)
         {
             if (e.isTaken)

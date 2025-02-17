@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ChangeDayCollision : MonoBehaviour
 {
-    [SerializeField] private string helpMessage = "You haven't taken any products from the shopping list. Pick up your phone with the Spacebar and navigate with Q or E to see the shopping list.";
+    [SerializeField] private string helpMessage = "You haven't taken any products from the shopping list. Pick up your phone with the Spacebar and navigate with Q or E to see the shopping list. Remember to pay at the counter!";
     private FirstPersonController player;
+    private bool hasPlayerPaid = false;
     void Start()
     {
 
@@ -22,8 +23,7 @@ public class ChangeDayCollision : MonoBehaviour
         // Verifica se l'altro collider appartiene all'oggetto specifico che desideri
         if ( other.CompareTag("Player") )
         {
-            if (BalanceText.Instance.balance >= BalanceText.MINIMUM_BALANCE_EXIT
-                && !GroceriesList.Instance.IsAtLeastOneProductChecked() )
+            if (!hasPlayerPaid)
             {
                 CanvasManager.Instance.ActivateCanvas(CanvasCode.CNV_HELPBOX);
                 DialogueManager.Instance.WriteHelpMessage(helpMessage);
@@ -31,11 +31,15 @@ public class ChangeDayCollision : MonoBehaviour
             else if (DayManager.Instance.currentDay.dayNumber < 5)
             {
                 // Chiama la funzione desiderata sull'oggetto che contiene questo script
+                hasPlayerPaid = false;
+                CanvasManager.Instance.DeactivateCanvas(CanvasCode.CNV_HELPBOX);
                 DayManager.Instance.LoadDayData(DayManager.Instance.currentDay.dayNumber + 1);
                 player.ResetToStartPosition();
             }
             else
             {
+                CanvasManager.Instance.DeactivateCanvas(CanvasCode.CNV_HUD);
+                CanvasManager.Instance.DeactivateCanvas(CanvasCode.CNV_PHONE);
                 SceneManager.LoadScene(2);
             }
         }
@@ -50,4 +54,27 @@ public class ChangeDayCollision : MonoBehaviour
             CanvasManager.Instance.DeactivateCanvas(CanvasCode.CNV_HELPBOX);
         }
     }
+
+    public void Pay()
+    {
+        if (GroceriesList.Instance.IsAtLeastOneProductChecked())
+        {
+            CanvasManager.Instance.ActivateCanvas(CanvasCode.CNV_HELPBOX);
+            DialogueManager.Instance.WriteHelpMessage("You have paid. Now you can exit the store.");
+            hasPlayerPaid = true;
+        }
+        else 
+        {
+            CanvasManager.Instance.ActivateCanvas(CanvasCode.CNV_HELPBOX);
+            DialogueManager.Instance.WriteHelpMessage("To pay you have to buy at least one product from the shopping list.");
+            StartCoroutine(DeactivateHelpBox());
+        }
+    }
+
+    private System.Collections.IEnumerator DeactivateHelpBox()
+    {
+        yield return new WaitForSeconds(4);
+        CanvasManager.Instance.DeactivateCanvas(CanvasCode.CNV_HELPBOX);
+    }
+
 }

@@ -58,6 +58,9 @@ public class ProductManager : MonoBehaviour
         // Genera i vari prodotti
         for (int i = 0; i < currentProductInfo.Length; i++)
         {
+            if(currentProductInfo[i]._xn==0 || currentProductInfo[i]._yn==0||currentProductInfo[i]._zn==0){
+                continue;
+            } 
             Product.Generate(currentProductInfo[i]);
             nistance++;
         }
