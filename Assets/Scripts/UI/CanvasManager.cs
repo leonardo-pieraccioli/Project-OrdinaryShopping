@@ -5,6 +5,7 @@ using UnityEngine;
 
 using StarterAssets;
 using Unity.VisualScripting;
+using System.Linq;
 
 public enum CanvasCode 
 {
@@ -13,7 +14,8 @@ public enum CanvasCode
     CNV_DIALOGUE,
     CNV_HELPBOX,
     CNV_PHONE,
-    CNV_MENU
+    CNV_MENU,
+    CNV_CASSA
 };
 
 public class CanvasManager : MonoBehaviour
@@ -59,7 +61,7 @@ public class CanvasManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if ( (canvases[(int)CanvasCode.CNV_CASSA] || !canvases.Any( c => c.isActiveAndEnabled == true )) && Input.GetKeyDown(KeyCode.Escape))
         {
             ToggleMenu();
         }
