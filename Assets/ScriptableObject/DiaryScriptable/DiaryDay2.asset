@@ -18,3 +18,4 @@ MonoBehaviour:
     war was really close. I smiled and told her it was just a bad dream. She was
     relieved and fell asleep hugging her new toy."
   dayImage: {fileID: 0}
+  voiceOver: {fileID: 8300000, guid: 62d78051e092ff144acc7316ca4f7e40, type: 3}
