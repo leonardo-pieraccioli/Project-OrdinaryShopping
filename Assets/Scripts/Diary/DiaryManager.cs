@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using StarterAssets;
+using Unity.VisualScripting;
+using UnityEngine.Audio;
 
 public class DiaryManager : MonoBehaviour
 {
@@ -34,6 +36,10 @@ public class DiaryManager : MonoBehaviour
     private DiaryDay currentDay; // Giorno attuale
     private LightManager lightManager;
 
+    [SerializeField] private AudioMixerGroup voiceOverMixer;
+    public AudioSource voiceOverSource;
+    
+
     void Awake()
     {
         // Assicura il Singleton
@@ -43,7 +49,12 @@ public class DiaryManager : MonoBehaviour
             Destroy(gameObject);
 
 
-            controller = GameObject.FindObjectOfType<FirstPersonController>();
+        controller = GameObject.FindObjectOfType<FirstPersonController>();
+        voiceOverSource = transform.AddComponent<AudioSource>();
+        voiceOverSource.playOnAwake = false;
+        voiceOverSource.loop = false;
+        voiceOverSource.spatialBlend = 0;
+        // voiceOverSource.outputAudioMixerGroup = voiceOverMixer;
 
         // Assicura che il Canvas sia attivo
         if (diaryCanvas != null)
@@ -92,6 +103,7 @@ public class DiaryManager : MonoBehaviour
         // Imposta i valori del giorno nel diario
         if (dayNameText != null) dayNameText.text = day.dayName;
         if (dayText != null) dayText.text = day.dayText;
+        if (voiceOverSource != null) voiceOverSource.clip = day.voiceOver;
         //if (dayImage != null && day.dayImage != null)
         //    dayImage.sprite = day.dayImage;
         else
@@ -100,6 +112,7 @@ public class DiaryManager : MonoBehaviour
         // Blocca il movimento del giocatore
         if (controller != null) controller.LockMovement(true);
 
+        voiceOverSource.Play();
         // Mostra il diario con effetto fade-in
         StartCoroutine(ShowDiary());
     }
@@ -116,6 +129,7 @@ public class DiaryManager : MonoBehaviour
 
     public void CloseDiary()
     {
+        voiceOverSource.Stop();
         StopAllCoroutines(); // Previene sovrapposizioni di fade
         StartCoroutine(HideDiary());
     }
@@ -150,7 +164,6 @@ public class DiaryManager : MonoBehaviour
             fadeOverlay.color = new Color(0, 0, 0, Mathf.Lerp(1, 0, elapsedTime / duration));
             yield return null;
         }
-
         fadeOverlay.gameObject.SetActive(false);
     }
 
