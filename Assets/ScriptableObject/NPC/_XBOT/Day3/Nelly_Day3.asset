@@ -15,8 +15,9 @@ MonoBehaviour:
   prefab: {fileID: 4853459816441512934, guid: eb13820d95216964a8b2d06508706746, type: 3}
   position: 2
   npcName: Nelly
+  isTrigger: 1
   dialogues:
-  - "I am so cold\u2026 Did you find any water?"
+  - "I am so cold\u2026 Did you find any blanckets?"
   audioClips:
   - {fileID: 8300000, guid: 6f619ceb809c1a74c8c6698367d8ce29, type: 3}
   animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}
