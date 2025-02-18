@@ -28,7 +28,7 @@ MonoBehaviour:
     _xn: 4
     _yn: 2
     _zn: 2
-    _offset: {x: 2, y: 1, z: 1}
+    _offset: {x: 1.75, y: 1, z: 1.3}
     _rotate: 0
   - LabelPosition: ShelfWS1sotto_0_1
     productName: Tomato
@@ -45,7 +45,7 @@ MonoBehaviour:
     _xn: 8
     _yn: 2
     _zn: 1
-    _offset: {x: 2, y: 1, z: 1.3}
+    _offset: {x: 1.75, y: 1, z: 1.3}
     _rotate: 0
   - LabelPosition: ShelfWS1sotto_1_0
     productName: Fish
@@ -62,7 +62,7 @@ MonoBehaviour:
     _xn: 4
     _yn: 2
     _zn: 2
-    _offset: {x: 2, y: 1, z: 1}
+    _offset: {x: 2, y: 1, z: 1.3}
     _rotate: 0
   - LabelPosition: ShelfWS1sotto_1_1
     productName: Tomato
@@ -153,7 +153,7 @@ MonoBehaviour:
     productName: Oil
     prefabs: {fileID: 230013934694285457, guid: db0c85a4cce8097429dc35dddd171dbb,
       type: 3}
-    price: 8.49
+    price: 6.49
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 762.00024, y: 2215.4524, z: 624.8471}
@@ -170,7 +170,7 @@ MonoBehaviour:
     productName: Oil
     prefabs: {fileID: 230013934694285457, guid: db0c85a4cce8097429dc35dddd171dbb,
       type: 3}
-    price: 8.49
+    price: 6.49
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 762.00024, y: 2215.4524, z: 624.8471}
@@ -232,7 +232,7 @@ MonoBehaviour:
     _xn: 4
     _yn: 2
     _zn: 2
-    _offset: {x: 1.5, y: 1, z: 1}
+    _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfWS1sopra_0_1
     productName: Tomato
@@ -266,7 +266,7 @@ MonoBehaviour:
     _xn: 4
     _yn: 2
     _zn: 2
-    _offset: {x: 1.5, y: 1, z: 1}
+    _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfWS1sopra_1_1
     productName: Tomato
@@ -297,7 +297,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.2563, y: 1.2563, z: 1.2563}
     _positions: {x: 6.638, y: 1.248, z: 3.392}
-    _xn: 10
+    _xn: 9
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.2}
@@ -1082,7 +1082,7 @@ MonoBehaviour:
     _xn: 5
     _yn: 2
     _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1}
+    _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfN3Sopra_1_0
     productName: Meat
@@ -1099,7 +1099,7 @@ MonoBehaviour:
     _xn: 5
     _yn: 2
     _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1}
+    _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfN4sotto_0_0
     productName: Soda
@@ -1183,7 +1183,7 @@ MonoBehaviour:
     _positions: {x: 10.724, y: 0.24000001, z: 6.6537995}
     _xn: 6
     _yn: 1
-    _zn: 1
+    _zn: 2
     _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfN5sotto_1_0
@@ -1200,7 +1200,7 @@ MonoBehaviour:
     _positions: {x: 10.724, y: 0.804, z: 6.6537995}
     _xn: 6
     _yn: 1
-    _zn: 1
+    _zn: 2
     _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfN5Sopra_0_0
@@ -1217,7 +1217,7 @@ MonoBehaviour:
     _positions: {x: 10.6970005, y: 1.248, z: 6.6537995}
     _xn: 6
     _yn: 1
-    _zn: 1
+    _zn: 2
     _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfN5Sopra_1_0
@@ -1234,7 +1234,7 @@ MonoBehaviour:
     _positions: {x: 10.6970005, y: 1.678, z: 6.6537995}
     _xn: 6
     _yn: 1
-    _zn: 1
+    _zn: 2
     _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_0_0
@@ -1248,11 +1248,11 @@ MonoBehaviour:
     centerCollider: {x: 1.1844975e-16, y: 0.1250378, z: 3.971668e-23}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 11.898001, y: 0.39365608, z: -3.263}
+    _positions: {x: 12.056, y: 0.39365608, z: -3.263}
     _xn: 4
     _yn: 1
-    _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1}
+    _zn: 2
+    _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_0_1
     productName: Milk
@@ -1265,11 +1265,11 @@ MonoBehaviour:
     centerCollider: {x: 1.1844975e-16, y: 0.1250378, z: 3.971668e-23}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 12.446, y: 0.39365608, z: -3.263}
+    _positions: {x: 12.603999, y: 0.39365608, z: -3.263}
     _xn: 5
     _yn: 1
-    _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1}
+    _zn: 2
+    _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_0_2
     productName: Milk
@@ -1282,11 +1282,11 @@ MonoBehaviour:
     centerCollider: {x: 1.1844975e-16, y: 0.1250378, z: 3.971668e-23}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 13.117001, y: 0.39365608, z: -3.263}
+    _positions: {x: 13.275, y: 0.39365608, z: -3.263}
     _xn: 5
     _yn: 1
-    _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1}
+    _zn: 2
+    _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_0_3
     productName: Milk
@@ -1299,11 +1299,11 @@ MonoBehaviour:
     centerCollider: {x: -0.00000023841858, y: 0.1250378, z: 3.971668e-23}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 13.882, y: 0.39365608, z: -3.263}
+    _positions: {x: 14.039999, y: 0.39365608, z: -3.263}
     _xn: 4
     _yn: 1
-    _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1}
+    _zn: 2
+    _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_1_0
     productName: Soda
@@ -1316,11 +1316,11 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 11.898001, y: 0.964, z: -3.263}
+    _positions: {x: 12.056, y: 0.964, z: -3.263}
     _xn: 4
     _yn: 1
-    _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1}
+    _zn: 2
+    _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_1_1
     productName: Soda
@@ -1333,11 +1333,11 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 12.446, y: 0.964, z: -3.263}
+    _positions: {x: 12.603999, y: 0.964, z: -3.263}
     _xn: 5
     _yn: 1
-    _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1}
+    _zn: 2
+    _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_1_2
     productName: Soda
@@ -1350,11 +1350,11 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 13.117001, y: 0.964, z: -3.263}
+    _positions: {x: 13.275, y: 0.964, z: -3.263}
     _xn: 5
     _yn: 1
-    _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1}
+    _zn: 2
+    _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_1_3
     productName: Soda
@@ -1367,11 +1367,11 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 13.882, y: 0.964, z: -3.263}
+    _positions: {x: 14.039999, y: 0.964, z: -3.263}
     _xn: 4
     _yn: 1
-    _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1}
+    _zn: 2
+    _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_2_0
     productName: Soda
@@ -1384,11 +1384,11 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 11.898001, y: 1.3880723, z: -3.263}
+    _positions: {x: 12.056, y: 1.3880723, z: -3.263}
     _xn: 4
     _yn: 1
-    _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1}
+    _zn: 2
+    _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_2_1
     productName: Soda
@@ -1401,11 +1401,11 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 12.446, y: 1.3880723, z: -3.263}
+    _positions: {x: 12.603999, y: 1.3880723, z: -3.263}
     _xn: 5
     _yn: 1
-    _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1}
+    _zn: 2
+    _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_2_2
     productName: Soda
@@ -1418,11 +1418,11 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 13.117001, y: 1.3880723, z: -3.263}
+    _positions: {x: 13.275, y: 1.3880723, z: -3.263}
     _xn: 5
     _yn: 1
-    _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1}
+    _zn: 2
+    _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_2_3
     productName: Soda
@@ -1435,11 +1435,11 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 13.847, y: 1.3880723, z: -3.263}
+    _positions: {x: 14.004999, y: 1.3880723, z: -3.263}
     _xn: 4
     _yn: 1
-    _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1}
+    _zn: 2
+    _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_3_0
     productName: Soda
@@ -1452,10 +1452,10 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255707, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 11.898001, y: 1.8056769, z: -3.263}
+    _positions: {x: 12.056, y: 1.8056769, z: -3.263}
     _xn: 4
     _yn: 1
-    _zn: 1
+    _zn: 2
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_3_1
@@ -1469,11 +1469,11 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255707, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 12.446, y: 1.8056769, z: -3.263}
+    _positions: {x: 12.603999, y: 1.8056769, z: -3.263}
     _xn: 5
     _yn: 1
-    _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1}
+    _zn: 2
+    _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_3_2
     productName: Soda
@@ -1486,11 +1486,11 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255707, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 13.117001, y: 1.8056769, z: -3.263}
+    _positions: {x: 13.275, y: 1.8056769, z: -3.263}
     _xn: 5
     _yn: 1
-    _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1}
+    _zn: 2
+    _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_3_3
     productName: Soda
@@ -1503,9 +1503,9 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255707, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 13.882, y: 1.8056769, z: -3.263}
+    _positions: {x: 14.039999, y: 1.8056769, z: -3.263}
     _xn: 4
     _yn: 1
     _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1}
+    _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
