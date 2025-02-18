@@ -41,10 +41,6 @@ public class CanvasManager : MonoBehaviour
     // ---- 
     private FirstPersonController controller;
     private bool isMenuActive = false;
-    void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -61,7 +57,10 @@ public class CanvasManager : MonoBehaviour
 
     void Update()
     {
-        if ( (canvases[(int)CanvasCode.CNV_CASSA] || !canvases.Any( c => c.isActiveAndEnabled == true )) && Input.GetKeyDown(KeyCode.Escape))
+        if (        !canvases[(int)CanvasCode.CNV_CASSA].gameObject.activeSelf
+                &&  !canvases[(int)CanvasCode.CNV_INSPECT].gameObject.activeSelf
+                &&  !DiaryManager.Instance.voiceOverSource.isPlaying 
+                &&  Input.GetKeyDown(KeyCode.Escape))
         {
             ToggleMenu();
         }

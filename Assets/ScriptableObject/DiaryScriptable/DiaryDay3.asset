@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46c50183bb4fcc44b6119cd110f59a2, type: 3}
   m_Name: DiaryDay3
   m_EditorClassIdentifier: 
-  dayName: 13th May
-  dayText: The situation is worsening, Jack lost a lot of weight. Angela drank dirty
+  dayName: 'May 30th '
+  dayText: "The situation is worsening, Jack lost a lot of weight. Angela drank dirty
     water and vomited all night. They were already feeling weak because of the cold,
-    the situation is getting worse.
+    I don\u2019t know what to do."
   dayImage: {fileID: 0}
+  voiceOver: {fileID: 8300000, guid: 9f6b44aa2a6f3964f9845554db57b74e, type: 3}

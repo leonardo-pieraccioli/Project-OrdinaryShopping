@@ -23,7 +23,11 @@ public class ChangeDayCollision : MonoBehaviour
         // Verifica se l'altro collider appartiene all'oggetto specifico che desideri
         if ( other.CompareTag("Player") )
         {
-            if (!hasPlayerPaid)
+            if (DayManager.Instance.currentDay.dayNumber == 5)
+            {
+                SceneManager.LoadScene(2);
+            }
+            else if (!hasPlayerPaid)
             {
                 CanvasManager.Instance.ActivateCanvas(CanvasCode.CNV_HELPBOX);
                 DialogueManager.Instance.WriteHelpMessage(helpMessage);
@@ -35,12 +39,6 @@ public class ChangeDayCollision : MonoBehaviour
                 CanvasManager.Instance.DeactivateCanvas(CanvasCode.CNV_HELPBOX);
                 DayManager.Instance.LoadDayData(DayManager.Instance.currentDay.dayNumber + 1);
                 player.ResetToStartPosition();
-            }
-            else
-            {
-                CanvasManager.Instance.DeactivateCanvas(CanvasCode.CNV_HUD);
-                CanvasManager.Instance.DeactivateCanvas(CanvasCode.CNV_PHONE);
-                SceneManager.LoadScene(2);
             }
         }
 

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46c50183bb4fcc44b6119cd110f59a2, type: 3}
   m_Name: DiaryDay2
   m_EditorClassIdentifier: 
-  dayName: 12th May
-  dayText: "Last night I talked with Mary, she is very worried for our children too.
-    Maybe we should escape, but I am afraid its too late\u2026 Angela asked if the
-    war was really close. I smiled and told her it was just a bad dream. She was
-    relieved and fell asleep hugging her new toy."
+  dayName: 'May 19th '
+  dayText: "Last night, I spoke with Mary\u2014she\u2019s worried too. Maybe we should
+    escape, but it may be too late\u2026 Angela asked if the war was near. I smiled
+    and said it was just a bad dream. She relaxed and fell asleep, hugging her new
+    toy."
   dayImage: {fileID: 0}
-  voiceOver: {fileID: 8300000, guid: 62d78051e092ff144acc7316ca4f7e40, type: 3}
+  voiceOver: {fileID: 8300000, guid: d088373339d120c4c8ff7e84d5823882, type: 3}
