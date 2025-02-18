@@ -15,8 +15,9 @@ MonoBehaviour:
   prefab: {fileID: 4853459816441512934, guid: eb13820d95216964a8b2d06508706746, type: 3}
   position: 4
   npcName: Jacob
+  isTrigger: 0
   dialogues:
   - Have you heard about the bombings in the fields? I am worried for my colleagues
   audioClips:
-  - {fileID: 8300000, guid: dd928dc1258bd3449a6419253adffd14, type: 3}
+  - {fileID: 8300000, guid: f0fdf76c10ba1c940bb7d5086d83baca, type: 3}
   animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}

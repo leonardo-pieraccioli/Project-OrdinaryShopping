@@ -15,8 +15,9 @@ MonoBehaviour:
   prefab: {fileID: 4853459816441512934, guid: eb13820d95216964a8b2d06508706746, type: 3}
   position: 5
   npcName: Mark
+  isTrigger: 1
   dialogues:
-  - "Its empty\u2026"
+  - "I am so thirsty\u2026"
   audioClips:
-  - {fileID: 8300000, guid: 4c314f261bc1c9d44b65f53ce2158611, type: 3}
+  - {fileID: 8300000, guid: 9ea8bf61df67e434cab218bf80119cb3, type: 3}
   animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}

@@ -193,7 +193,7 @@ public class DialogueManager : MonoBehaviour
         {
             Debug.LogError("Audio source not found on NPC: " + npc.npcName + " on day " + DayManager.Instance.currentDay);
         }
-        else
+        else if (audioClips.Length > 0)
         {
             npc.audioSource.clip = audioClips[currentDialogueIndex];
             npc.audioSource.Play();
