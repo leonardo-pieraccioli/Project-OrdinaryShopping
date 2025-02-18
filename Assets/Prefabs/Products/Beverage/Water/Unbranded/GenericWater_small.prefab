@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 7728409420614888988}
   - component: {fileID: 5970192143404872388}
   - component: {fileID: 1247476940502632720}
-  m_Layer: 0
+  - component: {fileID: -591328350123433007}
+  m_Layer: 8
   m_Name: GenericWater_small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725709982864244551}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071069, y: -0.00000008429369, z: -0.000000084293696, w: 0.7071067}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.2891031, y: -0.0011655472, z: 5.353168e-10}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
@@ -85,3 +86,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-591328350123433007
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725709982864244551}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0006516593, y: 0.00065165927, z: 0.0020967326}
+  m_Center: {x: -0.000030392766, y: -1.4551915e-10, z: 0.0010583766}
