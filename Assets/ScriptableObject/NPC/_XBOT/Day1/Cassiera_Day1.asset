@@ -19,5 +19,5 @@ MonoBehaviour:
   dialogues:
   - What a pretty unicorn
   audioClips:
-  - {fileID: 8300000, guid: 62d78051e092ff144acc7316ca4f7e40, type: 3}
+  - {fileID: 8300000, guid: 624109dae0af67e4fa4f8e2539e62d70, type: 3}
   animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}

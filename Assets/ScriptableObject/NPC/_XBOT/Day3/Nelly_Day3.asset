@@ -19,5 +19,5 @@ MonoBehaviour:
   dialogues:
   - "I am so cold\u2026 Did you find any blanckets?"
   audioClips:
-  - {fileID: 8300000, guid: 6f619ceb809c1a74c8c6698367d8ce29, type: 3}
+  - {fileID: 8300000, guid: d058177f253d8f5468fe6eac0fce617c, type: 3}
   animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}

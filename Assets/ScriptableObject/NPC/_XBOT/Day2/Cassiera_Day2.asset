@@ -20,5 +20,5 @@ MonoBehaviour:
   - "I hope you have found some things usefull, we didn\u2019t get any supplies due
     to the road blockages."
   audioClips:
-  - {fileID: 8300000, guid: a41b62afefe97a144bd31e91d094d8a2, type: 3}
+  - {fileID: 8300000, guid: 718ed9e9f550f8b409bfa33ad8dc3b34, type: 3}
   animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}

@@ -19,5 +19,5 @@ MonoBehaviour:
   dialogues:
   - "Did you hear the radio today? Weird\u2026Did you hear the radio today? Weird\u2026"
   audioClips:
-  - {fileID: 8300000, guid: 44d75a3908bb36f4ba2d57821e4a6329, type: 3}
+  - {fileID: 8300000, guid: a6e07b0d30f2e884e9f6b36c6b40d7c3, type: 3}
   animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}

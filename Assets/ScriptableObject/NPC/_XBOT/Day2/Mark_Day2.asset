@@ -19,5 +19,5 @@ MonoBehaviour:
   dialogues:
   - Have you seen the canned fish, how is it possible that the shelf is empty
   audioClips:
-  - {fileID: 8300000, guid: c1f8c1f8191cd684c906ab05cddd831a, type: 3}
+  - {fileID: 8300000, guid: aed230f39f0a7a34caf13cffc41b9c76, type: 3}
   animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}
