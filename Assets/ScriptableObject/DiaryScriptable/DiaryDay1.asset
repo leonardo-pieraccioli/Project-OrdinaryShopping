@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46c50183bb4fcc44b6119cd110f59a2, type: 3}
   m_Name: DiaryDay1
   m_EditorClassIdentifier: 
-  dayName: '11th May '
+  dayName: 'May 11th '
   dayText: "Life is simple, and I am grateful. Mary and I care for Jack and Angela\u2014Jack,
     fragile but strong in his own way, and Angela, always full of questions. They
-    are my world, my joy. I just wish I could give them more. "
+    are my world, my joy. I just wish I could give them more."
   dayImage: {fileID: 0}
-  voiceOver: {fileID: 8300000, guid: 2cc76f9255c5eb048b60787bfcd3c26f, type: 3}
+  voiceOver: {fileID: 8300000, guid: 66c2dec9cea106a49b174b64cc208d90, type: 3}

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46c50183bb4fcc44b6119cd110f59a2, type: 3}
   m_Name: DiaryDay4
   m_EditorClassIdentifier: 
-  dayName: 14th May
-  dayText: "I cannot stop thinking about Jacob dying in the fields, he always helped
-    me to carry bags at the market, he had his whole life ahead of him\u2026 Bombs
-    are falling from the sky, day and night. The closest one fell one km from our
-    house. Why are they doing this to us?"
+  dayName: 'June 11th '
+  dayText: "I can't stop thinking about Jacob\u2014he had his whole life ahead. He
+    used to help me at the market. Now, bombs fall day and night. One hit just a
+    kilometer away. Why is this happening to us?"
   dayImage: {fileID: 0}
+  voiceOver: {fileID: 8300000, guid: d67fcc4c3476602438abd35ad717e6dc, type: 3}

@@ -437,7 +437,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ec5311ab6c76ec48a8a16857291bf88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayInfo: {fileID: 0}
+  dayInfo: {fileID: 11400000, guid: f722bff7e7da6d448bcab84b03767ead, type: 2}
+  isTrigger: 0
   audioSource: {fileID: 0}
   audioClips: []
   dialogue: []

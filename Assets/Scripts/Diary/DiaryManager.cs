@@ -38,7 +38,14 @@ public class DiaryManager : MonoBehaviour
 
     [SerializeField] private AudioMixerGroup voiceOverMixer;
     public AudioSource voiceOverSource;
-    
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            CloseDiary();
+        }   
+    }
 
     void Awake()
     {
@@ -112,6 +119,7 @@ public class DiaryManager : MonoBehaviour
         // Blocca il movimento del giocatore
         if (controller != null) controller.LockMovement(true);
 
+        Cursor.visible = true;
         voiceOverSource.Play();
         // Mostra il diario con effetto fade-in
         StartCoroutine(ShowDiary());
