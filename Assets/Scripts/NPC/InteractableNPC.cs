@@ -32,6 +32,7 @@ public class InteractableNPC : MonoBehaviour, IInteractable
             triggerCollider = gameObject.AddComponent<SphereCollider>();
             triggerCollider.isTrigger = true;
             triggerCollider.radius = 2.5f;
+            this.gameObject.layer = LayerMask.NameToLayer("Default");
         }
         audioSource = GetComponent<AudioSource>();
         audioClips = dayInfo.audioClips;

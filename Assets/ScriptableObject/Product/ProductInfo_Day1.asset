@@ -36,7 +36,7 @@ MonoBehaviour:
       type: 3}
     price: 2.99
     description: 
-    isInShoppingList: 0
+    isInShoppingList: 1
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
     centerCollider: {x: 0.0000009536743, y: 0.11459063, z: 0}
     emptyPos: {fileID: 0}
@@ -45,7 +45,7 @@ MonoBehaviour:
     _xn: 8
     _yn: 2
     _zn: 1
-    _offset: {x: 1.75, y: 1, z: 1.3}
+    _offset: {x: 2, y: 1, z: 1.3}
     _rotate: 0
   - LabelPosition: ShelfWS1sotto_1_0
     productName: Fish
@@ -153,9 +153,9 @@ MonoBehaviour:
     productName: Oil
     prefabs: {fileID: 230013934694285457, guid: db0c85a4cce8097429dc35dddd171dbb,
       type: 3}
-    price: 6.49
+    price: 9.49
     description: 
-    isInShoppingList: 0
+    isInShoppingList: 1
     sizeCollider: {x: 762.00024, y: 2215.4524, z: 624.8471}
     centerCollider: {x: 0.24986267, y: 1109.2484, z: -20.952637}
     emptyPos: {fileID: 0}
@@ -170,7 +170,7 @@ MonoBehaviour:
     productName: Oil
     prefabs: {fileID: 230013934694285457, guid: db0c85a4cce8097429dc35dddd171dbb,
       type: 3}
-    price: 6.49
+    price: 9.49
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 762.00024, y: 2215.4524, z: 624.8471}
@@ -189,7 +189,7 @@ MonoBehaviour:
       type: 3}
     price: 1.1
     description: 
-    isInShoppingList: 0
+    isInShoppingList: 1
     sizeCollider: {x: 2, y: 2, z: 1.9999999}
     centerCollider: {x: 0, y: 0.9999981, z: 0}
     emptyPos: {fileID: 0}
@@ -442,7 +442,7 @@ MonoBehaviour:
     productName: Cake
     prefabs: {fileID: 3933548172878679237, guid: d723c88e16dcf514991a8cffd419d7b3,
       type: 3}
-    price: 8.99
+    price: 7.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.18743965, y: 0.11237903, z: 0.12935935}
@@ -459,7 +459,7 @@ MonoBehaviour:
     productName: Cake
     prefabs: {fileID: 3933548172878679237, guid: d723c88e16dcf514991a8cffd419d7b3,
       type: 3}
-    price: 8.99
+    price: 7.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.18743965, y: 0.11237903, z: 0.12935935}
@@ -476,7 +476,7 @@ MonoBehaviour:
     productName: Cake
     prefabs: {fileID: 3933548172878679237, guid: d723c88e16dcf514991a8cffd419d7b3,
       type: 3}
-    price: 8.99
+    price: 7.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.18743965, y: 0.11237903, z: 0.12935935}
@@ -495,7 +495,7 @@ MonoBehaviour:
       type: 3}
     price: 6.99
     description: 
-    isInShoppingList: 0
+    isInShoppingList: 1
     sizeCollider: {x: 0.08839113, y: 0.2937395, z: 0.061210893}
     centerCollider: {x: 0.000000026077032, y: 0.14686975, z: 0}
     emptyPos: {fileID: 0}
@@ -629,9 +629,9 @@ MonoBehaviour:
     productName: Chips
     prefabs: {fileID: 8533873060431379036, guid: e0ad384f3cd21a64d9d52e1fe6e1ec4c,
       type: 3}
-    price: 0
+    price: 0.99
     description: 
-    isInShoppingList: 0
+    isInShoppingList: 1
     sizeCollider: {x: 0.24808007, y: 0.29773057, z: 0.13224001}
     centerCollider: {x: -0.009129796, y: 0.14899841, z: -0.007523367}
     emptyPos: {fileID: 0}
@@ -646,7 +646,7 @@ MonoBehaviour:
     productName: Chips
     prefabs: {fileID: 8533873060431379036, guid: e0ad384f3cd21a64d9d52e1fe6e1ec4c,
       type: 3}
-    price: 0
+    price: 0.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.24808007, y: 0.29773057, z: 0.13224001}
@@ -663,7 +663,7 @@ MonoBehaviour:
     productName: Chips
     prefabs: {fileID: 8533873060431379036, guid: e0ad384f3cd21a64d9d52e1fe6e1ec4c,
       type: 3}
-    price: 0
+    price: 0.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.24808007, y: 0.29773057, z: 0.13224001}
@@ -680,7 +680,7 @@ MonoBehaviour:
     productName: Chips
     prefabs: {fileID: 8533873060431379036, guid: e0ad384f3cd21a64d9d52e1fe6e1ec4c,
       type: 3}
-    price: 0
+    price: 0.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.24808007, y: 0.29773057, z: 0.13224001}
@@ -833,7 +833,7 @@ MonoBehaviour:
     productName: Eyedrop
     prefabs: {fileID: 2383542905293890662, guid: c2b91f9ddc53a814e9887aaa0963087b,
       type: 3}
-    price: 4.99
+    price: 5.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.022832284, y: 0.06775481, z: 0.022832286}
@@ -850,7 +850,7 @@ MonoBehaviour:
     productName: Eyedrop
     prefabs: {fileID: 2383542905293890662, guid: c2b91f9ddc53a814e9887aaa0963087b,
       type: 3}
-    price: 4.99
+    price: 5.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.022832284, y: 0.06775481, z: 0.022832286}
@@ -901,7 +901,7 @@ MonoBehaviour:
     productName: Cake
     prefabs: {fileID: 3933548172878679237, guid: d723c88e16dcf514991a8cffd419d7b3,
       type: 3}
-    price: 8.99
+    price: 7.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.18743965, y: 0.11237903, z: 0.12935935}
@@ -918,7 +918,7 @@ MonoBehaviour:
     productName: Cake
     prefabs: {fileID: 3933548172878679237, guid: d723c88e16dcf514991a8cffd419d7b3,
       type: 3}
-    price: 8.99
+    price: 7.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.18743965, y: 0.11237903, z: 0.12935935}
@@ -1238,12 +1238,12 @@ MonoBehaviour:
     _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_0_0
-    productName: Milk
+    productName: Fresh Milk
     prefabs: {fileID: 2190908929263238766, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
     price: 1.49
     description: 
-    isInShoppingList: 0
+    isInShoppingList: 1
     sizeCollider: {x: 0.090457484, y: 0.24942127, z: 0.14858355}
     centerCollider: {x: 1.1844975e-16, y: 0.1250378, z: 3.971668e-23}
     emptyPos: {fileID: 0}
@@ -1255,7 +1255,7 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_0_1
-    productName: Milk
+    productName: Fresh Milk
     prefabs: {fileID: 2190908929263238766, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
     price: 1.49
@@ -1272,7 +1272,7 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_0_2
-    productName: Milk
+    productName: Fresh Milk
     prefabs: {fileID: 2190908929263238766, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
     price: 1.49
@@ -1289,7 +1289,7 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_0_3
-    productName: Milk
+    productName: Fresh Milk
     prefabs: {fileID: 2190908929263238766, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
     price: 1.49
@@ -1306,12 +1306,12 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_1_0
-    productName: Soda
+    productName: Fresh Soda
     prefabs: {fileID: 6099454480340716241, guid: e26626a233d70614e8015042417431b0,
       type: 3}
     price: 1.99
     description: 
-    isInShoppingList: 0
+    isInShoppingList: 1
     sizeCollider: {x: 0.045758285, y: 0.10647632, z: 0.04575828}
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
@@ -1323,7 +1323,7 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_1_1
-    productName: Soda
+    productName: Fresh Soda
     prefabs: {fileID: 6099454480340716241, guid: e26626a233d70614e8015042417431b0,
       type: 3}
     price: 1.99
@@ -1340,7 +1340,7 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_1_2
-    productName: Soda
+    productName: Fresh Soda
     prefabs: {fileID: 4477105512359372738, guid: c6f4bca6e32cd38469e64071fd0ecd7a,
       type: 3}
     price: 1.99
@@ -1357,7 +1357,7 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_1_3
-    productName: Soda
+    productName: Fresh Soda
     prefabs: {fileID: 6099454480340716241, guid: e26626a233d70614e8015042417431b0,
       type: 3}
     price: 1.99
@@ -1374,7 +1374,7 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_2_0
-    productName: Soda
+    productName: Fresh Soda
     prefabs: {fileID: 4477105512359372738, guid: c6f4bca6e32cd38469e64071fd0ecd7a,
       type: 3}
     price: 1.99
@@ -1391,7 +1391,7 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_2_1
-    productName: Soda
+    productName: Fresh Soda
     prefabs: {fileID: 4477105512359372738, guid: c6f4bca6e32cd38469e64071fd0ecd7a,
       type: 3}
     price: 1.99
@@ -1408,7 +1408,7 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_2_2
-    productName: Soda
+    productName: Fresh Soda
     prefabs: {fileID: 8973046401379164388, guid: 466ec06af0c7bbd40af23c8cb407751e,
       type: 3}
     price: 1.99
@@ -1425,7 +1425,7 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_2_3
-    productName: Soda
+    productName: Fresh Soda
     prefabs: {fileID: 8973046401379164388, guid: 466ec06af0c7bbd40af23c8cb407751e,
       type: 3}
     price: 1.99
@@ -1442,7 +1442,7 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_3_0
-    productName: Soda
+    productName: Fresh Soda
     prefabs: {fileID: 8973046401379164388, guid: 466ec06af0c7bbd40af23c8cb407751e,
       type: 3}
     price: 1.99
@@ -1459,7 +1459,7 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_3_1
-    productName: Soda
+    productName: Fresh Soda
     prefabs: {fileID: 8973046401379164388, guid: 466ec06af0c7bbd40af23c8cb407751e,
       type: 3}
     price: 1.99
@@ -1476,7 +1476,7 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_3_2
-    productName: Soda
+    productName: Fresh Soda
     prefabs: {fileID: 6099454480340716241, guid: e26626a233d70614e8015042417431b0,
       type: 3}
     price: 1.99
@@ -1493,7 +1493,7 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_3_3
-    productName: Soda
+    productName: Fresh Soda
     prefabs: {fileID: 6099454480340716241, guid: e26626a233d70614e8015042417431b0,
       type: 3}
     price: 1.99
