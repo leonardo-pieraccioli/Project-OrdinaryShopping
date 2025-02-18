@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Newspaper 2
+  m_Name: Welcome
   m_Shader: {fileID: -6465566751694194690, guid: d0508fb690c08b049845b7190b25d007,
     type: 3}
   m_Parent: {fileID: 0}
@@ -26,7 +26,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: e9ba990317c5d7143a658633c14bd05f, type: 3}
+        m_Texture: {fileID: 2800000, guid: ca235ac266b456b45bddfbe6a1ff880f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SmoothnessMap:
