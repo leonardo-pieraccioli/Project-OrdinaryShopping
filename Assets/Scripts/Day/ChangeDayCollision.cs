@@ -25,6 +25,8 @@ public class ChangeDayCollision : MonoBehaviour
         {
             if (DayManager.Instance.currentDay.dayNumber == 5)
             {
+                if (Pills.hasGivenToKid)
+                {}
                 SceneManager.LoadScene(2);
             }
             else if (!hasPlayerPaid)

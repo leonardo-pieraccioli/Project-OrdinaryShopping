@@ -15,7 +15,8 @@ public enum CanvasCode
     CNV_HELPBOX,
     CNV_PHONE,
     CNV_MENU,
-    CNV_CASSA
+    CNV_CASSA,
+    CNV_PILLS
 };
 
 public class CanvasManager : MonoBehaviour
