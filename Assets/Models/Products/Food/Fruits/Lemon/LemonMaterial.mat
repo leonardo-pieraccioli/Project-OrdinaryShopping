@@ -105,11 +105,11 @@ Material:
     - _AmbientEnvironmentMultiplier: 1
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
-    - _Brightness: 1.71
+    - _Brightness: 4
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _Contrast: 1
+    - _Contrast: 0.954
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
