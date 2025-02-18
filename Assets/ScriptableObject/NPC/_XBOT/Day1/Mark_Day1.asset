@@ -20,4 +20,4 @@ MonoBehaviour:
   - "Did you hear the radio today? Weird\u2026Did you hear the radio today? Weird\u2026"
   audioClips:
   - {fileID: 8300000, guid: a6e07b0d30f2e884e9f6b36c6b40d7c3, type: 3}
-  animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}
+  animatorController: {fileID: 9100000, guid: f29a94b9441d13e4db3d0fdc4e1e1e57, type: 2}

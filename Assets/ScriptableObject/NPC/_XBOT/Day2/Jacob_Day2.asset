@@ -20,4 +20,4 @@ MonoBehaviour:
   - Have you heard about the bombings in the fields? I am worried for my colleagues
   audioClips:
   - {fileID: 8300000, guid: f0fdf76c10ba1c940bb7d5086d83baca, type: 3}
-  animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}
+  animatorController: {fileID: 9100000, guid: 3573c3a59a77c8e418aadcfedc3423fd, type: 2}

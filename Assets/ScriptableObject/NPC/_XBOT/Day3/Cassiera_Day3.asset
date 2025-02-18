@@ -22,4 +22,4 @@ MonoBehaviour:
     know if you ever met\u2026"
   audioClips:
   - {fileID: 8300000, guid: d01204ca255966d4dbcab8fb5e3752bb, type: 3}
-  animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}
+  animatorController: {fileID: 9100000, guid: 171b888ec648e79489df6fd7e5daf131, type: 2}

@@ -21,4 +21,4 @@ MonoBehaviour:
     to the road blockages."
   audioClips:
   - {fileID: 8300000, guid: 718ed9e9f550f8b409bfa33ad8dc3b34, type: 3}
-  animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}
+  animatorController: {fileID: 9100000, guid: a0c555b5f05661b4aabe81d0a8ee002f, type: 2}
