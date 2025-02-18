@@ -49,7 +49,7 @@ Material:
     m_Floats:
     - _AmbientEnvironmentMultiplier: 1
     - _Brightness: 4
-    - _Contrast: 1
+    - _Contrast: 1.2
     - _EdgeDistanceAttenuation: 0
     - _EdgeRim: 0
     - _EdgeSpecular: 0
