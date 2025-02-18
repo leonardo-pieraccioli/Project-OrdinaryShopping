@@ -112,6 +112,7 @@ public class DiaryManager : MonoBehaviour
         // Blocca il movimento del giocatore
         if (controller != null) controller.LockMovement(true);
 
+        Cursor.visible = true;
         voiceOverSource.Play();
         // Mostra il diario con effetto fade-in
         StartCoroutine(ShowDiary());
