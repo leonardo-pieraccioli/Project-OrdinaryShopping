@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3522548245643183803}
   - component: {fileID: 8422526406683630556}
   m_Layer: 0
-  m_Name: RecluitementPoster
+  m_Name: RecluitementPoste
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1556349033939138977}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.6722013, y: 0.008425413, z: 0.0000000011320287}
+  m_LocalPosition: {x: 5.8950934, y: -10.777814, z: -11.896408}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
