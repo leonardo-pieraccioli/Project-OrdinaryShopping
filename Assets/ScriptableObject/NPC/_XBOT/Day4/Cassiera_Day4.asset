@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 4853459816441512934, guid: eb13820d95216964a8b2d06508706746, type: 3}
   position: 3
-  npcName: Cassiera
-  dialogues: []
-  audioClips: []
+  npcName: Cassy
+  isTrigger: 1
+  dialogues:
+  - I hope your family is well, I heard about many losses in the area due to the
+    bombings.
+  audioClips:
+  - {fileID: 0}
   animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}

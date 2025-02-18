@@ -15,6 +15,7 @@ MonoBehaviour:
   prefab: {fileID: 4853459816441512934, guid: eb13820d95216964a8b2d06508706746, type: 3}
   position: 0
   npcName: Mark
+  isTrigger: 1
   dialogues:
   - Have you seen the canned fish, how is it possible that the shelf is empty
   audioClips:
