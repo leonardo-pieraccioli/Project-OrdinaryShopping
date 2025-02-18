@@ -38,7 +38,14 @@ public class DiaryManager : MonoBehaviour
 
     [SerializeField] private AudioMixerGroup voiceOverMixer;
     public AudioSource voiceOverSource;
-    
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            CloseDiary();
+        }   
+    }
 
     void Awake()
     {
