@@ -26,7 +26,7 @@ MonoBehaviour:
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 2.847, y: 0.24000001, z: 3.519}
     _xn: 4
-    _yn: 3
+    _yn: 2
     _zn: 2
     _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
@@ -60,7 +60,7 @@ MonoBehaviour:
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 2.847, y: 0.804, z: 3.519}
     _xn: 4
-    _yn: 3
+    _yn: 2
     _zn: 2
     _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
@@ -93,8 +93,8 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.2210002, y: 1.2210001, z: 1.2210002}
     _positions: {x: -0.8020006, y: 1.0247183, z: 5.6409645}
-    _xn: 2
-    _yn: 2
+    _xn: 1
+    _yn: 1
     _zn: 10
     _offset: {x: 1.5, y: 1, z: 1.3}
     _rotate: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
     _dimensions: {x: 1.2210001, y: 1.2210001, z: 1.2210001}
     _positions: {x: -0.803, y: 2.0175447, z: 5.641}
     _xn: 1
-    _yn: 2
+    _yn: 1
     _zn: 10
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
@@ -128,8 +128,8 @@ MonoBehaviour:
     _dimensions: {x: 1.5317687, y: 1.5317687, z: 1.5317689}
     _positions: {x: -0.472, y: 1.0247183, z: 6.905}
     _xn: 5
-    _yn: 2
-    _zn: 2
+    _yn: 1
+    _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.3}
     _rotate: 0
   - LabelPosition: Rack1 (3)_0_0
@@ -145,8 +145,8 @@ MonoBehaviour:
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: -0.45445144, y: 2.0175447, z: 6.904}
     _xn: 8
-    _yn: 2
-    _zn: 2
+    _yn: 1
+    _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfWS2sotto_0_0
@@ -196,7 +196,7 @@ MonoBehaviour:
     _dimensions: {x: 0.043987412, y: 0.045485795, z: 0.17992951}
     _positions: {x: 6.716, y: 0.804, z: 3.559}
     _xn: 11
-    _yn: 3
+    _yn: 2
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
@@ -212,8 +212,8 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 0.043987412, y: 0.045485795, z: 0.17992951}
     _positions: {x: 8.216, y: 0.804, z: 3.559}
-    _xn: 13
-    _yn: 3
+    _xn: 11
+    _yn: 2
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
@@ -230,7 +230,7 @@ MonoBehaviour:
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 2.847, y: 1.261, z: 3.519}
     _xn: 4
-    _yn: 3
+    _yn: 2
     _zn: 2
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
@@ -264,7 +264,7 @@ MonoBehaviour:
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 2.847, y: 1.691, z: 3.519}
     _xn: 4
-    _yn: 3
+    _yn: 2
     _zn: 2
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
@@ -299,7 +299,7 @@ MonoBehaviour:
     _positions: {x: 6.638, y: 1.248, z: 3.392}
     _xn: 10
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfWS2Sopra_0_1
@@ -316,7 +316,7 @@ MonoBehaviour:
     _positions: {x: 8.285, y: 1.248, z: 3.4449997}
     _xn: 8
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfWS2Sopra_1_0
@@ -333,7 +333,7 @@ MonoBehaviour:
     _positions: {x: 6.634, y: 1.678, z: 3.392}
     _xn: 9
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfWS2Sopra_1_1
@@ -350,7 +350,7 @@ MonoBehaviour:
     _positions: {x: 8.285, y: 1.678, z: 3.4559996}
     _xn: 8
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfWS3sotto_0_0
@@ -367,7 +367,7 @@ MonoBehaviour:
     _positions: {x: 10.318999, y: 0.24000001, z: 3.596}
     _xn: 5
     _yn: 2
-    _zn: 1
+    _zn: 2
     _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWS3sotto_0_1
@@ -400,7 +400,7 @@ MonoBehaviour:
     _dimensions: {x: 0.043987412, y: 0.045485795, z: 0.17992951}
     _positions: {x: 10.318999, y: 0.804, z: 3.596}
     _xn: 8
-    _yn: 3
+    _yn: 2
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.5}
     _rotate: 0
@@ -417,9 +417,9 @@ MonoBehaviour:
     _dimensions: {x: 0.043987412, y: 0.045485795, z: 0.17992951}
     _positions: {x: 11.601, y: 0.804, z: 3.596}
     _xn: 7
-    _yn: 3
+    _yn: 2
     _zn: 1
-    _offset: {x: 2, y: 1, z: 2}
+    _offset: {x: 1.5, y: 1, z: 2}
     _rotate: 0
   - LabelPosition: ShelfWS3Sopra_0_0
     productName: Pasta
@@ -434,7 +434,7 @@ MonoBehaviour:
     _dimensions: {x: 0.043987412, y: 0.045485795, z: 0.17992951}
     _positions: {x: 10.124, y: 1.248, z: 3.557}
     _xn: 8
-    _yn: 3
+    _yn: 2
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.5}
     _rotate: 0
@@ -503,7 +503,7 @@ MonoBehaviour:
     _positions: {x: 3.065, y: 0.24000001, z: 4.158}
     _xn: 9
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWN1sotto_1_0
@@ -520,7 +520,7 @@ MonoBehaviour:
     _positions: {x: 3.065, y: 0.804, z: 4.158}
     _xn: 9
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 1
   - LabelPosition: ShelfWN1sotto_0_1
@@ -537,7 +537,7 @@ MonoBehaviour:
     _positions: {x: 4.883, y: 0.24000001, z: 4.158}
     _xn: 8
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 1.5, y: 1, z: 2}
     _rotate: 0
   - LabelPosition: ShelfWN1sotto_1_1
@@ -554,7 +554,7 @@ MonoBehaviour:
     _positions: {x: 4.883, y: 0.804, z: 4.158}
     _xn: 8
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 1.5, y: 1, z: 2}
     _rotate: 0
   - LabelPosition: ShelfWN2sotto_0_0
@@ -571,7 +571,7 @@ MonoBehaviour:
     _positions: {x: 6.716, y: 0.24000001, z: 4.145}
     _xn: 8
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWN2sotto_1_0
@@ -588,7 +588,7 @@ MonoBehaviour:
     _positions: {x: 6.716, y: 0.804, z: 4.145}
     _xn: 8
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWN2sotto_0_1
@@ -605,7 +605,7 @@ MonoBehaviour:
     _positions: {x: 8.161, y: 0.24000001, z: 4.145}
     _xn: 10
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 2.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfWN2sotto_1_1
@@ -622,7 +622,7 @@ MonoBehaviour:
     _positions: {x: 8.161, y: 0.804, z: 4.145}
     _xn: 10
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 2.5, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWN3sotto_0_0
@@ -721,7 +721,7 @@ MonoBehaviour:
     centerCollider: {x: 0, y: 0.11459063, z: 0}
     emptyPos: {fileID: 0}
     _dimensions: {x: 0.5, y: 0.5, z: 0.5}
-    _positions: {x: 10.292001, y: 1.678, z: 4.085}
+    _positions: {x: 10.292001, y: 1.698, z: 4.085}
     _xn: 5
     _yn: 2
     _zn: 1
@@ -755,7 +755,7 @@ MonoBehaviour:
     centerCollider: {x: 0, y: 0.11459063, z: 0}
     emptyPos: {fileID: 0}
     _dimensions: {x: 0.5, y: 0.5, z: 0.5}
-    _positions: {x: 11.771001, y: 1.678, z: 4.085}
+    _positions: {x: 11.771001, y: 1.698, z: 4.085}
     _xn: 5
     _yn: 2
     _zn: 1
@@ -810,7 +810,7 @@ MonoBehaviour:
     _xn: 8
     _yn: 1
     _zn: 2
-    _offset: {x: 2, y: 1, z: 1}
+    _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWN1sopra_1_1
     productName: Hand Cream
@@ -827,7 +827,7 @@ MonoBehaviour:
     _xn: 8
     _yn: 1
     _zn: 2
-    _offset: {x: 2, y: 1, z: 1}
+    _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWN2Sopra_0_0
     productName: Eyedrop
@@ -843,8 +843,8 @@ MonoBehaviour:
     _positions: {x: 6.737, y: 1.248, z: 4.168}
     _xn: 10
     _yn: 1
-    _zn: 2
-    _offset: {x: 2.5, y: 1, z: 1}
+    _zn: 1
+    _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfWN2Sopra_1_0
     productName: Eyedrop
@@ -943,10 +943,10 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 4.37, y: 1.242, z: 6.739}
-    _xn: 6
-    _yn: 2
-    _zn: 2
-    _offset: {x: 1, y: 1, z: 1}
+    _xn: 10
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfN1sopra_1_0
     productName: Milk
@@ -961,9 +961,9 @@ MonoBehaviour:
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 4.37, y: 1.6719999, z: 6.739}
     _xn: 10
-    _yn: 2
-    _zn: 2
-    _offset: {x: 1, y: 1, z: 1}
+    _yn: 1
+    _zn: 1
+    _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfN2sotto_0_0
     productName: Pasta
@@ -978,7 +978,7 @@ MonoBehaviour:
     _dimensions: {x: 0.043987412, y: 0.045485795, z: 0.17992951}
     _positions: {x: 6.099, y: 0.24000001, z: 6.913}
     _xn: 9
-    _yn: 3
+    _yn: 2
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
@@ -995,7 +995,7 @@ MonoBehaviour:
     _dimensions: {x: 0.043987412, y: 0.045485795, z: 0.17992951}
     _positions: {x: 6.099, y: 0.804, z: 6.913}
     _xn: 9
-    _yn: 3
+    _yn: 2
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
@@ -1012,9 +1012,9 @@ MonoBehaviour:
     _dimensions: {x: 0.043987412, y: 0.045485795, z: 0.17992951}
     _positions: {x: 6.072, y: 1.248, z: 6.913}
     _xn: 9
-    _yn: 3
+    _yn: 2
     _zn: 1
-    _offset: {x: 2, y: 1, z: 1}
+    _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfN2Sopra_1_0
     productName: Pasta
@@ -1029,7 +1029,7 @@ MonoBehaviour:
     _dimensions: {x: 0.043987412, y: 0.045485795, z: 0.17992951}
     _positions: {x: 6.072, y: 1.678, z: 6.913}
     _xn: 9
-    _yn: 3
+    _yn: 2
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
@@ -1095,7 +1095,7 @@ MonoBehaviour:
     centerCollider: {x: 0, y: 0.11459063, z: 0}
     emptyPos: {fileID: 0}
     _dimensions: {x: 0.5, y: 0.5, z: 0.5}
-    _positions: {x: 7.605, y: 1.678, z: 6.784}
+    _positions: {x: 7.605, y: 1.7, z: 6.784}
     _xn: 5
     _yn: 2
     _zn: 1
@@ -1148,7 +1148,7 @@ MonoBehaviour:
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 9.1380005, y: 1.246, z: 6.635}
     _xn: 6
-    _yn: 2
+    _yn: 1
     _zn: 2
     _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 0
@@ -1165,7 +1165,7 @@ MonoBehaviour:
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 9.1380005, y: 1.676, z: 6.635}
     _xn: 6
-    _yn: 2
+    _yn: 1
     _zn: 2
     _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 0
@@ -1182,9 +1182,9 @@ MonoBehaviour:
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 10.724, y: 0.24000001, z: 6.6537995}
     _xn: 6
-    _yn: 2
+    _yn: 1
     _zn: 1
-    _offset: {x: 1, y: 1, z: 1}
+    _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfN5sotto_1_0
     productName: Soda
@@ -1199,7 +1199,7 @@ MonoBehaviour:
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 10.724, y: 0.804, z: 6.6537995}
     _xn: 6
-    _yn: 2
+    _yn: 1
     _zn: 1
     _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
@@ -1216,7 +1216,7 @@ MonoBehaviour:
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 10.6970005, y: 1.248, z: 6.6537995}
     _xn: 6
-    _yn: 2
+    _yn: 1
     _zn: 1
     _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
@@ -1233,7 +1233,7 @@ MonoBehaviour:
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 10.6970005, y: 1.678, z: 6.6537995}
     _xn: 6
-    _yn: 2
+    _yn: 1
     _zn: 1
     _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
@@ -1266,7 +1266,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 12.446, y: 0.39365608, z: -3.263}
-    _xn: 3
+    _xn: 5
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
@@ -1283,7 +1283,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 13.117001, y: 0.39365608, z: -3.263}
-    _xn: 3
+    _xn: 5
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
@@ -1300,10 +1300,10 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 13.882, y: 0.39365608, z: -3.263}
-    _xn: 1
+    _xn: 4
     _yn: 1
     _zn: 1
-    _offset: {x: 1, y: 1, z: 1}
+    _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_1_0
     productName: Soda
@@ -1334,7 +1334,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 12.446, y: 0.964, z: -3.263}
-    _xn: 4
+    _xn: 5
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
@@ -1351,7 +1351,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 13.117001, y: 0.964, z: -3.263}
-    _xn: 4
+    _xn: 5
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
@@ -1402,7 +1402,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 12.446, y: 1.3880723, z: -3.263}
-    _xn: 4
+    _xn: 5
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
@@ -1419,7 +1419,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 13.117001, y: 1.3880723, z: -3.263}
-    _xn: 4
+    _xn: 5
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
@@ -1470,7 +1470,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 12.446, y: 1.8056769, z: -3.263}
-    _xn: 4
+    _xn: 5
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
@@ -1487,7 +1487,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 13.117001, y: 1.8056769, z: -3.263}
-    _xn: 4
+    _xn: 5
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
