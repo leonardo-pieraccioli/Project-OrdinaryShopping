@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 4423673481867876317}
   - component: {fileID: 777944116498782328}
   - component: {fileID: 3255864231661350066}
-  m_Layer: 0
+  - component: {fileID: 2368116267044591020}
+  m_Layer: 8
   m_Name: Toothpaste
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,3 +85,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2368116267044591020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3904580420548463975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279e0dfbdde6a5a4abe47c60a717f266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instanceProduct: {fileID: 0}

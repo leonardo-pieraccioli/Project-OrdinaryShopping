@@ -40,7 +40,7 @@ MonoBehaviour:
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
     centerCollider: {x: 0.0000009536743, y: 0.11459063, z: 0}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.8, y: 0.8, z: 0.8}
+    _dimensions: {x: 0.4, y: 0.4, z: 0.4}
     _positions: {x: 4.576, y: 0.24000001, z: 3.6219997}
     _xn: 2
     _yn: 2
@@ -74,7 +74,7 @@ MonoBehaviour:
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
     centerCollider: {x: 0.0000009536743, y: 0.11459051, z: 0}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.8, y: 0.8, z: 0.8}
+    _dimensions: {x: 0.4, y: 0.4, z: 0.4}
     _positions: {x: 4.576, y: 0.804, z: 3.6219997}
     _xn: 3
     _yn: 2
@@ -244,7 +244,7 @@ MonoBehaviour:
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
     centerCollider: {x: 0.0000009536743, y: 0.11459063, z: 0}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.8, y: 0.8, z: 0.8}
+    _dimensions: {x: 0.4, y: 0.4, z: 0.4}
     _positions: {x: 4.576, y: 1.261, z: 3.6219997}
     _xn: 4
     _yn: 1
@@ -278,7 +278,7 @@ MonoBehaviour:
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
     centerCollider: {x: 0.0000009536743, y: 0.11459063, z: 0}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.8, y: 0.8, z: 0.8}
+    _dimensions: {x: 0.4, y: 0.4, z: 0.4}
     _positions: {x: 4.576, y: 1.691, z: 3.6219997}
     _xn: 4
     _yn: 2
@@ -703,7 +703,7 @@ MonoBehaviour:
     sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
     centerCollider: {x: 0, y: 0.11459063, z: 0}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.8, y: 0.8, z: 0.8}
+    _dimensions: {x: 0.4, y: 0.4, z: 0.4}
     _positions: {x: 10.292001, y: 1.248, z: 4.085}
     _xn: 4
     _yn: 1
@@ -720,8 +720,8 @@ MonoBehaviour:
     sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
     centerCollider: {x: 0, y: 0.11459063, z: 0}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.8, y: 0.8, z: 0.8}
-    _positions: {x: 10.292001, y: 1.678, z: 4.085}
+    _dimensions: {x: 0.4, y: 0.4, z: 0.4}
+    _positions: {x: 10.292001, y: 1.698, z: 4.085}
     _xn: 4
     _yn: 1
     _zn: 1
@@ -737,7 +737,7 @@ MonoBehaviour:
     sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
     centerCollider: {x: 0, y: 0.11459063, z: 0}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.8, y: 0.8, z: 0.8}
+    _dimensions: {x: 0.4, y: 0.4, z: 0.4}
     _positions: {x: 11.771001, y: 1.248, z: 4.085}
     _xn: 4
     _yn: 1
@@ -754,8 +754,8 @@ MonoBehaviour:
     sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
     centerCollider: {x: 0, y: 0.11459063, z: 0}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.8, y: 0.8, z: 0.8}
-    _positions: {x: 11.771001, y: 1.678, z: 4.085}
+    _dimensions: {x: 0.4, y: 0.4, z: 0.4}
+    _positions: {x: 11.771001, y: 1.698, z: 4.085}
     _xn: 4
     _yn: 1
     _zn: 1
@@ -796,10 +796,10 @@ MonoBehaviour:
     _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfWN1sopra_0_1
-    productName: Hand Cream
-    prefabs: {fileID: 5264444037268359098, guid: a464486dbcaa6d54fb27c121b13fd747,
+    productName: Paper Toilet
+    prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
       type: 3}
-    price: 3.49
+    price: 0.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.048381425, y: 0.115128435, z: 0.023584917}
@@ -808,9 +808,9 @@ MonoBehaviour:
     _dimensions: {x: 1.9999999, y: 1.9999999, z: 1.9999999}
     _positions: {x: 4.989452, y: 1.248, z: 4.112}
     _xn: 8
-    _yn: 1
+    _yn: 2
     _zn: 2
-    _offset: {x: 2, y: 1, z: 1}
+    _offset: {x: 1, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfWN1sopra_1_1
     productName: Hand Cream
@@ -898,10 +898,10 @@ MonoBehaviour:
     _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfN1sotto_0_0
-    productName: Cake
-    prefabs: {fileID: 3933548172878679237, guid: d723c88e16dcf514991a8cffd419d7b3,
+    productName: Paper Toilet
+    prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
       type: 3}
-    price: 8.99
+    price: 0.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.18743965, y: 0.11237903, z: 0.12935935}
@@ -909,16 +909,16 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.9999998, y: 3, z: 2.9999998}
     _positions: {x: 4.595, y: 0.24000001, z: 6.8187995}
-    _xn: 0
-    _yn: 0
-    _zn: 0
-    _offset: {x: 1.5, y: 1, z: 1.5}
+    _xn: 7
+    _yn: 2
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfN1sotto_1_0
-    productName: Cake
-    prefabs: {fileID: 3933548172878679237, guid: d723c88e16dcf514991a8cffd419d7b3,
+    productName: Paper Toilet
+    prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
       type: 3}
-    price: 8.99
+    price: 0.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.18743965, y: 0.11237903, z: 0.12935935}
@@ -926,10 +926,10 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.9999998, y: 3, z: 2.9999998}
     _positions: {x: 4.595, y: 0.804, z: 6.8187995}
-    _xn: 0
-    _yn: 0
-    _zn: 0
-    _offset: {x: 1.5, y: 1, z: 1.5}
+    _xn: 4
+    _yn: 3
+    _zn: 1
+    _offset: {x: 1, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfN1sopra_0_0
     productName: Milk
@@ -941,7 +941,7 @@ MonoBehaviour:
     sizeCollider: {x: 0.09045755, y: 0.24942127, z: 0.14858365}
     centerCollider: {x: 0.00000047683716, y: 0.1250378, z: -0.00000047683716}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1.0000004, y: 1, z: 1.0000004}
+    _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 4.37, y: 1.242, z: 6.739}
     _xn: 3
     _yn: 1
@@ -958,7 +958,7 @@ MonoBehaviour:
     sizeCollider: {x: 0.09045755, y: 0.24942127, z: 0.14858365}
     centerCollider: {x: 0.00000047683716, y: 0.1250378, z: -0.00000047683716}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1.0000004, y: 1, z: 1.0000004}
+    _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 4.37, y: 1.6719999, z: 6.739}
     _xn: 4
     _yn: 1
@@ -1077,7 +1077,7 @@ MonoBehaviour:
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
     centerCollider: {x: 0, y: 0.11459063, z: 0}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.8, y: 0.8, z: 0.8}
+    _dimensions: {x: 0.4, y: 0.4, z: 0.4}
     _positions: {x: 7.605, y: 1.248, z: 6.784}
     _xn: 1
     _yn: 1
@@ -1094,8 +1094,8 @@ MonoBehaviour:
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
     centerCollider: {x: 0, y: 0.11459063, z: 0}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.8, y: 0.8, z: 0.8}
-    _positions: {x: 7.605, y: 1.678, z: 6.784}
+    _dimensions: {x: 0.4, y: 0.4, z: 0.4}
+    _positions: {x: 7.605, y: 1.7, z: 6.784}
     _xn: 2
     _yn: 1
     _zn: 1
