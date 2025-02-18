@@ -88,7 +88,7 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _AmbientEnvironmentMultiplier: 0.626
+    - _AmbientEnvironmentMultiplier: 0.534
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _Brightness: 1
@@ -102,11 +102,11 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _DstBlendAlpha: 0
-    - _EdgeDiffuse: 0.001
-    - _EdgeDistanceAttenuation: 0.001
-    - _EdgeRim: 0.001
-    - _EdgeShadowAttenuation: 1
-    - _EdgeSpecular: 0.001
+    - _EdgeDiffuse: 0.53
+    - _EdgeDistanceAttenuation: 1.02
+    - _EdgeRim: 0
+    - _EdgeShadowAttenuation: 0.62
+    - _EdgeSpecular: 0.391
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -117,9 +117,9 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _RimAmount: 0
-    - _RimStrength: 0
-    - _RimThreshold: 0.01
+    - _RimAmount: 0.379
+    - _RimStrength: 0.554
+    - _RimThreshold: 0.407
     - _SHADOWBRIGHTTYPE: 0
     - _Saturation: 1
     - _Shadow_Steps: 1.1
@@ -132,7 +132,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.6754716, g: 0.6754716, b: 0.6754716, a: 1}
+    - _BaseColor: {r: 0.22264141, g: 0.22264141, b: 0.22264141, a: 1}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
