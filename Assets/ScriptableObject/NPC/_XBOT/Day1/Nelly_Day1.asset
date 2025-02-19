@@ -21,4 +21,4 @@ MonoBehaviour:
     my children?
   audioClips:
   - {fileID: 8300000, guid: 22fdf967107efbf4693d08a8fbfe52d2, type: 3}
-  animatorController: {fileID: 9100000, guid: 56b83219f2cdc96458084a5fc989e8cb, type: 2}
+  animatorController: {fileID: 9100000, guid: b7f3a460c1b35b143a95216a81240ed1, type: 2}
