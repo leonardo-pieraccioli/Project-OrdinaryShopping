@@ -125,6 +125,19 @@ public class LightManager : MonoBehaviour
         }
     }
 
+    //////////////////////////////////////////////////////////////////////////
+
+    public void StopCoroutineBombs()
+    {
+        foreach (AudioSource audioSource in bombAudioSources)
+        {
+            audioSource.Stop();
+        }
+
+        if (explosionCoroutine != null)
+                StopCoroutine(explosionCoroutine);
+    }
+
     public void StartGameMusic()
     {
         if (!isGameStarted) // Controlla se il gioco è già iniziato
@@ -247,6 +260,7 @@ public class LightManager : MonoBehaviour
     {
         musicSource.Stop();
         musicSource2.Stop();
+        SFXSource.Stop();
         supermarketAmbientSource.Stop();
     }
 
@@ -266,7 +280,8 @@ public class LightManager : MonoBehaviour
         }
 
         if (cineVC != null)
-            StartCoroutine(CameraShake());
+            StartCoroutine(CameraShake());  
+        DialogueManager.Instance.BombAnimations();
         Invoke(nameof(TriggerFlicker), 0.5f); // Modifica "0.5f" con il tempo di ritardo desiderato
         Invoke(nameof(StopAudio), 0.7f); // Modifica "0.5f" con il tempo di ritardo desiderato
         
