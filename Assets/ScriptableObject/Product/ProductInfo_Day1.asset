@@ -495,7 +495,7 @@ MonoBehaviour:
       type: 3}
     price: 6.99
     description: 
-    isInShoppingList: 1
+    isInShoppingList: 0
     sizeCollider: {x: 0.08839113, y: 0.2937395, z: 0.061210893}
     centerCollider: {x: 0.000000026077032, y: 0.14686975, z: 0}
     emptyPos: {fileID: 0}
