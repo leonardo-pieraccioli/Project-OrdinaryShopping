@@ -61,7 +61,7 @@ Material:
     - _SHADOWBRIGHTTYPE: 1
     - _Saturation: 1
     - _Shadow_Steps: 3
-    - _Smoothness: 0.955
+    - _Smoothness: 0
     m_Colors:
     - _BaseColor: {r: 0.506, g: 0.506, b: 0.506, a: 1}
   m_BuildTextureStacks: []

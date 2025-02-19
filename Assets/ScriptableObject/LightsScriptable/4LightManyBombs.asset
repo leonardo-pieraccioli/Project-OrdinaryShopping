@@ -24,5 +24,5 @@ MonoBehaviour:
     maxExplosionInterval: 6
   StopMusic: 1
   Music:
-  - {fileID: 8300000, guid: cbb1c211e628d17439536185bf26688e, type: 3}
+  - {fileID: 8300000, guid: 5efa7944b3bd5c545891401983b83aad, type: 3}
   Ambient: {fileID: 8300000, guid: f7c279b433cae494bb471eedaabb227d, type: 3}

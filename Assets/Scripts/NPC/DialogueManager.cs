@@ -68,6 +68,7 @@ public class DialogueManager : MonoBehaviour
         {
             Destroy(npc);
         }
+        activeNPCs.Clear();
     }
 
     #region NPC Management
@@ -120,7 +121,7 @@ public class DialogueManager : MonoBehaviour
         currentDialogueIndex = 0;
         dialogueBox.text = string.Empty;
         NPCStartAudio();
-        StartCoroutine(TypeLine());
+        activeCoroutine = StartCoroutine(TypeLine());
     }
 
     public void StopDialogueUI()
@@ -173,6 +174,14 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(textSpeed);
         }
         isLineRunning = false;
+    }
+
+    public void BombAnimations()
+    {
+        foreach (GameObject npc in activeNPCs)
+        {
+            npc.GetComponent<InteractableNPC>().BombReaction();
+        }
     }
 
     #endregion

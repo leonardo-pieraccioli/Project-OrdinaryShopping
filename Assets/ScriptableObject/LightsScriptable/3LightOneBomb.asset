@@ -20,10 +20,10 @@ MonoBehaviour:
     flickeringDuration: 1
     maxFlickeringIntensity: 2
     numberOfExplosions: 1
-    minExplosionInterval: 15
-    maxExplosionInterval: 16
+    minExplosionInterval: 61
+    maxExplosionInterval: 62
   StopMusic: 1
   Music:
-  - {fileID: 8300000, guid: cbb1c211e628d17439536185bf26688e, type: 3}
+  - {fileID: 8300000, guid: dc2aa0806bdc1424594bbcb7da83d6bb, type: 3}
   - {fileID: 0}
   Ambient: {fileID: 8300000, guid: f7c279b433cae494bb471eedaabb227d, type: 3}
