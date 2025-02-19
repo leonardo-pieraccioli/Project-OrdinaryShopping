@@ -38,14 +38,15 @@ public class DiaryManager : MonoBehaviour
 
     [SerializeField] private AudioMixerGroup voiceOverMixer;
     [SerializeField] public AudioSource voiceOverSource;
-
     [SerializeField] public AudioSource diaryMusic;
+    [SerializeField] public AudioClip diaryMusicClip;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
             CloseDiary();
+            lightManager.StartGameMusic();
         }   
     }
 
@@ -122,7 +123,8 @@ public class DiaryManager : MonoBehaviour
         if (controller != null) controller.LockMovement(true);
 
         Cursor.visible = true;
-        voiceOverSource.Play();
+        //voiceOverSource.Play();
+        diaryMusic.Play();
         // Mostra il diario con effetto fade-in
         StartCoroutine(ShowDiary());
     }
@@ -132,7 +134,7 @@ public class DiaryManager : MonoBehaviour
         if (diaryCanvas != null)
             diaryCanvas.gameObject.SetActive(true);
             //lightManager.PlayMenuMusic();
-            diaryMusic.Play();
+            //diaryMusic.Play();
             voiceOverSource.Play();
             Debug.Log("Mostra il diario con effetto fade-in");
 
@@ -142,6 +144,7 @@ public class DiaryManager : MonoBehaviour
     public void CloseDiary()
     {
         voiceOverSource.Stop();
+        diaryMusic.Stop();
         StopAllCoroutines(); // Previene sovrapposizioni di fade
         StartCoroutine(HideDiary());
     }
