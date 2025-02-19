@@ -19,3 +19,4 @@ MonoBehaviour:
     toy."
   dayImage: {fileID: 0}
   voiceOver: {fileID: 8300000, guid: d088373339d120c4c8ff7e84d5823882, type: 3}
+  diaryMusicClip: {fileID: 8300000, guid: 52f909bd03b30b941af758c2dc329fd7, type: 3}
