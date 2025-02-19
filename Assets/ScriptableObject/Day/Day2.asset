@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayNumber: 2
   budget: 4
-  productInfo: {fileID: 11400000, guid: 8cdfdb2878f3b874c82c6792ee63a114, type: 2}
+  productInfo: {fileID: 11400000, guid: 98410285e0346d34fb5521c5955116ac, type: 2}
   light: {fileID: 11400000, guid: f11dcdc9f3d42804c9ac503b58ac6a9b, type: 2}
   npc:
   - {fileID: 11400000, guid: 2d18d83659dcfb54f9f4ea14999c66eb, type: 2}
