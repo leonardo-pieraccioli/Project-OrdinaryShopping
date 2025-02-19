@@ -24,7 +24,7 @@ MonoBehaviour:
     centerCollider: {x: 0.027422892, y: 0.038714226, z: 0.0474323}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 2.847, y: 0.24000001, z: 3.519}
+    _positions: {x: 2.847, y: 0.24000001, z: 3.529}
     _xn: 2
     _yn: 1
     _zn: 2
@@ -34,14 +34,14 @@ MonoBehaviour:
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 3.99
     description: 
-    isInShoppingList: 0
+    isInShoppingList: 1
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
     centerCollider: {x: 0.0000019073486, y: 0.11459063, z: 0}
     emptyPos: {fileID: 0}
     _dimensions: {x: 0.4, y: 0.4, z: 0.4}
-    _positions: {x: 4.576, y: 0.24000001, z: 3.6219997}
+    _positions: {x: 4.576, y: 0.24000001, z: 3.5289998}
     _xn: 2
     _yn: 2
     _zn: 1
@@ -58,7 +58,7 @@ MonoBehaviour:
     centerCollider: {x: 0.027422892, y: 0.038714226, z: 0.0474323}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 2.847, y: 0.804, z: 3.519}
+    _positions: {x: 2.847, y: 0.804, z: 3.529}
     _xn: 1
     _yn: 1
     _zn: 2
@@ -68,14 +68,14 @@ MonoBehaviour:
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 3.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
     centerCollider: {x: 0.0000019073486, y: 0.11459039, z: 0}
     emptyPos: {fileID: 0}
     _dimensions: {x: 0.4, y: 0.4, z: 0.4}
-    _positions: {x: 4.576, y: 0.804, z: 3.6219997}
+    _positions: {x: 4.576, y: 0.804, z: 3.5289998}
     _xn: 3
     _yn: 2
     _zn: 1
@@ -85,7 +85,7 @@ MonoBehaviour:
     productName: Med Vita
     prefabs: {fileID: 4365570326480699178, guid: c78db953d92fbd64b87e67d6e9d8fb50,
       type: 3}
-    price: 2.99
+    price: 6.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.07646613, y: 0.15668252, z: 0.07646613}
@@ -102,7 +102,7 @@ MonoBehaviour:
     productName: Med Vita
     prefabs: {fileID: 4365570326480699178, guid: c78db953d92fbd64b87e67d6e9d8fb50,
       type: 3}
-    price: 2.99
+    price: 6.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.076466136, y: 0.15668252, z: 0.076466136}
@@ -119,7 +119,7 @@ MonoBehaviour:
     productName: Medicine Box
     prefabs: {fileID: 979148581013408380, guid: 718e83d0796680946964942a3be7693f,
       type: 3}
-    price: 8.95
+    price: 11.95
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.09822875, y: 0.21879247, z: 0.097154155}
@@ -136,7 +136,7 @@ MonoBehaviour:
     productName: Medicine Box
     prefabs: {fileID: 3992470281443889014, guid: 6c0686cf52e0f414f90ee6899b1f2c1a,
       type: 3}
-    price: 8.95
+    price: 11.95
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.0989707, y: 0.2396445, z: 0.09673134}
@@ -153,7 +153,7 @@ MonoBehaviour:
     productName: Flour
     prefabs: {fileID: 1940950339893451597, guid: 1143460aaad5564439a58812142ba7ea,
       type: 3}
-    price: 4.99
+    price: 3.49
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.17352173, y: 0.27872297, z: 0.116744354}
@@ -170,7 +170,7 @@ MonoBehaviour:
     productName: Flour
     prefabs: {fileID: 1940950339893451597, guid: 1143460aaad5564439a58812142ba7ea,
       type: 3}
-    price: 4.99
+    price: 3.49
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.17352173, y: 0.27872297, z: 0.116744354}
@@ -187,7 +187,7 @@ MonoBehaviour:
     productName: Pasta
     prefabs: {fileID: 8092843609906841068, guid: b4298c600cf88424a87d97bcb4916cdf,
       type: 3}
-    price: 1.1
+    price: 2.5
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 2, y: 2, z: 1.9999999}
@@ -204,7 +204,7 @@ MonoBehaviour:
     productName: Pasta
     prefabs: {fileID: 8092843609906841068, guid: b4298c600cf88424a87d97bcb4916cdf,
       type: 3}
-    price: 1.1
+    price: 2.5
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 2, y: 2, z: 1.9999999}
@@ -228,7 +228,7 @@ MonoBehaviour:
     centerCollider: {x: 0.027422892, y: 0.038714226, z: 0.0474323}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 2.847, y: 1.261, z: 3.519}
+    _positions: {x: 2.847, y: 1.261, z: 3.544}
     _xn: 0
     _yn: 0
     _zn: 0
@@ -238,14 +238,14 @@ MonoBehaviour:
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 3.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
     centerCollider: {x: 0.0000019073486, y: 0.11459063, z: 0}
     emptyPos: {fileID: 0}
     _dimensions: {x: 0.4, y: 0.4, z: 0.4}
-    _positions: {x: 4.576, y: 1.261, z: 3.6219997}
+    _positions: {x: 4.576, y: 1.261, z: 3.4319997}
     _xn: 4
     _yn: 2
     _zn: 1
@@ -262,7 +262,7 @@ MonoBehaviour:
     centerCollider: {x: 0.027422892, y: 0.038714226, z: 0.0474323}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 2.847, y: 1.691, z: 3.519}
+    _positions: {x: 2.847, y: 1.691, z: 3.544}
     _xn: 4
     _yn: 3
     _zn: 2
@@ -272,14 +272,14 @@ MonoBehaviour:
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 3.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
     centerCollider: {x: 0.0000019073486, y: 0.11459063, z: 0}
     emptyPos: {fileID: 0}
     _dimensions: {x: 0.4, y: 0.4, z: 0.4}
-    _positions: {x: 4.576, y: 1.691, z: 3.6219997}
+    _positions: {x: 4.576, y: 1.691, z: 3.4319997}
     _xn: 4
     _yn: 2
     _zn: 1
@@ -289,14 +289,14 @@ MonoBehaviour:
     productName: Tea
     prefabs: {fileID: 6239699513786241697, guid: f337a4056f119194d9e71076db156c94,
       type: 3}
-    price: 1.89
+    price: 3.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.097684674, y: 0.19599201, z: 0.06011369}
     centerCollider: {x: 0.0018994932, y: 0.098023705, z: -0.0083939405}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.2563, y: 1.2563, z: 1.2563}
-    _positions: {x: 6.638, y: 1.248, z: 3.392}
+    _positions: {x: 6.638, y: 1.248, z: 3.445}
     _xn: 3
     _yn: 1
     _zn: 2
@@ -306,7 +306,7 @@ MonoBehaviour:
     productName: Tea
     prefabs: {fileID: 6239699513786241697, guid: f337a4056f119194d9e71076db156c94,
       type: 3}
-    price: 1.89
+    price: 3.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.097684674, y: 0.19599201, z: 0.06011369}
@@ -323,9 +323,9 @@ MonoBehaviour:
     productName: Flour
     prefabs: {fileID: 1940950339893451597, guid: 1143460aaad5564439a58812142ba7ea,
       type: 3}
-    price: 4.99
+    price: 3.49
     description: 
-    isInShoppingList: 0
+    isInShoppingList: 1
     sizeCollider: {x: 0.1735218, y: 0.27872297, z: 0.116744414}
     centerCollider: {x: 0, y: 0.14017649, z: 0}
     emptyPos: {fileID: 0}
@@ -340,7 +340,7 @@ MonoBehaviour:
     productName: Flour
     prefabs: {fileID: 1940950339893451597, guid: 1143460aaad5564439a58812142ba7ea,
       type: 3}
-    price: 4.99
+    price: 3.49
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.1735218, y: 0.27872297, z: 0.116744414}
@@ -357,7 +357,7 @@ MonoBehaviour:
     productName: Flour
     prefabs: {fileID: 1940950339893451597, guid: 1143460aaad5564439a58812142ba7ea,
       type: 3}
-    price: 4.99
+    price: 3.49
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.17352173, y: 0.27872297, z: 0.116744354}
@@ -374,7 +374,7 @@ MonoBehaviour:
     productName: Flour
     prefabs: {fileID: 1940950339893451597, guid: 1143460aaad5564439a58812142ba7ea,
       type: 3}
-    price: 4.99
+    price: 3.49
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.17352173, y: 0.27872297, z: 0.116744354}
@@ -391,7 +391,7 @@ MonoBehaviour:
     productName: Pasta
     prefabs: {fileID: 8092843609906841068, guid: b4298c600cf88424a87d97bcb4916cdf,
       type: 3}
-    price: 1.1
+    price: 2.5
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 2, y: 2, z: 1.9999999}
@@ -408,7 +408,7 @@ MonoBehaviour:
     productName: Pasta
     prefabs: {fileID: 8092843609906841068, guid: b4298c600cf88424a87d97bcb4916cdf,
       type: 3}
-    price: 1.1
+    price: 2.5
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 2, y: 2, z: 1.9999999}
@@ -425,7 +425,7 @@ MonoBehaviour:
     productName: Pasta
     prefabs: {fileID: 8092843609906841068, guid: b4298c600cf88424a87d97bcb4916cdf,
       type: 3}
-    price: 1.1
+    price: 2.5
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 2.0000007, y: 2, z: 2.0000007}
@@ -442,7 +442,7 @@ MonoBehaviour:
     productName: Toilet Paper
     prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
       type: 3}
-    price: 0.99
+    price: 1.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.15354276, y: 0.09789506, z: 0.16072462}
@@ -459,7 +459,7 @@ MonoBehaviour:
     productName: Toilet Paper
     prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
       type: 3}
-    price: 0.99
+    price: 1.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.15354276, y: 0.09789506, z: 0.16072462}
@@ -476,7 +476,7 @@ MonoBehaviour:
     productName: Toilet Paper
     prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
       type: 3}
-    price: 0.99
+    price: 1.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.15354276, y: 0.09789506, z: 0.16072462}
@@ -493,7 +493,7 @@ MonoBehaviour:
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 3.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
@@ -510,7 +510,7 @@ MonoBehaviour:
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 3.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
@@ -527,7 +527,7 @@ MonoBehaviour:
     productName: Detergent
     prefabs: {fileID: 2834691519401720754, guid: 697a9b3855e5b2a4380f3ba23ea96eee,
       type: 3}
-    price: 5.99
+    price: 7.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.141249, y: 0.3221454, z: 0.06598891}
@@ -561,7 +561,7 @@ MonoBehaviour:
     productName: Water
     prefabs: {fileID: 2231874957027838253, guid: 7cc4854f848a2c04090041af9e57fb20,
       type: 3}
-    price: 1
+    price: 2.49
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.10241246, y: 0.2229836, z: 0.12971926}
@@ -578,7 +578,7 @@ MonoBehaviour:
     productName: Water
     prefabs: {fileID: 2231874957027838253, guid: 7cc4854f848a2c04090041af9e57fb20,
       type: 3}
-    price: 1
+    price: 2.49
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.10241246, y: 0.2229836, z: 0.12971926}
@@ -595,9 +595,9 @@ MonoBehaviour:
     productName: Water
     prefabs: {fileID: 2231874957027838253, guid: 7cc4854f848a2c04090041af9e57fb20,
       type: 3}
-    price: 1
+    price: 2.49
     description: 
-    isInShoppingList: 0
+    isInShoppingList: 1
     sizeCollider: {x: 0.10241246, y: 0.2229836, z: 0.12971926}
     centerCollider: {x: 0.008393884, y: 0.111166, z: -0.039978743}
     emptyPos: {fileID: 0}
@@ -612,7 +612,7 @@ MonoBehaviour:
     productName: Water
     prefabs: {fileID: 2231874957027838253, guid: 7cc4854f848a2c04090041af9e57fb20,
       type: 3}
-    price: 1
+    price: 2.49
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.10241246, y: 0.2229836, z: 0.12971926}
@@ -629,7 +629,7 @@ MonoBehaviour:
     productName: Toilet Paper
     prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
       type: 3}
-    price: 0.99
+    price: 1.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.15354268, y: 0.09789506, z: 0.16072455}
@@ -646,7 +646,7 @@ MonoBehaviour:
     productName: Toilet Paper
     prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
       type: 3}
-    price: 0.99
+    price: 1.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.15354268, y: 0.09789506, z: 0.16072455}
@@ -663,7 +663,7 @@ MonoBehaviour:
     productName: Toilet Paper
     prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
       type: 3}
-    price: 0.99
+    price: 1.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.15354268, y: 0.09789506, z: 0.16072455}
@@ -680,7 +680,7 @@ MonoBehaviour:
     productName: Toilet Paper
     prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
       type: 3}
-    price: 0.99
+    price: 1.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.15354268, y: 0.09789506, z: 0.16072455}
@@ -697,7 +697,7 @@ MonoBehaviour:
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 3.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
@@ -714,7 +714,7 @@ MonoBehaviour:
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 3.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
@@ -731,7 +731,7 @@ MonoBehaviour:
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 3.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
@@ -748,7 +748,7 @@ MonoBehaviour:
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 3.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
@@ -765,7 +765,7 @@ MonoBehaviour:
     productName: Water
     prefabs: {fileID: 2231874957027838253, guid: 7cc4854f848a2c04090041af9e57fb20,
       type: 3}
-    price: 1
+    price: 2.49
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.10241246, y: 0.2229836, z: 0.12971926}
@@ -782,7 +782,7 @@ MonoBehaviour:
     productName: Water
     prefabs: {fileID: 2231874957027838253, guid: 7cc4854f848a2c04090041af9e57fb20,
       type: 3}
-    price: 1
+    price: 2.49
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.10241246, y: 0.2229836, z: 0.12971926}
@@ -799,7 +799,7 @@ MonoBehaviour:
     productName: Meat
     prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
-    price: 6.2
+    price: 8.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.3299659, y: 0.15349625, z: 0.32996598}
@@ -816,7 +816,7 @@ MonoBehaviour:
     productName: Meat
     prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
-    price: 6.2
+    price: 8.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.3299659, y: 0.15349625, z: 0.32996598}
@@ -850,7 +850,7 @@ MonoBehaviour:
     productName: Meat
     prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
-    price: 6.2
+    price: 8.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.3299659, y: 0.15349625, z: 0.32996598}
@@ -867,7 +867,7 @@ MonoBehaviour:
     productName: Sanitizer
     prefabs: {fileID: 1484380487437812938, guid: f8189813296ac2e48a273056a7f989ec,
       type: 3}
-    price: 3.99
+    price: 5.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.12008752, y: 0.25170872, z: 0.07789418}
@@ -884,7 +884,7 @@ MonoBehaviour:
     productName: Sanitizer
     prefabs: {fileID: 1484380487437812938, guid: f8189813296ac2e48a273056a7f989ec,
       type: 3}
-    price: 3.99
+    price: 5.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.12008752, y: 0.25170872, z: 0.07789418}
@@ -901,7 +901,7 @@ MonoBehaviour:
     productName: Toilet Paper
     prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
       type: 3}
-    price: 0.99
+    price: 1.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.15354276, y: 0.09789506, z: 0.16072462}
@@ -915,12 +915,12 @@ MonoBehaviour:
     _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 1
   - LabelPosition: ShelfN1sotto_1_0
-    productName: Cake
+    productName: Peas
     prefabs: {fileID: 5908235145960124908, guid: 42d70392a97cafa4faa85e14f8702c60,
       type: 3}
-    price: 8.99
+    price: 12.99
     description: 
-    isInShoppingList: 0
+    isInShoppingList: 1
     sizeCollider: {x: 0.18743965, y: 0.11237903, z: 0.12935935}
     centerCollider: {x: -0.0031000015, y: 0.056092463, z: 0.0029479687}
     emptyPos: {fileID: 0}
@@ -935,7 +935,7 @@ MonoBehaviour:
     productName: Milk
     prefabs: {fileID: 2190908929263238766, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
-    price: 1.49
+    price: 2.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.09045755, y: 0.24942127, z: 0.14858365}
@@ -952,7 +952,7 @@ MonoBehaviour:
     productName: Milk
     prefabs: {fileID: 2190908929263238766, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
-    price: 1.49
+    price: 2.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.09045755, y: 0.24942127, z: 0.14858365}
@@ -969,7 +969,7 @@ MonoBehaviour:
     productName: Pasta
     prefabs: {fileID: 8092843609906841068, guid: b4298c600cf88424a87d97bcb4916cdf,
       type: 3}
-    price: 1.1
+    price: 2.5
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 2.0000007, y: 2, z: 2.0000007}
@@ -986,7 +986,7 @@ MonoBehaviour:
     productName: Pasta
     prefabs: {fileID: 8092843609906841068, guid: b4298c600cf88424a87d97bcb4916cdf,
       type: 3}
-    price: 1.1
+    price: 2.5
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 2.0000007, y: 2, z: 2.0000007}
@@ -1003,7 +1003,7 @@ MonoBehaviour:
     productName: Pasta
     prefabs: {fileID: 8092843609906841068, guid: b4298c600cf88424a87d97bcb4916cdf,
       type: 3}
-    price: 1.1
+    price: 2.5
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 2.0000007, y: 2, z: 2.0000007}
@@ -1020,7 +1020,7 @@ MonoBehaviour:
     productName: Pasta
     prefabs: {fileID: 8092843609906841068, guid: b4298c600cf88424a87d97bcb4916cdf,
       type: 3}
-    price: 1.1
+    price: 2.5
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 2.0000007, y: 2, z: 2.0000007}
@@ -1071,7 +1071,7 @@ MonoBehaviour:
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 3.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
@@ -1088,7 +1088,7 @@ MonoBehaviour:
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 3.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
@@ -1105,7 +1105,7 @@ MonoBehaviour:
     productName: Meat
     prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
-    price: 6.2
+    price: 8.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.32996604, y: 0.15349625, z: 0.32996613}
@@ -1122,7 +1122,7 @@ MonoBehaviour:
     productName: Soda
     prefabs: {fileID: 6099454480340716241, guid: e26626a233d70614e8015042417431b0,
       type: 3}
-    price: 1.99
+    price: 3.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.045758307, y: 0.10647632, z: 0.045758303}
@@ -1139,7 +1139,7 @@ MonoBehaviour:
     productName: Meat
     prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
-    price: 6.2
+    price: 8.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.32996604, y: 0.15349625, z: 0.32996613}
@@ -1156,7 +1156,7 @@ MonoBehaviour:
     productName: Soda
     prefabs: {fileID: 6099454480340716241, guid: e26626a233d70614e8015042417431b0,
       type: 3}
-    price: 1.99
+    price: 3.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.045758307, y: 0.10647632, z: 0.045758303}
@@ -1173,7 +1173,7 @@ MonoBehaviour:
     productName: Soda
     prefabs: {fileID: 4477105512359372738, guid: c6f4bca6e32cd38469e64071fd0ecd7a,
       type: 3}
-    price: 1.99
+    price: 3.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.045758307, y: 0.10647632, z: 0.045758303}
@@ -1190,7 +1190,7 @@ MonoBehaviour:
     productName: Meat
     prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
-    price: 6.2
+    price: 8.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.32996604, y: 0.15349625, z: 0.32996613}
@@ -1207,7 +1207,7 @@ MonoBehaviour:
     productName: Soda
     prefabs: {fileID: 4477105512359372738, guid: c6f4bca6e32cd38469e64071fd0ecd7a,
       type: 3}
-    price: 1.99
+    price: 3.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.045758307, y: 0.10647632, z: 0.045758303}
@@ -1224,7 +1224,7 @@ MonoBehaviour:
     productName: Soda
     prefabs: {fileID: 6099454480340716241, guid: e26626a233d70614e8015042417431b0,
       type: 3}
-    price: 1.99
+    price: 3.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.045758307, y: 0.10647632, z: 0.045758303}
@@ -1241,7 +1241,7 @@ MonoBehaviour:
     productName: Milk
     prefabs: {fileID: 2190908929263238766, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
-    price: 1.49
+    price: 2.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.090457484, y: 0.24942127, z: 0.14858355}
@@ -1258,7 +1258,7 @@ MonoBehaviour:
     productName: Milk
     prefabs: {fileID: 2190908929263238766, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
-    price: 1.49
+    price: 2.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.090457484, y: 0.24942127, z: 0.14858355}
@@ -1275,7 +1275,7 @@ MonoBehaviour:
     productName: Milk
     prefabs: {fileID: 2190908929263238766, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
-    price: 1.49
+    price: 2.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.090457484, y: 0.24942127, z: 0.14858355}
@@ -1292,7 +1292,7 @@ MonoBehaviour:
     productName: Milk
     prefabs: {fileID: 2190908929263238766, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
-    price: 1.49
+    price: 2.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.090457484, y: 0.24942127, z: 0.14858355}
