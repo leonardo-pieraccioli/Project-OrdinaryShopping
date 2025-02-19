@@ -450,10 +450,10 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.3, y: 1.3, z: 1.3}
     _positions: {x: 11.613, y: 1.248, z: 3.5569997}
-    _xn: 4
+    _xn: 3
     _yn: 1
     _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1.5}
+    _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWS3Sopra_1_0
     productName: Toilet Paper
@@ -467,10 +467,10 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.3, y: 1.3, z: 1.3}
     _positions: {x: 10.12, y: 1.678, z: 3.557}
-    _xn: 5
+    _xn: 2
     _yn: 1
     _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1.5}
+    _offset: {x: 3, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWS3Sopra_1_1
     productName: Toilet Paper
@@ -484,11 +484,11 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.3, y: 1.3, z: 1.3}
     _positions: {x: 11.613, y: 1.678, z: 3.5569997}
-    _xn: 5
+    _xn: 4
     _yn: 1
     _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1.5}
-    _rotate: 0
+    _offset: {x: 2, y: 1, z: 1.5}
+    _rotate: 1
   - LabelPosition: ShelfWN1sotto_0_0
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
@@ -559,13 +559,13 @@ MonoBehaviour:
     _rotate: 0
   - LabelPosition: ShelfWN2sotto_0_0
     productName: Water
-    prefabs: {fileID: 1725709982864244551, guid: 19cf9f26742244d47978bdff0be69897,
+    prefabs: {fileID: 2231874957027838253, guid: 7cc4854f848a2c04090041af9e57fb20,
       type: 3}
     price: 1
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.0006516593, y: 0.00065165927, z: 0.0020967326}
-    centerCollider: {x: -0.000030392766, y: -1.4551915e-10, z: 0.0010583766}
+    sizeCollider: {x: 0.10241246, y: 0.2229836, z: 0.12971926}
+    centerCollider: {x: 0.008393884, y: 0.111166, z: -0.039978743}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 6.716, y: 0.24000001, z: 4.145}
@@ -576,13 +576,13 @@ MonoBehaviour:
     _rotate: 1
   - LabelPosition: ShelfWN2sotto_1_0
     productName: Water
-    prefabs: {fileID: 1725709982864244551, guid: 19cf9f26742244d47978bdff0be69897,
+    prefabs: {fileID: 2231874957027838253, guid: 7cc4854f848a2c04090041af9e57fb20,
       type: 3}
     price: 1
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.0006516593, y: 0.00065165927, z: 0.0020967326}
-    centerCollider: {x: -0.000030392766, y: -1.4551915e-10, z: 0.0010583766}
+    sizeCollider: {x: 0.10241246, y: 0.2229836, z: 0.12971926}
+    centerCollider: {x: 0.008393884, y: 0.111166, z: -0.039978743}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 6.716, y: 0.804, z: 4.145}
@@ -593,13 +593,13 @@ MonoBehaviour:
     _rotate: 1
   - LabelPosition: ShelfWN2sotto_0_1
     productName: Water
-    prefabs: {fileID: 1725709982864244551, guid: 19cf9f26742244d47978bdff0be69897,
+    prefabs: {fileID: 2231874957027838253, guid: 7cc4854f848a2c04090041af9e57fb20,
       type: 3}
     price: 1
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.0006516593, y: 0.00065165927, z: 0.0020967326}
-    centerCollider: {x: -0.000030392766, y: -1.4551915e-10, z: 0.0010583766}
+    sizeCollider: {x: 0.10241246, y: 0.2229836, z: 0.12971926}
+    centerCollider: {x: 0.008393884, y: 0.111166, z: -0.039978743}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 8.161, y: 0.24000001, z: 4.145}
@@ -610,13 +610,13 @@ MonoBehaviour:
     _rotate: 0
   - LabelPosition: ShelfWN2sotto_1_1
     productName: Water
-    prefabs: {fileID: 1725709982864244551, guid: 19cf9f26742244d47978bdff0be69897,
+    prefabs: {fileID: 2231874957027838253, guid: 7cc4854f848a2c04090041af9e57fb20,
       type: 3}
     price: 1
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.0006516593, y: 0.00065165927, z: 0.0020967326}
-    centerCollider: {x: -0.000030392766, y: -1.4551915e-10, z: 0.0010583766}
+    sizeCollider: {x: 0.10241246, y: 0.2229836, z: 0.12971926}
+    centerCollider: {x: 0.008393884, y: 0.111166, z: -0.039978743}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 8.161, y: 0.804, z: 4.145}
@@ -640,8 +640,8 @@ MonoBehaviour:
     _xn: 3
     _yn: 1
     _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1.5}
-    _rotate: 0
+    _offset: {x: 2, y: 1, z: 1.5}
+    _rotate: 1
   - LabelPosition: ShelfWN3sotto_1_0
     productName: Toilet Paper
     prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
@@ -654,7 +654,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.3, y: 1.3, z: 1.3}
     _positions: {x: 10.149, y: 0.804, z: 4.077}
-    _xn: 3
+    _xn: 1
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.5}
@@ -671,7 +671,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.3, y: 1.3, z: 1.3}
     _positions: {x: 11.49, y: 0.24000001, z: 4.077}
-    _xn: 3
+    _xn: 1
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.5}
@@ -763,13 +763,13 @@ MonoBehaviour:
     _rotate: 0
   - LabelPosition: ShelfWN1sopra_0_0
     productName: Water
-    prefabs: {fileID: 1725709982864244551, guid: 19cf9f26742244d47978bdff0be69897,
+    prefabs: {fileID: 2231874957027838253, guid: 7cc4854f848a2c04090041af9e57fb20,
       type: 3}
     price: 1
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.0006516593, y: 0.00065165927, z: 0.0020967326}
-    centerCollider: {x: -0.000030392766, y: -1.4551915e-10, z: 0.0010583766}
+    sizeCollider: {x: 0.10241246, y: 0.2229836, z: 0.12971926}
+    centerCollider: {x: 0.008393884, y: 0.111166, z: -0.039978743}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 3.0434518, y: 1.262, z: 4.112}
@@ -780,13 +780,13 @@ MonoBehaviour:
     _rotate: 1
   - LabelPosition: ShelfWN1sopra_1_0
     productName: Water
-    prefabs: {fileID: 1725709982864244551, guid: 19cf9f26742244d47978bdff0be69897,
+    prefabs: {fileID: 2231874957027838253, guid: 7cc4854f848a2c04090041af9e57fb20,
       type: 3}
     price: 1
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.0006516593, y: 0.00065165927, z: 0.0020967326}
-    centerCollider: {x: -0.000030392766, y: -1.4551915e-10, z: 0.0010583766}
+    sizeCollider: {x: 0.10241246, y: 0.2229836, z: 0.12971926}
+    centerCollider: {x: 0.008393884, y: 0.111166, z: -0.039978743}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 3.0434518, y: 1.6919999, z: 4.112}
@@ -909,10 +909,10 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.3, y: 1.3, z: 1.3}
     _positions: {x: 4.595, y: 0.24000001, z: 6.8187995}
-    _xn: 5
+    _xn: 2
     _yn: 1
     _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1.5}
+    _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 1
   - LabelPosition: ShelfN1sotto_1_0
     productName: Cake
