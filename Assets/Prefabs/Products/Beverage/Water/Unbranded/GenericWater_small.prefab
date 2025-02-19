@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5970192143404872388}
   - component: {fileID: 1247476940502632720}
   - component: {fileID: -591328350123433007}
+  - component: {fileID: -555803396752578486}
   m_Layer: 8
   m_Name: GenericWater_small
   m_TagString: Untagged
@@ -107,3 +108,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0006516593, y: 0.00065165927, z: 0.0020967326}
   m_Center: {x: -0.000030392766, y: -1.4551915e-10, z: 0.0010583766}
+--- !u!114 &-555803396752578486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725709982864244551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279e0dfbdde6a5a4abe47c60a717f266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instanceProduct: {fileID: 0}
