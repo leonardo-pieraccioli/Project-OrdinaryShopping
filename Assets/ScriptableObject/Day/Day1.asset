@@ -15,7 +15,7 @@ MonoBehaviour:
   dayNumber: 1
   budget: 100
   productInfo: {fileID: 11400000, guid: 0e9e6ebe050e61943bc619039e8a5f51, type: 2}
-  light: {fileID: 11400000, guid: f11dcdc9f3d42804c9ac503b58ac6a9b, type: 2}
+  light: {fileID: 11400000, guid: afb534977245bab40bf998a9d1e269c2, type: 2}
   npc:
   - {fileID: 11400000, guid: 1030f27569d52694b85f925fb330b69f, type: 2}
   - {fileID: 11400000, guid: 29a5581d9763e584ab6e45744f2f2619, type: 2}
