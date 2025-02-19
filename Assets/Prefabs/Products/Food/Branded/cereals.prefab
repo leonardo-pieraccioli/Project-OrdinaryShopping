@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2067641740740076731
+--- !u!1001 &2629769964989245326
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -26,17 +26,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 257e9e47ee6fd0a4c8d9c58fed3f97d6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.523
+      value: 8.224035
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 257e9e47ee6fd0a4c8d9c58fed3f97d6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.238
+      value: 1.3152131
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 257e9e47ee6fd0a4c8d9c58fed3f97d6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.48
+      value: 3.3105173
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 257e9e47ee6fd0a4c8d9c58fed3f97d6,
         type: 3}
@@ -76,10 +76,38 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 257e9e47ee6fd0a4c8d9c58fed3f97d6,
         type: 3}
       propertyPath: m_Name
-      value: cereals
+      value: Cereals (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 257e9e47ee6fd0a4c8d9c58fed3f97d6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 257e9e47ee6fd0a4c8d9c58fed3f97d6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1356990367947835059}
   m_SourcePrefab: {fileID: 100100000, guid: 257e9e47ee6fd0a4c8d9c58fed3f97d6, type: 3}
+--- !u!1 &2936267828583586527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 257e9e47ee6fd0a4c8d9c58fed3f97d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 2629769964989245326}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1356990367947835059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2936267828583586527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279e0dfbdde6a5a4abe47c60a717f266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instanceProduct: {fileID: 0}
