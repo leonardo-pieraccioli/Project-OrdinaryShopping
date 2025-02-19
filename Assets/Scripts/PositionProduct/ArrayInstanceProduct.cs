@@ -73,9 +73,9 @@ public class ArrayInstanceProduct : MonoBehaviour
             Debug.Log($"collider not found in gameobject {gameObject.name}");
         }
 
-        /*  product.sizeCollider=collider.size;
+          product.sizeCollider=collider.size;
          product.centerCollider=collider.center;
-          */
+        
 
         // Imposta la dimensione e la posizione del colliders
         collider.center = Vector3.zero; // Impostato su zero per default

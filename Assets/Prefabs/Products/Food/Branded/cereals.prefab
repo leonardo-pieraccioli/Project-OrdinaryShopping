@@ -76,7 +76,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 257e9e47ee6fd0a4c8d9c58fed3f97d6,
         type: 3}
       propertyPath: m_Name
-      value: Cereals (1)
+      value: cereals
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 257e9e47ee6fd0a4c8d9c58fed3f97d6,
         type: 3}
@@ -90,7 +90,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 257e9e47ee6fd0a4c8d9c58fed3f97d6,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1356990367947835059}
+      addedObject: {fileID: -252474409514712665}
   m_SourcePrefab: {fileID: 100100000, guid: 257e9e47ee6fd0a4c8d9c58fed3f97d6, type: 3}
 --- !u!1 &2936267828583586527 stripped
 GameObject:
@@ -98,7 +98,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2629769964989245326}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1356990367947835059
+--- !u!114 &-252474409514712665
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
