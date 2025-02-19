@@ -27,8 +27,9 @@ public class ChangeDayCollision : MonoBehaviour
             {
                 if (Pills.hasGivenToKid)
                 { SceneManager.LoadScene(2); }
-                else{
-                    SceneManager.LoadScene(3); 
+                else
+                {
+                    SceneManager.LoadScene(3);
 
                 }
 
