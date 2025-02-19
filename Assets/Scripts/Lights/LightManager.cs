@@ -32,7 +32,7 @@ public class LightManager : MonoBehaviour
     public enum BackgroundMusicType
 {
     Background = 0,
-    SupermarketBack = 1,
+    Ambient = 1,
     Menu = 2
     
 }
@@ -110,9 +110,9 @@ public class LightManager : MonoBehaviour
         if (SFXSource.isPlaying)
             SFXSource.Stop();
 
-        if (musicSource != null && dayLightSetting.background.Length > 2)
+        if (musicSource != null && dayLightSetting.Music.Length > 2)
         {
-            musicSource.clip = dayLightSetting.background[BackgroundMusicType.Menu.GetHashCode()];
+            musicSource.clip = dayLightSetting.Music[BackgroundMusicType.Menu.GetHashCode()];
             musicSource.loop = true;
             musicSource.Play();
         }
@@ -176,15 +176,15 @@ public class LightManager : MonoBehaviour
 
     public void PlayBackgroundMusic()
 {
-    if (musicSource != null && supermarketMusicSource != null && dayLightSetting.background.Length > 1)
+    if (musicSource != null && supermarketMusicSource != null && dayLightSetting.Music.Length > 1)
     {
         // Imposta la prima musica
-        musicSource.clip = dayLightSetting.background[BackgroundMusicType.Background.GetHashCode()];
+        musicSource.clip = dayLightSetting.Music[BackgroundMusicType.Background.GetHashCode()];
         musicSource.loop = true;
         musicSource.Play();
 
         // Imposta la seconda musica
-        supermarketMusicSource.clip = dayLightSetting.background[BackgroundMusicType.SupermarketBack.GetHashCode()];
+        supermarketMusicSource.clip = dayLightSetting.Ambient;
         supermarketMusicSource.loop = true;
         supermarketMusicSource.Play();
     }

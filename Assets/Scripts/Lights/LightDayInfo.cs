@@ -25,7 +25,9 @@ public class LightDayInfo : ScriptableObject
     public bool StopMusic; // Flag per interrompere la musica alla prima bomba
 
     [Header("Music Clips")]
-    public AudioClip[] background;
+    public AudioClip[] Music;
+
+    public AudioClip Ambient;
 
     
     
