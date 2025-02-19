@@ -134,7 +134,7 @@ public class DiaryManager : MonoBehaviour
         if (diaryCanvas != null)
             diaryCanvas.gameObject.SetActive(true);
             //lightManager.PlayMenuMusic();
-            diaryMusic.Play();
+            //diaryMusic.Play();
             voiceOverSource.Play();
             Debug.Log("Mostra il diario con effetto fade-in");
 
