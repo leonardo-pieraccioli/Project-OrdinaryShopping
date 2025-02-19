@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -68,6 +69,31 @@ public class InteractableNPC : MonoBehaviour, IInteractable
                 audioSource.Play();
             }
         }
+        if (!audioSource.isPlaying)
+        {
+            animator.SetBool("IsTalking", false);
+        }
+    }
+
+    public void BombReaction()
+    {
+        animator.SetBool("Bomb", true);
+        StartCoroutine(WaitSeconds());
+    }
+
+    IEnumerator WaitSeconds()
+    {
+        yield return new WaitForSeconds(2.5f);
+        animator.SetBool("Bomb", false);
+    }
+
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player") && isTrigger)
+        {
+            animator.SetBool("IsTalking", false);
+        }
     }
 
     private float currentWeight = 0.0f;
@@ -77,11 +103,10 @@ public class InteractableNPC : MonoBehaviour, IInteractable
 
     void OnAnimatorIK()
     {
-        if (animator.enabled)
+        if (animator.enabled && !isTrigger)
         {
             if (animator.GetBool("IsTalking"))
             {
-                Debug.Log("Looking at player");
                 currentWeight = newWeight;
                 targetWeight = 1f;
                 newWeight = Mathf.Lerp(currentWeight, targetWeight, Time.deltaTime * lerpSpeed);
