@@ -705,7 +705,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 10.292001, y: 1.248, z: 4.085}
-    _xn: 10
+    _xn: 8
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
@@ -722,7 +722,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 10.292001, y: 1.698, z: 4.085}
-    _xn: 10
+    _xn: 8
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
@@ -739,7 +739,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 11.771001, y: 1.248, z: 4.085}
-    _xn: 10
+    _xn: 8
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
@@ -756,7 +756,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 11.771001, y: 1.698, z: 4.085}
-    _xn: 10
+    _xn: 8
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
@@ -943,7 +943,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 4.37, y: 1.242, z: 6.739}
-    _xn: 6
+    _xn: 3
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
@@ -960,7 +960,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 4.37, y: 1.6719999, z: 6.739}
-    _xn: 6
+    _xn: 3
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
