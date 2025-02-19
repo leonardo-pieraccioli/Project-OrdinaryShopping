@@ -121,7 +121,7 @@ public class DialogueManager : MonoBehaviour
         currentDialogueIndex = 0;
         dialogueBox.text = string.Empty;
         NPCStartAudio();
-        StartCoroutine(TypeLine());
+        activeCoroutine = StartCoroutine(TypeLine());
     }
 
     public void StopDialogueUI()
