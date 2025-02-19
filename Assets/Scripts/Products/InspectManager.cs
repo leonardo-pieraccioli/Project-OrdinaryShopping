@@ -3,7 +3,6 @@ using UnityEngine;
 using StarterAssets;
 using TMPro;
 using System;
-using Unity.VisualScripting;
 
 public class InspectManager : MonoBehaviour
 {
@@ -27,25 +26,10 @@ public class InspectManager : MonoBehaviour
     private InspectableProduct inspectedProduct = null;
     public bool isInspecting = false;
 
-    Vector3 lastMousePosition = Vector3.zero;
     private void Start()
     {
         playerController = FindObjectOfType<FirstPersonController>();
     }
-
-    void Update()
-    {
-        if (isInspecting && Input.GetMouseButton(0))
-        {
-            Vector3 deltaMousePosition = Input.mousePosition - lastMousePosition;
-            float rotationSpeed = 1.0f;
-            inspectedProduct.transform.Rotate(Vector3.up, -deltaMousePosition.x * rotationSpeed, Space.World);
-            inspectedProduct.transform.Rotate(Vector3.right, deltaMousePosition.y * rotationSpeed, Space.World);
-        }
-        lastMousePosition = Input.mousePosition;
-        
-    }
-    
     public void StartInspect(InspectableProduct product)
     {
         productNameBox.text = product.instanceProduct.product.productName;
@@ -56,14 +40,12 @@ public class InspectManager : MonoBehaviour
         playerController.LockMovement(true);
         CanvasManager.Instance.DeactivateAllCanvasBut(CanvasCode.CNV_INSPECT);
         inspectedProduct.ReachInspectPosition();
-        inspectedProduct.gameObject.layer = 3;
         inspectedProduct.instanceProduct.GrabObject();
     }
 
     public void StopInspect()
     {
         isInspecting = false;
-        inspectedProduct.gameObject.layer = 8;
         inspectedProduct = null;
         playerController.LockMovement(false);
         CanvasManager.Instance.DeactivateAllCanvasBut(CanvasCode.CNV_HUD);

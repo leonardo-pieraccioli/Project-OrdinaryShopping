@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 using UnityEngine.Assertions;
-using UnityEngine.UIElements;
 
 public class InspectableProduct : MonoBehaviour, IInteractable
 {
@@ -11,14 +10,12 @@ public class InspectableProduct : MonoBehaviour, IInteractable
     public ArrayInstanceProduct instanceProduct;
     private MeshRenderer meshRenderer;
     private Vector3 originalPosition;
-    private Quaternion originalRotation;
     static private Transform cameraTransform;
 
     // Start is called before the first frame update
     void Start()
     {
         originalPosition = transform.position;
-        originalRotation = transform.rotation;
         cameraTransform = FindObjectOfType<Camera>().gameObject.transform;
         instanceProduct = GetComponent<ArrayInstanceProduct>();
         Debug.Assert(instanceProduct != null, message: $"The product {gameObject.name} must have an ArrayInstanceProduct component");
@@ -28,17 +25,13 @@ public class InspectableProduct : MonoBehaviour, IInteractable
 
     public void ReachInspectPosition()
     {
-        BoxCollider bc = GetComponent<BoxCollider>();
-        transform.position = cameraTransform.position + cameraTransform.forward * inspectDistance - cameraTransform.up * bc.size.normalized.y / 4;
-        transform.rotation = cameraTransform.rotation * Quaternion.Euler(0, 160, 0);
-        
+        transform.position = cameraTransform.position + cameraTransform.forward * inspectDistance;
         meshRenderer.enabled = true;
     }
 
     public void ReachOriginalPosition()
     {
         transform.position = originalPosition;
-        transform.rotation = originalRotation;
         meshRenderer.enabled = false;
     }
 
