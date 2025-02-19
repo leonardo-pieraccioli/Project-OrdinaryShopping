@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0bcb5e2848b6c439f94991cefa2924, type: 3}
   m_Name: Nelly_Day2
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4853459816441512934, guid: eb13820d95216964a8b2d06508706746, type: 3}
+  prefab: {fileID: 1669210603020318556, guid: 63ef1bf1c4e3e674b9497e0b059b37e1, type: 3}
   position: 5
   npcName: Nelly
   isTrigger: 0

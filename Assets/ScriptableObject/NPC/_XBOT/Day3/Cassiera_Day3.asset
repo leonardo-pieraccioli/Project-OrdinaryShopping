@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0bcb5e2848b6c439f94991cefa2924, type: 3}
   m_Name: Cassiera_Day3
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4853459816441512934, guid: eb13820d95216964a8b2d06508706746, type: 3}
+  prefab: {fileID: 4052659672230166701, guid: f18287d8361a1054ba817ef479669f28, type: 3}
   position: 3
   npcName: Cassy
   isTrigger: 1
