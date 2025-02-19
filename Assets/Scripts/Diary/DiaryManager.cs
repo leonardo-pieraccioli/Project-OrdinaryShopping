@@ -109,6 +109,9 @@ public class DiaryManager : MonoBehaviour
         currentDay = day;
         lightManager = LightManager.Instance;
 
+        if(lightManager.isGameStarted==true)
+          lightManager.isGameStarted=false;
+
         // Imposta i valori del giorno nel diario
         if (dayNameText != null) dayNameText.text = day.dayName;
         if (dayText != null) dayText.text = day.dayText;
@@ -128,6 +131,8 @@ public class DiaryManager : MonoBehaviour
                 audioSource.Stop();
             }
 
+            lightManager.StopCoroutineBombs();
+
         Cursor.visible = true;
         //voiceOverSource.Play();
         diaryMusic.Play();
@@ -141,10 +146,15 @@ public class DiaryManager : MonoBehaviour
             diaryCanvas.gameObject.SetActive(true);
             //lightManager.PlayMenuMusic();
             //diaryMusic.Play();
+
+             if (lightManager.SFXSource.isPlaying)
+                lightManager.SFXSource.Stop();
+
             foreach (AudioSource audioSource in lightManager.bombAudioSources)
             {
                 audioSource.Stop();
             }
+
             lightManager.musicSource.Stop();
             lightManager.musicSource2.Stop();
             voiceOverSource.Play();

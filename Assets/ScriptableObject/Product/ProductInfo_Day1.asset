@@ -14,72 +14,72 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   products:
   - LabelPosition: ShelfWS1sotto_0_0
-    productName: Fish
-    prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
+    productName: Syrup
+    prefabs: {fileID: 4275616223655900131, guid: 1ddcfa7094dca23429a4ab650c3e5f83,
       type: 3}
-    price: 4.99
+    price: 1.99
     description: 
     isInShoppingList: 1
-    sizeCollider: {x: 0.19273937, y: 0.08380286, z: 0.19273931}
-    centerCollider: {x: 0.027422892, y: 0.038714226, z: 0.0474323}
+    sizeCollider: {x: 0.09385506, y: 0.1321367, z: 0.09385505}
+    centerCollider: {x: -0.0002853164, y: 0.06655672, z: -0.0008561876}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
     _positions: {x: 2.847, y: 0.24000001, z: 3.519}
-    _xn: 4
+    _xn: 7
     _yn: 2
     _zn: 2
     _offset: {x: 1.75, y: 1, z: 1.3}
     _rotate: 0
   - LabelPosition: ShelfWS1sotto_0_1
-    productName: Tomato
-    prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
+    productName: Syrup
+    prefabs: {fileID: 4275616223655900131, guid: 1ddcfa7094dca23429a4ab650c3e5f83,
       type: 3}
-    price: 2.99
+    price: 1.99
     description: 
     isInShoppingList: 1
-    sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
-    centerCollider: {x: 0.0000009536743, y: 0.11459063, z: 0}
+    sizeCollider: {x: 0.09385506, y: 0.1321367, z: 0.09385505}
+    centerCollider: {x: -0.00028549522, y: 0.06655672, z: -0.000856426}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.4, y: 0.4, z: 0.4}
+    _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
     _positions: {x: 4.576, y: 0.24000001, z: 3.6219997}
-    _xn: 8
-    _yn: 2
+    _xn: 5
+    _yn: 1
     _zn: 1
-    _offset: {x: 2, y: 1, z: 1.3}
+    _offset: {x: 1.5, y: 1, z: 1.3}
     _rotate: 0
   - LabelPosition: ShelfWS1sotto_1_0
-    productName: Fish
-    prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
+    productName: Peas
+    prefabs: {fileID: 5886593373652477726, guid: 8e8e38d5032ac8047bcede91d8e3970b,
       type: 3}
-    price: 4.99
+    price: 1.25
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.19273937, y: 0.08380286, z: 0.19273931}
-    centerCollider: {x: 0.027422892, y: 0.038714226, z: 0.0474323}
+    sizeCollider: {x: 0.093855016, y: 0.1321367, z: 0.09385501}
+    centerCollider: {x: -0.00028531626, y: 0.06655672, z: -0.0008559488}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 2.000001, y: 2, z: 2.000001}
     _positions: {x: 2.847, y: 0.804, z: 3.519}
     _xn: 4
-    _yn: 2
+    _yn: 1
     _zn: 2
     _offset: {x: 2, y: 1, z: 1.3}
     _rotate: 0
   - LabelPosition: ShelfWS1sotto_1_1
-    productName: Tomato
-    prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
+    productName: Pumpkin
+    prefabs: {fileID: 3227546916961175394, guid: b2bec79cc8bb21446904239c81d3ce05,
       type: 3}
     price: 2.99
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
-    centerCollider: {x: 0.0000009536743, y: 0.11459051, z: 0}
+    sizeCollider: {x: 0.093855016, y: 0.1321367, z: 0.09385501}
+    centerCollider: {x: -0.00028531626, y: 0.06655672, z: -0.0008559488}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.4, y: 0.4, z: 0.4}
+    _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
     _positions: {x: 4.576, y: 0.804, z: 3.6219997}
-    _xn: 8
-    _yn: 2
+    _xn: 5
+    _yn: 1
     _zn: 1
-    _offset: {x: 2, y: 1, z: 1.3}
+    _offset: {x: 1.5, y: 1, z: 1.3}
     _rotate: 0
   - LabelPosition: Rack1_0_0
     productName: Med Vita
@@ -218,86 +218,86 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfWS1sopra_0_0
-    productName: Fish
-    prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
+    productName: Flour
+    prefabs: {fileID: 2254950887640212190, guid: cf507bc292c9bfe43b910dd0d9d5a324,
       type: 3}
-    price: 4.99
+    price: 0.99
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.19273937, y: 0.08380286, z: 0.19273931}
-    centerCollider: {x: 0.027422892, y: 0.038714226, z: 0.0474323}
+    sizeCollider: {x: 0.18337992, y: 0.36196542, z: 0.11446622}
+    centerCollider: {x: -0.00081135, y: 0.18168443, z: 0.00000003725292}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 1.0000005, y: 1, z: 1.0000005}
     _positions: {x: 2.847, y: 1.261, z: 3.519}
     _xn: 4
-    _yn: 2
+    _yn: 1
     _zn: 2
     _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfWS1sopra_0_1
-    productName: Tomato
-    prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
+    productName: Flour
+    prefabs: {fileID: 2254950887640212190, guid: cf507bc292c9bfe43b910dd0d9d5a324,
       type: 3}
-    price: 2.99
+    price: 0.99
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
-    centerCollider: {x: 0.0000009536743, y: 0.11459063, z: 0}
+    sizeCollider: {x: 0.18337992, y: 0.36196542, z: 0.11446622}
+    centerCollider: {x: -0.00081206526, y: 0.18168443, z: 0.00000003725292}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.4, y: 0.4, z: 0.4}
+    _dimensions: {x: 1.0000005, y: 1, z: 1.0000005}
     _positions: {x: 4.576, y: 1.261, z: 3.6219997}
-    _xn: 8
-    _yn: 2
+    _xn: 4
+    _yn: 1
     _zn: 1
     _offset: {x: 2, y: 1, z: 1.3}
     _rotate: 0
   - LabelPosition: ShelfWS1sopra_1_0
-    productName: Fish
-    prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
+    productName: Flour
+    prefabs: {fileID: 2254950887640212190, guid: cf507bc292c9bfe43b910dd0d9d5a324,
       type: 3}
-    price: 4.99
+    price: 0.99
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.19273937, y: 0.08380286, z: 0.19273931}
-    centerCollider: {x: 0.027422892, y: 0.038714226, z: 0.0474323}
+    sizeCollider: {x: 0.18337992, y: 0.36196542, z: 0.11446622}
+    centerCollider: {x: -0.00081135, y: 0.18168443, z: 0.00000003725292}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 1.0000005, y: 1, z: 1.0000005}
     _positions: {x: 2.847, y: 1.691, z: 3.519}
-    _xn: 4
-    _yn: 2
+    _xn: 5
+    _yn: 1
     _zn: 2
     _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfWS1sopra_1_1
-    productName: Tomato
-    prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
+    productName: Syrup
+    prefabs: {fileID: 4275616223655900131, guid: 1ddcfa7094dca23429a4ab650c3e5f83,
       type: 3}
-    price: 2.99
+    price: 1.99
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
-    centerCollider: {x: 0.0000009536743, y: 0.11459063, z: 0}
+    sizeCollider: {x: 0.09385506, y: 0.1321367, z: 0.09385505}
+    centerCollider: {x: -0.00028549522, y: 0.06655672, z: -0.000856426}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.4, y: 0.4, z: 0.4}
+    _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
     _positions: {x: 4.576, y: 1.691, z: 3.6219997}
-    _xn: 8
-    _yn: 2
+    _xn: 5
+    _yn: 1
     _zn: 1
-    _offset: {x: 2, y: 1, z: 1.3}
+    _offset: {x: 1.5, y: 1, z: 1.3}
     _rotate: 0
   - LabelPosition: ShelfWS2Sopra_0_0
-    productName: Tea
-    prefabs: {fileID: 6239699513786241697, guid: f337a4056f119194d9e71076db156c94,
+    productName: Flour
+    prefabs: {fileID: 911037915604296683, guid: 21668b65aed5e3745a00b6d6f5e76fdd,
       type: 3}
-    price: 1.89
+    price: 0.99
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.097684674, y: 0.19599201, z: 0.06011369}
-    centerCollider: {x: 0.0018994932, y: 0.098023705, z: -0.0083939405}
+    sizeCollider: {x: 0.18337992, y: 0.36196542, z: 0.11446622}
+    centerCollider: {x: -0.0008111116, y: 0.18168443, z: 0.00000003725292}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1.2563, y: 1.2563, z: 1.2563}
+    _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 6.638, y: 1.248, z: 3.392}
-    _xn: 9
+    _xn: 7
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.2}
@@ -700,8 +700,8 @@ MonoBehaviour:
     price: 5.49
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
-    centerCollider: {x: 0, y: 0.11459063, z: 0}
+    sizeCollider: {x: 0.3299659, y: 0.15349625, z: 0.32996598}
+    centerCollider: {x: -0.00000008195639, y: 0.07794205, z: 0.00000010430813}
     emptyPos: {fileID: 0}
     _dimensions: {x: 0.5, y: 0.5, z: 0.5}
     _positions: {x: 10.292001, y: 1.248, z: 4.085}
@@ -717,8 +717,8 @@ MonoBehaviour:
     price: 5.49
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
-    centerCollider: {x: 0, y: 0.11459063, z: 0}
+    sizeCollider: {x: 0.3299659, y: 0.15349625, z: 0.32996598}
+    centerCollider: {x: -0.00000008195639, y: 0.07794205, z: 0.00000010430813}
     emptyPos: {fileID: 0}
     _dimensions: {x: 0.5, y: 0.5, z: 0.5}
     _positions: {x: 10.292001, y: 1.698, z: 4.085}
@@ -734,8 +734,8 @@ MonoBehaviour:
     price: 5.49
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
-    centerCollider: {x: 0, y: 0.11459063, z: 0}
+    sizeCollider: {x: 0.3299659, y: 0.15349625, z: 0.32996598}
+    centerCollider: {x: -0.00000008195639, y: 0.07794205, z: 0.00000010430813}
     emptyPos: {fileID: 0}
     _dimensions: {x: 0.5, y: 0.5, z: 0.5}
     _positions: {x: 11.771001, y: 1.248, z: 4.085}
@@ -751,8 +751,8 @@ MonoBehaviour:
     price: 5.49
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
-    centerCollider: {x: 0, y: 0.11459063, z: 0}
+    sizeCollider: {x: 0.3299659, y: 0.15349625, z: 0.32996598}
+    centerCollider: {x: -0.00000008195639, y: 0.07794205, z: 0.00000010430813}
     emptyPos: {fileID: 0}
     _dimensions: {x: 0.5, y: 0.5, z: 0.5}
     _positions: {x: 11.771001, y: 1.698, z: 4.085}
@@ -772,7 +772,7 @@ MonoBehaviour:
     centerCollider: {x: -0.000000011175871, y: 0.063802265, z: -0.011330162}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2, y: 2, z: 2}
-    _positions: {x: 3.0434518, y: 1.248, z: 4.112}
+    _positions: {x: 3.0434518, y: 1.262, z: 4.112}
     _xn: 11
     _yn: 1
     _zn: 1
@@ -789,7 +789,7 @@ MonoBehaviour:
     centerCollider: {x: -0.000000011175871, y: 0.063802265, z: -0.011330162}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2, y: 2, z: 2}
-    _positions: {x: 3.0434518, y: 1.678, z: 4.112}
+    _positions: {x: 3.0434518, y: 1.6919999, z: 4.112}
     _xn: 11
     _yn: 1
     _zn: 1
@@ -806,7 +806,7 @@ MonoBehaviour:
     centerCollider: {x: 0.00000049639493, y: 0.056285117, z: 0.0000000013969839}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.9999999, y: 1.9999999, z: 1.9999999}
-    _positions: {x: 4.989452, y: 1.248, z: 4.112}
+    _positions: {x: 4.989452, y: 1.262, z: 4.112}
     _xn: 8
     _yn: 1
     _zn: 2
@@ -823,7 +823,7 @@ MonoBehaviour:
     centerCollider: {x: 0.00000049639493, y: 0.056285117, z: 0.0000000013969839}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.9999999, y: 1.9999999, z: 1.9999999}
-    _positions: {x: 4.989452, y: 1.678, z: 4.112}
+    _positions: {x: 4.989452, y: 1.6919999, z: 4.112}
     _xn: 8
     _yn: 1
     _zn: 2
@@ -840,7 +840,7 @@ MonoBehaviour:
     centerCollider: {x: 0, y: 0.03342061, z: -0.00000023748726}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.4938004, y: 2.4938, z: 2.4938004}
-    _positions: {x: 6.737, y: 1.248, z: 4.168}
+    _positions: {x: 6.737, y: 1.269, z: 4.094}
     _xn: 10
     _yn: 1
     _zn: 1
@@ -857,7 +857,7 @@ MonoBehaviour:
     centerCollider: {x: 0, y: 0.03342061, z: -0.00000023748726}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.4938004, y: 2.4938, z: 2.4938004}
-    _positions: {x: 6.737, y: 1.678, z: 4.168}
+    _positions: {x: 6.737, y: 1.699, z: 4.094}
     _xn: 10
     _yn: 1
     _zn: 1
@@ -874,7 +874,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00010508299, y: 0.12709711, z: 0.00010121614}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 8.2560005, y: 1.248, z: 4.168}
+    _positions: {x: 8.2560005, y: 1.269, z: 4.094}
     _xn: 7
     _yn: 1
     _zn: 2
@@ -891,7 +891,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00010508299, y: 0.12709711, z: 0.00010121614}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 8.2560005, y: 1.678, z: 4.168}
+    _positions: {x: 8.2560005, y: 1.699, z: 4.094}
     _xn: 7
     _yn: 1
     _zn: 2
@@ -1074,8 +1074,8 @@ MonoBehaviour:
     price: 5.49
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
-    centerCollider: {x: 0, y: 0.11459063, z: 0}
+    sizeCollider: {x: 0.32996604, y: 0.15349625, z: 0.32996613}
+    centerCollider: {x: -0.00000008195643, y: 0.07794205, z: 0.00000010430818}
     emptyPos: {fileID: 0}
     _dimensions: {x: 0.5, y: 0.5, z: 0.5}
     _positions: {x: 7.605, y: 1.248, z: 6.784}
@@ -1091,8 +1091,8 @@ MonoBehaviour:
     price: 5.49
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
-    centerCollider: {x: 0, y: 0.11459063, z: 0}
+    sizeCollider: {x: 0.32996604, y: 0.15349625, z: 0.32996613}
+    centerCollider: {x: -0.00000008195643, y: 0.07794205, z: 0.00000010430818}
     emptyPos: {fileID: 0}
     _dimensions: {x: 0.5, y: 0.5, z: 0.5}
     _positions: {x: 7.605, y: 1.7, z: 6.784}
@@ -1248,7 +1248,7 @@ MonoBehaviour:
     centerCollider: {x: 1.1844975e-16, y: 0.1250378, z: 3.971668e-23}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 12.056, y: 0.39365608, z: -3.263}
+    _positions: {x: 12.025, y: 0.39365608, z: -3.263}
     _xn: 4
     _yn: 1
     _zn: 2
@@ -1265,7 +1265,7 @@ MonoBehaviour:
     centerCollider: {x: 1.1844975e-16, y: 0.1250378, z: 3.971668e-23}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 12.603999, y: 0.39365608, z: -3.263}
+    _positions: {x: 12.585, y: 0.39365608, z: -3.263}
     _xn: 5
     _yn: 1
     _zn: 2
@@ -1282,7 +1282,7 @@ MonoBehaviour:
     centerCollider: {x: 1.1844975e-16, y: 0.1250378, z: 3.971668e-23}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 13.275, y: 0.39365608, z: -3.263}
+    _positions: {x: 13.224998, y: 0.39365608, z: -3.263}
     _xn: 5
     _yn: 1
     _zn: 2
@@ -1299,7 +1299,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00000023841858, y: 0.1250378, z: 3.971668e-23}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 14.039999, y: 0.39365608, z: -3.263}
+    _positions: {x: 13.882, y: 0.39365608, z: -3.263}
     _xn: 4
     _yn: 1
     _zn: 2
@@ -1316,7 +1316,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 12.056, y: 0.964, z: -3.263}
+    _positions: {x: 12.025, y: 0.90999997, z: -3.263}
     _xn: 4
     _yn: 1
     _zn: 2
@@ -1333,7 +1333,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 12.603999, y: 0.964, z: -3.263}
+    _positions: {x: 12.585, y: 0.90999997, z: -3.263}
     _xn: 5
     _yn: 1
     _zn: 2
@@ -1347,10 +1347,10 @@ MonoBehaviour:
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.045758285, y: 0.10647632, z: 0.04575828}
-    centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
+    centerCollider: {x: -0.000963415, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 13.275, y: 0.964, z: -3.263}
+    _positions: {x: 13.224998, y: 0.90999997, z: -3.263}
     _xn: 5
     _yn: 1
     _zn: 2
@@ -1367,7 +1367,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 14.039999, y: 0.964, z: -3.263}
+    _positions: {x: 13.882, y: 0.90999997, z: -3.263}
     _xn: 4
     _yn: 1
     _zn: 2
@@ -1381,10 +1381,10 @@ MonoBehaviour:
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.045758285, y: 0.10647632, z: 0.04575828}
-    centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
+    centerCollider: {x: -0.0009629382, y: 0.053255707, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 12.056, y: 1.3880723, z: -3.263}
+    _positions: {x: 12.025, y: 1.415, z: -3.263}
     _xn: 4
     _yn: 1
     _zn: 2
@@ -1398,10 +1398,10 @@ MonoBehaviour:
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.045758285, y: 0.10647632, z: 0.04575828}
-    centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
+    centerCollider: {x: -0.0009629382, y: 0.053255707, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 12.603999, y: 1.3880723, z: -3.263}
+    _positions: {x: 12.585, y: 1.415, z: -3.263}
     _xn: 5
     _yn: 1
     _zn: 2
@@ -1415,10 +1415,10 @@ MonoBehaviour:
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.045758285, y: 0.10647632, z: 0.04575828}
-    centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
+    centerCollider: {x: -0.000963415, y: 0.053255707, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 13.275, y: 1.3880723, z: -3.263}
+    _positions: {x: 13.224998, y: 1.415, z: -3.263}
     _xn: 5
     _yn: 1
     _zn: 2
@@ -1432,10 +1432,10 @@ MonoBehaviour:
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.045758285, y: 0.10647632, z: 0.04575828}
-    centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
+    centerCollider: {x: -0.0009629382, y: 0.053255707, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 14.004999, y: 1.3880723, z: -3.263}
+    _positions: {x: 13.847, y: 1.415, z: -3.263}
     _xn: 4
     _yn: 1
     _zn: 2
@@ -1452,7 +1452,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255707, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 12.056, y: 1.8056769, z: -3.263}
+    _positions: {x: 12.025, y: 1.8800001, z: -3.263}
     _xn: 4
     _yn: 1
     _zn: 2
@@ -1469,7 +1469,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255707, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 12.603999, y: 1.8056769, z: -3.263}
+    _positions: {x: 12.585, y: 1.8800001, z: -3.263}
     _xn: 5
     _yn: 1
     _zn: 2
@@ -1483,10 +1483,10 @@ MonoBehaviour:
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.045758285, y: 0.10647632, z: 0.04575828}
-    centerCollider: {x: -0.0009629382, y: 0.053255707, z: 0.000026844442}
+    centerCollider: {x: -0.000963415, y: 0.053255707, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 13.275, y: 1.8056769, z: -3.263}
+    _positions: {x: 13.224998, y: 1.8800001, z: -3.263}
     _xn: 5
     _yn: 1
     _zn: 2
@@ -1503,7 +1503,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255707, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 14.039999, y: 1.8056769, z: -3.263}
+    _positions: {x: 13.882, y: 1.8800001, z: -3.263}
     _xn: 4
     _yn: 1
     _zn: 1

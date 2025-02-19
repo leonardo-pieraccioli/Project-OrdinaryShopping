@@ -21,13 +21,18 @@ public class ChangeDayCollision : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Verifica se l'altro collider appartiene all'oggetto specifico che desideri
-        if ( other.CompareTag("Player") )
+        if (other.CompareTag("Player"))
         {
             if (DayManager.Instance.currentDay.dayNumber == 5)
             {
                 if (Pills.hasGivenToKid)
-                {}
-                SceneManager.LoadScene(2);
+                { SceneManager.LoadScene(2); }
+                else
+                {
+                    SceneManager.LoadScene(3);
+
+                }
+
             }
             else if (!hasPlayerPaid)
             {
@@ -63,7 +68,7 @@ public class ChangeDayCollision : MonoBehaviour
             DialogueManager.Instance.WriteHelpMessage("You have paid. Now you can exit the store.");
             hasPlayerPaid = true;
         }
-        else 
+        else
         {
             CanvasManager.Instance.ActivateCanvas(CanvasCode.CNV_HELPBOX);
             DialogueManager.Instance.WriteHelpMessage("To pay you have to buy at least one product from the shopping list.");
