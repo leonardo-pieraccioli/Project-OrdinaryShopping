@@ -28,7 +28,7 @@ public class LightManager : MonoBehaviour
 
 
     [Header("---Bomb Audio Sources---")]
-    [SerializeField] private AudioSource [] bombAudioSources;
+    [SerializeField] public AudioSource [] bombAudioSources;
 
 
     public enum BackgroundMusicType
@@ -393,7 +393,7 @@ private IEnumerator FlickerSingleLight(Light light, GameObject objLight, LightDa
 /// </summary>
 public void ResetLights()
 {
-    Debug.Log("🔄 Resetting all lights and materials...");
+    Debug.Log("Resetting all lights and materials...");
 
     // Reset delle luci
     for (int i = 0; i < sceneLights.Length; i++)
