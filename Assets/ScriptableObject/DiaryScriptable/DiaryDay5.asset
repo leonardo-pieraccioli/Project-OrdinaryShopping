@@ -17,3 +17,4 @@ MonoBehaviour:
     leg, I can barely walk. My son got it in the eye, he can\u2019t see anymore."
   dayImage: {fileID: 0}
   voiceOver: {fileID: 8300000, guid: 8ec5737ab6c070042ab800829025c6f2, type: 3}
+  diaryMusicClip: {fileID: 8300000, guid: fee0789b6c8bb6d4d99b5e23e35d2fc3, type: 3}
