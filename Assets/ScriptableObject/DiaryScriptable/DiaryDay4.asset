@@ -18,3 +18,4 @@ MonoBehaviour:
     kilometer away. Why is this happening to us?"
   dayImage: {fileID: 0}
   voiceOver: {fileID: 8300000, guid: d67fcc4c3476602438abd35ad717e6dc, type: 3}
+  diaryMusicClip: {fileID: 8300000, guid: fee0789b6c8bb6d4d99b5e23e35d2fc3, type: 3}
