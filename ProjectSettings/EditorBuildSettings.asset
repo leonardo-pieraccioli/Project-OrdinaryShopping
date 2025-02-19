@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Supermarket_v2.unity
     guid: 9ec0c3aa90b39584e942972365809995
   - enabled: 1
-    path: Assets/Scenes/Finale.unity
-    guid: b0aa3d08dc62dd44195effd18cc21894
+    path: Assets/Scenes/Finale_unicorn.unity
+    guid: 1a5f0d10e1ae80d4b88983110b637090
+  - enabled: 1
+    path: Assets/Scenes/Finale_Cap.unity
+    guid: 3f5d6f22a4fc57749bfe03a7d9f955b3
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 43c012f940f2bc14bb82b8aadb8f7fb8,
       type: 2}

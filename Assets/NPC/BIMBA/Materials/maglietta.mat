@@ -49,9 +49,9 @@ Material:
     m_Floats:
     - _AmbientEnvironmentMultiplier: 1
     - _Brightness: 3.34
-    - _Contrast: 1.024
-    - _EdgeDistanceAttenuation: 0.53
-    - _EdgeRim: 0.424
+    - _Contrast: 1.026
+    - _EdgeDistanceAttenuation: 0.57
+    - _EdgeRim: 0.413
     - _EdgeSpecular: 0
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -59,11 +59,11 @@ Material:
     - _RimStrength: 0.453
     - _RimThreshold: 0.64
     - _SHADOWBRIGHTTYPE: 0
-    - _Saturation: 1
-    - _Shadow_Steps: 6.1
-    - _Smoothness: 0.436
+    - _Saturation: 0.982
+    - _Shadow_Steps: 6.7
+    - _Smoothness: 0.301
     m_Colors:
-    - _BaseColor: {r: 0.97735846, g: 0.536625, b: 0.5927051, a: 1}
+    - _BaseColor: {r: 0.82641506, g: 0.38514057, b: 0.44029987, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &3982348512348924458
 MonoBehaviour:

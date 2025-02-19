@@ -19129,7 +19129,6 @@ MonoBehaviour:
   voiceOverMixer: {fileID: 0}
   voiceOverSource: {fileID: 1220221401}
   diaryMusic: {fileID: 1020982248}
-  diaryMusicClip: {fileID: 8300000, guid: fee0789b6c8bb6d4d99b5e23e35d2fc3, type: 3}
 --- !u!4 &1047275126 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7545541725186885917, guid: e706b94418768b34895e5d0a378f268f,

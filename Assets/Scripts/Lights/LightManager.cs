@@ -28,7 +28,7 @@ public class LightManager : MonoBehaviour
 
 
     [Header("---Bomb Audio Sources---")]
-    [SerializeField] private AudioSource [] bombAudioSources;
+    [SerializeField] public AudioSource [] bombAudioSources;
 
 
     public enum BackgroundMusicType
@@ -123,6 +123,19 @@ public class LightManager : MonoBehaviour
             musicSource.loop = true;
             musicSource.Play();
         }
+    }
+
+    //////////////////////////////////////////////////////////////////////////
+
+    public void StopCoroutineBombs()
+    {
+        foreach (AudioSource audioSource in bombAudioSources)
+        {
+            audioSource.Stop();
+        }
+
+        if (explosionCoroutine != null)
+                StopCoroutine(explosionCoroutine);
     }
 
     public void StartGameMusic()
@@ -247,6 +260,7 @@ public class LightManager : MonoBehaviour
     {
         musicSource.Stop();
         musicSource2.Stop();
+        SFXSource.Stop();
         supermarketAmbientSource.Stop();
     }
 
@@ -394,7 +408,7 @@ private IEnumerator FlickerSingleLight(Light light, GameObject objLight, LightDa
 /// </summary>
 public void ResetLights()
 {
-    Debug.Log("🔄 Resetting all lights and materials...");
+    Debug.Log("Resetting all lights and materials...");
 
     // Reset delle luci
     for (int i = 0; i < sceneLights.Length; i++)

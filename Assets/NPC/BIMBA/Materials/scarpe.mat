@@ -49,10 +49,10 @@ Material:
     m_Floats:
     - _AmbientEnvironmentMultiplier: 1
     - _Brightness: 4
-    - _Contrast: 0.995
+    - _Contrast: 1.022
     - _EdgeDistanceAttenuation: 1.08
     - _EdgeRim: 0.394
-    - _EdgeSpecular: 0.43
+    - _EdgeSpecular: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RimAmount: 0.505
@@ -60,8 +60,8 @@ Material:
     - _RimThreshold: 0.629
     - _SHADOWBRIGHTTYPE: 0
     - _Saturation: 1
-    - _Shadow_Steps: 3.3
-    - _Smoothness: 0.566
+    - _Shadow_Steps: 1.1
+    - _Smoothness: 0.375
     m_Colors:
     - _BaseColor: {r: 0.5245282, g: 0.2853214, b: 0.17319322, a: 1}
   m_BuildTextureStacks: []
