@@ -280,7 +280,8 @@ public class LightManager : MonoBehaviour
         }
 
         if (cineVC != null)
-            StartCoroutine(CameraShake());
+            StartCoroutine(CameraShake());  
+        DialogueManager.Instance.BombAnimations();
         Invoke(nameof(TriggerFlicker), 0.5f); // Modifica "0.5f" con il tempo di ritardo desiderato
         Invoke(nameof(StopAudio), 0.7f); // Modifica "0.5f" con il tempo di ritardo desiderato
         
