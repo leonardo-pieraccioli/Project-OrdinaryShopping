@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using StarterAssets;
 using TMPro;
+using Unity.VisualScripting;
 using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
 using UnityEngine.UI;
@@ -32,6 +34,7 @@ public class InteractableNPC : MonoBehaviour, IInteractable
             triggerCollider = gameObject.AddComponent<SphereCollider>();
             triggerCollider.isTrigger = true;
             triggerCollider.radius = 2.5f;
+            this.gameObject.layer = LayerMask.NameToLayer("Default");
         }
         audioSource = GetComponent<AudioSource>();
         audioClips = dayInfo.audioClips;
@@ -44,13 +47,13 @@ public class InteractableNPC : MonoBehaviour, IInteractable
         if (isTrigger) return;
         if (DialogueManager.Instance.isDialogueHappening) return;
         if (dialogue.Length == 0) return;
-        animator.SetBool("isTalking", true);
+        animator.SetBool("IsTalking", true);
         DialogueManager.Instance.StartDialogue(this, TransitionToIdle);
     }
 
     private void TransitionToIdle()
     {
-        animator.SetBool("isTalking", false);
+        animator.SetBool("IsTalking", false);
     }
 
     void OnTriggerEnter(Collider other)
@@ -59,7 +62,7 @@ public class InteractableNPC : MonoBehaviour, IInteractable
         {
             if (DialogueManager.Instance.isDialogueHappening) return;
             if (dialogue.Length == 0) return;
-            animator.SetBool("isTalking", true);
+            animator.SetBool("IsTalking", true);
             if (audioSource == null)
             {
                 Debug.LogError("Audio source not found on NPC: " + npcName + " on day " + DayManager.Instance.currentDay);
@@ -69,6 +72,35 @@ public class InteractableNPC : MonoBehaviour, IInteractable
                 hasTalked = true;
                 audioSource.clip = audioClips[0];
                 audioSource.Play();
+            }
+        }
+    }
+
+    private float currentWeight = 0.0f;
+    private float targetWeight;
+    private float lerpSpeed = 5f;
+    private float newWeight;
+
+    void OnAnimatorIK()
+    {
+        if (animator.enabled)
+        {
+            if (animator.GetBool("IsTalking"))
+            {
+                Debug.Log("Looking at player");
+                currentWeight = newWeight;
+                targetWeight = 1f;
+                newWeight = Mathf.Lerp(currentWeight, targetWeight, Time.deltaTime * lerpSpeed);
+                animator.SetLookAtWeight(newWeight, 0.0f, 0.6f, 0.0f, 0.4f);
+                animator.SetLookAtPosition(Camera.main.transform.position);
+            }
+            else 
+            {
+                currentWeight = newWeight;
+                targetWeight = 0f;
+                newWeight = Mathf.Lerp(currentWeight, targetWeight, Time.deltaTime * lerpSpeed);
+                animator.SetLookAtWeight(newWeight, 0.0f, 0.5f, 0.0f, 0.4f);
+                animator.SetLookAtPosition(Camera.main.transform.position);
             }
         }
     }
