@@ -19,7 +19,7 @@ MonoBehaviour:
       type: 3}
     price: 1.99
     description: 
-    isInShoppingList: 1
+    isInShoppingList: 0
     sizeCollider: {x: 0.09385506, y: 0.1321367, z: 0.09385505}
     centerCollider: {x: -0.0002853164, y: 0.06655672, z: -0.0008561876}
     emptyPos: {fileID: 0}
@@ -53,7 +53,7 @@ MonoBehaviour:
       type: 3}
     price: 1.25
     description: 
-    isInShoppingList: 0
+    isInShoppingList: 1
     sizeCollider: {x: 0.093855016, y: 0.1321367, z: 0.09385501}
     centerCollider: {x: -0.00028531626, y: 0.06655672, z: -0.0008559488}
     emptyPos: {fileID: 0}
@@ -240,7 +240,7 @@ MonoBehaviour:
       type: 3}
     price: 6.99
     description: 
-    isInShoppingList: 0
+    isInShoppingList: 1
     sizeCollider: {x: 0.09385506, y: 0.1321367, z: 0.09385505}
     centerCollider: {x: -0.00028546542, y: 0.06655672, z: -0.0008561876}
     emptyPos: {fileID: 0}
