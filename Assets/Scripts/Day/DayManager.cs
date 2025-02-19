@@ -56,6 +56,7 @@ public class DayManager : MonoBehaviour
         currentDay=loadedDayData;
 
         Debug.Log($"Current day is {currentDay.dayNumber}");
+        SaturationHandler();
 
         foreach(DayVariationsHandler v in dayVar)
         {
