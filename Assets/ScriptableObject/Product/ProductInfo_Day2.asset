@@ -36,7 +36,7 @@ MonoBehaviour:
       type: 3}
     price: 3.49
     description: 
-    isInShoppingList: 1
+    isInShoppingList: 0
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
     centerCollider: {x: 0.0000009536743, y: 0.11459063, z: 0}
     emptyPos: {fileID: 0}
@@ -121,7 +121,7 @@ MonoBehaviour:
       type: 3}
     price: 10.95
     description: 
-    isInShoppingList: 1
+    isInShoppingList: 0
     sizeCollider: {x: 0.09822875, y: 0.21879247, z: 0.097154155}
     centerCollider: {x: -0.008983575, y: 0.108602226, z: -0.008656117}
     emptyPos: {fileID: 0}
@@ -291,7 +291,7 @@ MonoBehaviour:
       type: 3}
     price: 2.19
     description: 
-    isInShoppingList: 1
+    isInShoppingList: 0
     sizeCollider: {x: 0.097684674, y: 0.19599201, z: 0.06011369}
     centerCollider: {x: 0.0018994932, y: 0.098023705, z: -0.0083939405}
     emptyPos: {fileID: 0}
@@ -529,7 +529,7 @@ MonoBehaviour:
       type: 3}
     price: 6.99
     description: 
-    isInShoppingList: 1
+    isInShoppingList: 0
     sizeCollider: {x: 0.141249, y: 0.3221454, z: 0.06598891}
     centerCollider: {x: -0.000447914, y: 0.16084981, z: 0.00036662258}
     emptyPos: {fileID: 0}
@@ -563,7 +563,7 @@ MonoBehaviour:
       type: 3}
     price: 8.29
     description: 
-    isInShoppingList: 1
+    isInShoppingList: 0
     sizeCollider: {x: 0.042000014, y: 0.12767823, z: 0.042013787}
     centerCollider: {x: -0.000000011175871, y: 0.063802265, z: -0.011330162}
     emptyPos: {fileID: 0}
@@ -1107,7 +1107,7 @@ MonoBehaviour:
       type: 3}
     price: 4.99
     description: 
-    isInShoppingList: 0
+    isInShoppingList: 1
     sizeCollider: {x: 0.045758307, y: 0.10647632, z: 0.045758303}
     centerCollider: {x: -0.000961985, y: 0.053255767, z: 0.000026725245}
     emptyPos: {fileID: 0}
@@ -1243,12 +1243,12 @@ MonoBehaviour:
       type: 3}
     price: 2.49
     description: 
-    isInShoppingList: 1
+    isInShoppingList: 0
     sizeCollider: {x: 0.090457484, y: 0.24942127, z: 0.14858355}
     centerCollider: {x: 1.1844975e-16, y: 0.1250378, z: 3.971668e-23}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 12.025, y: 0.39365608, z: -3.263}
+    _positions: {x: 12.056, y: 0.39365608, z: -3.263}
     _xn: 4
     _yn: 1
     _zn: 2
@@ -1265,7 +1265,7 @@ MonoBehaviour:
     centerCollider: {x: 1.1844975e-16, y: 0.1250378, z: 3.971668e-23}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 12.585, y: 0.39365608, z: -3.263}
+    _positions: {x: 12.603999, y: 0.39365608, z: -3.263}
     _xn: 5
     _yn: 1
     _zn: 2
@@ -1282,7 +1282,7 @@ MonoBehaviour:
     centerCollider: {x: 1.1844975e-16, y: 0.1250378, z: 3.971668e-23}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 13.224998, y: 0.39365608, z: -3.263}
+    _positions: {x: 13.275, y: 0.39365608, z: -3.263}
     _xn: 5
     _yn: 1
     _zn: 2
@@ -1299,7 +1299,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00000023841858, y: 0.1250378, z: 3.971668e-23}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 13.882, y: 0.39365608, z: -3.263}
+    _positions: {x: 14.039999, y: 0.39365608, z: -3.263}
     _xn: 4
     _yn: 1
     _zn: 2
@@ -1316,7 +1316,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 12.025, y: 0.90999997, z: -3.263}
+    _positions: {x: 12.056, y: 0.964, z: -3.263}
     _xn: 4
     _yn: 1
     _zn: 2
@@ -1333,7 +1333,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 12.585, y: 0.90999997, z: -3.263}
+    _positions: {x: 12.603999, y: 0.964, z: -3.263}
     _xn: 5
     _yn: 1
     _zn: 2
@@ -1350,7 +1350,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 13.224998, y: 0.90999997, z: -3.263}
+    _positions: {x: 13.275, y: 0.964, z: -3.263}
     _xn: 5
     _yn: 1
     _zn: 2
@@ -1367,7 +1367,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 13.882, y: 0.90999997, z: -3.263}
+    _positions: {x: 14.039999, y: 0.964, z: -3.263}
     _xn: 4
     _yn: 1
     _zn: 2
@@ -1384,7 +1384,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 12.025, y: 1.415, z: -3.263}
+    _positions: {x: 12.056, y: 1.3880723, z: -3.263}
     _xn: 4
     _yn: 1
     _zn: 2
@@ -1401,7 +1401,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 12.585, y: 1.415, z: -3.263}
+    _positions: {x: 12.603999, y: 1.3880723, z: -3.263}
     _xn: 5
     _yn: 1
     _zn: 2
@@ -1418,7 +1418,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 13.224998, y: 1.415, z: -3.263}
+    _positions: {x: 13.275, y: 1.3880723, z: -3.263}
     _xn: 5
     _yn: 1
     _zn: 2
@@ -1435,7 +1435,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 13.847, y: 1.415, z: -3.263}
+    _positions: {x: 14.004999, y: 1.3880723, z: -3.263}
     _xn: 4
     _yn: 1
     _zn: 2
@@ -1452,7 +1452,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255707, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 12.025, y: 1.8800001, z: -3.263}
+    _positions: {x: 12.056, y: 1.8056769, z: -3.263}
     _xn: 4
     _yn: 1
     _zn: 2
@@ -1469,7 +1469,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255707, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 12.585, y: 1.8800001, z: -3.263}
+    _positions: {x: 12.603999, y: 1.8056769, z: -3.263}
     _xn: 5
     _yn: 1
     _zn: 2
@@ -1486,7 +1486,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255707, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 13.224998, y: 1.8800001, z: -3.263}
+    _positions: {x: 13.275, y: 1.8056769, z: -3.263}
     _xn: 5
     _yn: 1
     _zn: 2
@@ -1503,7 +1503,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0009629382, y: 0.053255707, z: 0.000026844442}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 13.882, y: 1.8800001, z: -3.263}
+    _positions: {x: 14.039999, y: 1.8056769, z: -3.263}
     _xn: 4
     _yn: 1
     _zn: 1
