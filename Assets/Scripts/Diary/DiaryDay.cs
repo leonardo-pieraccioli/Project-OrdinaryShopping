@@ -13,6 +13,8 @@ public class DiaryDay : ScriptableObject
     public Sprite dayImage; // L'immagine che apparirà nel Canvas
 
     public AudioClip voiceOver; // Il voice over che verrà riprodotto
+
+    public AudioClip diaryMusicClip; // La musica che verrà riprodotta
         
     
 }
