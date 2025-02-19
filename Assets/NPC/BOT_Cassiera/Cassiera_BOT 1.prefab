@@ -179,8 +179,36 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2231802686144721581}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b735697a2c2324241922d9fbc393a29d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7866389701766243659}
   m_SourcePrefab: {fileID: 100100000, guid: b735697a2c2324241922d9fbc393a29d, type: 3}
+--- !u!1 &4052659672230166701 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b735697a2c2324241922d9fbc393a29d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3818095557157174780}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-7866389701766243659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052659672230166701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec5311ab6c76ec48a8a16857291bf88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayInfo: {fileID: 0}
+  isTrigger: 0
+  audioSource: {fileID: 0}
+  audioClips: []
+  dialogue: []
+  npcName: 
 --- !u!4 &6251055041198326881 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7078722787440015773, guid: b735697a2c2324241922d9fbc393a29d,
