@@ -1509,20 +1509,3 @@ MonoBehaviour:
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.2}
     _rotate: 0
-  - LabelPosition: ShelfVerticalFridge_3_3
-    productName: Fresh Soda
-    prefabs: {fileID: 6099454480340716241, guid: e26626a233d70614e8015042417431b0,
-      type: 3}
-    price: 1.99
-    description: 
-    isInShoppingList: 0
-    sizeCollider: {x: 0.045758285, y: 0.10647632, z: 0.04575828}
-    centerCollider: {x: -0.0009629382, y: 0.053255707, z: 0.000026844442}
-    emptyPos: {fileID: 0}
-    _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 13.882, y: 1.8800001, z: -3.263}
-    _xn: 4
-    _yn: 1
-    _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1.2}
-    _rotate: 0
