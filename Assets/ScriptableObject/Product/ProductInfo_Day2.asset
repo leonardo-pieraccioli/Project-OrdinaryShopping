@@ -24,7 +24,7 @@ MonoBehaviour:
     centerCollider: {x: -0.0002853164, y: 0.06655672, z: -0.0008561876}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
-    _positions: {x: 2.847, y: 0.24000001, z: 3.519}
+    _positions: {x: 2.847, y: 0.24000001, z: 3.529}
     _xn: 7
     _yn: 2
     _zn: 1
@@ -38,10 +38,10 @@ MonoBehaviour:
     description: 
     isInShoppingList: 1
     sizeCollider: {x: 0.09385506, y: 0.1321367, z: 0.09385505}
-    centerCollider: {x: -0.00028549522, y: 0.06655672, z: -0.000856426}
+    centerCollider: {x: -0.0002853462, y: 0.06655672, z: -0.0008561876}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
-    _positions: {x: 4.576, y: 0.24000001, z: 3.6219997}
+    _positions: {x: 4.576, y: 0.24000001, z: 3.5289998}
     _xn: 5
     _yn: 1
     _zn: 1
@@ -58,7 +58,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00028531626, y: 0.06655672, z: -0.0008559488}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.000001, y: 2, z: 2.000001}
-    _positions: {x: 2.847, y: 0.804, z: 3.519}
+    _positions: {x: 2.847, y: 0.804, z: 3.529}
     _xn: 4
     _yn: 1
     _zn: 1
@@ -75,7 +75,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00028531626, y: 0.06655672, z: -0.0008559488}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
-    _positions: {x: 4.576, y: 0.804, z: 3.6219997}
+    _positions: {x: 4.576, y: 0.804, z: 3.5289998}
     _xn: 5
     _yn: 1
     _zn: 1
@@ -228,7 +228,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00081135, y: 0.18168443, z: 0.00000003725292}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.0000005, y: 1, z: 1.0000005}
-    _positions: {x: 2.847, y: 1.261, z: 3.519}
+    _positions: {x: 2.847, y: 1.261, z: 3.544}
     _xn: 5
     _yn: 1
     _zn: 1
@@ -245,7 +245,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00028549522, y: 0.06655672, z: -0.000856426}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
-    _positions: {x: 4.576, y: 1.261, z: 3.6219997}
+    _positions: {x: 4.576, y: 1.261, z: 3.4319997}
     _xn: 0
     _yn: 0
     _zn: 0
@@ -262,7 +262,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00081135, y: 0.18168443, z: 0.00000003725292}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.0000005, y: 1, z: 1.0000005}
-    _positions: {x: 2.847, y: 1.691, z: 3.519}
+    _positions: {x: 2.847, y: 1.691, z: 3.544}
     _xn: 5
     _yn: 1
     _zn: 1
@@ -276,10 +276,10 @@ MonoBehaviour:
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.09385506, y: 0.1321367, z: 0.09385505}
-    centerCollider: {x: -0.00028549522, y: 0.06655672, z: -0.000856426}
+    centerCollider: {x: -0.00028546542, y: 0.06655672, z: -0.0008561876}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
-    _positions: {x: 4.576, y: 1.691, z: 3.6219997}
+    _positions: {x: 4.576, y: 1.691, z: 3.4319997}
     _xn: 5
     _yn: 1
     _zn: 1
@@ -296,7 +296,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00028531626, y: 0.06655672, z: -0.0008559488}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
-    _positions: {x: 6.638, y: 1.248, z: 3.392}
+    _positions: {x: 6.638, y: 1.248, z: 3.445}
     _xn: 4
     _yn: 1
     _zn: 1
@@ -330,7 +330,7 @@ MonoBehaviour:
     centerCollider: {x: 0.0018990163, y: 0.098023705, z: -0.0083939405}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.2563, y: 1.2563, z: 1.2563}
-    _positions: {x: 6.634, y: 1.678, z: 3.392}
+    _positions: {x: 6.634, y: 1.688, z: 3.392}
     _xn: 9
     _yn: 1
     _zn: 1
@@ -347,7 +347,7 @@ MonoBehaviour:
     centerCollider: {x: 0.0018994932, y: 0.098023705, z: -0.008394179}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.2563, y: 1.2563, z: 1.2563}
-    _positions: {x: 8.285, y: 1.678, z: 3.4559996}
+    _positions: {x: 8.285, y: 1.688, z: 3.4559996}
     _xn: 8
     _yn: 1
     _zn: 1
@@ -450,9 +450,9 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 11.613, y: 1.248, z: 3.5569997}
-    _xn: 7
-    _yn: 1
-    _zn: 1
+    _xn: 0
+    _yn: 0
+    _zn: 0
     _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWS3Sopra_1_0
@@ -466,28 +466,28 @@ MonoBehaviour:
     centerCollider: {x: 0.00000005960467, y: 0.12105354, z: 0}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 10.12, y: 1.678, z: 3.557}
-    _xn: 7
-    _yn: 1
-    _zn: 1
+    _positions: {x: 10.12, y: 1.692, z: 3.557}
+    _xn: 0
+    _yn: 0
+    _zn: 0
     _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWS3Sopra_1_1
-    productName: water
-    prefabs: {fileID: 3734019348867968001, guid: 65f7205a4430d244e945a3b7a781337e,
+    productName: Pumpkin
+    prefabs: {fileID: 3227546916961175394, guid: b2bec79cc8bb21446904239c81d3ce05,
       type: 3}
-    price: 2.29
+    price: 2.99
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.08553662, y: 0.23989041, z: 0.08553663}
-    centerCollider: {x: 0.00000005960467, y: 0.12105354, z: 0}
+    sizeCollider: {x: 0.093855016, y: 0.1321367, z: 0.09385501}
+    centerCollider: {x: -0.00028531626, y: 0.06655672, z: -0.0008559488}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 11.613, y: 1.678, z: 3.5569997}
-    _xn: 7
+    _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
+    _positions: {x: 11.613, y: 1.692, z: 3.5569997}
+    _xn: 4
     _yn: 1
     _zn: 1
-    _offset: {x: 2, y: 1, z: 1.5}
+    _offset: {x: 1.5, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWN1sotto_0_0
     productName: Bleach
@@ -499,7 +499,7 @@ MonoBehaviour:
     sizeCollider: {x: 0.08839113, y: 0.2937395, z: 0.061210893}
     centerCollider: {x: 0.000000026077032, y: 0.14686975, z: 0}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 1.3, y: 1.1, z: 1.3}
     _positions: {x: 3.065, y: 0.24000001, z: 4.158}
     _xn: 9
     _yn: 1
@@ -514,9 +514,9 @@ MonoBehaviour:
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.08839113, y: 0.2937395, z: 0.061210893}
-    centerCollider: {x: 0.000000026077032, y: 0.14686975, z: 0}
+    centerCollider: {x: 0.000000026077032, y: 0.14686969, z: 0}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 1.3, y: 1.1, z: 1.3}
     _positions: {x: 3.065, y: 0.804, z: 4.158}
     _xn: 9
     _yn: 1
@@ -874,7 +874,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00010508299, y: 0.12709711, z: 0.00010121614}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 8.2560005, y: 1.269, z: 4.094}
+    _positions: {x: 8.2560005, y: 1.2490001, z: 4.094}
     _xn: 7
     _yn: 1
     _zn: 2
@@ -891,7 +891,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00010508299, y: 0.12709711, z: 0.00010121614}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
-    _positions: {x: 8.2560005, y: 1.699, z: 4.094}
+    _positions: {x: 8.2560005, y: 1.679, z: 4.094}
     _xn: 7
     _yn: 1
     _zn: 2
@@ -1024,10 +1024,10 @@ MonoBehaviour:
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 2.0000007, y: 2, z: 2.0000007}
-    centerCollider: {x: 0, y: 1.0000038, z: -0.0000038146973}
+    centerCollider: {x: 0, y: 1, z: -0.0000038146973}
     emptyPos: {fileID: 0}
     _dimensions: {x: 0.043987412, y: 0.045485795, z: 0.17992951}
-    _positions: {x: 6.072, y: 1.678, z: 6.913}
+    _positions: {x: 6.072, y: 1.689, z: 6.913}
     _xn: 9
     _yn: 2
     _zn: 1
@@ -1112,7 +1112,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00028531626, y: 0.06655672, z: -0.0008559488}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
-    _positions: {x: 9.165, y: 0.245, z: 6.655}
+    _positions: {x: 9.165, y: 0.245, z: 6.743}
     _xn: 4
     _yn: 1
     _zn: 2
@@ -1129,7 +1129,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00028531626, y: 0.06655672, z: -0.0008559488}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
-    _positions: {x: 9.165, y: 0.809, z: 6.655}
+    _positions: {x: 9.165, y: 0.809, z: 6.721}
     _xn: 4
     _yn: 1
     _zn: 2
@@ -1146,7 +1146,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00028531626, y: 0.06655672, z: -0.0008559488}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.000001, y: 2, z: 2.000001}
-    _positions: {x: 9.1380005, y: 1.246, z: 6.635}
+    _positions: {x: 9.1380005, y: 1.2445999, z: 6.746}
     _xn: 5
     _yn: 1
     _zn: 2
@@ -1163,7 +1163,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00028531626, y: 0.06655672, z: -0.0008559488}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.000001, y: 2, z: 2.000001}
-    _positions: {x: 9.1380005, y: 1.676, z: 6.635}
+    _positions: {x: 9.1380005, y: 1.6896, z: 6.746}
     _xn: 5
     _yn: 1
     _zn: 2
@@ -1180,7 +1180,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00028555482, y: 0.06655672, z: -0.0008559492}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
-    _positions: {x: 10.724, y: 0.24000001, z: 6.6537995}
+    _positions: {x: 10.724, y: 0.24000001, z: 6.6897993}
     _xn: 0
     _yn: 0
     _zn: 0
@@ -1197,7 +1197,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00028555482, y: 0.06655672, z: -0.0008559492}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
-    _positions: {x: 10.724, y: 0.804, z: 6.6537995}
+    _positions: {x: 10.724, y: 0.804, z: 6.7157993}
     _xn: 0
     _yn: 0
     _zn: 0
@@ -1214,7 +1214,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00028555482, y: 0.06655672, z: -0.0008559492}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
-    _positions: {x: 10.6970005, y: 1.248, z: 6.6537995}
+    _positions: {x: 10.6970005, y: 1.2495999, z: 6.734}
     _xn: 4
     _yn: 1
     _zn: 2
@@ -1231,7 +1231,7 @@ MonoBehaviour:
     centerCollider: {x: -0.00028555482, y: 0.06655672, z: -0.0008559492}
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
-    _positions: {x: 10.6970005, y: 1.678, z: 6.6537995}
+    _positions: {x: 10.6970005, y: 1.6911999, z: 6.734}
     _xn: 4
     _yn: 1
     _zn: 2
