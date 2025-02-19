@@ -20,8 +20,8 @@ MonoBehaviour:
     flickeringDuration: 1
     maxFlickeringIntensity: 2
     numberOfExplosions: 1
-    minExplosionInterval: 15
-    maxExplosionInterval: 16
+    minExplosionInterval: 61
+    maxExplosionInterval: 62
   StopMusic: 1
   Music:
   - {fileID: 8300000, guid: dc2aa0806bdc1424594bbcb7da83d6bb, type: 3}
