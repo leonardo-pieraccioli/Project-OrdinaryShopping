@@ -1,7 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+using Cinemachine;
+using Unity.VisualScripting;
 
 public class LightManager : MonoBehaviour
 {
@@ -63,8 +63,11 @@ public class LightManager : MonoBehaviour
     private Coroutine flickeringCoroutine;
     private Coroutine explosionCoroutine;
 
+    private CinemachineVirtualCamera cineVC;
+
     void Start()
     {
+        cineVC = FindObjectOfType<CinemachineVirtualCamera>();
     }
 
 
@@ -262,11 +265,37 @@ public class LightManager : MonoBehaviour
             bombAudioSources[Random.Range(0, bombAudioSources.Length)].PlayOneShot(explosionSound);
         }
 
+        if (cineVC != null)
+            StartCoroutine(CameraShake());
         Invoke(nameof(TriggerFlicker), 0.5f); // Modifica "0.5f" con il tempo di ritardo desiderato
         Invoke(nameof(StopAudio), 0.7f); // Modifica "0.5f" con il tempo di ritardo desiderato
-
+        
 
        // TriggerFlicker();
+    }
+
+    private IEnumerator CameraShake()
+    {
+        float amplitude = 1f;
+        float frequency = 0.7f;
+        float duration = .5f; // Duration of the shake
+        float elapsedTime = 0.0f;
+
+        while (elapsedTime < duration)
+        {
+            float currentAmplitude = Mathf.Lerp(amplitude, 0.0f, elapsedTime / duration);
+            float currentFrequency = Mathf.Lerp(frequency, 0.0f, elapsedTime / duration);
+
+            cineVC.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = currentAmplitude;
+            cineVC.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = currentFrequency;
+
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        // Ensure the shake values are reset to 0
+        cineVC.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 0.0f;
+        cineVC.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = 0.0f;
     }
 
     /// <summary>
