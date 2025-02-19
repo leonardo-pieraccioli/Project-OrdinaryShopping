@@ -17,24 +17,24 @@ MonoBehaviour:
     productName: Fish
     prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
       type: 3}
-    price: 11.99
+    price: 12.99
     description: 
-    isInShoppingList: 1
+    isInShoppingList: 0
     sizeCollider: {x: 0.19273937, y: 0.08380286, z: 0.19273931}
     centerCollider: {x: 0.027422892, y: 0.038714226, z: 0.0474323}
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 2.847, y: 0.24000001, z: 3.519}
-    _xn: 2
-    _yn: 1
-    _zn: 2
+    _xn: 0
+    _yn: 0
+    _zn: 0
     _offset: {x: 2, y: 1, z: 1}
-    _rotate: 1
+    _rotate: 0
   - LabelPosition: ShelfWS1sotto_0_1
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 5.99
     description: 
     isInShoppingList: 1
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
@@ -51,7 +51,7 @@ MonoBehaviour:
     productName: Fish
     prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
       type: 3}
-    price: 11.99
+    price: 12.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.19273937, y: 0.08380286, z: 0.19273931}
@@ -68,7 +68,7 @@ MonoBehaviour:
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 5.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
@@ -94,8 +94,8 @@ MonoBehaviour:
     _dimensions: {x: 1.2210002, y: 1.2210001, z: 1.2210002}
     _positions: {x: -0.8020006, y: 1.0247183, z: 5.6409645}
     _xn: 2
-    _yn: 2
-    _zn: 3
+    _yn: 1
+    _zn: 2
     _offset: {x: 3, y: 1, z: 1.3}
     _rotate: 1
   - LabelPosition: Rack2_0_0
@@ -111,7 +111,7 @@ MonoBehaviour:
     _dimensions: {x: 1.2210001, y: 1.2210001, z: 1.2210001}
     _positions: {x: -0.803, y: 2.0175447, z: 5.641}
     _xn: 1
-    _yn: 2
+    _yn: 1
     _zn: 2
     _offset: {x: 3, y: 1, z: 1.2}
     _rotate: 1
@@ -167,27 +167,27 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 1
   - LabelPosition: ShelfWS2sotto_0_1
-    productName: Oil
-    prefabs: {fileID: 230013934694285457, guid: db0c85a4cce8097429dc35dddd171dbb,
+    productName: Tomato
+    prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 15
+    price: 5.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 762.00024, y: 2215.4524, z: 624.8471}
     centerCollider: {x: 0.24986267, y: 1109.2484, z: -20.952637}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.0002, y: 0.00015, z: 0.0002}
+    _dimensions: {x: 0.4, y: 0.4, z: 0.4}
     _positions: {x: 8.216, y: 0.24000001, z: 3.433}
-    _xn: 2
-    _yn: 1
-    _zn: 1
+    _xn: 0
+    _yn: 0
+    _zn: 0
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfWS2sotto_1_0
-    productName: Soup
-    prefabs: {fileID: 121037066721963011, guid: eec88ff7f30ff534bac731947c089617,
+    productName: Tomato
+    prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 3.99
+    price: 5.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 2, y: 2, z: 1.9999999}
@@ -221,7 +221,7 @@ MonoBehaviour:
     productName: Fish
     prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
       type: 3}
-    price: 11.99
+    price: 12.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.19273937, y: 0.08380286, z: 0.19273931}
@@ -238,7 +238,7 @@ MonoBehaviour:
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 5.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
@@ -255,7 +255,7 @@ MonoBehaviour:
     productName: Fish
     prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
       type: 3}
-    price: 11.99
+    price: 12.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.19273937, y: 0.08380286, z: 0.19273931}
@@ -264,15 +264,15 @@ MonoBehaviour:
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 2.847, y: 1.691, z: 3.519}
     _xn: 4
-    _yn: 3
+    _yn: 2
     _zn: 2
-    _offset: {x: 1.5, y: 1, z: 1}
+    _offset: {x: 2, y: 1, z: 1}
     _rotate: 1
   - LabelPosition: ShelfWS1sopra_1_1
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 5.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
@@ -286,8 +286,8 @@ MonoBehaviour:
     _offset: {x: 2, y: 1, z: 1.3}
     _rotate: 1
   - LabelPosition: ShelfWS2Sopra_0_0
-    productName: Soup
-    prefabs: {fileID: 121037066721963011, guid: eec88ff7f30ff534bac731947c089617,
+    productName: m
+    prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
     price: 3.99
     description: 
@@ -297,31 +297,31 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 6.638, y: 1.248, z: 3.392}
-    _xn: 0
-    _yn: 0
+    _xn: 3
+    _yn: 1
     _zn: 0
     _offset: {x: 2, y: 1, z: 1.2}
     _rotate: 1
   - LabelPosition: ShelfWS2Sopra_0_1
-    productName: Soup
-    prefabs: {fileID: 121037066721963011, guid: eec88ff7f30ff534bac731947c089617,
+    productName: Fish
+    prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
       type: 3}
-    price: 3.99
+    price: 12.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.097684674, y: 0.19599201, z: 0.06011369}
     centerCollider: {x: 0.0018994932, y: 0.098023705, z: -0.008394179}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.5, y: 0.5, z: 0.5}
+    _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 8.285, y: 1.248, z: 3.4449997}
-    _xn: 0
-    _yn: 0
-    _zn: 0
+    _xn: 3
+    _yn: 1
+    _zn: 1
     _offset: {x: 2, y: 1, z: 1.2}
     _rotate: 1
   - LabelPosition: ShelfWS2Sopra_1_0
-    productName: Soup
-    prefabs: {fileID: 121037066721963011, guid: eec88ff7f30ff534bac731947c089617,
+    productName: Meet
+    prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
     price: 3.99
     description: 
@@ -337,8 +337,8 @@ MonoBehaviour:
     _offset: {x: 3, y: 1, z: 1.2}
     _rotate: 0
   - LabelPosition: ShelfWS2Sopra_1_1
-    productName: Soup
-    prefabs: {fileID: 121037066721963011, guid: eec88ff7f30ff534bac731947c089617,
+    productName: mee
+    prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
       type: 3}
     price: 3.99
     description: 
@@ -391,7 +391,7 @@ MonoBehaviour:
     productName: Fish
     prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
       type: 3}
-    price: 11.99
+    price: 12.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 2, y: 2, z: 1.9999999}
@@ -408,7 +408,7 @@ MonoBehaviour:
     productName: Fish
     prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
       type: 3}
-    price: 11.99
+    price: 12.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 2, y: 2, z: 1.9999999}
@@ -425,7 +425,7 @@ MonoBehaviour:
     productName: Meat
     prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
-    price: 7.99
+    price: 9.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 2.0000007, y: 2, z: 2.0000007}
@@ -456,8 +456,8 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWS3Sopra_1_0
-    productName: Soup
-    prefabs: {fileID: 121037066721963011, guid: eec88ff7f30ff534bac731947c089617,
+    productName: meet
+    prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
     price: 3.99
     description: 
@@ -491,7 +491,7 @@ MonoBehaviour:
     _rotate: 0
   - LabelPosition: ShelfWN1sotto_0_0
     productName: Bleach
-    prefabs: {fileID: 1084924201873051434, guid: bb667c5d143d5294e84ca5fb18899d57,
+    prefabs: {fileID: 7436536261352831518, guid: 87512276ae437e745a626be32f5c09c6,
       type: 3}
     price: 6.99
     description: 
@@ -499,11 +499,11 @@ MonoBehaviour:
     sizeCollider: {x: 0.08839113, y: 0.2937395, z: 0.061210893}
     centerCollider: {x: 0.000000026077032, y: 0.14686975, z: 0}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 2, y: 2, z: 2}
     _positions: {x: 3.065, y: 0.24000001, z: 4.158}
-    _xn: 0
-    _yn: 0
-    _zn: 0
+    _xn: 3
+    _yn: 1
+    _zn: 1
     _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWN1sotto_1_0
@@ -626,10 +626,10 @@ MonoBehaviour:
     _offset: {x: 2.5, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfWN3sotto_0_0
-    productName: Chips
-    prefabs: {fileID: 8533873060431379036, guid: e0ad384f3cd21a64d9d52e1fe6e1ec4c,
+    productName: Fish
+    prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
       type: 3}
-    price: 0
+    price: 12.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.24808007, y: 0.29773057, z: 0.13224001}
@@ -639,14 +639,14 @@ MonoBehaviour:
     _positions: {x: 10.149, y: 0.24000001, z: 4.077}
     _xn: 3
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.5}
-    _rotate: 0
+    _rotate: 1
   - LabelPosition: ShelfWN3sotto_1_0
-    productName: Chips
-    prefabs: {fileID: 8533873060431379036, guid: e0ad384f3cd21a64d9d52e1fe6e1ec4c,
+    productName: Fish
+    prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
       type: 3}
-    price: 0
+    price: 12.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.24808007, y: 0.29773057, z: 0.13224001}
@@ -656,48 +656,48 @@ MonoBehaviour:
     _positions: {x: 10.149, y: 0.804, z: 4.077}
     _xn: 3
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.5}
-    _rotate: 0
+    _rotate: 1
   - LabelPosition: ShelfWN3sotto_0_1
-    productName: Chips
-    prefabs: {fileID: 8533873060431379036, guid: e0ad384f3cd21a64d9d52e1fe6e1ec4c,
+    productName: Tomato
+    prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 0
+    price: 5.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.24808007, y: 0.29773057, z: 0.13224001}
     centerCollider: {x: -0.009129796, y: 0.14899841, z: -0.007523367}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 0.4, y: 0.4, z: 0.4}
     _positions: {x: 11.49, y: 0.24000001, z: 4.077}
     _xn: 3
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.5}
-    _rotate: 0
+    _rotate: 1
   - LabelPosition: ShelfWN3sotto_1_1
-    productName: Chips
-    prefabs: {fileID: 8533873060431379036, guid: e0ad384f3cd21a64d9d52e1fe6e1ec4c,
+    productName: Meat
+    prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
-    price: 0
+    price: 9.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.24808007, y: 0.29773057, z: 0.13224001}
     centerCollider: {x: -0.009129796, y: 0.14899841, z: -0.007523367}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 0.5, y: 0.5, z: 0.5}
     _positions: {x: 11.49, y: 0.804, z: 4.077}
     _xn: 3
     _yn: 1
-    _zn: 2
+    _zn: 1
     _offset: {x: 1.5, y: 1, z: 1.5}
-    _rotate: 0
+    _rotate: 1
   - LabelPosition: ShelfWN3Sopra_0_0
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 5.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
@@ -709,12 +709,12 @@ MonoBehaviour:
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
-    _rotate: 0
+    _rotate: 1
   - LabelPosition: ShelfWN3Sopra_1_0
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 5.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
@@ -726,12 +726,12 @@ MonoBehaviour:
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
-    _rotate: 0
+    _rotate: 1
   - LabelPosition: ShelfWN3Sopra_0_1
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 5.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
@@ -743,12 +743,12 @@ MonoBehaviour:
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
-    _rotate: 0
+    _rotate: 1
   - LabelPosition: ShelfWN3Sopra_1_1
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 5.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.3229375, y: 0.23047483, z: 0.3229375}
@@ -760,7 +760,7 @@ MonoBehaviour:
     _yn: 1
     _zn: 1
     _offset: {x: 1.5, y: 1, z: 1}
-    _rotate: 0
+    _rotate: 1
   - LabelPosition: ShelfWN1sopra_0_0
     productName: Antiseptic Box
     prefabs: {fileID: 8646048584198479513, guid: 1f595c14bf594124ab6c27eda1fc53a2,
@@ -816,7 +816,7 @@ MonoBehaviour:
     productName: Meat
     prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
-    price: 7.99
+    price: 9.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.048381425, y: 0.115128435, z: 0.023584917}
@@ -833,7 +833,7 @@ MonoBehaviour:
     productName: Fish
     prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
       type: 3}
-    price: 11.99
+    price: 12.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.022832284, y: 0.06775481, z: 0.022832286}
@@ -850,7 +850,7 @@ MonoBehaviour:
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 5.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.022832284, y: 0.06775481, z: 0.022832286}
@@ -867,7 +867,7 @@ MonoBehaviour:
     productName: Meat
     prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
-    price: 7.99
+    price: 9.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.12008752, y: 0.25170872, z: 0.07789418}
@@ -884,7 +884,7 @@ MonoBehaviour:
     productName: Meat
     prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
-    price: 7.99
+    price: 9.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.12008752, y: 0.25170872, z: 0.07789418}
@@ -933,7 +933,7 @@ MonoBehaviour:
     _rotate: 1
   - LabelPosition: ShelfN1sopra_0_0
     productName: Milk
-    prefabs: {fileID: 2190908929263238766, guid: 3c20b957b3bd7834eab2d974ede13f1f,
+    prefabs: {fileID: 1396276235481089339, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
     price: 1.49
     description: 
@@ -941,16 +941,16 @@ MonoBehaviour:
     sizeCollider: {x: 0.09045755, y: 0.24942127, z: 0.14858365}
     centerCollider: {x: 0.00000047683716, y: 0.1250378, z: -0.00000047683716}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 0.01, y: 0.01, z: 0.01}
     _positions: {x: 4.37, y: 1.242, z: 6.739}
-    _xn: 3
-    _yn: 1
-    _zn: 1
+    _xn: 0
+    _yn: 0
+    _zn: 0
     _offset: {x: 1, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfN1sopra_1_0
     productName: Milk
-    prefabs: {fileID: 2190908929263238766, guid: 3c20b957b3bd7834eab2d974ede13f1f,
+    prefabs: {fileID: 1396276235481089339, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
     price: 1.49
     description: 
@@ -958,18 +958,18 @@ MonoBehaviour:
     sizeCollider: {x: 0.09045755, y: 0.24942127, z: 0.14858365}
     centerCollider: {x: 0.00000047683716, y: 0.1250378, z: -0.00000047683716}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 0.01, y: 0.01, z: 0.01}
     _positions: {x: 4.37, y: 1.6719999, z: 6.739}
-    _xn: 4
-    _yn: 1
-    _zn: 1
+    _xn: 0
+    _yn: 0
+    _zn: 0
     _offset: {x: 1, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfN2sotto_0_0
-    productName: Soup
-    prefabs: {fileID: 121037066721963011, guid: eec88ff7f30ff534bac731947c089617,
+    productName: Milk
+    prefabs: {fileID: 1396276235481089339, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
-    price: 3.99
+    price: 1.49
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 2.0000007, y: 2, z: 2.0000007}
@@ -983,8 +983,8 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 1
   - LabelPosition: ShelfN2sotto_1_0
-    productName: Soup
-    prefabs: {fileID: 121037066721963011, guid: eec88ff7f30ff534bac731947c089617,
+    productName: me
+    prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
     price: 3.99
     description: 
@@ -1000,8 +1000,8 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 1
   - LabelPosition: ShelfN2Sopra_0_0
-    productName: Soup
-    prefabs: {fileID: 797352537804140421, guid: eec88ff7f30ff534bac731947c089617,
+    productName: m
+    prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
     price: 3.99
     description: 
@@ -1017,8 +1017,8 @@ MonoBehaviour:
     _offset: {x: 2, y: 1, z: 1}
     _rotate: 1
   - LabelPosition: ShelfN2Sopra_1_0
-    productName: Soup
-    prefabs: {fileID: 121037066721963011, guid: eec88ff7f30ff534bac731947c089617,
+    productName: 
+    prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
     price: 3.99
     description: 
@@ -1037,7 +1037,7 @@ MonoBehaviour:
     productName: Fish
     prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
       type: 3}
-    price: 11.99
+    price: 12.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.19273937, y: 0.08380286, z: 0.19273931}
@@ -1054,7 +1054,7 @@ MonoBehaviour:
     productName: Fish
     prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
       type: 3}
-    price: 11.99
+    price: 12.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.19273937, y: 0.08380286, z: 0.19273931}
@@ -1071,7 +1071,7 @@ MonoBehaviour:
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 5.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
@@ -1088,7 +1088,7 @@ MonoBehaviour:
     productName: Tomato
     prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
       type: 3}
-    price: 2.99
+    price: 5.99
     description: 
     isInShoppingList: 0
     sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
@@ -1153,8 +1153,8 @@ MonoBehaviour:
     _offset: {x: 2, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfN4Sopra_1_0
-    productName: Soup
-    prefabs: {fileID: 121037066721963011, guid: eec88ff7f30ff534bac731947c089617,
+    productName: M
+    prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
     price: 3.99
     description: 
@@ -1170,8 +1170,8 @@ MonoBehaviour:
     _offset: {x: 4, y: 1, z: 1.5}
     _rotate: 0
   - LabelPosition: ShelfN5sotto_0_0
-    productName: Soup
-    prefabs: {fileID: 121037066721963011, guid: eec88ff7f30ff534bac731947c089617,
+    productName: Me
+    prefabs: {fileID: 1683631181981544885, guid: f701fbdc4fe774f4eb4a0336da8fc04d,
       type: 3}
     price: 3.99
     description: 
@@ -1239,7 +1239,7 @@ MonoBehaviour:
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_0_0
     productName: Milk
-    prefabs: {fileID: 2190908929263238766, guid: 3c20b957b3bd7834eab2d974ede13f1f,
+    prefabs: {fileID: 1396276235481089339, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
     price: 1.49
     description: 
@@ -1247,16 +1247,16 @@ MonoBehaviour:
     sizeCollider: {x: 0.090457484, y: 0.24942127, z: 0.14858355}
     centerCollider: {x: 1.1844975e-16, y: 0.1250378, z: 3.971668e-23}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 0.01, y: 0.01, z: 0.01}
     _positions: {x: 12.025, y: 0.39365608, z: -3.263}
-    _xn: 2
-    _yn: 1
-    _zn: 1
+    _xn: 0
+    _yn: 0
+    _zn: 0
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_0_1
     productName: Milk
-    prefabs: {fileID: 2190908929263238766, guid: 3c20b957b3bd7834eab2d974ede13f1f,
+    prefabs: {fileID: 1396276235481089339, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
     price: 1.49
     description: 
@@ -1266,14 +1266,14 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1, y: 1, z: 1}
     _positions: {x: 12.585, y: 0.39365608, z: -3.263}
-    _xn: 2
-    _yn: 1
-    _zn: 1
+    _xn: 0
+    _yn: 0
+    _zn: 0
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_0_2
     productName: Milk
-    prefabs: {fileID: 2190908929263238766, guid: 3c20b957b3bd7834eab2d974ede13f1f,
+    prefabs: {fileID: 1396276235481089339, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
     price: 1.49
     description: 
@@ -1290,7 +1290,7 @@ MonoBehaviour:
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_0_3
     productName: Milk
-    prefabs: {fileID: 2190908929263238766, guid: 3c20b957b3bd7834eab2d974ede13f1f,
+    prefabs: {fileID: 1396276235481089339, guid: 3c20b957b3bd7834eab2d974ede13f1f,
       type: 3}
     price: 1.49
     description: 
@@ -1334,9 +1334,9 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 12.585, y: 0.90999997, z: -3.263}
-    _xn: 3
-    _yn: 1
-    _zn: 1
+    _xn: 0
+    _yn: 0
+    _zn: 0
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_1_2
@@ -1351,9 +1351,9 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 13.224998, y: 0.90999997, z: -3.263}
-    _xn: 2
-    _yn: 1
-    _zn: 1
+    _xn: 0
+    _yn: 0
+    _zn: 0
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_1_3
@@ -1368,9 +1368,9 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 13.882, y: 0.90999997, z: -3.263}
-    _xn: 3
-    _yn: 1
-    _zn: 1
+    _xn: 0
+    _yn: 0
+    _zn: 0
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_2_0
@@ -1385,9 +1385,9 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 12.025, y: 1.415, z: -3.263}
-    _xn: 1
-    _yn: 1
-    _zn: 1
+    _xn: 0
+    _yn: 0
+    _zn: 0
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_2_1
@@ -1436,9 +1436,9 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 13.847, y: 1.415, z: -3.263}
-    _xn: 2
-    _yn: 1
-    _zn: 1
+    _xn: 0
+    _yn: 0
+    _zn: 0
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_3_0
@@ -1453,9 +1453,9 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 12.025, y: 1.8800001, z: -3.263}
-    _xn: 3
-    _yn: 1
-    _zn: 1
+    _xn: 0
+    _yn: 0
+    _zn: 0
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_3_1
@@ -1470,9 +1470,9 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 12.585, y: 1.8800001, z: -3.263}
-    _xn: 2
-    _yn: 1
-    _zn: 1
+    _xn: 0
+    _yn: 0
+    _zn: 0
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfVerticalFridge_3_2
@@ -1487,23 +1487,6 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
     _positions: {x: 13.224998, y: 1.8800001, z: -3.263}
-    _xn: 3
-    _yn: 1
-    _zn: 1
-    _offset: {x: 1.5, y: 1, z: 1}
-    _rotate: 0
-  - LabelPosition: ShelfVerticalFridge_3_3
-    productName: Soda
-    prefabs: {fileID: 6099454480340716241, guid: e26626a233d70614e8015042417431b0,
-      type: 3}
-    price: 1.99
-    description: 
-    isInShoppingList: 0
-    sizeCollider: {x: 0.045758285, y: 0.10647632, z: 0.04575828}
-    centerCollider: {x: -0.0009629382, y: 0.053255707, z: 0.000026844442}
-    emptyPos: {fileID: 0}
-    _dimensions: {x: 2.0341, y: 2.0341, z: 2.0341}
-    _positions: {x: 13.882, y: 1.8800001, z: -3.263}
     _xn: 0
     _yn: 0
     _zn: 0

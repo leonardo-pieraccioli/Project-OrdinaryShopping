@@ -37,13 +37,16 @@ public class DiaryManager : MonoBehaviour
     private LightManager lightManager;
 
     [SerializeField] private AudioMixerGroup voiceOverMixer;
-    public AudioSource voiceOverSource;
+    [SerializeField] public AudioSource voiceOverSource;
+    [SerializeField] public AudioSource diaryMusic;
+    [SerializeField] public AudioClip diaryMusicClip;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
             CloseDiary();
+            lightManager.StartGameMusic();
         }   
     }
 
@@ -57,10 +60,10 @@ public class DiaryManager : MonoBehaviour
 
 
         controller = GameObject.FindObjectOfType<FirstPersonController>();
-        voiceOverSource = transform.AddComponent<AudioSource>();
-        voiceOverSource.playOnAwake = false;
-        voiceOverSource.loop = false;
-        voiceOverSource.spatialBlend = 0;
+        //voiceOverSource = transform.AddComponent<AudioSource>();
+        //voiceOverSource.playOnAwake = false;
+        //voiceOverSource.loop = false;
+        //voiceOverSource.spatialBlend = 0;
         // voiceOverSource.outputAudioMixerGroup = voiceOverMixer;
 
         // Assicura che il Canvas sia attivo
@@ -102,7 +105,7 @@ public class DiaryManager : MonoBehaviour
             return;
         }
 
-        Debug.Log("✅ Init() del Diario chiamato correttamente per il giorno: " + day.dayName);
+        Debug.Log("Init() del Diario chiamato correttamente per il giorno: " + day.dayName);
 
         currentDay = day;
         lightManager = LightManager.Instance;
@@ -120,7 +123,8 @@ public class DiaryManager : MonoBehaviour
         if (controller != null) controller.LockMovement(true);
 
         Cursor.visible = true;
-        voiceOverSource.Play();
+        //voiceOverSource.Play();
+        diaryMusic.Play();
         // Mostra il diario con effetto fade-in
         StartCoroutine(ShowDiary());
     }
@@ -129,8 +133,10 @@ public class DiaryManager : MonoBehaviour
     {
         if (diaryCanvas != null)
             diaryCanvas.gameObject.SetActive(true);
-            lightManager.PlayMenuMusic();
-            Debug.Log("✅ Mostra il diario con effetto fade-in");
+            //lightManager.PlayMenuMusic();
+            diaryMusic.Play();
+            voiceOverSource.Play();
+            Debug.Log("Mostra il diario con effetto fade-in");
 
         yield return StartCoroutine(FadeIn());
     }
@@ -138,6 +144,7 @@ public class DiaryManager : MonoBehaviour
     public void CloseDiary()
     {
         voiceOverSource.Stop();
+        diaryMusic.Stop();
         StopAllCoroutines(); // Previene sovrapposizioni di fade
         StartCoroutine(HideDiary());
     }
