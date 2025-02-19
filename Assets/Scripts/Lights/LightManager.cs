@@ -125,6 +125,19 @@ public class LightManager : MonoBehaviour
         }
     }
 
+    //////////////////////////////////////////////////////////////////////////
+
+    public void StopCoroutineBombs()
+    {
+        foreach (AudioSource audioSource in bombAudioSources)
+        {
+            audioSource.Stop();
+        }
+
+        if (explosionCoroutine != null)
+                StopCoroutine(explosionCoroutine);
+    }
+
     public void StartGameMusic()
     {
         if (!isGameStarted) // Controlla se il gioco è già iniziato
@@ -247,6 +260,7 @@ public class LightManager : MonoBehaviour
     {
         musicSource.Stop();
         musicSource2.Stop();
+        SFXSource.Stop();
         supermarketAmbientSource.Stop();
     }
 
