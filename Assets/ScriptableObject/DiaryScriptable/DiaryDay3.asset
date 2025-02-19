@@ -18,3 +18,4 @@ MonoBehaviour:
     I don\u2019t know what to do."
   dayImage: {fileID: 0}
   voiceOver: {fileID: 8300000, guid: 9f6b44aa2a6f3964f9845554db57b74e, type: 3}
+  diaryMusicClip: {fileID: 8300000, guid: fee0789b6c8bb6d4d99b5e23e35d2fc3, type: 3}

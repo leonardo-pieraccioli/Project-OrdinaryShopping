@@ -39,7 +39,6 @@ public class DiaryManager : MonoBehaviour
     [SerializeField] private AudioMixerGroup voiceOverMixer;
     [SerializeField] public AudioSource voiceOverSource;
     [SerializeField] public AudioSource diaryMusic;
-    [SerializeField] public AudioClip diaryMusicClip;
 
     void Update()
     {
@@ -114,6 +113,7 @@ public class DiaryManager : MonoBehaviour
         if (dayNameText != null) dayNameText.text = day.dayName;
         if (dayText != null) dayText.text = day.dayText;
         if (voiceOverSource != null) voiceOverSource.clip = day.voiceOver;
+        if (diaryMusic != null) diaryMusic.clip = day.diaryMusicClip;
         //if (dayImage != null && day.dayImage != null)
         //    dayImage.sprite = day.dayImage;
         else
