@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f5ee29e6e4c0234fa06cc11ecadfaf1, type: 3}
-  m_Name: 5LightSilence
+  m_Name: 2-LightNormal
   m_EditorClassIdentifier: 
   lightColor: {r: 1, g: 1, b: 1, a: 0}
   intensity: 5
@@ -24,5 +24,6 @@ MonoBehaviour:
     maxExplosionInterval: 20
   StopMusic: 1
   Music:
-  - {fileID: 8300000, guid: 9eec014f8995752468fb5590217a3e3e, type: 3}
+  - {fileID: 8300000, guid: d03c21b5651510d45b81c185e641871e, type: 3}
+  - {fileID: 0}
   Ambient: {fileID: 8300000, guid: f7c279b433cae494bb471eedaabb227d, type: 3}
