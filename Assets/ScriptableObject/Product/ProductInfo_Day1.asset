@@ -15,15 +15,15 @@ MonoBehaviour:
   products:
   - LabelPosition: ShelfWS1sotto_0_0
     productName: Syrup
-    prefabs: {fileID: 2187680061115399032, guid: 1639232a7cc42b941b6bb39b69b2de1e,
+    prefabs: {fileID: 4275616223655900131, guid: 1ddcfa7094dca23429a4ab650c3e5f83,
       type: 3}
-    price: 0.99
+    price: 1.99
     description: 
     isInShoppingList: 1
     sizeCollider: {x: 0.09385506, y: 0.1321367, z: 0.09385505}
-    centerCollider: {x: -0.00028483957, y: 0.06655672, z: -0.0008559492}
+    centerCollider: {x: -0.0002853164, y: 0.06655672, z: -0.0008561876}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
     _positions: {x: 2.847, y: 0.24000001, z: 3.519}
     _xn: 7
     _yn: 2
@@ -32,24 +32,24 @@ MonoBehaviour:
     _rotate: 0
   - LabelPosition: ShelfWS1sotto_0_1
     productName: Syrup
-    prefabs: {fileID: 2187680061115399032, guid: 1639232a7cc42b941b6bb39b69b2de1e,
+    prefabs: {fileID: 4275616223655900131, guid: 1ddcfa7094dca23429a4ab650c3e5f83,
       type: 3}
-    price: 0.99
+    price: 1.99
     description: 
     isInShoppingList: 1
     sizeCollider: {x: 0.09385506, y: 0.1321367, z: 0.09385505}
-    centerCollider: {x: -0.00028436273, y: 0.06655672, z: -0.0008561876}
+    centerCollider: {x: -0.00028549522, y: 0.06655672, z: -0.000856426}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
     _positions: {x: 4.576, y: 0.24000001, z: 3.6219997}
-    _xn: 8
-    _yn: 2
+    _xn: 5
+    _yn: 1
     _zn: 1
-    _offset: {x: 2, y: 1, z: 1.3}
+    _offset: {x: 1.5, y: 1, z: 1.3}
     _rotate: 0
   - LabelPosition: ShelfWS1sotto_1_0
     productName: Peas
-    prefabs: {fileID: 3903602883720291406, guid: 01647d1e6255adb4699d51c22130e66c,
+    prefabs: {fileID: 5886593373652477726, guid: 8e8e38d5032ac8047bcede91d8e3970b,
       type: 3}
     price: 1.25
     description: 
@@ -57,7 +57,7 @@ MonoBehaviour:
     sizeCollider: {x: 0.093855016, y: 0.1321367, z: 0.09385501}
     centerCollider: {x: -0.00028531626, y: 0.06655672, z: -0.0008559488}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 2.000001, y: 2, z: 2.000001}
     _positions: {x: 2.847, y: 0.804, z: 3.519}
     _xn: 4
     _yn: 1
@@ -66,7 +66,7 @@ MonoBehaviour:
     _rotate: 0
   - LabelPosition: ShelfWS1sotto_1_1
     productName: Pumpkin
-    prefabs: {fileID: 6560080780928890091, guid: 8a3de38aa39edaf4d93a411b9a47a50a,
+    prefabs: {fileID: 3227546916961175394, guid: b2bec79cc8bb21446904239c81d3ce05,
       type: 3}
     price: 2.99
     description: 
@@ -74,12 +74,12 @@ MonoBehaviour:
     sizeCollider: {x: 0.093855016, y: 0.1321367, z: 0.09385501}
     centerCollider: {x: -0.00028531626, y: 0.06655672, z: -0.0008559488}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
     _positions: {x: 4.576, y: 0.804, z: 3.6219997}
-    _xn: 8
+    _xn: 5
     _yn: 1
     _zn: 1
-    _offset: {x: 2, y: 1, z: 1.3}
+    _offset: {x: 1.5, y: 1, z: 1.3}
     _rotate: 0
   - LabelPosition: Rack1_0_0
     productName: Med Vita
@@ -218,72 +218,72 @@ MonoBehaviour:
     _offset: {x: 1.5, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfWS1sopra_0_0
-    productName: Fish
-    prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
+    productName: Flour
+    prefabs: {fileID: 2254950887640212190, guid: cf507bc292c9bfe43b910dd0d9d5a324,
       type: 3}
-    price: 4.99
+    price: 0.99
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.19273937, y: 0.08380286, z: 0.19273931}
-    centerCollider: {x: 0.027422892, y: 0.038714226, z: 0.0474323}
+    sizeCollider: {x: 0.18337992, y: 0.36196542, z: 0.11446622}
+    centerCollider: {x: -0.00081135, y: 0.18168443, z: 0.00000003725292}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 1.0000005, y: 1, z: 1.0000005}
     _positions: {x: 2.847, y: 1.261, z: 3.519}
     _xn: 4
-    _yn: 2
+    _yn: 1
     _zn: 2
     _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfWS1sopra_0_1
-    productName: Tomato
-    prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
+    productName: Flour
+    prefabs: {fileID: 2254950887640212190, guid: cf507bc292c9bfe43b910dd0d9d5a324,
       type: 3}
-    price: 2.99
+    price: 0.99
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
-    centerCollider: {x: 0.0000019073486, y: 0.11459063, z: 0}
+    sizeCollider: {x: 0.18337992, y: 0.36196542, z: 0.11446622}
+    centerCollider: {x: -0.00081206526, y: 0.18168443, z: 0.00000003725292}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.4, y: 0.4, z: 0.4}
+    _dimensions: {x: 1.0000005, y: 1, z: 1.0000005}
     _positions: {x: 4.576, y: 1.261, z: 3.6219997}
-    _xn: 8
-    _yn: 2
+    _xn: 4
+    _yn: 1
     _zn: 1
     _offset: {x: 2, y: 1, z: 1.3}
     _rotate: 0
   - LabelPosition: ShelfWS1sopra_1_0
-    productName: Fish
-    prefabs: {fileID: 3310230082148338102, guid: 74875a27600984b4f9765aaf67be4d80,
+    productName: Flour
+    prefabs: {fileID: 2254950887640212190, guid: cf507bc292c9bfe43b910dd0d9d5a324,
       type: 3}
-    price: 4.99
+    price: 0.99
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.19273937, y: 0.08380286, z: 0.19273931}
-    centerCollider: {x: 0.027422892, y: 0.038714226, z: 0.0474323}
+    sizeCollider: {x: 0.18337992, y: 0.36196542, z: 0.11446622}
+    centerCollider: {x: -0.00081135, y: 0.18168443, z: 0.00000003725292}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 1, y: 1, z: 1}
+    _dimensions: {x: 1.0000005, y: 1, z: 1.0000005}
     _positions: {x: 2.847, y: 1.691, z: 3.519}
-    _xn: 4
-    _yn: 2
+    _xn: 5
+    _yn: 1
     _zn: 2
     _offset: {x: 2, y: 1, z: 1}
     _rotate: 0
   - LabelPosition: ShelfWS1sopra_1_1
-    productName: Tomato
-    prefabs: {fileID: 6908195517934943740, guid: c2a44458837847e47901195cc127e29f,
+    productName: Syrup
+    prefabs: {fileID: 4275616223655900131, guid: 1ddcfa7094dca23429a4ab650c3e5f83,
       type: 3}
-    price: 2.99
+    price: 1.99
     description: 
     isInShoppingList: 0
-    sizeCollider: {x: 0.32293764, y: 0.23047483, z: 0.32293764}
-    centerCollider: {x: 0.0000019073486, y: 0.11459063, z: 0}
+    sizeCollider: {x: 0.09385506, y: 0.1321367, z: 0.09385505}
+    centerCollider: {x: -0.00028549522, y: 0.06655672, z: -0.000856426}
     emptyPos: {fileID: 0}
-    _dimensions: {x: 0.4, y: 0.4, z: 0.4}
+    _dimensions: {x: 2.0000014, y: 2, z: 2.0000014}
     _positions: {x: 4.576, y: 1.691, z: 3.6219997}
-    _xn: 8
-    _yn: 2
+    _xn: 5
+    _yn: 1
     _zn: 1
-    _offset: {x: 2, y: 1, z: 1.3}
+    _offset: {x: 1.5, y: 1, z: 1.3}
     _rotate: 0
   - LabelPosition: ShelfWS2Sopra_0_0
     productName: Flour
