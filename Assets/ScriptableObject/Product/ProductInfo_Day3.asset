@@ -440,7 +440,7 @@ MonoBehaviour:
     _rotate: 0
   - LabelPosition: ShelfWS3Sopra_0_1
     productName: Toilet Paper
-    prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
+    prefabs: {fileID: 1033070637845888963, guid: 4d1f3941cd7c8f045abca5c58d138351,
       type: 3}
     price: 1.99
     description: 
@@ -457,7 +457,7 @@ MonoBehaviour:
     _rotate: 0
   - LabelPosition: ShelfWS3Sopra_1_0
     productName: Toilet Paper
-    prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
+    prefabs: {fileID: 1033070637845888963, guid: 4d1f3941cd7c8f045abca5c58d138351,
       type: 3}
     price: 1.99
     description: 
@@ -474,7 +474,7 @@ MonoBehaviour:
     _rotate: 0
   - LabelPosition: ShelfWS3Sopra_1_1
     productName: Toilet Paper
-    prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
+    prefabs: {fileID: 1033070637845888963, guid: 4d1f3941cd7c8f045abca5c58d138351,
       type: 3}
     price: 1.99
     description: 
@@ -627,7 +627,7 @@ MonoBehaviour:
     _rotate: 1
   - LabelPosition: ShelfWN3sotto_0_0
     productName: Toilet Paper
-    prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
+    prefabs: {fileID: 1033070637845888963, guid: 4d1f3941cd7c8f045abca5c58d138351,
       type: 3}
     price: 1.99
     description: 
@@ -644,7 +644,7 @@ MonoBehaviour:
     _rotate: 1
   - LabelPosition: ShelfWN3sotto_1_0
     productName: Toilet Paper
-    prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
+    prefabs: {fileID: 1033070637845888963, guid: 4d1f3941cd7c8f045abca5c58d138351,
       type: 3}
     price: 1.99
     description: 
@@ -661,7 +661,7 @@ MonoBehaviour:
     _rotate: 0
   - LabelPosition: ShelfWN3sotto_0_1
     productName: Toilet Paper
-    prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
+    prefabs: {fileID: 1033070637845888963, guid: 4d1f3941cd7c8f045abca5c58d138351,
       type: 3}
     price: 1.99
     description: 
@@ -678,7 +678,7 @@ MonoBehaviour:
     _rotate: 0
   - LabelPosition: ShelfWN3sotto_1_1
     productName: Toilet Paper
-    prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
+    prefabs: {fileID: 1033070637845888963, guid: 4d1f3941cd7c8f045abca5c58d138351,
       type: 3}
     price: 1.99
     description: 
@@ -899,7 +899,7 @@ MonoBehaviour:
     _rotate: 0
   - LabelPosition: ShelfN1sotto_0_0
     productName: Toilet Paper
-    prefabs: {fileID: 439716966295665415, guid: cca60b251f1261c43ae63d1f7853dbd1,
+    prefabs: {fileID: 1033070637845888963, guid: 4d1f3941cd7c8f045abca5c58d138351,
       type: 3}
     price: 1.99
     description: 

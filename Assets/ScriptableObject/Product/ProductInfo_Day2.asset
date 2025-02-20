@@ -763,7 +763,7 @@ MonoBehaviour:
     _rotate: 0
   - LabelPosition: ShelfWN1sopra_0_0
     productName: Toothpaste
-    prefabs: {fileID: 3904580420548463975, guid: 1a989ea9942d95f4a9b26ad96a7d573f,
+    prefabs: {fileID: 2117874134717100500, guid: a4e71f9a2caf5e34997a88c03278defa,
       type: 3}
     price: 2.29
     description: 
@@ -780,7 +780,7 @@ MonoBehaviour:
     _rotate: 0
   - LabelPosition: ShelfWN1sopra_1_0
     productName: Toothpaste
-    prefabs: {fileID: 3904580420548463975, guid: 1a989ea9942d95f4a9b26ad96a7d573f,
+    prefabs: {fileID: 2117874134717100500, guid: a4e71f9a2caf5e34997a88c03278defa,
       type: 3}
     price: 2.29
     description: 
