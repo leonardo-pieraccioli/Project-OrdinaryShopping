@@ -19,7 +19,7 @@ MonoBehaviour:
       type: 3}
     price: 1.99
     description: 
-    isInShoppingList: 1
+    isInShoppingList: 0
     sizeCollider: {x: 0.09385506, y: 0.1321367, z: 0.09385505}
     centerCollider: {x: -0.0002853164, y: 0.06655672, z: -0.0008561876}
     emptyPos: {fileID: 0}
@@ -36,7 +36,7 @@ MonoBehaviour:
       type: 3}
     price: 1.99
     description: 
-    isInShoppingList: 1
+    isInShoppingList: 0
     sizeCollider: {x: 0.09385506, y: 0.1321367, z: 0.09385505}
     centerCollider: {x: -0.0002853462, y: 0.06655672, z: -0.0008561876}
     emptyPos: {fileID: 0}
@@ -240,7 +240,7 @@ MonoBehaviour:
       type: 3}
     price: 6.99
     description: 
-    isInShoppingList: 1
+    isInShoppingList: 0
     sizeCollider: {x: 0.09385506, y: 0.1321367, z: 0.09385505}
     centerCollider: {x: -0.00028549522, y: 0.06655672, z: -0.000856426}
     emptyPos: {fileID: 0}
@@ -631,7 +631,7 @@ MonoBehaviour:
       type: 3}
     price: 0.99
     description: 
-    isInShoppingList: 1
+    isInShoppingList: 0
     sizeCollider: {x: 0.24808007, y: 0.29773057, z: 0.13224001}
     centerCollider: {x: -0.009129796, y: 0.14899841, z: -0.007523367}
     emptyPos: {fileID: 0}
@@ -801,7 +801,7 @@ MonoBehaviour:
       type: 3}
     price: 3.49
     description: 
-    isInShoppingList: 0
+    isInShoppingList: 1
     sizeCollider: {x: 0.048381425, y: 0.115128435, z: 0.023584917}
     centerCollider: {x: 0.00000049639493, y: 0.056285117, z: 0.0000000013969839}
     emptyPos: {fileID: 0}
@@ -1311,7 +1311,7 @@ MonoBehaviour:
       type: 3}
     price: 1.99
     description: 
-    isInShoppingList: 1
+    isInShoppingList: 0
     sizeCollider: {x: 0.045758285, y: 0.10647632, z: 0.04575828}
     centerCollider: {x: -0.000963415, y: 0.053255767, z: 0.000026844442}
     emptyPos: {fileID: 0}
