@@ -3,7 +3,57 @@ guid: c43bac84e3c027e4684b5620efaac1d6
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bottle.001
+    second: {fileID: 2100000, guid: 16768f22790fe76488b46b1dc5864647, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Label.003
+    second: {fileID: 2100000, guid: c94f72774f6022b41bb73fa14dfdcddf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Label.004
+    second: {fileID: 2100000, guid: 8726c4b55473da443b2b036c9ba60525, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Label.005
+    second: {fileID: 2100000, guid: d7fe0ffe7a1d8b44286708ee2d215ef7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.012
+    second: {fileID: 2100000, guid: be9f6f4457bed354192b0187c73f39ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.013
+    second: {fileID: 2100000, guid: 71cbe199263fd7940ad4286fde74b7d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.014
+    second: {fileID: 2100000, guid: 5f4c7593cf35d934aa444c7a2205582f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic.005
+    second: {fileID: 2100000, guid: 8fcdc74bdca9ef445bb5726537c71d8c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastic_blue.002
+    second: {fileID: 2100000, guid: 503b621fc1b229f40974e3d293fec3f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastic_blue.003
+    second: {fileID: 2100000, guid: 3d4704cab78010c4e99a66b2a5725524, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,17 @@ guid: d618ad763c89a8145b5485ea14629146
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: colgate
+    second: {fileID: 2100000, guid: bb8e9eb54a1c4f64b998ee6e51944bea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastic_simple
+    second: {fileID: 2100000, guid: 78605c42543708447aa0af8ee8d5fca4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
