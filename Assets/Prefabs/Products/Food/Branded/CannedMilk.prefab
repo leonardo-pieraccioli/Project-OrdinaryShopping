@@ -86,10 +86,38 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c7cb2726135762a46bab71c2196321f2,
         type: 3}
       propertyPath: m_Name
-      value: Canned3 1
+      value: CannedMilk
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7cb2726135762a46bab71c2196321f2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c7cb2726135762a46bab71c2196321f2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1345235708793434614}
   m_SourcePrefab: {fileID: 100100000, guid: c7cb2726135762a46bab71c2196321f2, type: 3}
+--- !u!1 &7722955848335776193 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c7cb2726135762a46bab71c2196321f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7488389679194662032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-1345235708793434614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7722955848335776193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279e0dfbdde6a5a4abe47c60a717f266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instanceProduct: {fileID: 0}

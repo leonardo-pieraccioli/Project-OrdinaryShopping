@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 4317832734631925373, guid: f0ba5bb6e21d9784088250881d6dab84, type: 3}
   position: 9
-  npcName: Carol
+  npcName: Bianca
   isTrigger: 0
   dialogues:
   - "I can\u2019t reach those pills, could you get them for me?"
