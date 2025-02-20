@@ -8,12 +8,11 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Caixa antisseptico-OK-01
-  m_Shader: {fileID: -6465566751694194690, guid: d0508fb690c08b049845b7190b25d007,
+  m_Shader: {fileID: -6465566751694194690, guid: 8b809c5c5a0f1714a9ab117fa886dd52,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _SHADOWBRIGHTTYPE_LINEAR
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
@@ -103,8 +102,10 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _DstBlendAlpha: 0
+    - _EdgeDiffuse: 0.001
     - _EdgeDistanceAttenuation: 0.001
     - _EdgeRim: 0.001
+    - _EdgeShadowAttenuation: 1
     - _EdgeSpecular: 0.001
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
@@ -121,7 +122,7 @@ Material:
     - _RimThreshold: 0.15
     - _SHADOWBRIGHTTYPE: 0
     - _Saturation: 1
-    - _Shadow_Steps: 2
+    - _Shadow_Steps: 4
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -131,7 +132,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 0.234, g: 0.234, b: 0.234, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
