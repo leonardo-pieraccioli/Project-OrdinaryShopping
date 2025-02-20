@@ -501,7 +501,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.3, y: 1.1, z: 1.3}
     _positions: {x: 3.065, y: 0.24000001, z: 4.158}
-    _xn: 9
+    _xn: 6
     _yn: 1
     _zn: 1
     _offset: {x: 2, y: 1, z: 1.5}
@@ -518,7 +518,7 @@ MonoBehaviour:
     emptyPos: {fileID: 0}
     _dimensions: {x: 1.3, y: 1.1, z: 1.3}
     _positions: {x: 3.065, y: 0.804, z: 4.158}
-    _xn: 9
+    _xn: 6
     _yn: 1
     _zn: 1
     _offset: {x: 2, y: 1, z: 1.5}
