@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 2-LightNormal
   m_EditorClassIdentifier: 
   lightColor: {r: 1, g: 1, b: 1, a: 0}
-  intensity: 5
+  intensity: 3
   flickeringSettings:
     enableFlickering: 0
     flickeringInterval: 0.09
