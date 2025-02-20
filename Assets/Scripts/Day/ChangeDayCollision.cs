@@ -65,13 +65,13 @@ public class ChangeDayCollision : MonoBehaviour
         if (GroceriesList.Instance.IsAtLeastOneProductChecked())
         {
             CanvasManager.Instance.ActivateCanvas(CanvasCode.CNV_HELPBOX);
-            DialogueManager.Instance.WriteHelpMessage("You have paid. Now you can exit the store.");
+            DialogueManager.Instance.WriteHelpMessage("Thank you sweetheart for your precious help!");
             hasPlayerPaid = true;
         }
         else
         {
             CanvasManager.Instance.ActivateCanvas(CanvasCode.CNV_HELPBOX);
-            DialogueManager.Instance.WriteHelpMessage("To pay you have to buy at least one product from the shopping list.");
+            DialogueManager.Instance.WriteHelpMessage("I think you forgot to buy something…");
             StartCoroutine(DeactivateHelpBox());
         }
     }
