@@ -17,5 +17,5 @@ MonoBehaviour:
     fragile but strong in his own way, and Angela, always full of questions. They
     are my world, my joy. I just wish I could give them more."
   dayImage: {fileID: 0}
-  voiceOver: {fileID: 8300000, guid: 66c2dec9cea106a49b174b64cc208d90, type: 3}
+  voiceOver: {fileID: 8300000, guid: 467ff380fe1e7cc428673e45ef8d50e7, type: 3}
   diaryMusicClip: {fileID: 8300000, guid: 52f909bd03b30b941af758c2dc329fd7, type: 3}

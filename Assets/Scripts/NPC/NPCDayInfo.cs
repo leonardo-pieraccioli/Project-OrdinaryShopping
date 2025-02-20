@@ -11,6 +11,9 @@ public enum NPCPosition
     SpawnArea4,
     SpawnArea5,
     SpawnArea6,
+    SpawnArea7,
+    SpawnArea8,
+    SpawnArea9,
     SpawnAreaBimba
 }
 

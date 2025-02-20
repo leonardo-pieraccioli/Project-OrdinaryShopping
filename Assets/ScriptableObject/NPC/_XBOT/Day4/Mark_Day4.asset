@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mark_Day4
   m_EditorClassIdentifier: 
   prefab: {fileID: 3090446031367323671, guid: 41b21a957327e634da8660cb90687fda, type: 3}
-  position: 5
+  position: 8
   npcName: Mark
   isTrigger: 1
   dialogues:

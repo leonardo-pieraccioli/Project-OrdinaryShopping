@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Bianca_Day2
   m_EditorClassIdentifier: 
   prefab: {fileID: 3655195028132339095, guid: 2334a78c97b599e4a87ff89e83e882be, type: 3}
-  position: 0
-  npcName: 
-  isTrigger: 0
+  position: 7
+  npcName: Bianca
+  isTrigger: 1
   dialogues:
   - Mom, Mom!
   audioClips:
-  - {fileID: 8300000, guid: 6be27a1f5464ae54ab5dc27e71b83da5, type: 3}
+  - {fileID: 8300000, guid: 8544674fa99daba42b86419a728ee59f, type: 3}
   animatorController: {fileID: 9100000, guid: d4b5d90c906efda4eb2c93b66d9e5b85, type: 2}

@@ -17,7 +17,7 @@ MonoBehaviour:
   npcName: Nelly
   isTrigger: 0
   dialogues:
-  - How can I afford eyexdrops at these prices? How am I supposed to take care of
+  - How can I afford eyedrops at these prices? How am I supposed to take care of
     my children?
   audioClips:
   - {fileID: 8300000, guid: 22fdf967107efbf4693d08a8fbfe52d2, type: 3}

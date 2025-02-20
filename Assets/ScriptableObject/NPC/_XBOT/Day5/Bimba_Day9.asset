@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Bimba_Day9
   m_EditorClassIdentifier: 
   prefab: {fileID: 4317832734631925373, guid: f0ba5bb6e21d9784088250881d6dab84, type: 3}
-  position: 6
+  position: 9
   npcName: Carol
   isTrigger: 0
   dialogues:
   - "I can\u2019t reach those pills, could you get them for me?"
   audioClips:
-  - {fileID: 8300000, guid: 4a0cd4da19f75144ba499e691e85aafe, type: 3}
+  - {fileID: 8300000, guid: 2d44afba92d87be4bbb4c3128356152f, type: 3}
   animatorController: {fileID: 9100000, guid: b1575f78d44e3ed4ab462cc16cda1a97, type: 2}

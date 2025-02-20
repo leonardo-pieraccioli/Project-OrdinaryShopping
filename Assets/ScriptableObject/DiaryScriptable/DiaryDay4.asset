@@ -17,5 +17,5 @@ MonoBehaviour:
     used to help me at the market. Now, bombs fall day and night. One hit just a
     kilometer away. Why is this happening to us?"
   dayImage: {fileID: 0}
-  voiceOver: {fileID: 8300000, guid: d67fcc4c3476602438abd35ad717e6dc, type: 3}
+  voiceOver: {fileID: 8300000, guid: d75b29cb50b476842bf49e91500cb67c, type: 3}
   diaryMusicClip: {fileID: 8300000, guid: 9366cc36c535af04086ed4ede94c2335, type: 3}
