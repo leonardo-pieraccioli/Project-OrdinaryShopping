@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Nelly_Day3
   m_EditorClassIdentifier: 
   prefab: {fileID: 1669210603020318556, guid: 63ef1bf1c4e3e674b9497e0b059b37e1, type: 3}
-  position: 2
+  position: 0
   npcName: Nelly
   isTrigger: 1
   dialogues:

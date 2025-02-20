@@ -18,5 +18,5 @@ MonoBehaviour:
     and said it was just a bad dream. She relaxed and fell asleep, hugging her new
     toy."
   dayImage: {fileID: 0}
-  voiceOver: {fileID: 8300000, guid: d088373339d120c4c8ff7e84d5823882, type: 3}
+  voiceOver: {fileID: 8300000, guid: b05e43f5190fd69479c33e94fe8654ef, type: 3}
   diaryMusicClip: {fileID: 8300000, guid: 52f909bd03b30b941af758c2dc329fd7, type: 3}

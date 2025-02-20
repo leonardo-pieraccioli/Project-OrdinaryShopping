@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: DiaryDay5
   m_EditorClassIdentifier: 
   dayName: June 20th
-  dayText: "My neighbors are dead, bomb debris got to their house. It got me in the
-    leg, I can barely walk. My son got it in the eye, he can\u2019t see anymore."
+  dayText: The city is in ruins, the explosions never stop. My neighbors are dead,
+    my son has lost his eye and needs medicine. Food is becoming scarce. Hunger weighs
+    on us like the war itself, slowly draining our strength.
   dayImage: {fileID: 0}
-  voiceOver: {fileID: 8300000, guid: 8ec5737ab6c070042ab800829025c6f2, type: 3}
+  voiceOver: {fileID: 8300000, guid: 9ceaf0484100f8a42bfaf0b071e6002c, type: 3}
   diaryMusicClip: {fileID: 0}

@@ -17,5 +17,5 @@ MonoBehaviour:
     water and vomited all night. They were already feeling weak because of the cold,
     I don\u2019t know what to do."
   dayImage: {fileID: 0}
-  voiceOver: {fileID: 8300000, guid: 9f6b44aa2a6f3964f9845554db57b74e, type: 3}
+  voiceOver: {fileID: 8300000, guid: 4f4975b6d79a28f479cf6b5e8e7120bd, type: 3}
   diaryMusicClip: {fileID: 8300000, guid: 9366cc36c535af04086ed4ede94c2335, type: 3}
