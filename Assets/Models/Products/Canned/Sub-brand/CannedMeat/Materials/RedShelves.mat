@@ -63,7 +63,7 @@ Material:
     - _Shadow_Steps: 4
     - _Smoothness: 0.791
     m_Colors:
-    - _BaseColor: {r: 0.9716981, g: 0.32052398, b: 0.28875935, a: 1}
+    - _BaseColor: {r: 0.67, g: 0.22153227, b: 0.19991937, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &3982348512348924458
 MonoBehaviour:

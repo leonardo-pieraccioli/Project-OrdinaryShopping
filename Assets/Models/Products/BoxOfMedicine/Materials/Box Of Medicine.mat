@@ -8,12 +8,11 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Box Of Medicine
-  m_Shader: {fileID: -6465566751694194690, guid: d0508fb690c08b049845b7190b25d007,
+  m_Shader: {fileID: -6465566751694194690, guid: 8b809c5c5a0f1714a9ab117fa886dd52,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _SHADOWBRIGHTTYPE_POWER4
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
@@ -53,6 +52,7 @@ Material:
     - _EdgeDiffuse: 0
     - _EdgeDistanceAttenuation: 0
     - _EdgeRim: 0
+    - _EdgeShadowAttenuation: 1
     - _EdgeSpecular: 0
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -64,7 +64,7 @@ Material:
     - _Shadow_Steps: 15.45
     - _Smoothness: 0.286
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 0.28930807, g: 0.28930807, b: 0.28930807, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &1762473482734971843
 MonoBehaviour:

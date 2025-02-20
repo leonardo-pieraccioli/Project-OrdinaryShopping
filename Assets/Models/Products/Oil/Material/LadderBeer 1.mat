@@ -48,7 +48,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AmbientEnvironmentMultiplier: 0.826
-    - _Brightness: 4
+    - _Brightness: 1
     - _Contrast: 1.031
     - _EdgeDiffuse: 0
     - _EdgeDistanceAttenuation: 0
@@ -64,7 +64,7 @@ Material:
     - _Shadow_Steps: 4.21
     - _Smoothness: 1
     m_Colors:
-    - _BaseColor: {r: 0.13296545, g: 0.33962262, b: 0.15491879, a: 1}
+    - _BaseColor: {r: 0.20087355, g: 0.514, b: 0.23632185, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &1762473482734971843
 MonoBehaviour:
